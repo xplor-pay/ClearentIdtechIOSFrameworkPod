@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ClearentIdtechIOSFrameworkPod'
-    s.version          = '1.0.23'
+    s.version          = '1.0.24'
     s.summary          = 'Clearent IOS Framework supporting IDTech credit card reader.'
     s.description  = <<-DESC
     This framework lets your app avoid handling credit card data by connecting to a supported IDTech credit card reader and sending the card data to Clearent for processing.
@@ -21,12 +21,11 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '8.0'
     
-    #s.public_header_files = "ClearentIdtechIOSFrameworkPod/Assets/IDTech.framework/Versions/A/Headers/IDTech.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/Clearent_VP3300.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentDelegate.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentPublicVP3300Delegate.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentTransactionTokenRequest.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentConfigurator.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentEmvConfigurator.h"
+    s.source_files = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/Clearent_VP3300.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentDelegate.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentPublicVP3300Delegate.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentTransactionTokenRequest.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentConfigurator.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentEmvConfigurator.h'
     
-    #s.vendored_frameworks = 'ClearentIdtechIOSFrameworkPod/Frameworks/IDTech.framework','ClearentIdtechIOSFrameworkPod/Frameworks/ClearentIdtechIOSFramework.framework'
+    s.vendored_frameworks = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework'
     
-     s.vendored_frameworks = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework'
-    
+    s.public_header_files = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/Clearent_VP3300.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentDelegate.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentPublicVP3300Delegate.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentTransactionTokenRequest.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentConfigurator.h','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Headers/ClearentEmvConfigurator.h'
     
     s.resource_bundles = {
         'ClearentIdtechIOSFrameworkPod' => ['ClearentIdtechIOSFrameworkPod/IDTech.bundle']
@@ -34,7 +33,7 @@ Pod::Spec.new do |s|
     
     s.frameworks = 'CFNetwork', 'AudioToolbox','AVFoundation','MediaPlayer','ExternalAccessory'
 
-    s.preserve_paths = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework','ClearentIdtechIOSFrameworkPod/Assets/IDTech.bundle'
+    s.preserve_paths = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework','ClearentIdtechIOSFrameworkPod/IDTech.bundle'
     
     s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ClearentIdtechIOSFrameworkPod" "${PODS_ROOT}/../../ClearentIdtechIOSFrameworkPod/IDTech.framework/Headers"' }
 end
