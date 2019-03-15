@@ -21,8 +21,6 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '8.0'
     
-    #s.source_files = 'ClearentIdtechIOSFrameworkPod/Classes/**/*'
-    
     s.public_header_files = "ClearentIdtechIOSFrameworkPod/Assets/IDTech.framework/Versions/A/Headers/IDTech.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/Clearent_VP3300.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentDelegate.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentPublicVP3300Delegate.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentTransactionTokenRequest.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentConfigurator.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentEmvConfigurator.h"
     
     s.vendored_frameworks = 'ClearentIdtechIOSFrameworkPod/Assets/IDTech.framework'
@@ -31,10 +29,8 @@ Pod::Spec.new do |s|
         'ClearentIdtechIOSFrameworkPod' => ['ClearentIdtechIOSFrameworkPod/Assets/IDTech.bundle']
     }
     
-    # s.public_header_files = 'Pod/Classes/**/*.h'
     s.frameworks = "CFNetwork", "AudioToolbox","AVFoundation","MediaPlayer","ExternalAccessory"
-    # s.dependency 'AFNetworking', '~> 2.3'
-    
+
     s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ClearentIdtechIOSFrameworkPod" "${PODS_ROOT}/../../ClearentIdtechIOSFrameworkPod/Assets/IDTech.framework/Headers"' }
 end
 

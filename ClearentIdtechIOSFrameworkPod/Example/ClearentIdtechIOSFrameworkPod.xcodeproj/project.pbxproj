@@ -58,13 +58,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		60DC3DF54A1A4E0A6073C050 /* ClearentIdtechIOSFrameworkPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ClearentIdtechIOSFrameworkPod.podspec; path = ../ClearentIdtechIOSFrameworkPod.podspec; sourceTree = "<group>"; };
+		60DC3DF54A1A4E0A6073C050 /* ClearentIdtechIOSFrameworkPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ClearentIdtechIOSFrameworkPod.podspec; path = ../ClearentIdtechIOSFrameworkPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		830E7BE36F36A87A3DC2D994 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		830E7BE36F36A87A3DC2D994 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D08197385F7BB8228ABD9C1 /* Pods-ClearentIdtechIOSFrameworkPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearentIdtechIOSFrameworkPod_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClearentIdtechIOSFrameworkPod_Tests/Pods-ClearentIdtechIOSFrameworkPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		90C282DFCF37FF6C6535AF5B /* Pods-ClearentIdtechIOSFrameworkPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClearentIdtechIOSFrameworkPod_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClearentIdtechIOSFrameworkPod_Tests/Pods-ClearentIdtechIOSFrameworkPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		971853E574B32E05C5D1A926 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		971853E574B32E05C5D1A926 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D83E18710FAA77D0313C89AA /* Pods_ClearentIdtechIOSFrameworkPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearentIdtechIOSFrameworkPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A2DDE1DB7FCF45F038381D /* Pods_ClearentIdtechIOSFrameworkPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClearentIdtechIOSFrameworkPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -321,9 +321,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClearentIdtechIOSFrameworkPod_Example/Pods-ClearentIdtechIOSFrameworkPod_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFrameworkPod.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ClearentIdtechIOSFrameworkPod.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

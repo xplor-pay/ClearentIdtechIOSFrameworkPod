@@ -8,6 +8,12 @@
 
 @import UIKit;
 
-@interface ExampleViewController : UIViewController
+//CLEARENT: import the ClearentIdtechIOSFramework header
+@import ClearentIdtechIOSFramework;
+
+//CLEARENT make the view a Clearent_Public_IDTech_VP3300_Delegate
+
+//CLEARENT make the view a ClearentManualEntryDelegate
+@interface ExampleViewController : UIViewController<Clearent_Public_IDTech_VP3300_Delegate, ClearentManualEntryDelegate>
 
 @end
