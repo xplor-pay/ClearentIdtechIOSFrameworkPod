@@ -1,0 +1,6 @@
+framework module ClearentIdtechIOSFrameworkPod {
+  umbrella header "ClearentIdtechIOSFrameworkPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
