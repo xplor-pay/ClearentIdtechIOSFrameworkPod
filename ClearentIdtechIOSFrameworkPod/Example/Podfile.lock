@@ -1,5 +1,5 @@
 PODS:
-  - ClearentIdtechIOSFrameworkPod (0.1.0)
+  - ClearentIdtechIOSFrameworkPod (1.0.19)
 
 DEPENDENCIES:
   - ClearentIdtechIOSFrameworkPod (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ClearentIdtechIOSFrameworkPod: 4fb2645b377db8513165457051388bd9ae222e3b
+  ClearentIdtechIOSFrameworkPod: 96d473a2d240f62edfd0c76e8217a7ee82004dbc
 
 PODFILE CHECKSUM: 2fc5ae77c37adadcf31327a2b6ce357e01ab3a46
 

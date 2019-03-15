@@ -14,16 +14,16 @@ Pod::Spec.new do |s|
     This framework lets your app avoid handling credit card data by connecting to a supported IDTech credit card reader and sending the card data to Clearent for processing.
     DESC
     
-    s.homepage         = 'https://github.com/clearent/ClearentIdtechIOSFrameworkPod.git'
+    s.homepage         = 'http://api.clearent.com/swagger.html#!/Quest_API_Integration/Mobile_Transactions_using_SDKs'
     s.license          = { :type => 'APACHE', :file => 'LICENSE' }
     s.author           = { 'davidHigginbotham' => 'dhigginbotham@clearent.com' }
     s.source           = { :git => 'https://github.com/clearent/ClearentIdtechIOSFrameworkPod.git', :tag => s.version.to_s }
     
     s.ios.deployment_target = '8.0'
     
-    s.public_header_files = "ClearentIdtechIOSFrameworkPod/Assets/IDTech.framework/Versions/A/Headers/IDTech.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/Clearent_VP3300.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentDelegate.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentPublicVP3300Delegate.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentTransactionTokenRequest.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentConfigurator.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentEmvConfigurator.h"
+    #s.public_header_files = "ClearentIdtechIOSFrameworkPod/Assets/IDTech.framework/Versions/A/Headers/IDTech.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/Clearent_VP3300.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentDelegate.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentPublicVP3300Delegate.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentTransactionTokenRequest.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentConfigurator.h","ClearentIdtechIOSFrameworkPod/Assets/ClearentIdtechIOSFramework/ClearentEmvConfigurator.h"
     
-    s.vendored_frameworks = 'ClearentIdtechIOSFrameworkPod/Assets/IDTech.framework'
+    s.vendored_frameworks = 'Assets/IDTech.framework'
     
     s.resource_bundles = {
         'ClearentIdtechIOSFrameworkPod' => ['ClearentIdtechIOSFrameworkPod/Assets/IDTech.bundle']

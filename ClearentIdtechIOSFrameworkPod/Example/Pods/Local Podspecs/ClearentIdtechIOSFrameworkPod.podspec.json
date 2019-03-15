@@ -1,9 +1,9 @@
 {
   "name": "ClearentIdtechIOSFrameworkPod",
-  "version": "0.1.0",
+  "version": "1.0.19",
   "summary": "Clearent IOS Framework supporting IDTech credit card reader.",
   "description": "This framework lets your app avoid handling credit card data by connecting to a supported IDTech credit card reader and sending the card data to Clearent for processing.",
-  "homepage": "https://github.com/clearent/ClearentIdtechIOSFrameworkPod.git",
+  "homepage": "http://api.clearent.com/swagger.html#!/Quest_API_Integration/Mobile_Transactions_using_SDKs",
   "license": {
     "type": "APACHE",
     "file": "LICENSE"
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/clearent/ClearentIdtechIOSFrameworkPod.git",
-    "tag": "0.1.0"
+    "tag": "1.0.19"
   },
   "platforms": {
     "ios": "8.0"
