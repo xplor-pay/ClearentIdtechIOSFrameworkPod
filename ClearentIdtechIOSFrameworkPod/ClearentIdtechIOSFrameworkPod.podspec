@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 
     s.preserve_paths = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework'
     
-    s.dependency 'IDTechPod', '0.1.2'
+    s.dependency 'IDTechPod', '0.1.3'
     
     # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ClearentIdtechIOSFrameworkPod" "${PODS_ROOT}/../../ClearentIdtechIOSFrameworkPod/IDTech.framework/Headers"' }
 end
