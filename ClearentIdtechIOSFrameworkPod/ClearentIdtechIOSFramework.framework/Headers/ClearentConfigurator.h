@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ClearentEmvConfigurator.h"
 #import "ClearentConfiguration.h"
 #import "ClearentConfigFetcher.h"
-
+#import "IDTech/IDT_VP3300.h"
 typedef enum{
     CLOCK_CONFIGURATION_SUCCESS,
     CLOCK_FAILED,
