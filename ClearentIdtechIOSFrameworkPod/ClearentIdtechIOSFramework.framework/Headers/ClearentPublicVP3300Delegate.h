@@ -12,8 +12,13 @@
 @protocol Clearent_Public_IDTech_VP3300_Delegate <NSObject>
 
 /**
+ * This will notify you when the device is ready for use (connection, configuration, etc is completed).
+ */
+-(void) isReady;
+
+/**
  * This will notify you when a Clearent Transaction Token has been successfully created based on the card data read from the ID Tech device. The json returned represents a Clearent Response.
- * When you want to perform the payment transaction use the 'jwt' from this response as a header called 'emvjwt'. See demo for an example (the payment transaction API is not supported in
+ * When you want to perform the payment transaction use the 'jwt' from this response as a header called 'mobilejwt'. See demo for an example (the payment transaction API is not supported in
  * this SDK).
  */
 -(void) successfulTransactionToken:(NSString*)jsonString;
@@ -43,5 +48,4 @@
 
 - (void) bypassData:(NSData*)data;//!<When bypass output is enabled, all data intended for the current device will be sent here .
 //!< @param data The data intended for the device
-
 @end
