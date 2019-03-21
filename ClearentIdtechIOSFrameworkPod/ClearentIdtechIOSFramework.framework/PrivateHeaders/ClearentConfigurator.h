@@ -22,7 +22,6 @@ typedef enum{
     @property(nonatomic) SEL selector;
     @property(nonatomic) id callbackObject;
     @property (assign, getter=isConfigured) BOOL configured;
-    @property (nonatomic) IDT_VP3300 *sharedController;
 
     - (id) init : (NSString*)clearentBaseUrl
         publicKey:(NSString*)publicKey

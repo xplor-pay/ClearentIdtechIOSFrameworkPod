@@ -8,4 +8,3 @@
 #import "ClearentIdtechIOSFramework/Clearent_VP3300.h"
 #import "ClearentIdtechIOSFramework/ClearentManualEntry.h"
 
-
