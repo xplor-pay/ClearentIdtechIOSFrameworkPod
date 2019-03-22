@@ -10,7 +10,7 @@
 #import <MessageUI/MessageUI.h>
 #import <AVFoundation/AVFoundation.h>
 #import "ClearentPublicVP3300Delegate.h"
-#import "IDT_VP3300.h"
+#import <IDTech/IDT_VP3300.h>
 /**
  * Interact with this object as a singleton. Provide a delegate that adheres to the Clearent_Public_IDTech_VP3300_Delegate protocol will allow the framework to send messages to you.
  * The Clearent solution wraps all of the IDTech functionality, allowing it to shield you from interacting with the credit card data. The methods that are available are well documented in the IDTech documentation.
