@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ClearentPublicVP3300Delegate.h"
 #import "ClearentTransactionTokenRequest.h"
-#import <IDTech/IDT_VP3300.h>
+#import "IDT_VP3300.h"
 //EMV_DIP("EMV_DIP", "05"),
 typedef enum {FALLBACK_SWIPE=80, NONTECH_FALLBACK_SWIPE=95, CONTACTLESS_EMV=07, CONTACTLESS_MAGNETIC_SWIPE=91} supportedEmvEntryMode;
 typedef enum {SWIPE=90} supportedNonEmvEntryMode;
