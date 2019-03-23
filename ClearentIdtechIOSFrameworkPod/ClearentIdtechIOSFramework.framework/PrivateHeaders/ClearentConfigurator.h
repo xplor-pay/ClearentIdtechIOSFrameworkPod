@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <IDTech/IDT_VP3300.h>
+#import "ClearentEmvConfigurator.h"
+#import "ClearentConfiguration.h"
+#import "ClearentConfigFetcher.h"
+
 typedef enum{
     CLOCK_CONFIGURATION_SUCCESS,
     CLOCK_FAILED,
@@ -20,12 +23,14 @@ typedef enum{
     @property(nonatomic) SEL selector;
     @property(nonatomic) id callbackObject;
     @property (assign, getter=isConfigured) BOOL configured;
+    @property (nonatomic) IDT_VP3300 *sharedController;
 
     - (id) init : (NSString*)clearentBaseUrl
         publicKey:(NSString*)publicKey
         callbackObject:(id)callbackObject
         withSelector:(SEL)selector
         sharedController:(IDT_VP3300*) sharedController;
+
     - (void) configure: (NSString*)kernelVersion deviceSerialNumber:(NSString*) deviceSerialNumber;
     - (void) configure: (NSDictionary*) jsonConfiguration;
     - (void) notify:(NSString*)message;
