@@ -33,9 +33,9 @@ Pod::Spec.new do |s|
     
     s.frameworks = 'CFNetwork', 'AudioToolbox','AVFoundation','MediaPlayer','ExternalAccessory'
     
-    s.module_map = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Modules/module.modulemap','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Modules/module.private.modulemap'
+    s.module_map = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Modules/module.private.modulemap'
     
-    s.preserve_paths = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework','ClearentIdtechIOSFrameworkPod/IDTech.bundle', 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Modules/module.modulemap','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Modules/module.private.modulemap'
+    s.preserve_paths = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework','ClearentIdtechIOSFrameworkPod/IDTech.bundle', 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/Modules/module.private.modulemap'
     
 #    s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/CommonCryptoSwift/Sources/CCommonCrypto $(PODS_TARGET_SRCROOT)/Sources/CCommonCrypto }
 
