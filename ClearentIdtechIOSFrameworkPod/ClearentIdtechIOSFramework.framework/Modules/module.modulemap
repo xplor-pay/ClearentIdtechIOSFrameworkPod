@@ -1,5 +1,5 @@
 framework module ClearentIdtechIOSFramework {
-    explicit module Clearent {
+    explicit module ClearentIdtechIOSFramework {
         header "ClearentIdtechIOSFramework.h"
         export *
     }
