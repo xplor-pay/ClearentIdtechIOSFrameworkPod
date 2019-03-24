@@ -1,23 +1,6 @@
 framework module ClearentIdtechIOSFramework {
-    explicit module ClearentIdtechIOSFramework {
-        header "ClearentIdtechIOSFramework.h"
-        export *
-    }
-    explicit module IDTech {
-        header "IDTech/IDT_VP3300.h"
-        header "IDTech/IDTCommon.h"
-        header "IDTech/IDTUtility.h"
-        header "IDTech/IDT_Device.h"
-        header "IDTech/IDT_BTPay.h"
-        header "IDTech/IDT_BTMag.h"
-        header "IDT_iMag.h"
-        header "IDTech/IDT_UniPay.h"
-        header "IDTech/IDT_UniMag.h"
-        header "IDTech/IDTMSRData.h"
-        header "IDTech/IDTEMVData.h"
-        header "IDTech/APDUResponse.h"
-        header "IDTech/IDT_UniPayI_V.h"
-        header "IDTech/uniMag.h"
-        export *
-    }
+  umbrella header "ClearentIdtechIOSFramework.h"
+
+  export *
+  module * { export * }
 }
