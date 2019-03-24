@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ClearentIdtechIOSFrameworkPod'
-    s.version          = '1.0.69'
+    s.version          = '1.0.70'
     s.summary          = 'Clearent IOS Framework supporting IDTech credit card reader.'
     s.description  = <<-DESC
     This framework lets your app avoid handling credit card data by connecting to a supported IDTech credit card reader and sending the card data to Clearent for processing.
@@ -35,9 +35,9 @@ Pod::Spec.new do |s|
     
     s.module_map = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.modulemap'
     
-    s.preserve_paths = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework','ClearentIdtechIOSFrameworkPod/IDTech.bundle', 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.modulemap'
+    s.preserve_paths = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework','ClearentIdtechIOSFrameworkPod/IDTech.bundle', 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/ClearentIdtechIOSFramework.modulemap'
 
-    s.xcconfig = {'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}/../../ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.modulemap' }
+    s.xcconfig = {'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}/../../ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/ClearentIdtechIOSFramework.modulemap' }
     
 #     s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ClearentIdtechIOSFrameworkPod" "${PODS_ROOT}/../../ClearentIdtechIOSFrameworkPod/IDTech.framework/Headers"' }
 end

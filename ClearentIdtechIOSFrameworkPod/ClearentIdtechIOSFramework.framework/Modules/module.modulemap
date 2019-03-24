@@ -1,13 +1,15 @@
 framework module ClearentIdtechIOSFramework {
     umbrella header "ClearentIdtechIOSFramework.h"
+
+    module IDTech {
+        umbrella header "IDTech/IDTech.h"
+        
+        export *
+        module * { export * }
+    }
     
     export *
     module * { export * }
 }
 
-framework module IDTech {
-    umbrella header "IDTech.h"
-    
-    export *
-    module * { export * }
-}
+
