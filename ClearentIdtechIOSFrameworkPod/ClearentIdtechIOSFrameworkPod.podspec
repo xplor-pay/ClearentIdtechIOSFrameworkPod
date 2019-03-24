@@ -33,7 +33,11 @@ Pod::Spec.new do |s|
     
     s.frameworks = 'CFNetwork', 'AudioToolbox','AVFoundation','MediaPlayer','ExternalAccessory'
     
-    s.preserve_paths = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework','ClearentIdtechIOSFrameworkPod/IDTech.bundle'
+    s.module_map = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/IDTechModuleMap/module.modulemap'
     
+    s.preserve_paths = 'ClearentIdtechIOSFrameworkPod/IDTech.framework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework','ClearentIdtechIOSFrameworkPod/IDTech.bundle', 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.framework/IDTechModuleMap/module.modulemap'
+    
+#    s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/CommonCryptoSwift/Sources/CCommonCrypto $(PODS_TARGET_SRCROOT)/Sources/CCommonCrypto }
+
     # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ClearentIdtechIOSFrameworkPod" "${PODS_ROOT}/../../ClearentIdtechIOSFrameworkPod/IDTech.framework/Headers"' }
 end
