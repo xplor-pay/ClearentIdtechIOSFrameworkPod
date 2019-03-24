@@ -4,20 +4,20 @@ framework module ClearentIdtechIOSFramework {
         export *
     }
     explicit module IDTech {
-        header "IDT_VP3300.h"
-        header "IDTCommon.h"
-        header "IDTUtility.h"
-        header "IDT_Device.h"
-        header "IDT_BTPay.h"
-        header "IDT_BTMag.h"
+        header "IDTech/IDT_VP3300.h"
+        header "IDTech/IDTCommon.h"
+        header "IDTech/IDTUtility.h"
+        header "IDTech/IDT_Device.h"
+        header "IDTech/IDT_BTPay.h"
+        header "IDTech/IDT_BTMag.h"
         header "IDT_iMag.h"
-        header "IDT_UniPay.h"
-        header "IDT_UniMag.h"
-        header "IDTMSRData.h"
-        header "IDTEMVData.h"
-        header "APDUResponse.h"
-        header "IDT_UniPayI_V.h"
-        header "uniMag.h"
+        header "IDTech/IDT_UniPay.h"
+        header "IDTech/IDT_UniMag.h"
+        header "IDTech/IDTMSRData.h"
+        header "IDTech/IDTEMVData.h"
+        header "IDTech/APDUResponse.h"
+        header "IDTech/IDT_UniPayI_V.h"
+        header "IDTech/uniMag.h"
         export *
     }
 }
