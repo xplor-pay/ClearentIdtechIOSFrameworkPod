@@ -28,4 +28,5 @@
 #import "APDUData.h"
 #import "IDT_UniPayI_V.h"
 #import "uniMag.h"
+#import "UniPay.h"
 
