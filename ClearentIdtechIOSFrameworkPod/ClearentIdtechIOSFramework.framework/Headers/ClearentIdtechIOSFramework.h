@@ -25,6 +25,7 @@
 #import "IDTMSRData.h"
 #import "IDTEMVData.h"
 #import "APDUResponse.h"
+#import "APDUData.h"
 #import "IDT_UniPayI_V.h"
 #import "uniMag.h"
 
