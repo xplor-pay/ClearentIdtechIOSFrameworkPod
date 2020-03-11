@@ -2,6 +2,8 @@ Try to build a pod containing our framework and the idtech framework.
 
 
 # Release Notes
+1.0.100 - Has Clearent IDTech framework 1.1.13
+
 1.0.98 - Code Signing issue fix
 
 1.0.96 - Added Simulator architecture support
