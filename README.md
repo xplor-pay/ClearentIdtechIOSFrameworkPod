@@ -3,7 +3,7 @@ Try to build a pod containing our framework and the idtech framework.
 
 # Release Notes
 
-2.0.0 - Has Clearent IDTech framework 2.0.0
+2.0.2 - Has Clearent IDTech framework 2.0.0
 
 1.0.100 - Has Clearent IDTech framework 1.1.13
 
