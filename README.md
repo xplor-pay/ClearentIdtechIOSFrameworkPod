@@ -3,6 +3,8 @@ Try to build a pod containing our framework and the idtech framework.
 
 # Release Notes
 
+2.0.10 - Use new idtech framework to callback with messages related to audio events.
+
 2.0.9 - Has Clearent IDTech framework 2.0.0. Included simulator architecture for 64 bit
 
 2.0.7 - Has Clearent IDTech framework 2.0.0. Included simulator architecture
