@@ -3,6 +3,11 @@ Try to build a pod containing our framework and the idtech framework.
 
 # Release Notes
 
+2.0.13 - Fixed an issue with our bad swipe solution. IDTech sends back an incomplete card object sometimes on a bad swipe. We already monitor for certain failures so just adding another one. If the framework sees this scenario it will 
+cancel the transaction and restart a transaction in 2 in 1 mode.
+
+2.0.12 - Fix beep issue.
+
 2.0.11 - Removed extraneous LCD event message callback.
 
 2.0.10 - Use new idtech framework to callback with messages related to audio events.
