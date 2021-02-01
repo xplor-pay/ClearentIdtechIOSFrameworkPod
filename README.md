@@ -3,7 +3,12 @@ Try to build a pod containing our framework and the idtech framework.
 
 # Release Notes
 
-2.0.13 - Fixed an issue with our bad swipe solution. IDTech sends back an incomplete card object sometimes on a bad swipe. We already monitor for certain failures so just adding another one. If the framework sees this scenario it will 
+2.0.25 - trapping more potential exceptions in remote logging to avoid crashes. (framework version 2.0.8)
+
+2.0.24 - improved retry when retrieving the device serial number and firmware version from reader.
+started trapping exceptions in remote logging.
+
+2.0.13 - Fixed an issue with our bad swipe solution. IDTech sends back an incomplete card object sometimes on a bad swipe. We already monitor for certain failures so just adding another one. If the framework sees this scenario it will
 cancel the transaction and restart a transaction in 2 in 1 mode.
 
 2.0.12 - Fix beep issue.
