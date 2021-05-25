@@ -3,6 +3,9 @@ Try to build a pod containing our framework and the idtech framework.
 
 # Release Notes
 
+2.0.27 - Fix an issue with BITCODE_ENABLED usage. Remove the logic to retry the bluetooth search when
+a condition idtech warned us about happens. Instead, just force the disconnect and have the client try the search again.
+
 2.0.25 - trapping more potential exceptions in remote logging to avoid crashes. (framework version 2.0.8)
 
 2.0.24 - improved retry when retrieving the device serial number and firmware version from reader.
