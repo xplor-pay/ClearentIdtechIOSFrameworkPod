@@ -17,6 +17,4 @@
 @property (nonatomic) BOOL forceOnline;
 @property (nonatomic) BOOL fallback;
 @property (nonatomic) NSString* emailAddress;
-
-- (instancetype) initSale;
 @end
