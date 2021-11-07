@@ -76,6 +76,55 @@
 
 - (void) lcdDisplay:(int)mode  lines:(NSArray*)lines;
 
+
+/**
+ Bluetooth Picker Alert
+ When a bluetooth scan is requested, this delegate will return an UIAlertView for displaying to allow the selection of a found device
+ 
+ @param view UIAlertView:
+ 
+ */
+
+- (void) bluetoothPickerAlert:(UIAlertView*)view;
+
+
+
+/**
+ Contactless Event
+ During a Contactless transaction, if events are enabled, they will be sent to this protocol,
+ 
+ @param event Event Type:
+ - 01 = LED Event
+ - 02 = Buzzer Event
+ - 03 = LCD Message
+ @param scheme LCD Message Scheme
+ @param data Data
+	- When Event Type 01:
+	-- 0x00 = LED0 off
+	-- 0x10 = LED1 off
+ 	-- 0x20 = LED2 off
+ 	-- 0x30 = LED3 off
+ 	-- 0xF0 = ALL off
+	-- 0x01 = LED0 on
+	-- 0x11 = LED1 on
+ 	-- 0x21 = LED2 on
+ 	-- 0x31 = LED3 on
+ 	-- 0xF1 = ALL on
+ 	- When Event Type 02:
+ 	-- 0x10 = Short Beep No Change
+ 	-- 0x11 = Short Beep No Change
+ 	-- 0x12 = Double Short Beep
+ 	-- 0x13 = Triple Short Beep
+ 	-- 0x20 = 200ms Beep
+ 	-- 0x21 = 400ms Beep
+ 	-- 0x22 = 600ms Beep
+ 	- When Event Type 03:
+ 	-- Message ID (please refer to table in NEO Reference Guide)
+ */
+
+- (void) ctlsEvent:(Byte)event scheme:(Byte)scheme  data:(Byte)data;
+
+
 /**
  PIN Request
  During an EMV transaction, this delegate will receive data that is a request to collect a PIN
@@ -93,12 +142,12 @@
  
  */
 
+- (void) pinRequest:(EMV_PIN_MODE_Types)mode  key:(NSData*)key  PAN:(NSData*)PAN startTO:(int)startTO intervalTO:(int)intervalTO language:(NSString*)language;
+
+
+
 - (void) gen2Data:(NSData*)tlv;//!<Receives Gen2 TLV data.
 //!< @param tlv TLV data from gen2 event
-
-
-
-- (void) pinRequest:(EMV_PIN_MODE_Types)mode  key:(NSData*)key  PAN:(NSData*)PAN startTO:(int)startTO intervalTO:(int)intervalTO language:(NSString*)language;
 
 
 /**
@@ -149,6 +198,9 @@
 - (void) emvTransactionData:(IDTEMVData*)emvData errorCode:(int)error;
 
 
+
+
+
 /**
  Pinpad data delegate protocol
  
@@ -195,13 +247,16 @@
     id<IDT_Device_Delegate> bypassDelegate;
 }
 #else
-@interface IDT_Device : NSObject<EAAccessoryDelegate, NSStreamDelegate,UniPay_Delegate,CBCentralManagerDelegate, CBPeripheralDelegate>{
+@interface IDT_Device : NSObject<EAAccessoryDelegate, NSStreamDelegate,UniPay_Delegate,CBCentralManagerDelegate, CBPeripheralDelegate, UIAlertViewDelegate>{
     id<IDT_Device_Delegate> delegate;
     id<IDT_Device_Delegate> delegate2;
     id<IDT_Device_Delegate> bypassDelegate;
+	
 }
 @property (nonatomic, strong) CBCentralManager *centralManager;
 @property (nonatomic, strong) CBPeripheral *bleDevice;
+@property (nonatomic, strong) NSMutableArray *peripherals;
+@property bool scanOnly;
 #endif
 
 #endif
@@ -212,6 +267,15 @@
 	@property(strong) id<IDT_Device_Delegate> bypassDelegate;  //!<- Reference to IDT_Device_Delegate.
 @property int bleRetryCount;
 
+/**
+* Reset Singleton
+-  All Devices
+*
+Resets the singleton instance of the SDK
+
+*/
+
++(void) resetSingleton;
 
 /**
  * SDK Version
@@ -239,11 +303,66 @@
  */
 +(void) bypassOutput:(bool)bypass;
 
+
+
+/**
+ Sets the flag to bypass Ble Validation.
+ @param bypass TRUE = bypass output
+ */
++(void) bypassBLEValidation:(bool)bypass;
+
+/**
+ Outputs MSR swipe data in tag DFEE23.
+ @param keep TRUE = DFEE23 is output, FALSE = Parsed as MSR data
+ */
++(void) keepDFEE23:(bool)keep;
+
+
++(bool) EAOutputStreamSpaceAvailable;
+
 /**
  Sets the flag to bypass checking SDK Status.
  @param bypass TRUE = bypass checking
  */
 +(void) bypassEventCheck:(bool)bypass;
+
+
+/**
+ * Gets the IDTech Device Type
+ - All Devices
+ *
+ Returns the current device type the SDK is efaulting to
+ 
+ @return deviceType  Select from the IDT_DEVICE_Types enumeration
+ 
+ @code
+ typedef enum{
+    IDT_DEVICE_BTPAY_IOS = 0,
+    IDT_DEVICE_BTPAY_OSX_BT,
+    IDT_DEVICE_BTPAY_OSX_USB,
+    IDT_DEVICE_UNIPAY_IOS,
+    IDT_DEVICE_UNIPAY_OSX_USB,
+    IDT_DEVICE_UNIPAYII_IOS,
+    IDT_DEVICE_UNIPAYII_OSX_USB,
+    IDT_DEVICE_IMAG_IOS,
+    IDT_DEVICE_VP3300_IOS,
+    IDT_DEVICE_VP3300_OSX_USB,
+    IDT_DEVICE_UNIMAG,
+    IDT_DEVICE_BTMAG_IOS,
+    IDT_DEVICE_BTMAG_OSX_BT,
+    IDT_DEVICE_BTMAG_OSX_USB,
+    IDT_DEVICE_VP3300_IOS,
+    IDT_DEVICE_VP4880,
+ *  IDT_DEVICE_UNIMAG_PRO
+ }IDT_DEVICE_Types;
+
+ @endcode
+ 
+
+ 
+ 
+ */
++(IDT_DEVICE_Types) getDeviceType;
 
 
 /**
@@ -271,14 +390,34 @@
     IDT_DEVICE_BTMAG_OSX_BT,
     IDT_DEVICE_BTMAG_OSX_USB,
     IDT_DEVICE_VP3300_IOS,
-    IDT_DEVICE_VP4880
+    IDT_DEVICE_VP4880,
+ *  IDT_DEVICE_UNIMAG_PRO
  }IDT_DEVICE_Types;
 
  @endcode
  
 
+ 
+ 
  */
 +(void) setDeviceType:(IDT_DEVICE_Types)deviceType;
+
+/**
+* Create Fast EMV Data
+*
+*  At the completion of a Fast EMV Transaction, after the final card decision is returned
+*  and the IDTEMVData object is provided, sending that emvData object to this
+*  method will populate return string data that represents the Fast EMV
+*  data that would be returned from and IDTech FastEMV over KB protocol
+*
+* @param emvData The IDTEMVData object populated with card data.
+*
+* @return Fast EMV String data
+*
+*/
++ (NSString*) createFastEMVData:(IDTEMVData*)emvData;
+
+
 
 /**
  Initialize class.
@@ -293,6 +432,12 @@
  For BLE implementations.  Removes monitoring headphone jack for audio devices.
  */
 +(void) disableAudioDetection;
+
+/**
+Remove Command Delay.
+For Audio Jack implementations.  Removes delay between playing and reading audio waves.
+*/
++(void) removeCommandDelay;
 
 /**
  Set BLE Service Scan Filter.
@@ -340,6 +485,22 @@
    */
  -(void)destroy;
 
+/**
+* Begins searching for Bluetooth Low Energy devices in range and return UIAlertView with choices
+- VP3300, NEO2
+*
+* This will initiate a bluetooth searech, and return an UIAlertView to the delegate bluetoothPickerAlert
+ 
+* @param scanTime Amount of time to search for devices before returning alert view.
+* @param serviceUUIDs  A null terminated array of CBUUID to filter for specific device type.  Sending nil will report all ble devices in range
+ @param options scan options
+*
+*
+*
+* Note: Please refer to CBCentralManager scanForPeripheralsWithServices for information about serviceUUIDs and options parameters
+*/
+
+- (void)scanForBLEDevices:(NSTimeInterval)scanTime serviceUUIDs:(nullable NSArray<CBUUID *> *)serviceUUIDs options:(nullable NSDictionary<NSString *, id> *)options;
 
 
 /**
@@ -361,7 +522,7 @@
  *
  * Note: a Devices UUID is calculated by the iOS device using a combiniation of the iOS device UUID and the BLE device MAC address.  This value is not known until after it connects for the first time, and then every time after that, it will be the same value.  This value can be retrieved by IDT_Device::connectedBLEDevice() after the device connects.
  */
--(bool) enableBLEDeviceSearch:(IDT_DEVICE_Types)type identifier:(NSUUID*)identifier;
+-(bool) enableBLEDeviceSearch:(IDT_DEVICE_Types)type identifier:(nullable NSUUID*)identifier;
 
 /**
  * Get BLE Friendly Name
@@ -371,7 +532,7 @@
  * @return NSString  Returns the default friendly name to be used when discovering any BLE devices
  *
  */
--(NSString*) getBLEFriendlyName;
+-(NSString*_Nullable) getBLEFriendlyName;
 
 
 /**
@@ -585,7 +746,31 @@
  
  */
 
--(RETURN_CODE) activateTransaction:(NSMutableDictionary *)tags timeout:(int)timeout;
+-(RETURN_CODE) activateTransaction:(NSMutableDictionary<NSString*,NSString*> *_Nullable)tags timeout:(int)timeout;
+
+
+/**
+ * Sync Clock
+ Syncs the VP3300 clock with the iOS device clock
+ *
+ *
+ * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString().  When no data is available, return code = RETURN_CODE_NO_DATA_AVAILABLE
+ *
+ */
+
+-(RETURN_CODE)  device_syncClock;
+
+
+/**
+ * Sync Time
+ Syncs the VP3300 time with the iOS device clock
+ *
+ *
+ * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString().  When no data is available, return code = RETURN_CODE_NO_DATA_AVAILABLE
+ *
+ */
+
+-(RETURN_CODE)  device_syncTime;
 
 
 /**
@@ -1340,6 +1525,75 @@ The tags will be returned in the response parameter.
  
  */
 -(RETURN_CODE) retrieveTerminalDataUniPay:(NSDictionary**)responseData;
+
+
+
+/**
+ * Set Terminal Data
+
+ *
+ Sets the Terminal Data .
+ 
+ * @param responseData  The data to set
+ *
+ *
+ * @return RETURN_CODE:
+ - 0x0000: Success: no error - RETURN_CODE_DO_SUCCESS
+ - 0x0001: Disconnect: no response from reader - RETURN_CODE_ERR_DISCONNECT
+ - 0x0002: Invalid Response: invalid response data - RETURN_CODE_ERR_CMD_RESPONSE
+ - 0x0003: Timeout: time out for task or CMD - RETURN_CODE_ERR_TIMEDOUT
+ - 0x0004: Invalid Parameter: wrong parameter - RETURN_CODE_ERR_INVALID_PARAMETER
+ - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
+ - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
+ - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
+ - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ */
+-(RETURN_CODE) device_setTerminalData:(NSData*)tags;
+
+/**
+ * Retrieve Terminal Data
+
+ *
+ Retrieves the Terminal Data .  The Terminal Data will be in the response parameter responseData
+ 
+ * @param responseData  The response returned from the method as NSData
+ *
+ *
+ * @return RETURN_CODE:
+ - 0x0000: Success: no error - RETURN_CODE_DO_SUCCESS
+ - 0x0001: Disconnect: no response from reader - RETURN_CODE_ERR_DISCONNECT
+ - 0x0002: Invalid Response: invalid response data - RETURN_CODE_ERR_CMD_RESPONSE
+ - 0x0003: Timeout: time out for task or CMD - RETURN_CODE_ERR_TIMEDOUT
+ - 0x0004: Invalid Parameter: wrong parameter - RETURN_CODE_ERR_INVALID_PARAMETER
+ - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
+ - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
+ - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
+ - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ */
+-(RETURN_CODE) device_retrieveTerminalData:(NSData**)responseData;
+
+/**
+ * Add Terminal Data
+
+ *
+ Adds the specified TLV to the current terminal data .
+ 
+ * @param tlv  The data to set, overwriting any existing value
+ *
+ *
+ * @return RETURN_CODE:
+ - 0x0000: Success: no error - RETURN_CODE_DO_SUCCESS
+ - 0x0001: Disconnect: no response from reader - RETURN_CODE_ERR_DISCONNECT
+ - 0x0002: Invalid Response: invalid response data - RETURN_CODE_ERR_CMD_RESPONSE
+ - 0x0003: Timeout: time out for task or CMD - RETURN_CODE_ERR_TIMEDOUT
+ - 0x0004: Invalid Parameter: wrong parameter - RETURN_CODE_ERR_INVALID_PARAMETER
+ - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
+ - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
+ - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
+ - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ */
+
+-(RETURN_CODE) device_addTLVToTerminalData:(NSData*)tlv;
 
 /**
  * Retrieve Application Data by AID
@@ -2539,22 +2793,6 @@ Sets seconds of idle that must pass before entering sleep mode
 -(RETURN_CODE) getASCIIMaskChar:(NSString**)response;
 
 
-
-/**
- * Set BCD Mask Character
- UniPay
- 
- *
- Executes a command to set the BCD Masking Characger.
- *
- @param mask BCD Masking character. Range is 0x0A - 0x0F.
- - Default character is 0x0C
- 
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
- 
- */
-
--(RETURN_CODE) setBCDMaskChar:(char)mask;
 /**
  * Set ASCII Mask Character
  UniPay
@@ -5167,6 +5405,19 @@ Returns the connection status of the requested device
 -(RETURN_CODE) sendUniMagCommand:(UNIMAG_COMMAND_Types)command;
 
 /**
+ * Send UniMag Command
+ 
+ *
+ * @param command  A command to execute
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniMag::device_getResponseCodeString:()
+ 
+ *
+ */
+-(RETURN_CODE) sendUniMagCmd:(NSString*)command;
+
+
+/**
  * Send NEO IDG Command
  Send a NEO IDG ViVOtech 2.0 command
  *
@@ -5457,6 +5708,96 @@ Returns the connection status of the requested device
  */
 -(RETURN_CODE) setPassThrough:(BOOL)enablePassThrough;
 
+
+
+
+
+/**
+* Poll for Token
+*
+Once Pass-Through Mode is started, ViVOpay will not poll for any cards until the “Poll for Token”
+	command is received. This command tells ViVOpay to start polling for a Type A or Type B PICC
+	until a PICC is detected or a timeout occurs.
+
+	This command automatically turns the RF Antenna on.
+
+If a PICC is detected within the specified time limit, ViVOpay activates it and responds back to the
+	terminal with card related data such as the Serial Number.
+If no PICC is detected within the specified time limit, ViVOpay stops polling and responds back
+	indicating that no card was found. No card related data is returned in this case
+
+ @param timeout  Timeout, in seconds to wait for card to be detected
+ @param card Card Type:
+   -  00h None (Card Not Detected or Could not Activate)
+   -  01h ISO 14443 Type A (Supports ISO 14443-4 Protocol)
+   -  02h ISO 14443 Type B (Supports ISO 14443-4 Protocol)
+   -  03h Mifare Type A (Standard)
+   -  04h Mifare Type A (Ultralight)
+   -  05h ISO 14443 Type A (Does not support ISO 14443-4 Protocol)
+   -  06h ISO 14443 Type B (Does not support ISO 14443-4 Protocol)
+   -  07h ISO 14443 Type A and Mifare (NFC phone)
+
+ @param serialNumber  Serial Number or the UID of the PICC
+ @param ident Device ID to send command to.  If not specified, current SDK default device will be used.
+
+ @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+*/
+
+-(RETURN_CODE) pollForToken:(Byte)seconds card:(Byte**)card serialNumber:(NSData**)serialNumber;
+
+/**
+* Set Special Function or Feature Configuration Command
+*
+ The Set Special Function or Feature Configuration command sets a specific special configuration.
+
+ @param feature  Function/Feature ID
+ @param addRequirement  Additional Requirement
+
+ @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+*/
+-(RETURN_CODE) device_setSpecialFunctionOrFeature:(NSData*)feature addRequirement:(NSData*)addRequirement;
+
+
+/**
+* Get Special Function or Feature Configuration Command
+*
+ The Get Special Function or Feature Configuration command returns the specific special configuration.
+
+ @param feature  Function/Feature ID
+ @param addRequirement  Additional Requirement
+
+ @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+*/
+-(RETURN_CODE) device_getSpecialFunctionOrFeature:(NSData**)feature addRequirement:(NSData**)addRequirement;
+
+
+
+
+/**
+* Antenna Control
+*
+ The Antenna Control command turns the RF Antenna ON or OFF.
+
+ @param turnON  TRUE = ON, FALSE = OFF
+
+ @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+*/
+-(RETURN_CODE) antennaControl:(bool)turnON;
+
+/**
+* Exchange Contactless Data
+*
+ The Echange Contactless Data command allows the host device to send, via the ViVOpay reader,
+ application-level APDUs to a PICC that supports ISO 14443-4 Protocol. The reader sends the PICC
+ response back to the host
+
+ @param sendData  APDU Out
+ @param receiveData  APDU response
+
+ @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+*/
+-(RETURN_CODE) exchangeContactlessData:(NSData*)sendData  receiveData:(NSData**)receiveData;
+
 /**
  * Multi App Selection
  *
@@ -5527,25 +5868,7 @@ Returns the connection status of the requested device
  */
 -(RETURN_CODE) device_sendGen2Cmd:(NSData*)tlv response:(NSData**)response;
 
-/**
- * Loads the ICC DUKPT Key
- *
- * Sets the key the data will be encrypted with
- *
- @param type Key Type
- - DUKPT_KEY_MSR = 0x00,
- - DUKPT_KEY_ICC = 0x01,
- - DUKPT_KEY_Admin = 0x10,
- - DUKPT_KEY_Paireing_PinPad = 0x20,
- @param hexKSN Key Serial Number as a Hex string
- @param hexInitKey Initial key as a Hex string
- 
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:())
- 
- 
- */
 
--(RETURN_CODE) loadDUKPTKey:(DUKPT_KEY_Type)type ksn:(NSString*)hexKSN initialKey:(NSString*)hexInitKey;
 
 
 
@@ -5872,6 +6195,22 @@ Returns the connection status of the requested device
 -(RETURN_CODE) felica_readWithMac:(int)numBlocks blockList:(NSData*)blockList blocks:(NSData**)blocks;
 
 
+
+/**
+ * FeliCa Send Command
+ *
+ Send a Felica Command
+ 
+ NOTE: The reader must be in Pass Through Mode for FeliCa commands to work.
+ 
+ @param command Command data from settlement center to be sent to felica card
+ @param response Response data from felica card
+ * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ 
+ */
+-(RETURN_CODE) felica_SendCommand:(NSData*)command response:(NSData**)response;
+
+
 /**
  * FeliCa Write with MAC Generation
  *
@@ -5909,35 +6248,54 @@ Returns the connection status of the requested device
  *
  Writes a block
  
- NOTE: The reader must be in Pass Through Mode for FeliCa commands to work.
- 
- @param serviceCode Service Code list.  Each service code must be be 2 bytes
- @param blockList Block list.
- @param data  Block to write.  Must be 16 bytes.
- @param statusFlag  Status flag response as explained in FeliCA Lite-S User's Manual, Section 4.5
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
- 
- */
--(RETURN_CODE) felica_write:(NSData*)serviceCode  blockList:(NSData*)blockList data:(NSData*)data statusFlag:(NSData**)statusFlag;
+  @param serviceCode Service Code list.  Each service code must be be 2 bytes
+  @param blockCount Block Count
+  @param blockList Block list.
+  @param data  Block to write.  Must be 16 bytes.
+  @param statusFlag  Status flag response as explained in FeliCA Lite-S User's Manual, Section 4.5
+  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+  
+  */
+ -(RETURN_CODE) felica_write:(NSData*)serviceCode blockCount:(int)blockCount  blockList:(NSData*)blockList data:(NSData*)data statusFlag:(NSData**)statusFlag;
 
 
 /**
- * FeliCa NFC Commands
- *
- Perform functions a Felica Card
+* FeliCa Poll Card
+*
+Perform functions a Felica Card Poll
  
  NOTE: The reader must be in Pass Through Mode for FeliCa commands to work.
  
- @param request Request as explained in IDTech NEO IDG Guide
+ @param systemCode System Code
  @param response  Response as explained in FeliCA Lite-S User's Manual
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  
  */
--(RETURN_CODE) felica_nfcCommand:(NSData*)request response:(NSData**)response;
+-(RETURN_CODE) ctls_nfcCommand:(NSData*)systemCode response:(NSData**)response;
+
+
+/**
+ * FeliCa Request Service
+ *
+ Perform functions a Felica Request Service
+ 
+  NOTE: The reader must be in Pass Through Mode for FeliCa commands to work.
+ 
+ @param nodeCode Node Code
+ @param response  Response as explained in FeliCA Lite-S User's Manual
+ * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ 
+ */
+-(RETURN_CODE) felica_requestService:(NSData*)nodeCode response:(NSData**)response;
 
 -(void) notifyDataReceived: (NSData*) RevData;
 +(bool) dataHasPrefix:(NSData*)data str:(NSString*)str;
 
 +(bool) dataEquals:(NSData*)data str:(NSString*)str;
+-(void) setReaderAttached:(BOOL)attached;
+
++ (NSString*) externalAccessoryProtocol;
+
++ (void) setExternalAccessoryProtocol:(NSString*)newValue;
 
 @end

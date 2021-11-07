@@ -124,6 +124,7 @@ typedef struct {
 }
 
 @property(strong) id<UniPay_Delegate> delegate;
+
 //version
 +(void) isKeyLoad:(BOOL)keyload;
 +(void) disableAudioDetection;
@@ -134,13 +135,14 @@ typedef struct {
 +(void) enableLogging:(BOOL) enable;
 +(UniPay*) sharedController;
 +(void) isVP3300:(BOOL)VP3300;
-+(void) isUniMag:(BOOL)uniMag;
++(void) isUniMag:(int)uniMag;
 -(void) setVivoAlive:(BOOL)val;
 -(void) clearTask;
 -(void) restart;
 -(void) stopConnection;
 //connect
 -(BOOL) cmut_isReaderConnected;
+-(void) setReaderAttached:(BOOL)attached;
 -(RDStatus) cmut_StartConnect_Task;
 -(RDStatus) cmut_CancelConnect_Task;
 -(RDStatus) startUniPay:(BOOL)start;
@@ -148,6 +150,7 @@ typedef struct {
 -(void) setDisconnect;
 -(void) setConnect;
 -(BOOL) isNoWait;
++(void) removeCommandDelay;
 -(void) noWaitNextCommand:(BOOL)wait;
 -(RDResult) comn_GetFirmVersion;
 -(RDResult) comn_GetSerialNumber;
@@ -198,6 +201,15 @@ typedef struct {
 - (void)uniMagNotifEnable:(BOOL) enable;
 +(void) usePreamble:(BOOL)pre;
 -(void) startTask_hook ;
+/**
+* Reset Singleton
+-  All Devices
+*
+Resets the singleton instance of the SDK
+
+*/
+
++(void) resetSingleton;
 
 @end
 

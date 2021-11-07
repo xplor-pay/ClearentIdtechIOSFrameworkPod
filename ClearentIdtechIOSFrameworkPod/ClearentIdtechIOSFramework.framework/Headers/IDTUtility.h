@@ -5,7 +5,7 @@
 //  Created by Randy Palermo on 5/9/14.
 //  Copyright (c) 2014 IDTech Products. All rights reserved.
 //
-
+#import "IDTMSRData.h"
 
 @interface IDTUtility : NSObject
 
@@ -13,6 +13,7 @@
 
 +(NSString*) dataToPrintableString:(NSData*)data;
 
++(NSString*) getErrorString:(int)code;
 + (NSString*) hexToString:(NSData*)data startByte:(int)start length:(int)len;
 + (NSString*) dataToString:(NSData*)data startByte:(int)start length:(int)len;
 + (NSString *) getSubString:(NSString*)str startPosition:(int)start length:(int)len;
@@ -24,6 +25,8 @@
 + (NSString*) hexToString:(NSString*)str;
 +(NSString*) dataToHexString:(NSData*)data;
 +(NSData*) encodeTags:(NSMutableDictionary*)tags;
++(NSMutableDictionary*) makeStringDict:(NSMutableDictionary*)tags;
++(NSMutableDictionary*) makeDataDict:(NSMutableDictionary*)tags;
 +(NSDictionary*) processTLV:(NSData*)param;
 +(NSDictionary*) TLVtoDICT:(NSData*)param;
 +(NSDictionary*) TLVtoDICT_HEX_ASCII:(NSData*)param;
@@ -41,4 +44,10 @@
 +(NSDictionary*) processTLVUnencrypted:(NSData*)param;
 +(NSDictionary*) processTLVUnencryptedStringValue:(NSData*)param;
 +(NSString*) dtv:(double)amt;
++(void) retrieveCTLSMessage:(Byte)scheme lang:(int)lang messageID:(Byte)messageID line1:(NSString**)line1 line2:(NSString**)line2;
++(NSMutableDictionary*) updateTags_Old_To_New:(NSDictionary*)tags;
++(NSString*) tagToString:(NSString*)tag value:(NSData*)value;
++ (NSString*) printDictionary:(NSDictionary<NSString*,NSData*>*)dict;
++ (NSString*) msrToKB:(NSData*)data;
++(IDTMSRData*) parseEnhancedEncryptedMSRFormat:(NSData*)data;
 @end
