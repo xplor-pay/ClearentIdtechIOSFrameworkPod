@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ClearentIdtechIOSFrameworkPod'
-    s.version          = '3.1.0'
+    s.version          = '3.1.1'
     s.summary          = 'Clearent IOS Framework supporting IDTech credit card reader.'
     s.description  = <<-DESC
     This framework lets your app avoid handling credit card data by connecting to a supported IDTech credit card reader and sending the card data to Clearent for processing.
@@ -19,15 +19,11 @@ Pod::Spec.new do |s|
     s.author           = { 'davidHigginbotham' => 'dhigginbotham@clearent.com' }
     s.source           = { :git => 'https://github.com/clearent/ClearentIdtechIOSFrameworkPod_xc.git', :tag => s.version.to_s }
 
-    s.ios.deployment_target = '9.0'
+    s.ios.deployment_target = '10.1'
 
-    s.vendored_frameworks = 'IDTech.xcframework','ClearentIdtechIOSFramework.xcframework'
-
-
+    s.vendored_frameworks = 'IDTech.xcframework','ClearentIdtechIOSFramework.xcframework','CocoaLumberjack.xcframework'
 
     s.frameworks = 'CFNetwork', 'AudioToolbox','AVFoundation','MediaPlayer','ExternalAccessory'
-
-
 
     s.requires_arc = true
 
