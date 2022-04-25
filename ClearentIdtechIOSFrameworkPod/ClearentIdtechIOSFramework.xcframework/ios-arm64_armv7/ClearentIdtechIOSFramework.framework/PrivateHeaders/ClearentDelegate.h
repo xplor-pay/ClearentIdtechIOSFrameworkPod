@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IDT_VP3300.h"
+#import <IDTech/IDT_VP3300.h>
+
 #import "ClearentPublicVP3300Delegate.h"
 #import "ClearentTransactionTokenRequest.h"
 #import "ClearentPaymentRequest.h"
