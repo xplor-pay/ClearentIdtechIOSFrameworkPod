@@ -11,7 +11,7 @@
 @class ClearentDelegate;
 @class Clearent_VP3300;
 @class ClearentBluetoothDevice;
-#import <IDTech/IDT_VP3300.h>
+#import "IDTech/IDT_VP3300.h"
 
 #import <Foundation/Foundation.h>
 
