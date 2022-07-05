@@ -13,5 +13,6 @@
 
 + (NSString *) getSubString:(NSString*)str startPosition:(int)start length:(int)len;
 + (NSString*) dataToString:(NSData*)data;
++ (NSString*) dataToString:(NSData*)data startByte:(int)start length:(int)len;
 
 @end
