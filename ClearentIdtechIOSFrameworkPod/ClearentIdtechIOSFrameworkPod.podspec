@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
     s.frameworks = 'CFNetwork', 'AudioToolbox','AVFoundation','MediaPlayer','ExternalAccessory'
 
-    s.preserve_paths ='ClearentIdtechIOSFrameworkPod/IDTech.bundle','ClearentIdtechIOSFrameworkPod/ClearentIdtechMessages.bundle','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.xcframework','ClearentIdtechIOSFrameworkPod/IDTech.xcframework','ClearentIdtechIOSFrameworkPod/CocoaLumberjack.xcframework'
+    s.preserve_paths ='ClearentIdtechIOSFrameworkPod/IDTech.bundle','ClearentIdtechIOSFrameworkPod/ClearentIdtechMessages.bundle','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.xcframework','ClearentIdtechIOSFrameworkPod/Frameworks/IDTech.xcframework','ClearentIdtechIOSFrameworkPod/Frameworks/CocoaLumberjack.xcframework'
 
     s.requires_arc = true
 
