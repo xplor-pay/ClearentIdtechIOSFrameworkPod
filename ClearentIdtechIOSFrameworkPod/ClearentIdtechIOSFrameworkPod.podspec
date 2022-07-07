@@ -27,10 +27,9 @@ Pod::Spec.new do |s|
 
     s.frameworks = 'CFNetwork', 'AudioToolbox','AVFoundation','MediaPlayer','ExternalAccessory'
 
-
     s.requires_arc = true
 
-    s.resource = 'Resources/ClearentIdtechMessages.bundle'
+    s.resource = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechMessages.bundle'
 
     s.pod_target_xcconfig = { 'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module' }
 
