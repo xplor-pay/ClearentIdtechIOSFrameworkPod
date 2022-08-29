@@ -255,10 +255,15 @@ extension UIKit.UIFont {
 }
 public struct ManualEntryCardInfo {
 }
-@_hasMissingDesignatedInitializers public class SaleEntity : ClearentIdtechIOSFramework.CodableProtocol {
+public class SaleEntity : ClearentIdtechIOSFramework.CodableProtocol {
+  public init(amount: Swift.String, tipAmount: Swift.String? = nil, softwareType: Swift.String? = nil, softwareTypeVersion: Swift.String? = nil, billing: ClearentIdtechIOSFramework.ClientInformation? = nil, shipping: ClearentIdtechIOSFramework.ClientInformation? = nil, card: Swift.String? = nil, csc: Swift.String? = nil, customerID: Swift.String? = nil, invoice: Swift.String? = nil, orderID: Swift.String? = nil)
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
+}
+public struct ClientInformation : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class ClearentUIBrandConfigurator {
   public static var shared: ClearentIdtechIOSFramework.ClearentUIBrandConfigurator
@@ -444,6 +449,7 @@ public protocol ClearentWrapperProtocol : AnyObject {
   final public var flowType: (processType: ClearentIdtechIOSFramework.ProcessType, flowFeedbackType: ClearentIdtechIOSFramework.FlowFeedbackType?)?
   final public var readerInfoReceived: ((_ readerInfo: ClearentIdtechIOSFramework.ReaderInfo?) -> Swift.Void)?
   final public var useCardReaderPaymentMethod: Swift.Bool
+  weak final public var delegate: ClearentIdtechIOSFramework.ClearentWrapperProtocol?
   final public func startPairing(reconnectIfPossible: Swift.Bool)
   final public func connectTo(reader: ClearentIdtechIOSFramework.ReaderInfo)
   final public func cancelTransaction()
