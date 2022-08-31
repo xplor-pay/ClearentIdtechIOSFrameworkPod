@@ -10,6 +10,7 @@ import Foundation
 import Network
 import Swift
 import UIKit
+import WebKit
 import _Concurrency
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class ClearentTitleLabel : ClearentIdtechIOSFramework.ClearentMarginableView {
   @_Concurrency.MainActor(unsafe) override public var margins: [ClearentIdtechIOSFramework.BottomMargin] {
@@ -76,6 +77,16 @@ public enum FlowInputType {
   }
   @_Concurrency.MainActor(unsafe) public func setBottomMargin(margin: ClearentIdtechIOSFramework.BottomMargin)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ClearentErrorDetailsView : UIKit.UIView, ClearentIdtechIOSFramework.ClearentMarginable {
+  @_Concurrency.MainActor(unsafe) public var viewType: UIKit.UIView.Type {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var margins: [ClearentIdtechIOSFramework.BottomMargin] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func setBottomMargin(margin: ClearentIdtechIOSFramework.BottomMargin)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ClearentWrapperDefaults : ClearentIdtechIOSFramework.UserDefaultsPersistence {
@@ -205,6 +216,10 @@ public struct Payload : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct ResponseError : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Transaction : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
