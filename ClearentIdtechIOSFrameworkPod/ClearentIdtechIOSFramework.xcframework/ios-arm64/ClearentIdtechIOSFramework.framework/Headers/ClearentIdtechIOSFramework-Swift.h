@@ -248,6 +248,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSBundle * _
 @end
 
 
+SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework24ClearentErrorDetailsView")
+@interface ClearentErrorDetailsView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
 /// A custom UIView  that contains all the necessary methods for loading a view from nib. Could be used as a base class for UI components in order to avoid boilerplate code.
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework15ClearentXibView")
 @interface ClearentXibView : UIView
@@ -373,6 +380,8 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework15ClearentWrapper")
 @interface UIFont (SWIFT_EXTENSION(ClearentIdtechIOSFramework))
 + (void)loadFontsWithFonts:(NSArray<NSString *> * _Nullable)fonts bundle:(NSBundle * _Nullable)bundle;
 @end
+
+
 
 
 
