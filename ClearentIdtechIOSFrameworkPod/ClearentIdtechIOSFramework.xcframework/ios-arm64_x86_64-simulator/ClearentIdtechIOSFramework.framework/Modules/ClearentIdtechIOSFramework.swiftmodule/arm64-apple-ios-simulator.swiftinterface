@@ -10,7 +10,6 @@ import Foundation
 import Network
 import Swift
 import UIKit
-import WebKit
 import _Concurrency
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class ClearentTitleLabel : ClearentIdtechIOSFramework.ClearentMarginableView {
   @_Concurrency.MainActor(unsafe) override public var margins: [ClearentIdtechIOSFramework.BottomMargin] {
@@ -77,16 +76,6 @@ public enum FlowInputType {
   }
   @_Concurrency.MainActor(unsafe) public func setBottomMargin(margin: ClearentIdtechIOSFramework.BottomMargin)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ClearentErrorDetailsView : UIKit.UIView, ClearentIdtechIOSFramework.ClearentMarginable {
-  @_Concurrency.MainActor(unsafe) public var viewType: UIKit.UIView.Type {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) public var margins: [ClearentIdtechIOSFramework.BottomMargin] {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) public func setBottomMargin(margin: ClearentIdtechIOSFramework.BottomMargin)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ClearentWrapperDefaults : ClearentIdtechIOSFramework.UserDefaultsPersistence {
@@ -219,10 +208,6 @@ public struct ResponseError : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public struct Transaction : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
 public struct ReaderItem {
 }
 public struct ReaderInfo : Swift.Codable {
@@ -270,15 +255,10 @@ extension UIKit.UIFont {
 }
 public struct ManualEntryCardInfo {
 }
-public class SaleEntity : ClearentIdtechIOSFramework.CodableProtocol {
-  public init(amount: Swift.String, tipAmount: Swift.String? = nil, softwareType: Swift.String? = nil, softwareTypeVersion: Swift.String? = nil, billing: ClearentIdtechIOSFramework.ClientInformation? = nil, shipping: ClearentIdtechIOSFramework.ClientInformation? = nil, card: Swift.String? = nil, csc: Swift.String? = nil, customerID: Swift.String? = nil, invoice: Swift.String? = nil, orderID: Swift.String? = nil)
+@_hasMissingDesignatedInitializers public class SaleEntity : ClearentIdtechIOSFramework.CodableProtocol {
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
-}
-public struct ClientInformation : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class ClearentUIBrandConfigurator {
   public static var shared: ClearentIdtechIOSFramework.ClearentUIBrandConfigurator
@@ -464,7 +444,6 @@ public protocol ClearentWrapperProtocol : AnyObject {
   final public var flowType: (processType: ClearentIdtechIOSFramework.ProcessType, flowFeedbackType: ClearentIdtechIOSFramework.FlowFeedbackType?)?
   final public var readerInfoReceived: ((_ readerInfo: ClearentIdtechIOSFramework.ReaderInfo?) -> Swift.Void)?
   final public var useCardReaderPaymentMethod: Swift.Bool
-  weak final public var delegate: ClearentIdtechIOSFramework.ClearentWrapperProtocol?
   final public func startPairing(reconnectIfPossible: Swift.Bool)
   final public func connectTo(reader: ClearentIdtechIOSFramework.ReaderInfo)
   final public func cancelTransaction()
