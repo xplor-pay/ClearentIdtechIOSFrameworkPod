@@ -318,6 +318,7 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework21ClearentSubtitleLabel")
 @end
 
 
+@class PaymentInfo;
 @class UINavigationController;
 
 /// This class is to be used as a singleton and its main purpose is to start different processes from the SDK by providing UIControllers that will handle the entire process
@@ -326,18 +327,18 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework17ClearentUIManager")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ClearentUIManager * _Nonnull shared;)
 + (ClearentUIManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) BOOL signatureEnabled;
-@property (nonatomic) BOOL useCardReaderPaymentMethod;
+@property (nonatomic) BOOL cardReaderPaymentIsPreferred;
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull tipAmounts;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Method updates the SDK with needed parameters to work properly
 /// @param baseURL, the endpoint of the backend
 /// @param apiKey, the API Key in order to use the API
 /// @param publicKey, needed for the card reader initialisation
-- (void)updateWithBaseURL:(NSString * _Nonnull)baseURL apiKey:(NSString * _Nonnull)apiKey publicKey:(NSString * _Nonnull)publicKey;
+- (void)updateWithBaseURL:(NSString * _Nonnull)baseURL apiKey:(NSString * _Nonnull)apiKey publicKey:(NSString * _Nonnull)publicKey enableEnhancedMessaging:(BOOL)enableEnhancedMessaging;
 /// Method returns a UIController that can handle the entire payment process
-/// @param amount, the amount to be charged in a transaction
+/// @param paymentInfo, a PaymentInfo object that contains information related to payment (amount, customerID, invoice, etc)
 /// @param completion, a closure to be executed once the clearent SDK UI is dimissed
-- (UINavigationController * _Nonnull)paymentViewControllerWithAmount:(double)amount completion:(void (^ _Nullable)(enum ClearentResult))completion SWIFT_WARN_UNUSED_RESULT;
+- (UINavigationController * _Nonnull)paymentViewControllerWithPaymentInfo:(PaymentInfo * _Nullable)paymentInfo completion:(void (^ _Nullable)(enum ClearentResult))completion SWIFT_WARN_UNUSED_RESULT;
 /// Method returns a UIController that can handle the pairing process of a card reader
 /// @param completion, a closure to be executed once the clearent SDK UI is dimissed
 - (UINavigationController * _Nonnull)pairingViewControllerWithCompletion:(void (^ _Nullable)(enum ClearentResult))completion SWIFT_WARN_UNUSED_RESULT;
@@ -375,11 +376,27 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework15ClearentWrapper")
 
 
 
+SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework17ClientInformation")
+@interface ClientInformation : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework11PaymentInfo")
+@interface PaymentInfo : NSObject
+- (nonnull instancetype)initWithAmount:(double)amount customerID:(NSString * _Nullable)customerID invoice:(NSString * _Nullable)invoice orderID:(NSString * _Nullable)orderID billing:(ClientInformation * _Nullable)billing shipping:(ClientInformation * _Nullable)shipping OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 @interface UIFont (SWIFT_EXTENSION(ClearentIdtechIOSFramework))
 + (void)loadFontsWithFonts:(NSArray<NSString *> * _Nullable)fonts bundle:(NSBundle * _Nullable)bundle;
 @end
+
 
 
 
