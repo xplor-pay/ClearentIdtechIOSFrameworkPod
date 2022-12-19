@@ -192,9 +192,10 @@ public class SaleEntity : ClearentIdtechIOSFramework.CodableProtocol {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
-public struct ClientInformation : Swift.Codable {
+@_hasMissingDesignatedInitializers @objc public class ClientInformation : ObjectiveC.NSObject, Swift.Codable {
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class ClearentConstants : ObjectiveC.NSObject {
   @objc public class var bundle: Foundation.Bundle {
@@ -216,6 +217,16 @@ public struct ClientInformation : Swift.Codable {
     public static let maxNoOfCharacters: Swift.Int
   }
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class PaymentInfo : ObjectiveC.NSObject {
+  public var amount: Swift.Double
+  public var customerID: Swift.String?
+  public var invoice: Swift.String?
+  public var orderID: Swift.String?
+  public var billing: ClearentIdtechIOSFramework.ClientInformation?
+  public var shipping: ClearentIdtechIOSFramework.ClientInformation?
+  @objc public init(amount: Swift.Double, customerID: Swift.String? = nil, invoice: Swift.String? = nil, orderID: Swift.String? = nil, billing: ClearentIdtechIOSFramework.ClientInformation? = nil, shipping: ClearentIdtechIOSFramework.ClientInformation? = nil)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ClearentHintView : ClearentIdtechIOSFramework.ClearentMarginableView {
@@ -414,7 +425,7 @@ extension ClearentIdtechIOSFramework.ClearentMarginable {
   @objc final public var tipAmounts: [Swift.Int]
   @objc override dynamic public init()
   @objc final public func updateWith(baseURL: Swift.String, apiKey: Swift.String, publicKey: Swift.String, enableEnhancedMessaging: Swift.Bool)
-  @objc final public func paymentViewController(amount: Swift.Double, completion: ((ClearentIdtechIOSFramework.ClearentResult) -> Swift.Void)?) -> UIKit.UINavigationController
+  @objc final public func paymentViewController(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, completion: ((ClearentIdtechIOSFramework.ClearentResult) -> Swift.Void)?) -> UIKit.UINavigationController
   @objc final public func pairingViewController(completion: ((ClearentIdtechIOSFramework.ClearentResult) -> Swift.Void)?) -> UIKit.UINavigationController
   @objc final public func readersViewController(completion: ((ClearentIdtechIOSFramework.ClearentResult) -> Swift.Void)?) -> UIKit.UINavigationController
   @objc deinit
