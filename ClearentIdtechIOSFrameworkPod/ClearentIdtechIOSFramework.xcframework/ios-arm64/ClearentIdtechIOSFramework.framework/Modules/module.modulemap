@@ -4,3 +4,8 @@ framework module ClearentIdtechIOSFramework {
   export *
   module * { export * }
 }
+
+module ClearentIdtechIOSFramework.Swift {
+    header "ClearentIdtechIOSFramework-Swift.h"
+    requires objc
+}
