@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ClearentIdtechIOSFramework
 @_exported import ClearentIdtechIOSFramework
 import CocoaLumberjack
@@ -44,7 +44,7 @@ extension UIKit.UITextField {
   @objc deinit
 }
 public enum FlowFeedbackType {
-  case error, info, warning, searchDevices, showReaders, pairingDoneInfo, renameReaderDone, signature, signatureError, emailReceipt
+  case error, info, warning, searchDevices, showReaders, pairingDoneInfo, renameReaderDone, signature, signatureError, emailReceiptOptions, emailReceiptForm
   public static func == (a: ClearentIdtechIOSFramework.FlowFeedbackType, b: ClearentIdtechIOSFramework.FlowFeedbackType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -52,11 +52,11 @@ public enum FlowFeedbackType {
   }
 }
 public enum ProcessType : Swift.Equatable {
-  case pairing(withReader: ClearentIdtechIOSFramework.ReaderInfo? = nil), payment, showReaders, renameReader, showSettings
+  case pairing(withReader: ClearentIdtechIOSFramework.ReaderInfo? = nil), payment, showReaders, renameReader, showSettings, offlineModeSetup
   public static func == (lhs: ClearentIdtechIOSFramework.ProcessType, rhs: ClearentIdtechIOSFramework.ProcessType) -> Swift.Bool
 }
 public enum FlowButtonType {
-  case cancel, retry, pair, done, skipSignature, pairNewReader, settings, pairInFlow, addReaderName, renameReaderLater, transactionWithTip, transactionWithoutTip, manuallyEnterCardInfo, acceptOfflineMode, denyOfflineMode, confirmOfflineModeWarningMessage, transactionWithServiceFee, emailReceiptOptionYes, emailReceiptOptionNo, emailFormSkip
+  case cancel, retry, pair, done, skipSignature, pairNewReader, settings, pairInFlow, addReaderName, renameReaderLater, transactionWithTip, transactionWithoutTip, manuallyEnterCardInfo, acceptOfflineMode, denyOfflineMode, confirmOfflineModeWarningMessage, transactionWithServiceFee, emailReceiptOptionYes, emailReceiptOptionNo, emailFormSkip, callSupport
   public static func == (a: ClearentIdtechIOSFramework.FlowButtonType, b: ClearentIdtechIOSFramework.FlowButtonType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -71,25 +71,31 @@ public enum FlowInputType {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers public class ClearentUIManager : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers final public class ClearentUIManager : ObjectiveC.NSObject {
   @objc public static let shared: ClearentIdtechIOSFramework.ClearentUIManager
   @objc public static var configuration: ClearentIdtechIOSFramework.ClearentUIManagerConfiguration!
-  @objc public var cardReaderPaymentIsPreferred: Swift.Bool {
+  @objc final public var cardReaderPaymentIsPreferred: Swift.Bool {
     @objc get
     @objc set
   }
-  public func initialize(with configuration: ClearentIdtechIOSFramework.ClearentUIManagerConfiguration)
-  @objc public func paymentViewController(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
-  @objc public func pairingViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
-  @objc public func settingsViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
-  @objc public func allUnprocessedOfflineTransactionsCount() -> Swift.Int
-  @objc public func shouldDisplayOfflineModeLabel() -> Swift.Bool
+  final public func initialize(with configuration: ClearentIdtechIOSFramework.ClearentUIManagerConfiguration)
+  @objc final public func paymentViewController(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
+  @objc final public func pairingViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
+  @objc final public func settingsViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
+  @objc final public func offlineModeQuestionViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
+  @objc final public func allUnprocessedOfflineTransactionsCount() -> Swift.Int
+  @objc final public func shouldDisplayOfflineModeLabel() -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
 extension UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public func addNavigationBarWithBackItem(barTitle: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func didPressBackButton()
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func showOfflineProcessConfirmation(title: Swift.String?, message: Swift.String?, cancelTitle: Swift.String?, action: UIKit.UIAlertAction)
+  @_Concurrency.MainActor(unsafe) public func showCancelAlert(title: Swift.String?, message: Swift.String?, cancelTitle: Swift.String?, cancelAction: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func showAlert(title: Swift.String?, message: Swift.String?, action: UIKit.UIAlertAction, completion: (() -> Swift.Void)? = nil)
 }
 public protocol ClearentWrapperProtocol : AnyObject {
   func didStartPairing()
@@ -153,6 +159,10 @@ public enum UserAction : Swift.String, Swift.CaseIterable {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class UserDefaultsPersistence {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OfflinePromptViewController : ClearentIdtechIOSFramework.ClearentBaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ClearentIconAndLabel : ClearentIdtechIOSFramework.ClearentMarginableView {
@@ -230,6 +240,7 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : ClearentIdtechIOSFramewor
   public static var configuration: ClearentIdtechIOSFramework.ClearentWrapperConfiguration!
   final public func initialize(with config: ClearentIdtechIOSFramework.ClearentWrapperConfiguration)
   final public func updateWebAuth(with auth: ClearentIdtechIOSFramework.ClearentWebAuth)
+  final public func hasWebAuth() -> Swift.Bool
   final public func enableOfflineMode() throws
   final public func disableOfflineMode()
   final public func retrieveAllOfflineTransactions() -> [ClearentIdtechIOSFramework.OfflineTransaction]?
@@ -249,6 +260,7 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : ClearentIdtechIOSFramewor
   final public func voidTransaction(transactionID: Swift.String, completion: @escaping (ClearentIdtechIOSFramework.TransactionResponse?, ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)
   final public func fetchTerminalSetting(completion: @escaping (ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)
   final public func processOfflineTransactions(completion: @escaping (() -> Swift.Void))
+  final public func areTerminalSettingsCached() -> Swift.Bool
   @objc deinit
 }
 extension ClearentIdtechIOSFramework.ClearentWrapper : ClearentIdtechIOSFramework.Clearent_Public_IDTech_VP3300_Delegate {
@@ -285,6 +297,9 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : ClearentIdtechIOSFramewor
   }
   public enum Amount {
     public static let maxNoOfCharacters: Swift.Int
+  }
+  public enum ContactSupport {
+    public static let phoneNumber: Swift.String
   }
   @objc override dynamic public init()
   @objc deinit
@@ -404,6 +419,7 @@ extension ClearentIdtechIOSFramework.ReaderInfo {
 }
 public typealias CompletionResult = Swift.Result<Swift.String?, ClearentIdtechIOSFramework.ClearentError>
 @_hasMissingDesignatedInitializers @objc public class ClearentError : ObjectiveC.NSObject, Swift.Error, Swift.Codable {
+  final public let type: ClearentIdtechIOSFramework.ClearentErrorType
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -416,7 +432,6 @@ public typealias CompletionResult = Swift.Result<Swift.String?, ClearentIdtechIO
   case cancelledByUser = 0
   case noAPIAuthentication
   case baseURLNotProvided
-  case publicKeyNotProvided
   case offlineModeEncryptionKeyNotProvided
   case httpError
   case gatewayDeclined
@@ -424,6 +439,9 @@ public typealias CompletionResult = Swift.Result<Swift.String?, ClearentIdtechIO
   case missingToken
   case missingSignatureImage
   case none
+  public var isMissingDataError: Swift.Bool {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -436,8 +454,8 @@ public typealias CompletionResult = Swift.Result<Swift.String?, ClearentIdtechIO
 @objc public class ClearentUIManagerConfiguration : ClearentIdtechIOSFramework.ClearentWrapperConfiguration {
   public var tipAmounts: [Swift.Int]
   public var signatureEnabled: Swift.Bool
-  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
-  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String, offlineModeEncryptionKeyData: Foundation.Data, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
+  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String?, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
+  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ClearentApplicationOrientation {
@@ -639,10 +657,11 @@ extension ClearentIdtechIOSFramework.ClearentMarginable {
 @objc public class ClearentWrapperConfiguration : ObjectiveC.NSObject {
   public var baseURL: Swift.String
   public var apiKey: Swift.String?
-  public var publicKey: Swift.String
+  public var publicKey: Swift.String?
   public var readerInfoReceived: ((_ readerInfo: ClearentIdtechIOSFramework.ReaderInfo?) -> Swift.Void)?
-  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String, enableEnhancedMessaging: Swift.Bool = false)
-  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String, offlineModeEncryptionKeyData: Foundation.Data, enableEnhancedMessaging: Swift.Bool = false)
+  public var provideAuthAndMerchantTerminalDetails: (() -> (Swift.String?, Swift.String?, ClearentIdtechIOSFramework.ClearentWebAuth?))?
+  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, enableEnhancedMessaging: Swift.Bool = false)
+  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data, enableEnhancedMessaging: Swift.Bool = false)
   @objc deinit
 }
 public struct FlowDataItem {
