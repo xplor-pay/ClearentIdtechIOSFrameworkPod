@@ -388,13 +388,14 @@
 		2E515A956B63F4CA1623BD00BA9032EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ClearentIdtechIOSFrameworkPod";
 				INFOPLIST_FILE = "Target Support Files/ClearentIdtechIOSFrameworkPod/ResourceBundle-ClearentIdtechIOSFrameworkPod-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = ClearentIdtechIOSFrameworkPod;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -598,13 +599,14 @@
 		D0E2200C4238BDB4D6F1AFFDD1B20494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ClearentIdtechIOSFrameworkPod";
 				INFOPLIST_FILE = "Target Support Files/ClearentIdtechIOSFrameworkPod/ResourceBundle-ClearentIdtechIOSFrameworkPod-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = ClearentIdtechIOSFrameworkPod;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
