@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
             'VALID_ARCHS' =>'arm64',
             'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
             'DEFINES_MODULE' => 'YES',
-            'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES'
+            'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
             'SKIP_INSTALL' => 'NO',
             'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
 }
