@@ -434,6 +434,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) ClearentUIManagerConfi
 + (ClearentUIManagerConfiguration * _Null_unspecified)configuration SWIFT_WARN_UNUSED_RESULT;
 + (void)setConfiguration:(ClearentUIManagerConfiguration * _Null_unspecified)value;
 @property (nonatomic) BOOL cardReaderPaymentIsPreferred;
+/// This method updates the SDK with the necessary configuration to work properly.
+- (void)initializeWith:(ClearentUIManagerConfiguration * _Nonnull)configuration;
 /// Method that returns a UINavigationController that can handle the entire payment process.
 /// @param amount, the amount to be charged in a transaction
 /// @param completion, a closure to be executed once the clearent SDK UI is dimissed

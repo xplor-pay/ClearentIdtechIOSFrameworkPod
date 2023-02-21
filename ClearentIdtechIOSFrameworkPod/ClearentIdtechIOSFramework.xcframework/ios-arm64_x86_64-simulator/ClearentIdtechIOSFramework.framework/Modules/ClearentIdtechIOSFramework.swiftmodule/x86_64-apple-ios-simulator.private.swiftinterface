@@ -80,7 +80,7 @@ public enum FlowInputType {
     @objc get
     @objc set
   }
-  final public func initialize(with configuration: ClearentIdtechIOSFramework.ClearentUIManagerConfiguration)
+  @objc final public func initialize(with configuration: ClearentIdtechIOSFramework.ClearentUIManagerConfiguration)
   @objc final public func paymentViewController(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
   @objc final public func pairingViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
   @objc final public func settingsViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController

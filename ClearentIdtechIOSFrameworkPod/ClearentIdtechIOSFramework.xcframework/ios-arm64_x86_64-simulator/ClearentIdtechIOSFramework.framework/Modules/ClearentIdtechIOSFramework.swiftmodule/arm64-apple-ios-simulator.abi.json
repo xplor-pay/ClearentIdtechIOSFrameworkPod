@@ -3245,12 +3245,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A9UIManagerC10initialize4withyAA0aD13ConfigurationC_tF",
+            "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentUIManager(im)initializeWith:",
             "mangledName": "$s26ClearentIdtechIOSFramework0A9UIManagerC10initialize4withyAA0aD13ConfigurationC_tF",
             "moduleName": "ClearentIdtechIOSFramework",
+            "objc_name": "initializeWith:",
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
