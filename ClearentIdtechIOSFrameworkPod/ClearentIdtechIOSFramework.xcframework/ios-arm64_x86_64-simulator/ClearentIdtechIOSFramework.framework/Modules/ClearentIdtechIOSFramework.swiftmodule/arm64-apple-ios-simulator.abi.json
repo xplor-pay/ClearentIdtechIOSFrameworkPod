@@ -302,6 +302,7 @@
         "declAttributes": [
           "Custom",
           "AccessControl",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)UIViewController",
@@ -3031,7 +3032,8 @@
               "Final",
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3149,7 +3151,8 @@
               "Final",
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -9301,7 +9304,8 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -17006,291 +17010,6 @@
         "printedName": "ClearentUIManagerConfiguration",
         "children": [
           {
-            "kind": "Var",
-            "name": "tipAmounts",
-            "printedName": "tipAmounts",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Int]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework0A22UIManagerConfigurationC10tipAmountsSaySiGvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC10tipAmountsSaySiGvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Int]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A22UIManagerConfigurationC10tipAmountsSaySiGvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC10tipAmountsSaySiGvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Int]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A22UIManagerConfigurationC10tipAmountsSaySiGvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC10tipAmountsSaySiGvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A22UIManagerConfigurationC10tipAmountsSaySiGvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC10tipAmountsSaySiGvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "signatureEnabled",
-            "printedName": "signatureEnabled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework0A22UIManagerConfigurationC16signatureEnabledSbvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC16signatureEnabledSbvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A22UIManagerConfigurationC16signatureEnabledSbvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC16signatureEnabledSbvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A22UIManagerConfigurationC16signatureEnabledSbvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC16signatureEnabledSbvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A22UIManagerConfigurationC16signatureEnabledSbvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC16signatureEnabledSbvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(baseURL:apiKey:publicKey:enableEnhancedMessaging:tipAmounts:signatureEnabled:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ClearentUIManagerConfiguration",
-                "printedName": "ClearentIdtechIOSFramework.ClearentUIManagerConfiguration",
-                "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentUIManagerConfiguration"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Int]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentUIManagerConfiguration(im)initWithBaseURL:apiKey:publicKey:enableEnhancedMessaging:tipAmounts:signatureEnabled:",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC7baseURL6apiKey06publicI023enableEnhancedMessaging10tipAmounts16signatureEnabledACSS_SSSgAJSbSaySiGSbtcfc",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "objc_name": "initWithBaseURL:apiKey:publicKey:enableEnhancedMessaging:tipAmounts:signatureEnabled:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(baseURL:apiKey:publicKey:offlineModeEncryptionKeyData:enableEnhancedMessaging:tipAmounts:signatureEnabled:)",
@@ -17334,6 +17053,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -17348,6 +17068,7 @@
                     "usr": "s:10Foundation4DataV"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -17387,71 +17108,8 @@
             "objc_name": "initWithBaseURL:apiKey:publicKey:offlineModeEncryptionKeyData:enableEnhancedMessaging:tipAmounts:signatureEnabled:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(baseURL:apiKey:publicKey:enableEnhancedMessaging:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ClearentUIManagerConfiguration",
-                "printedName": "ClearentIdtechIOSFramework.ClearentUIManagerConfiguration",
-                "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentUIManagerConfiguration"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26ClearentIdtechIOSFramework0A22UIManagerConfigurationC7baseURL6apiKey06publicI023enableEnhancedMessagingACSS_SSSgAHSbtcfc",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A22UIManagerConfigurationC7baseURL6apiKey06publicI023enableEnhancedMessagingACSS_SSSgAHSbtcfc",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "overriding": true,
-            "implicit": true,
-            "declAttributes": [
-              "Override"
+              "ObjC",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -17512,6 +17170,7 @@
                     "usr": "s:10Foundation4DataV"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -24265,312 +23924,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "baseURL",
-            "printedName": "baseURL",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURLSSvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURLSSvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURLSSvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURLSSvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURLSSvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURLSSvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURLSSvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURLSSvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "apiKey",
-            "printedName": "apiKey",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC6apiKeySSSgvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC6apiKeySSSgvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC6apiKeySSSgvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC6apiKeySSSgvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC6apiKeySSSgvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC6apiKeySSSgvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC6apiKeySSSgvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC6apiKeySSSgvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "publicKey",
-            "printedName": "publicKey",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC9publicKeySSSgvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC9publicKeySSSgvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC9publicKeySSSgvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC9publicKeySSSgvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC9publicKeySSSgvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC9publicKeySSSgvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC9publicKeySSSgvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC9publicKeySSSgvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "readerInfoReceived",
             "printedName": "readerInfoReceived",
             "children": [
@@ -25019,69 +24372,6 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(baseURL:apiKey:publicKey:enableEnhancedMessaging:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ClearentWrapperConfiguration",
-                "printedName": "ClearentIdtechIOSFramework.ClearentWrapperConfiguration",
-                "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentWrapperConfiguration"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURL6apiKey06publicI023enableEnhancedMessagingACSS_SSSgAHSbtcfc",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURL6apiKey06publicI023enableEnhancedMessagingACSS_SSSgAHSbtcfc",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
             "printedName": "init(baseURL:apiKey:publicKey:offlineModeEncryptionKeyData:enableEnhancedMessaging:)",
             "children": [
               {
@@ -25136,6 +24426,7 @@
                     "usr": "s:10Foundation4DataV"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -25151,7 +24442,8 @@
             "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC7baseURL6apiKey06publicI0021offlineModeEncryptionI4Data23enableEnhancedMessagingACSS_SSSgAI10Foundation0N0VSgSbtcfc",
             "moduleName": "ClearentIdtechIOSFramework",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -30122,14 +29414,14 @@
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 722,
+      "offset": 902,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 888,
+      "offset": 1068,
       "length": 5,
       "value": "false"
     },
@@ -30577,35 +29869,35 @@
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1134,
+      "offset": 1133,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 2246,
+      "offset": 2326,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 2280,
+      "offset": 2360,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 2569,
+      "offset": 2649,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 2871,
+      "offset": 2951,
       "length": 2,
       "value": "\"\""
     },
@@ -30703,1736 +29995,1736 @@
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1571,
+      "offset": 1573,
       "length": 6,
       "value": "\"full\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1611,
+      "offset": 1613,
       "length": 6,
       "value": "\"high\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1657,
+      "offset": 1659,
       "length": 12,
       "value": "\"mediumHigh\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1705,
+      "offset": 1707,
       "length": 8,
       "value": "\"medium\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1752,
+      "offset": 1754,
       "length": 11,
       "value": "\"mediumLow\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1796,
+      "offset": 1798,
       "length": 5,
       "value": "\"low\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1867,
+      "offset": 1869,
       "length": 12,
       "value": "\"goodSignal\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1914,
+      "offset": 1916,
       "length": 14,
       "value": "\"mediumSignal\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1961,
+      "offset": 1963,
       "length": 12,
       "value": "\"weakSignal\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2006,
+      "offset": 2008,
       "length": 10,
       "value": "\"noSignal\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2087,
+      "offset": 2089,
       "length": 21,
       "value": "\"pressButtonOnReader\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2152,
+      "offset": 2154,
       "length": 17,
       "value": "\"cardInteraction\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2203,
+      "offset": 2205,
       "length": 19,
       "value": "\"decreaseTipButton\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2256,
+      "offset": 2258,
       "length": 19,
       "value": "\"increaseTipButton\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2327,
+      "offset": 2329,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2364,
+      "offset": 2366,
       "length": 9,
       "value": "\"warning\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2408,
+      "offset": 2410,
       "length": 15,
       "value": "\"small_warning\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2453,
+      "offset": 2455,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2515,
+      "offset": 2517,
       "length": 13,
       "value": "\"right-arrow\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2573,
+      "offset": 2575,
       "length": 19,
       "value": "\"right-arrow-large\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2621,
+      "offset": 2623,
       "length": 8,
       "value": "\"reader\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2662,
+      "offset": 2664,
       "length": 12,
       "value": "\"bubbleTail\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2730,
+      "offset": 2732,
       "length": 10,
       "value": "\"expanded\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2772,
+      "offset": 2774,
       "length": 11,
       "value": "\"collapsed\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2823,
+      "offset": 2825,
       "length": 19,
       "value": "\"pairingSuccessful\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2872,
+      "offset": 2874,
       "length": 9,
       "value": "\"details\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2946,
+      "offset": 2948,
       "length": 12,
       "value": "\"left-arrow\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2991,
+      "offset": 2993,
       "length": 17,
       "value": "\"smallEditButton\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3082,
+      "offset": 3084,
       "length": 10,
       "value": "\"calendar\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3130,
+      "offset": 3132,
       "length": 20,
       "value": "\"redExclamationMark\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3185,
+      "offset": 3187,
       "length": 14,
       "value": "\"expandMedium\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3236,
+      "offset": 3238,
       "length": 16,
       "value": "\"collapseMedium\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3287,
+      "offset": 3289,
       "length": 19,
       "value": "\"smallDeleteButton\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3390,
+      "offset": 3392,
       "length": 13,
       "value": "\"report_line\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3477,
+      "offset": 3479,
       "length": 16,
       "value": "\"card_animation\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 3570,
+      "offset": 3572,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 3623,
+      "offset": 3625,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 3678,
+      "offset": 3680,
       "length": 5,
       "value": "600.0"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "Array",
-      "offset": 3768,
+      "offset": 3770,
       "length": 12,
       "value": "[15, 18, 20]"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 3835,
+      "offset": 3837,
       "length": 4,
       "value": "0.01"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3922,
+      "offset": 3924,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4009,
+      "offset": 4011,
       "length": 35,
       "value": "\"xsdk_contact_support_phone_number\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4184,
+      "offset": 4186,
       "length": 29,
       "value": "\"xsdk_internet_no_connection\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4262,
+      "offset": 4264,
       "length": 27,
       "value": "\"xsdk_internet_error_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4355,
+      "offset": 4357,
       "length": 36,
       "value": "\"xsdk_internet_no_connection_btn_ok\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4488,
+      "offset": 4490,
       "length": 27,
       "value": "\"xsdk_bluetooth_turned_off\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4571,
+      "offset": 4573,
       "length": 30,
       "value": "\"xsdk_bluetooth_no_permission\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4650,
+      "offset": 4652,
       "length": 28,
       "value": "\"xsdk_bluetooth_error_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4737,
+      "offset": 4739,
       "length": 39,
       "value": "\"xsdk_bluetooth_permission_error_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4882,
+      "offset": 4884,
       "length": 31,
       "value": "\"xsdk_offline_report_nav_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4973,
+      "offset": 4975,
       "length": 34,
       "value": "\"xsdk_offline_report_clear_report\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5069,
+      "offset": 5071,
       "length": 36,
       "value": "\"xsdk_offline_report_save_error_log\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5162,
+      "offset": 5164,
       "length": 19,
       "value": "\"xsdk_offline_info\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5251,
+      "offset": 5253,
       "length": 42,
       "value": "\"xsdk_offline_report_entry_approved_count\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5351,
+      "offset": 5353,
       "length": 43,
       "value": "\"xsdk_offline_report_entry_approved_amount\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5451,
+      "offset": 5453,
       "length": 42,
       "value": "\"xsdk_offline_report_entry_declined_count\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5551,
+      "offset": 5553,
       "length": 43,
       "value": "\"xsdk_offline_report_entry_declined_amount\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5648,
+      "offset": 5650,
       "length": 39,
       "value": "\"xsdk_offline_report_entry_error_count\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5742,
+      "offset": 5744,
       "length": 40,
       "value": "\"xsdk_offline_report_entry_error_amount\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5888,
+      "offset": 5890,
       "length": 31,
       "value": "\"xsdk_reader_details_nav_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5972,
+      "offset": 5974,
       "length": 31,
       "value": "\"xsdk_reader_details_connected\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6060,
+      "offset": 6062,
       "length": 36,
       "value": "\"xsdk_reader_details_autojoin_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6159,
+      "offset": 6161,
       "length": 42,
       "value": "\"xsdk_reader_details_autojoin_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6255,
+      "offset": 6257,
       "length": 38,
       "value": "\"xsdk_reader_details_readername_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6353,
+      "offset": 6355,
       "length": 45,
       "value": "\"xsdk_reader_details_custom_readername_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6461,
+      "offset": 6463,
       "length": 49,
       "value": "\"xsdk_reader_details_add_custom_readername_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6566,
+      "offset": 6568,
       "length": 40,
       "value": "\"xsdk_reader_details_serialnumber_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6657,
+      "offset": 6659,
       "length": 35,
       "value": "\"xsdk_reader_details_version_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6748,
+      "offset": 6750,
       "length": 35,
       "value": "\"xsdk_reader_details_remove_reader\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6849,
+      "offset": 6851,
       "length": 40,
       "value": "\"xsdk_reader_details_remove_alert_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6961,
+      "offset": 6963,
       "length": 42,
       "value": "\"xsdk_reader_details_remove_alert_message\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7054,
+      "offset": 7056,
       "length": 42,
       "value": "\"xsdk_reader_details_remove_alert_confirm\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7146,
+      "offset": 7148,
       "length": 41,
       "value": "\"xsdk_reader_details_remove_alert_cancel\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7241,
+      "offset": 7243,
       "length": 33,
       "value": "\"xsdk_reader_details_signal_weak\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7328,
+      "offset": 7330,
       "length": 33,
       "value": "\"xsdk_reader_details_signal_good\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7417,
+      "offset": 7419,
       "length": 35,
       "value": "\"xsdk_reader_details_signal_medium\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7508,
+      "offset": 7510,
       "length": 35,
       "value": "\"xsdk_reader_details_signal_status\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7600,
+      "offset": 7602,
       "length": 36,
       "value": "\"xsdk_reader_details_battery_status\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7735,
+      "offset": 7737,
       "length": 37,
       "value": "\"xsdk_payment_transaction_reader_tap\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7822,
+      "offset": 7824,
       "length": 40,
       "value": "\"xsdk_payment_transaction_reader_insert\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7911,
+      "offset": 7913,
       "length": 39,
       "value": "\"xsdk_payment_transaction_reader_slide\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8046,
+      "offset": 8048,
       "length": 33,
       "value": "\"xsdk_payment_manual_entry_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8135,
+      "offset": 8137,
       "length": 46,
       "value": "\"xsdk_payment_manual_entry_user_action_cancel\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8238,
+      "offset": 8240,
       "length": 47,
       "value": "\"xsdk_payment_manual_entry_user_action_confirm\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8346,
+      "offset": 8348,
       "length": 52,
       "value": "\"xsdk_payment_manual_entry_additional_section_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8448,
+      "offset": 8450,
       "length": 35,
       "value": "\"xsdk_payment_manual_entry_card_no\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8538,
+      "offset": 8540,
       "length": 41,
       "value": "\"xsdk_payment_manual_entry_card_no_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8637,
+      "offset": 8639,
       "length": 36,
       "value": "\"xsdk_payment_manual_entry_exp_date\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8742,
+      "offset": 8744,
       "length": 48,
       "value": "\"xsdk_payment_manual_entry_exp_date_placeholder\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8853,
+      "offset": 8855,
       "length": 42,
       "value": "\"xsdk_payment_manual_entry_exp_date_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8942,
+      "offset": 8944,
       "length": 31,
       "value": "\"xsdk_payment_manual_entry_csc\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9031,
+      "offset": 9033,
       "length": 43,
       "value": "\"xsdk_payment_manual_entry_csc_placeholder\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9126,
+      "offset": 9128,
       "length": 37,
       "value": "\"xsdk_payment_manual_entry_csc_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9226,
+      "offset": 9228,
       "length": 49,
       "value": "\"xsdk_payment_manual_entry_cardholder_first_name\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9343,
+      "offset": 9345,
       "length": 55,
       "value": "\"xsdk_payment_manual_entry_cardholder_first_name_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9460,
+      "offset": 9462,
       "length": 48,
       "value": "\"xsdk_payment_manual_entry_cardholder_last_name\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9575,
+      "offset": 9577,
       "length": 54,
       "value": "\"xsdk_payment_manual_entry_cardholder_last_name_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9687,
+      "offset": 9689,
       "length": 39,
       "value": "\"xsdk_payment_manual_entry_billing_zip\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9789,
+      "offset": 9791,
       "length": 45,
       "value": "\"xsdk_payment_manual_entry_billing_zip_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9887,
+      "offset": 9889,
       "length": 38,
       "value": "\"xsdk_payment_manual_entry_invoice_no\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9983,
+      "offset": 9985,
       "length": 44,
       "value": "\"xsdk_payment_manual_entry_invoice_no_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10078,
+      "offset": 10080,
       "length": 36,
       "value": "\"xsdk_payment_manual_entry_order_no\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10170,
+      "offset": 10172,
       "length": 42,
       "value": "\"xsdk_payment_manual_entry_order_no_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10267,
+      "offset": 10269,
       "length": 40,
       "value": "\"xsdk_payment_manual_entry_company_name\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10367,
+      "offset": 10369,
       "length": 46,
       "value": "\"xsdk_payment_manual_entry_company_name_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10467,
+      "offset": 10469,
       "length": 39,
       "value": "\"xsdk_payment_manual_entry_customer_id\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10565,
+      "offset": 10567,
       "length": 45,
       "value": "\"xsdk_payment_manual_entry_customer_id_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10669,
+      "offset": 10671,
       "length": 40,
       "value": "\"xsdk_payment_manual_entry_shipping_zip\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10773,
+      "offset": 10775,
       "length": 46,
       "value": "\"xsdk_payment_manual_entry_shipping_zip_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10912,
+      "offset": 10914,
       "length": 22,
       "value": "\"xsdk_signature_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10986,
+      "offset": 10988,
       "length": 25,
       "value": "\"xsdk_signature_subtitle\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11061,
+      "offset": 11063,
       "length": 23,
       "value": "\"xsdk_signature_action\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11132,
+      "offset": 11134,
       "length": 34,
       "value": "\"xsdk_signature_error_action_skip\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11232,
+      "offset": 11234,
       "length": 37,
       "value": "\"xsdk_signature_upload_failure_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11340,
+      "offset": 11342,
       "length": 39,
       "value": "\"xsdk_signature_upload_sucessful_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11452,
+      "offset": 11454,
       "length": 41,
       "value": "\"xsdk_signature_accepted_succesful_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11607,
+      "offset": 11609,
       "length": 25,
       "value": "\"xsdk_email_option_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11703,
+      "offset": 11705,
       "length": 30,
       "value": "\"xsdk_email_option_button_yes\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11803,
+      "offset": 11805,
       "length": 29,
       "value": "\"xsdk_email_option_button_no\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11890,
+      "offset": 11892,
       "length": 23,
       "value": "\"xsdk_email_form_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11974,
+      "offset": 11976,
       "length": 26,
       "value": "\"xsdk_email_form_subtitle\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12069,
+      "offset": 12071,
       "length": 35,
       "value": "\"xsdk_email_form_input_placeholder\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12171,
+      "offset": 12173,
       "length": 33,
       "value": "\"xsdk_email_form_invalid_address\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12267,
+      "offset": 12269,
       "length": 29,
       "value": "\"xsdk_email_form_button_send\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12359,
+      "offset": 12361,
       "length": 29,
       "value": "\"xsdk_email_form_button_skip\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12459,
+      "offset": 12461,
       "length": 38,
       "value": "\"xsdk_email_form_send_receipt_success\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12567,
+      "offset": 12569,
       "length": 37,
       "value": "\"xsdk_email_form_send_receipt_failed\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12673,
+      "offset": 12675,
       "length": 36,
       "value": "\"xsdk_email_form_save_email_success\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12789,
+      "offset": 12791,
       "length": 35,
       "value": "\"xsdk_email_form_offline_mode_info\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12915,
+      "offset": 12917,
       "length": 20,
       "value": "\"xsdk_keyboard_done\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13022,
+      "offset": 13024,
       "length": 16,
       "value": "\"xsdk_common_ok\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13134,
+      "offset": 13136,
       "length": 32,
       "value": "\"xsdk_pairing_connecting_reader\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13230,
+      "offset": 13232,
       "length": 35,
       "value": "\"xsdk_pairing_connection_sucessful\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13313,
+      "offset": 13315,
       "length": 31,
       "value": "\"xsdk_pairing_user_action_pair\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13392,
+      "offset": 13394,
       "length": 31,
       "value": "\"xsdk_pairing_user_action_done\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13480,
+      "offset": 13482,
       "length": 30,
       "value": "\"xsdk_pairing_pair_new_reader\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13562,
+      "offset": 13564,
       "length": 35,
       "value": "\"xsdk_pairing_user_action_settings\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13648,
+      "offset": 13650,
       "length": 34,
       "value": "\"xsdk_pairing_user_action_addName\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13731,
+      "offset": 13733,
       "length": 32,
       "value": "\"xsdk_pairing_user_action_later\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13819,
+      "offset": 13821,
       "length": 28,
       "value": "\"xsdk_pairing_select_reader\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13910,
+      "offset": 13912,
       "length": 37,
       "value": "\"xsdk_pairing_no_readers_found_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14016,
+      "offset": 14018,
       "length": 43,
       "value": "\"xsdk_pairing_no_readers_found_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14113,
+      "offset": 14115,
       "length": 26,
       "value": "\"xsdk_pairing_reader_name\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14202,
+      "offset": 14204,
       "length": 37,
       "value": "\"xsdk_pairing_reader_name_input_hint\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14294,
+      "offset": 14296,
       "length": 43,
       "value": "\"xsdk_pairing_prepare_pairing_reader_range\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14393,
+      "offset": 14395,
       "length": 44,
       "value": "\"xsdk_pairing_prepare_pairing_reader_button\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14494,
+      "offset": 14496,
       "length": 33,
       "value": "\"xsdk_pairing_add_name_to_reader\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14583,
+      "offset": 14585,
       "length": 33,
       "value": "\"xsdk_pairing_rename_your_reader\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14682,
+      "offset": 14684,
       "length": 32,
       "value": "\"xsdk_pairing_paired_successful\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14807,
+      "offset": 14809,
       "length": 25,
       "value": "\"xsdk_reader_signal_idle\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14885,
+      "offset": 14887,
       "length": 30,
       "value": "\"xsdk_reader_signal_connected\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15022,
+      "offset": 15024,
       "length": 39,
       "value": "\"xsdk_readers_list_no_reader_connected\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15117,
+      "offset": 15119,
       "length": 33,
       "value": "\"xsdk_readers_list_select_reader\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15240,
+      "offset": 15242,
       "length": 39,
       "value": "\"xsdk_general_error_user_action_cancel\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15328,
+      "offset": 15330,
       "length": 38,
       "value": "\"xsdk_general_error_user_action_retry\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15421,
+      "offset": 15423,
       "length": 52,
       "value": "\"xsdk_general_error_user_action_manually_enter_card\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15534,
+      "offset": 15536,
       "length": 26,
       "value": "\"xsdk_general_error_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15627,
+      "offset": 15629,
       "length": 32,
       "value": "\"xsdk_general_error_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15714,
+      "offset": 15716,
       "length": 25,
       "value": "\"xsdk_reader_error_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15792,
+      "offset": 15794,
       "length": 25,
       "value": "\"xsdk_general_error_code\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15873,
+      "offset": 15875,
       "length": 28,
       "value": "\"xsdk_general_error_message\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15958,
+      "offset": 15960,
       "length": 35,
       "value": "\"xsdk_general_error_transaction_id\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16047,
+      "offset": 16049,
       "length": 32,
       "value": "\"xsdk_general_error_exchange_id\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16150,
+      "offset": 16152,
       "length": 29,
       "value": "\"xsdk_response_parsing_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16252,
+      "offset": 16254,
       "length": 42,
       "value": "\"xsdk_http_response_parsing_error_message\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16409,
+      "offset": 16411,
       "length": 48,
       "value": "\"xsdk_payment_transaction_completed_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16537,
+      "offset": 16539,
       "length": 54,
       "value": "\"xsdk_payment_transaction_completed_avoided_surcharge\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16654,
+      "offset": 16656,
       "length": 47,
       "value": "\"xsdk_payment_transaction_accepted_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16767,
+      "offset": 16769,
       "length": 51,
       "value": "\"xsdk_payment_transaction_not_accepted_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16925,
+      "offset": 16927,
       "length": 32,
       "value": "\"xsdk_tips_percentage_and_value\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17013,
+      "offset": 17015,
       "length": 25,
       "value": "\"xsdk_tips_custom_amount\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17096,
+      "offset": 17098,
       "length": 38,
       "value": "\"xsdk_tips_user_transaction_tip_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17188,
+      "offset": 17190,
       "length": 47,
       "value": "\"xsdk_tips_user_action_transaction_without_tip\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17286,
+      "offset": 17288,
       "length": 44,
       "value": "\"xsdk_tips_user_action_transaction_with_tip\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17432,
+      "offset": 17434,
       "length": 33,
       "value": "\"xsdk_service_fee_type_surcharge\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17516,
+      "offset": 17518,
       "length": 27,
       "value": "\"xsdk_service_fee_type_nca\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17602,
+      "offset": 17604,
       "length": 36,
       "value": "\"xsdk_service_fee_type_service_lite\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17693,
+      "offset": 17695,
       "length": 31,
       "value": "\"xsdk_service_fee_type_service\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17783,
+      "offset": 17785,
       "length": 35,
       "value": "\"xsdk_service_fee_type_convenience\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17871,
+      "offset": 17873,
       "length": 29,
       "value": "\"xsdk_service_fee_base_price\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17957,
+      "offset": 17959,
       "length": 34,
       "value": "\"xsdk_service_fee_base_price_cash\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18057,
+      "offset": 18059,
       "length": 45,
       "value": "\"xsdk_service_fee_base_price_cash_debit_card\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18163,
+      "offset": 18165,
       "length": 38,
       "value": "\"xsdk_service_fee_adjusted_price_card\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18268,
+      "offset": 18270,
       "length": 45,
       "value": "\"xsdk_service_fee_adjusted_price_credit_card\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18375,
+      "offset": 18377,
       "length": 39,
       "value": "\"xsdk_service_fee_adjusted_price_total\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18469,
+      "offset": 18471,
       "length": 30,
       "value": "\"xsdk_service_fee_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18606,
+      "offset": 18608,
       "length": 32,
       "value": "\"xsdk_offline_mode_enable_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18706,
+      "offset": 18708,
       "length": 34,
       "value": "\"xsdk_offline_mode_confirm_option\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18807,
+      "offset": 18809,
       "length": 33,
       "value": "\"xsdk_offline_mode_cancel_option\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18914,
+      "offset": 18916,
       "length": 40,
       "value": "\"xsdk_offline_mode_confirmation_message\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19035,
+      "offset": 19037,
       "length": 40,
       "value": "\"xsdk_offline_mode_confirmation_proceed\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19155,
+      "offset": 19157,
       "length": 39,
       "value": "\"xsdk_offline_mode_confirmation_cancel\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19268,
+      "offset": 19270,
       "length": 41,
       "value": "\"xsdk_offline_mode_warning_message_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19389,
+      "offset": 19391,
       "length": 47,
       "value": "\"xsdk_offline_mode_warning_message_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19521,
+      "offset": 19523,
       "length": 52,
       "value": "\"xsdk_offline_mode_warning_confirmation_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19635,
+      "offset": 19637,
       "length": 27,
       "value": "\"xsdk_offline_mode_enabled\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19738,
+      "offset": 19740,
       "length": 48,
       "value": "\"xsdk_offline_mode_warning_message_confirmation\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19865,
+      "offset": 19867,
       "length": 38,
       "value": "\"xsdk_offline_mode_encryption_message\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19982,
+      "offset": 19984,
       "length": 43,
       "value": "\"xsdk_offline_mode_encryption_call_support\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20104,
+      "offset": 20106,
       "length": 32,
       "value": "\"xsdk_offline_mode_report_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20200,
+      "offset": 20202,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_merchant_id\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20303,
+      "offset": 20305,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_terminal_id\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20406,
+      "offset": 20408,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_report_date\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20509,
+      "offset": 20511,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_report_time\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20619,
+      "offset": 20621,
       "length": 39,
       "value": "\"xsdk_offline_mode_report_offline_date\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20730,
+      "offset": 20732,
       "length": 39,
       "value": "\"xsdk_offline_mode_report_offline_time\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20843,
+      "offset": 20845,
       "length": 41,
       "value": "\"xsdk_offline_mode_report_transaction_id\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20958,
+      "offset": 20960,
       "length": 42,
       "value": "\"xsdk_offline_mode_report_external_ref_id\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21075,
+      "offset": 21077,
       "length": 42,
       "value": "\"xsdk_offline_mode_report_cardholder_name\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21186,
+      "offset": 21188,
       "length": 36,
       "value": "\"xsdk_offline_mode_report_card_type\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21297,
+      "offset": 21299,
       "length": 43,
       "value": "\"xsdk_offline_mode_report_last_four_digits\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21415,
+      "offset": 21417,
       "length": 42,
       "value": "\"xsdk_offline_mode_report_expiration_date\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21524,
+      "offset": 21526,
       "length": 33,
       "value": "\"xsdk_offline_mode_report_amount\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21627,
+      "offset": 21629,
       "length": 37,
       "value": "\"xsdk_offline_mode_report_tip_amount\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21738,
+      "offset": 21740,
       "length": 41,
       "value": "\"xsdk_offline_mode_report_empower_amount\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21851,
+      "offset": 21853,
       "length": 39,
       "value": "\"xsdk_offline_mode_report_total_amount\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21961,
+      "offset": 21963,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_customer_id\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22067,
+      "offset": 22069,
       "length": 35,
       "value": "\"xsdk_offline_mode_report_order_id\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22170,
+      "offset": 22172,
       "length": 34,
       "value": "\"xsdk_offline_mode_report_invoice\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22279,
+      "offset": 22281,
       "length": 42,
       "value": "\"xsdk_offline_mode_report_billing_address\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22397,
+      "offset": 22399,
       "length": 43,
       "value": "\"xsdk_offline_mode_report_shipping_address\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22513,
+      "offset": 22515,
       "length": 40,
       "value": "\"xsdk_offline_mode_report_software_type\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22629,
+      "offset": 22631,
       "length": 43,
       "value": "\"xsdk_offline_mode_report_software_version\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22738,
+      "offset": 22740,
       "length": 32,
       "value": "\"xsdk_offline_mode_report_error\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22840,
+      "offset": 22842,
       "length": 37,
       "value": "\"xsdk_offline_mode_report_error_date\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22947,
+      "offset": 22949,
       "length": 37,
       "value": "\"xsdk_offline_mode_report_error_time\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23068,
+      "offset": 23070,
       "length": 38,
       "value": "\"xsdk_offline_mode_process_info_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23185,
+      "offset": 23187,
       "length": 44,
       "value": "\"xsdk_offline_mode_process_info_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23310,
+      "offset": 23312,
       "length": 53,
       "value": "\"xsdk_offline_mode_process_info_process_alert_action\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23429,
+      "offset": 23431,
       "length": 30,
       "value": "\"xsdk_no_merchant_error_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23532,
+      "offset": 23534,
       "length": 36,
       "value": "\"xsdk_no_merchant_error_description\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23642,
+      "offset": 23644,
       "length": 34,
       "value": "\"xsdk_no_merchant_error_ok_button\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23787,
+      "offset": 23789,
       "length": 21,
       "value": "\"xsdk_settings_title\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23878,
+      "offset": 23880,
       "length": 35,
       "value": "\"xsdk_settings_readers_placeholder\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23984,
+      "offset": 23986,
       "length": 32,
       "value": "\"xsdk_settings_offline_subtitle\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24088,
+      "offset": 24090,
       "length": 38,
       "value": "\"xsdk_settings_offline_switch_enabled\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24203,
+      "offset": 24205,
       "length": 44,
       "value": "\"xsdk_settings_offline_switch_enable_prompt\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24325,
+      "offset": 24327,
       "length": 44,
       "value": "\"xsdk_settings_offline_pending_transactions\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24450,
+      "offset": 24452,
       "length": 47,
       "value": "\"xsdk_settings_offline_one_pending_transaction\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24568,
+      "offset": 24570,
       "length": 37,
       "value": "\"xsdk_settings_offline_upload_errors\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24677,
+      "offset": 24679,
       "length": 38,
       "value": "\"xsdk_settings_offline_upload_success\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24787,
+      "offset": 24789,
       "length": 35,
       "value": "\"xsdk_settings_offline_btn_process\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24893,
+      "offset": 24895,
       "length": 34,
       "value": "\"xsdk_settings_offline_btn_report\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24996,
+      "offset": 24998,
       "length": 32,
       "value": "\"xsdk_settings_offline_btn_done\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25110,
+      "offset": 25112,
       "length": 47,
       "value": "\"xsdk_settings_offline_btn_process_no_internet\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25229,
+      "offset": 25231,
       "length": 38,
       "value": "\"xsdk_settings_email_receipt_subtitle\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25338,
+      "offset": 25340,
       "length": 37,
       "value": "\"xsdk_settings_email_receipt_enabled\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/PaymentInfo.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 279,
       "length": 11,
       "value": "\"ClearentIdtechIOSFramework.PaymentInfo\""
     },
@@ -33307,44 +32599,23 @@
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManagerConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 444,
+      "offset": 430,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManagerConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 589,
+      "offset": 1502,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManagerConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 687,
+      "offset": 1600,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManagerConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1270,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManagerConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1368,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManagerConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 225,
-      "length": 30,
-      "value": "\"ClearentIdtechIOSFramework.ClearentUIManagerConfiguration\""
     },
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManagerConfiguration.swift",
@@ -33720,14 +32991,7 @@
     {
       "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapperConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1432,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ovidiurotaru\/Projects\/xplor-pay-mobile\/XplorPayMobile\/ClearentSDK\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapperConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1749,
+      "offset": 1978,
       "length": 5,
       "value": "false"
     },

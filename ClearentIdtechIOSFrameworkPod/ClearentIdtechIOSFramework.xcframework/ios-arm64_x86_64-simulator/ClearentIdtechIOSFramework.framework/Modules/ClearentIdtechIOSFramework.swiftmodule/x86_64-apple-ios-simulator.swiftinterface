@@ -462,10 +462,7 @@ public typealias CompletionResult = Swift.Result<Swift.String?, ClearentIdtechIO
   }
 }
 @objc public class ClearentUIManagerConfiguration : ClearentIdtechIOSFramework.ClearentWrapperConfiguration {
-  public var tipAmounts: [Swift.Int]
-  public var signatureEnabled: Swift.Bool
-  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String?, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
-  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data?, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
+  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String? = nil, offlineModeEncryptionKeyData: Foundation.Data? = nil, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ClearentApplicationOrientation {
@@ -665,13 +662,9 @@ extension ClearentIdtechIOSFramework.ClearentMarginable {
   @objc deinit
 }
 @objc public class ClearentWrapperConfiguration : ObjectiveC.NSObject {
-  public var baseURL: Swift.String
-  public var apiKey: Swift.String?
-  public var publicKey: Swift.String?
   public var readerInfoReceived: ((_ readerInfo: ClearentIdtechIOSFramework.ReaderInfo?) -> Swift.Void)?
   public var provideAuthAndMerchantTerminalDetails: (() -> (Swift.String?, Swift.String?, ClearentIdtechIOSFramework.ClearentWebAuth?))?
-  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, enableEnhancedMessaging: Swift.Bool = false)
-  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data?, enableEnhancedMessaging: Swift.Bool = false)
+  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data? = nil, enableEnhancedMessaging: Swift.Bool = false)
   @objc deinit
 }
 public struct FlowDataItem {

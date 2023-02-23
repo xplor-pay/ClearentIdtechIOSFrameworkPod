@@ -261,6 +261,8 @@ using UInt = size_t;
 @class NSBundle;
 @class NSCoder;
 
+/// All screens that should have a maximum width (for iPad support) inherit from this class. The width can be set by updating ClearentConstants.Size.defaultScreenMaxWidth variable.
+/// If a screen needs a custom value, it can override containerMaxWidthConstraint.
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework30ClearentAbstractViewController")
 @interface ClearentAbstractViewController : UIViewController
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified containerMaxWidthConstraint;
@@ -270,7 +272,7 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework30ClearentAbstractViewController")
 @end
 
 
-/// A custom UIStackView  that supports subviews with different margins between them.
+/// A custom UIStackView  that supports subviews with different spaces between them.
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework25ClearentAdaptiveStackView")
 @interface ClearentAdaptiveStackView : UIStackView
 - (void)layoutSubviews;
@@ -430,20 +432,22 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework17ClearentUIManager")
 @interface ClearentUIManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ClearentUIManager * _Nonnull shared;)
 + (ClearentUIManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// Make sure this is set before using the SDK
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) ClearentUIManagerConfiguration * _Null_unspecified configuration;)
 + (ClearentUIManagerConfiguration * _Null_unspecified)configuration SWIFT_WARN_UNUSED_RESULT;
 + (void)setConfiguration:(ClearentUIManagerConfiguration * _Null_unspecified)value;
+/// If true, card reader payment flow will be displayed. Otherwise, a form where the user needs to input card data is shown
 @property (nonatomic) BOOL cardReaderPaymentIsPreferred;
 /// This method updates the SDK with the necessary configuration to work properly.
 - (void)initializeWith:(ClearentUIManagerConfiguration * _Nonnull)configuration;
 /// Method that returns a UINavigationController that can handle the entire payment process.
-/// @param amount, the amount to be charged in a transaction
+/// @param paymentInfo, a PaymentInfo object that contains information regarding amount, customer, invoice, web auth etc.
 /// @param completion, a closure to be executed once the clearent SDK UI is dimissed
 - (UINavigationController * _Nonnull)paymentViewControllerWithPaymentInfo:(PaymentInfo * _Nullable)paymentInfo completion:(void (^ _Nullable)(ClearentError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 /// Method that returns a UINavigationController that can handle the pairing process of a card reader.
 /// @param completion, a closure to be executed once the clearent SDK UI is dimissed
 - (UINavigationController * _Nonnull)pairingViewControllerWithCompletion:(void (^ _Nullable)(ClearentError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
-/// Method returns a UINavigationController that will display a list containing current card reader informations and recently paired readers
+/// Method returns a UINavigationController that will display settings information like the following: link to recently paired readers, offline mode related info, option to enable email receipt functionality
 /// @param completion, a closure to be executed once the clearent SDK UI is dimissed
 - (UINavigationController * _Nonnull)settingsViewControllerWithCompletion:(void (^ _Nullable)(ClearentError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 /// Method returns a UINavigationController that will display a pop-up that will notify the user about offline mode
@@ -466,7 +470,13 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework28ClearentWrapperConfiguration")
 
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework30ClearentUIManagerConfiguration")
 @interface ClearentUIManagerConfiguration : ClearentWrapperConfiguration
-- (nonnull instancetype)initWithBaseURL:(NSString * _Nonnull)baseURL apiKey:(NSString * _Nullable)apiKey publicKey:(NSString * _Nullable)publicKey enableEnhancedMessaging:(BOOL)enableEnhancedMessaging tipAmounts:(NSArray<NSNumber *> * _Nonnull)tipAmounts signatureEnabled:(BOOL)signatureEnabled OBJC_DESIGNATED_INITIALIZER;
+/// @param baseURL, required parameter that needs to point either to prod - gateway.clearent.net or sandbox - gateway-sb.clearent.net.
+/// @param apiKey, used for API authentication. This parameter can be nil as long as web authentication is used: ClearenwtWrapper.shared.updateWebAuth(…)
+/// @publicKey, if not passed, publicKey will be fetched from the web everytime a transaction is being made
+/// @offlineModeEncryptionKeyData, the key used to encrypt the offline transactions. If not passed, offline mode feature is not available
+/// @enableEnhancedMessaging, enables or disables the use of enhanced messages
+/// @tipAmounts, an array of tip percentages the client can select from during the payment process
+/// @signatureEnabled, if true, a screen will be displayed during the payment process where the client can draw the signature
 - (nonnull instancetype)initWithBaseURL:(NSString * _Nonnull)baseURL apiKey:(NSString * _Nullable)apiKey publicKey:(NSString * _Nullable)publicKey offlineModeEncryptionKeyData:(NSData * _Nullable)offlineModeEncryptionKeyData enableEnhancedMessaging:(BOOL)enableEnhancedMessaging tipAmounts:(NSArray<NSNumber *> * _Nonnull)tipAmounts signatureEnabled:(BOOL)signatureEnabled OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -535,6 +545,7 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework27OfflinePromptViewController")
 @end
 
 
+/// This class holds the necessary properties needed to initiate a payment request.
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework11PaymentInfo")
 @interface PaymentInfo : NSObject
 - (nonnull instancetype)initWithAmount:(double)amount customerID:(NSString * _Nullable)customerID invoice:(NSString * _Nullable)invoice orderID:(NSString * _Nullable)orderID billing:(ClientInformation * _Nullable)billing shipping:(ClientInformation * _Nullable)shipping softwareType:(NSString * _Nullable)softwareType webAuth:(ClearentWebAuth * _Nullable)webAuth OBJC_DESIGNATED_INITIALIZER;
@@ -832,6 +843,8 @@ using UInt = size_t;
 @class NSBundle;
 @class NSCoder;
 
+/// All screens that should have a maximum width (for iPad support) inherit from this class. The width can be set by updating ClearentConstants.Size.defaultScreenMaxWidth variable.
+/// If a screen needs a custom value, it can override containerMaxWidthConstraint.
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework30ClearentAbstractViewController")
 @interface ClearentAbstractViewController : UIViewController
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified containerMaxWidthConstraint;
@@ -841,7 +854,7 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework30ClearentAbstractViewController")
 @end
 
 
-/// A custom UIStackView  that supports subviews with different margins between them.
+/// A custom UIStackView  that supports subviews with different spaces between them.
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework25ClearentAdaptiveStackView")
 @interface ClearentAdaptiveStackView : UIStackView
 - (void)layoutSubviews;
@@ -1001,20 +1014,22 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework17ClearentUIManager")
 @interface ClearentUIManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ClearentUIManager * _Nonnull shared;)
 + (ClearentUIManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// Make sure this is set before using the SDK
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) ClearentUIManagerConfiguration * _Null_unspecified configuration;)
 + (ClearentUIManagerConfiguration * _Null_unspecified)configuration SWIFT_WARN_UNUSED_RESULT;
 + (void)setConfiguration:(ClearentUIManagerConfiguration * _Null_unspecified)value;
+/// If true, card reader payment flow will be displayed. Otherwise, a form where the user needs to input card data is shown
 @property (nonatomic) BOOL cardReaderPaymentIsPreferred;
 /// This method updates the SDK with the necessary configuration to work properly.
 - (void)initializeWith:(ClearentUIManagerConfiguration * _Nonnull)configuration;
 /// Method that returns a UINavigationController that can handle the entire payment process.
-/// @param amount, the amount to be charged in a transaction
+/// @param paymentInfo, a PaymentInfo object that contains information regarding amount, customer, invoice, web auth etc.
 /// @param completion, a closure to be executed once the clearent SDK UI is dimissed
 - (UINavigationController * _Nonnull)paymentViewControllerWithPaymentInfo:(PaymentInfo * _Nullable)paymentInfo completion:(void (^ _Nullable)(ClearentError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 /// Method that returns a UINavigationController that can handle the pairing process of a card reader.
 /// @param completion, a closure to be executed once the clearent SDK UI is dimissed
 - (UINavigationController * _Nonnull)pairingViewControllerWithCompletion:(void (^ _Nullable)(ClearentError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
-/// Method returns a UINavigationController that will display a list containing current card reader informations and recently paired readers
+/// Method returns a UINavigationController that will display settings information like the following: link to recently paired readers, offline mode related info, option to enable email receipt functionality
 /// @param completion, a closure to be executed once the clearent SDK UI is dimissed
 - (UINavigationController * _Nonnull)settingsViewControllerWithCompletion:(void (^ _Nullable)(ClearentError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 /// Method returns a UINavigationController that will display a pop-up that will notify the user about offline mode
@@ -1037,7 +1052,13 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework28ClearentWrapperConfiguration")
 
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework30ClearentUIManagerConfiguration")
 @interface ClearentUIManagerConfiguration : ClearentWrapperConfiguration
-- (nonnull instancetype)initWithBaseURL:(NSString * _Nonnull)baseURL apiKey:(NSString * _Nullable)apiKey publicKey:(NSString * _Nullable)publicKey enableEnhancedMessaging:(BOOL)enableEnhancedMessaging tipAmounts:(NSArray<NSNumber *> * _Nonnull)tipAmounts signatureEnabled:(BOOL)signatureEnabled OBJC_DESIGNATED_INITIALIZER;
+/// @param baseURL, required parameter that needs to point either to prod - gateway.clearent.net or sandbox - gateway-sb.clearent.net.
+/// @param apiKey, used for API authentication. This parameter can be nil as long as web authentication is used: ClearenwtWrapper.shared.updateWebAuth(…)
+/// @publicKey, if not passed, publicKey will be fetched from the web everytime a transaction is being made
+/// @offlineModeEncryptionKeyData, the key used to encrypt the offline transactions. If not passed, offline mode feature is not available
+/// @enableEnhancedMessaging, enables or disables the use of enhanced messages
+/// @tipAmounts, an array of tip percentages the client can select from during the payment process
+/// @signatureEnabled, if true, a screen will be displayed during the payment process where the client can draw the signature
 - (nonnull instancetype)initWithBaseURL:(NSString * _Nonnull)baseURL apiKey:(NSString * _Nullable)apiKey publicKey:(NSString * _Nullable)publicKey offlineModeEncryptionKeyData:(NSData * _Nullable)offlineModeEncryptionKeyData enableEnhancedMessaging:(BOOL)enableEnhancedMessaging tipAmounts:(NSArray<NSNumber *> * _Nonnull)tipAmounts signatureEnabled:(BOOL)signatureEnabled OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1106,6 +1127,7 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework27OfflinePromptViewController")
 @end
 
 
+/// This class holds the necessary properties needed to initiate a payment request.
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework11PaymentInfo")
 @interface PaymentInfo : NSObject
 - (nonnull instancetype)initWithAmount:(double)amount customerID:(NSString * _Nullable)customerID invoice:(NSString * _Nullable)invoice orderID:(NSString * _Nullable)orderID billing:(ClientInformation * _Nullable)billing shipping:(ClientInformation * _Nullable)shipping softwareType:(NSString * _Nullable)softwareType webAuth:(ClearentWebAuth * _Nullable)webAuth OBJC_DESIGNATED_INITIALIZER;
