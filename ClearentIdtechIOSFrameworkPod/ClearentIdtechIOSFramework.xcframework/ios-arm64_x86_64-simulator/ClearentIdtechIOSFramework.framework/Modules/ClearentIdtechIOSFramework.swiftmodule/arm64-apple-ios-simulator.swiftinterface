@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ClearentIdtechIOSFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import ClearentIdtechIOSFramework
@@ -86,7 +86,7 @@ public enum FlowInputType {
   @objc final public func settingsViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
   @objc final public func offlineModeQuestionViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
   @objc final public func allUnprocessedOfflineTransactionsCount() -> Swift.Int
-  @objc final public func shouldDisplayOfflineModeLabel(ignorePromptMode: Swift.Bool = false) -> Swift.Bool
+  @objc final public func shouldDisplayOfflineModeLabel() -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -230,9 +230,6 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : ClearentIdtechIOSFramewor
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ClearentSettingsModalViewController : ClearentIdtechIOSFramework.ClearentBaseViewController {
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var titleLabel: ClearentIdtechIOSFramework.ClearentTitleLabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var settingsStackView: ClearentIdtechIOSFramework.ClearentRoundedCornersStackView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var doneButton: ClearentIdtechIOSFramework.ClearentPrimaryButton!
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @objc deinit
@@ -465,7 +462,10 @@ public typealias CompletionResult = Swift.Result<Swift.String?, ClearentIdtechIO
   }
 }
 @objc public class ClearentUIManagerConfiguration : ClearentIdtechIOSFramework.ClearentWrapperConfiguration {
-  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String? = nil, offlineModeEncryptionKeyData: Foundation.Data? = nil, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
+  public var tipAmounts: [Swift.Int]
+  public var signatureEnabled: Swift.Bool
+  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String?, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
+  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data?, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ClearentApplicationOrientation {
@@ -572,9 +572,6 @@ extension ClearentIdtechIOSFramework.ClearentInfoWithIcon : UIKit.UITextViewDele
 }
 public protocol CodableProtocol : Swift.Decodable, Swift.Encodable {
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ClearentRoundedCornersStackView : ClearentIdtechIOSFramework.ClearentAdaptiveStackView {
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class ClearentUIBrandConfigurator {
   public static var shared: ClearentIdtechIOSFramework.ClearentUIBrandConfigurator
   public var colorPalette: ClearentIdtechIOSFramework.ClearentUIColors
@@ -668,9 +665,13 @@ extension ClearentIdtechIOSFramework.ClearentMarginable {
   @objc deinit
 }
 @objc public class ClearentWrapperConfiguration : ObjectiveC.NSObject {
+  public var baseURL: Swift.String
+  public var apiKey: Swift.String?
+  public var publicKey: Swift.String?
   public var readerInfoReceived: ((_ readerInfo: ClearentIdtechIOSFramework.ReaderInfo?) -> Swift.Void)?
-  public var provideAuthAndMerchantTerminalDetails: (() -> (merchant: Swift.String?, terminal: Swift.String?, webAuth: ClearentIdtechIOSFramework.ClearentWebAuth?))?
-  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data? = nil, enableEnhancedMessaging: Swift.Bool = false)
+  public var provideAuthAndMerchantTerminalDetails: (() -> (Swift.String?, Swift.String?, ClearentIdtechIOSFramework.ClearentWebAuth?))?
+  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, enableEnhancedMessaging: Swift.Bool = false)
+  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data?, enableEnhancedMessaging: Swift.Bool = false)
   @objc deinit
 }
 public struct FlowDataItem {
