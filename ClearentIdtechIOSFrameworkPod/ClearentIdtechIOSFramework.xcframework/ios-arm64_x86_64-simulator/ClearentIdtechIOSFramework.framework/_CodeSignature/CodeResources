@@ -140,14 +140,6 @@
 		<data>
 		eF9soMJoWpMKSrwwgdhQ0iOBWyc=
 		</data>
-		<key>Headers/APDUData.h</key>
-		<data>
-		BeclvN7y4BTG7shQBcTMNBq706w=
-		</data>
-		<key>Headers/APDUResponse.h</key>
-		<data>
-		Kp3F7H1D0WvxgCnWOliHqSz12S0=
-		</data>
 		<key>Headers/ClearentBluetoothDevice.h</key>
 		<data>
 		lu6bD3qfqEC2i5J8g8ydghEi3jY=
@@ -219,58 +211,6 @@
 		<key>Headers/Clearent_VP3300.h</key>
 		<data>
 		K3+wxO69tVHHoIfdUql5rXvtXLo=
-		</data>
-		<key>Headers/IDTCommon.h</key>
-		<data>
-		tM6qhrptd8L2X2xncFKfZ1/05tg=
-		</data>
-		<key>Headers/IDTEMVData.h</key>
-		<data>
-		H7RgyCoBksVEXbgKoZYuwkS5PgY=
-		</data>
-		<key>Headers/IDTMSRData.h</key>
-		<data>
-		FUfo8xaGQ55Ilr92HFQwXwfNw/w=
-		</data>
-		<key>Headers/IDT_BTMag.h</key>
-		<data>
-		JaSxGalxcjIWJ7KQ8YgJ/caOCmI=
-		</data>
-		<key>Headers/IDT_BTPay.h</key>
-		<data>
-		0YXzp72BuYazzYg5yjIISPmg+yc=
-		</data>
-		<key>Headers/IDT_Device.h</key>
-		<data>
-		Zn+66jU4Rd50bFOlBLYeCwpzgmw=
-		</data>
-		<key>Headers/IDT_UniMag.h</key>
-		<data>
-		bKNAhKze4ITPNLmGt1zUlQpe3Ek=
-		</data>
-		<key>Headers/IDT_UniPay.h</key>
-		<data>
-		wgTW3AtA+2w7fg5+61f+k8K+H5c=
-		</data>
-		<key>Headers/IDT_UniPayI_V.h</key>
-		<data>
-		qpHuebs6UbjFIA/cR6dU861rH8k=
-		</data>
-		<key>Headers/IDT_VP3300.h</key>
-		<data>
-		IQ7jjTYQ6igY7ELOD+NRVAc4CKc=
-		</data>
-		<key>Headers/IDT_iMag.h</key>
-		<data>
-		+LHSYuBKnA+kHKz5hU6QnfRRMwY=
-		</data>
-		<key>Headers/UniPay.h</key>
-		<data>
-		+xMdrxVSgxeepQE4OVcr422mCHw=
-		</data>
-		<key>Headers/uniMag.h</key>
-		<data>
-		DoDENktvRanyM3qhLmaauuCyWa4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -621,20 +561,6 @@
 			4HHyiyKen1T0HQ0d6bCLabPn1qBF1f/DEQ57GahJFLI=
 			</data>
 		</dict>
-		<key>Headers/APDUData.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qTRT3Ucna/dolAxhwNviD2p1WsIaOgmISUrJiZ/ELFQ=
-			</data>
-		</dict>
-		<key>Headers/APDUResponse.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TVjHp86bp9FSGfLMi4i5xeQasIB7TqIes64IFW0f6JE=
-			</data>
-		</dict>
 		<key>Headers/ClearentBluetoothDevice.h</key>
 		<dict>
 			<key>hash2</key>
@@ -759,97 +685,6 @@
 			<key>hash2</key>
 			<data>
 			ckrx1WhpCGPrK7qLgGu3YNen+3iyUKinYf7zxdzwN5o=
-			</data>
-		</dict>
-		<key>Headers/IDTCommon.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fFjlBYH8wcqu7y1n7o+ZAVPOsluE1aRDiFjAO2Cy3+k=
-			</data>
-		</dict>
-		<key>Headers/IDTEMVData.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Nvuyip5IZQdKZ5kahmpdlrrEAK5ywotOO+ay4kOaPo4=
-			</data>
-		</dict>
-		<key>Headers/IDTMSRData.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EkVK2W7zw34skwUik8xAWcdw7ICcT4223vx2I22FmjQ=
-			</data>
-		</dict>
-		<key>Headers/IDT_BTMag.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6TasPj2QDS2ECUFyIEGWlsF+w+tMozpLLL4/mk9oWhA=
-			</data>
-		</dict>
-		<key>Headers/IDT_BTPay.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			K7Zt/hFqYnqCBcNx+S+0Nc/WbaGjt0EgUNWjwbw+0ww=
-			</data>
-		</dict>
-		<key>Headers/IDT_Device.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JYNTvrwLbANFlJ9w2/zvRVPm63NKTwxjgg90umtr3Jg=
-			</data>
-		</dict>
-		<key>Headers/IDT_UniMag.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZwWSd3YtSszJ2bqCDTkku3RldPt02pvDQwuXwPQT7I4=
-			</data>
-		</dict>
-		<key>Headers/IDT_UniPay.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UTHdAA5LxHesO12FRVSAW0n9WrnZ64Bx7c6lJJ0csKs=
-			</data>
-		</dict>
-		<key>Headers/IDT_UniPayI_V.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TAecCsQGOBud8LUtD4oyXnFi2QrTXPs71ajxv6HeDpk=
-			</data>
-		</dict>
-		<key>Headers/IDT_VP3300.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			d0XWn4Zdxb9GAtrR3VBY+3YkJ7zajrr5cMwx/VqWBQY=
-			</data>
-		</dict>
-		<key>Headers/IDT_iMag.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IBicuy1nSh0HdfnmaBhum5vTlTMxzWHk5eAhgE80yjI=
-			</data>
-		</dict>
-		<key>Headers/UniPay.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AVqzC+ZHaxP/TfdWtgCDK8SYe5p5dbgywKHgWuucjjY=
-			</data>
-		</dict>
-		<key>Headers/uniMag.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O5H14qlwH+171bZ+W+zHiR2JGcVQN9sIw/CHp19RDgk=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
