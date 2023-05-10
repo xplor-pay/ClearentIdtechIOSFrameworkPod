@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ClearentIdtechIOSFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import ClearentIdtechIOSFramework
@@ -86,7 +86,7 @@ public enum FlowInputType {
   @objc final public func settingsViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
   @objc final public func offlineModeQuestionViewController(completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)?) -> UIKit.UINavigationController
   @objc final public func allUnprocessedOfflineTransactionsCount() -> Swift.Int
-  @objc final public func shouldDisplayOfflineModeLabel() -> Swift.Bool
+  @objc final public func shouldDisplayOfflineModeLabel(ignorePromptMode: Swift.Bool = false) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -230,13 +230,16 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : ClearentIdtechIOSFramewor
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ClearentSettingsModalViewController : ClearentIdtechIOSFramework.ClearentBaseViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var titleLabel: ClearentIdtechIOSFramework.ClearentTitleLabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var settingsStackView: ClearentIdtechIOSFramework.ClearentRoundedCornersStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var doneButton: ClearentIdtechIOSFramework.ClearentPrimaryButton!
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class ClearentWrapper : ObjectiveC.NSObject {
   public static var shared: ClearentIdtechIOSFramework.ClearentWrapper
-  weak final public var delegate: ClearentIdtechIOSFramework.ClearentWrapperProtocol? {
+  weak final public var delegate: (any ClearentIdtechIOSFramework.ClearentWrapperProtocol)? {
     get
     set
   }
@@ -370,32 +373,32 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : ClearentIdtechIOSFramewor
   @objc deinit
 }
 public struct TransactionResponse : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignatureResponse : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct ReceiptResponse : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Links : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Payload : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct ResponseError : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Transaction : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ClearentWrapperDefaults : ClearentIdtechIOSFramework.UserDefaultsPersistence {
   @objc deinit
@@ -416,8 +419,8 @@ public struct ReaderInfo : Swift.Codable {
   public var serialNumber: Swift.String?
   public var version: Swift.String?
   public var encrypted: Swift.Bool?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension ClearentIdtechIOSFramework.ReaderInfo : Swift.Equatable {
   public static func == (lhs: ClearentIdtechIOSFramework.ReaderInfo, rhs: ClearentIdtechIOSFramework.ReaderInfo) -> Swift.Bool
@@ -430,8 +433,8 @@ public typealias CompletionResult = Swift.Result<Swift.String?, ClearentIdtechIO
 @_hasMissingDesignatedInitializers @objc public class ClearentError : ObjectiveC.NSObject, Swift.Error, Swift.Codable {
   final public let type: ClearentIdtechIOSFramework.ClearentErrorType
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class ClearentWebAuth : ObjectiveC.NSObject {
   public init(merchantID: Swift.String, vtToken: Swift.String)
@@ -462,10 +465,7 @@ public typealias CompletionResult = Swift.Result<Swift.String?, ClearentIdtechIO
   }
 }
 @objc public class ClearentUIManagerConfiguration : ClearentIdtechIOSFramework.ClearentWrapperConfiguration {
-  public var tipAmounts: [Swift.Int]
-  public var signatureEnabled: Swift.Bool
-  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String?, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
-  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data?, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
+  @objc public init(baseURL: Swift.String, apiKey: Swift.String? = nil, publicKey: Swift.String? = nil, offlineModeEncryptionKeyData: Foundation.Data? = nil, enableEnhancedMessaging: Swift.Bool = false, tipAmounts: [Swift.Int] = ClearentConstants.Tips.defaultTipPercentages, signatureEnabled: Swift.Bool = true)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ClearentApplicationOrientation {
@@ -490,13 +490,13 @@ extension UIKit.UIFont {
 public class SaleEntity : ClearentIdtechIOSFramework.CodableProtocol {
   public init(amount: Swift.String, tipAmount: Swift.String? = nil, softwareType: Swift.String? = nil, softwareTypeVersion: Swift.String? = nil, billing: ClearentIdtechIOSFramework.ClientInformation? = nil, shipping: ClearentIdtechIOSFramework.ClientInformation? = nil, card: Swift.String? = nil, csc: Swift.String? = nil, customerID: Swift.String? = nil, invoice: Swift.String? = nil, orderID: Swift.String? = nil, expirationDateMMYY: Swift.String? = nil, serviceFeeAmount: Swift.String? = nil, externelRefID: Swift.String? = nil)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc public class ClientInformation : ObjectiveC.NSObject, Swift.Codable {
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class Crypto : ObjectiveC.NSObject {
   @objc public static func SHA256hash(data: Foundation.Data) -> Foundation.Data
@@ -572,10 +572,13 @@ extension ClearentIdtechIOSFramework.ClearentInfoWithIcon : UIKit.UITextViewDele
 }
 public protocol CodableProtocol : Swift.Decodable, Swift.Encodable {
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ClearentRoundedCornersStackView : ClearentIdtechIOSFramework.ClearentAdaptiveStackView {
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class ClearentUIBrandConfigurator {
   public static var shared: ClearentIdtechIOSFramework.ClearentUIBrandConfigurator
-  public var colorPalette: ClearentIdtechIOSFramework.ClearentUIColors
-  public var fonts: ClearentIdtechIOSFramework.ClearentUIFonts
+  public var colorPalette: any ClearentIdtechIOSFramework.ClearentUIColors
+  public var fonts: any ClearentIdtechIOSFramework.ClearentUIFonts
   public var overriddenLocalizedStrings: [Swift.String : Swift.String]?
   @objc deinit
 }
@@ -590,12 +593,12 @@ public enum OfflineTransactionType : Swift.String, Swift.Codable {
   }
 }
 public struct ErrorStatus : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct OfflineTransaction : ClearentIdtechIOSFramework.CodableProtocol {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum TransactionStoreStatus : Swift.String {
   case parsingError
@@ -655,23 +658,19 @@ public enum ButtonStyleType {
 public protocol ClearentMarginable {
   var viewType: UIKit.UIView.Type { get }
   var margins: [ClearentIdtechIOSFramework.BottomMargin] { get }
-  func handleBottomMargin(to neighbor: ClearentIdtechIOSFramework.ClearentMarginable?)
+  func handleBottomMargin(to neighbor: (any ClearentIdtechIOSFramework.ClearentMarginable)?)
   func setBottomMargin(margin: ClearentIdtechIOSFramework.BottomMargin)
 }
 extension ClearentIdtechIOSFramework.ClearentMarginable {
-  public func handleBottomMargin(to neighbor: ClearentIdtechIOSFramework.ClearentMarginable?)
+  public func handleBottomMargin(to neighbor: (any ClearentIdtechIOSFramework.ClearentMarginable)?)
 }
 @_hasMissingDesignatedInitializers public class BottomMargin {
   @objc deinit
 }
 @objc public class ClearentWrapperConfiguration : ObjectiveC.NSObject {
-  public var baseURL: Swift.String
-  public var apiKey: Swift.String?
-  public var publicKey: Swift.String?
   public var readerInfoReceived: ((_ readerInfo: ClearentIdtechIOSFramework.ReaderInfo?) -> Swift.Void)?
-  public var provideAuthAndMerchantTerminalDetails: (() -> (Swift.String?, Swift.String?, ClearentIdtechIOSFramework.ClearentWebAuth?))?
-  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, enableEnhancedMessaging: Swift.Bool = false)
-  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data?, enableEnhancedMessaging: Swift.Bool = false)
+  public var provideAuthAndMerchantTerminalDetails: (() -> (merchant: Swift.String?, terminal: Swift.String?, webAuth: ClearentIdtechIOSFramework.ClearentWebAuth?))?
+  public init(baseURL: Swift.String, apiKey: Swift.String?, publicKey: Swift.String?, offlineModeEncryptionKeyData: Foundation.Data? = nil, enableEnhancedMessaging: Swift.Bool = false)
   @objc deinit
 }
 public struct FlowDataItem {
