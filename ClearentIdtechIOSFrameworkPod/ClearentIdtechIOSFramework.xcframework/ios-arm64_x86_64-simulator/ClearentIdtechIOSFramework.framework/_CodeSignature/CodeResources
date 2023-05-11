@@ -212,6 +212,10 @@
 		<data>
 		3XGgRC5PQNKxpB29E1vCPE23J6s=
 		</data>
+		<key>Headers/IDTech.h</key>
+		<data>
+		1SVRXrkHVPc3BF6ATepP9CJUrRM=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		9vxgTFvTp3tMaCZvFnADyO8j8wc=
@@ -685,6 +689,13 @@
 			<key>hash2</key>
 			<data>
 			PXYxslTXxfH9nQha53bvWKeVGxhJ8ksBXPS3LO2btas=
+			</data>
+		</dict>
+		<key>Headers/IDTech.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KzOEQvNL41FsHeDf/68yaZK0tkTWA2x22RgkBp4xLUk=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>

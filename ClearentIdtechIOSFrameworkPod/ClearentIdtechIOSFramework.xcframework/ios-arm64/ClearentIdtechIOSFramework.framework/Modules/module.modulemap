@@ -4,6 +4,11 @@ framework module ClearentIdtechIOSFramework {
   export *
   module * { export * }
 }
+umbrella header "IDTech.h"
+
+export *
+module * { export * }
+}
 
 module ClearentIdtechIOSFramework.Swift {
   header "ClearentIdtechIOSFramework-Swift.h"
