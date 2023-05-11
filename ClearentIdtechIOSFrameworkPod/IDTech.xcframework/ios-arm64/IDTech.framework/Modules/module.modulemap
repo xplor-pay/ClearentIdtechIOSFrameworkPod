@@ -1,6 +1,0 @@
-framework module IDTech {
-  umbrella header "IDTech.h"
-
-  export *
-  module * { export * }
-}

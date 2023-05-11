@@ -27,6 +27,35 @@
 - (void) deviceMessage:(NSString*)message;//!<Receives messages from the framework
 //!< @param message String message transmitted by framework
 
+-(void) updateStatus:(PK_STATUS_Type)type currentBlock:(int)currentBlock totalBlocks:(int)totalBlocks error:(RETURN_CODE)error;//!<Reports PK Update status.
+//!< @param type The stage of the PK update
+//!< @param currentBlock The number of the block that has transferred
+//!< @param totalBlocks The total number of blocks to transfer
+//!< @param error The error condition when failure is encoutered
+
+/**
+ * Sends a PK Update
+ *
+ Starts a device firmware upatate using the provided path to the .pk file.
+ * Update proceeds on a background thread.
+ * Use protocol UpdateStatus to monitor progress.
+ * Keep device attached and do interrupt process until PK_STATUS_FAILED or PK_STATUS_COMPLETED has been received
+ *
+ @param pkFile The .pk file
+ 
+ * @return RETURN_CODE:
+ - 0x0000: Success: no error - RETURN_CODE_DO_SUCCESS
+ - 0x0001: Disconnect: no response from reader - RETURN_CODE_ERR_DISCONNECT
+ - 0x0002: Invalid Response: invalid response data - RETURN_CODE_ERR_CMD_RESPONSE
+ - 0x0003: Timeout: time out for task or CMD - RETURN_CODE_ERR_TIMEDOUT
+ - 0x0004: Invalid Parameter: wrong parameter - RETURN_CODE_ERR_INVALID_PARAMETER
+ - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
+ - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
+ - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
+ - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) sendPKUpdate:(NSData*)pkFile;
 
 /**
  PIN Request
@@ -283,9 +312,42 @@
  
  Instructs the device to delete all log data
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
--(RETURN_CODE) device_logClear; //Added 8/12/2022 - MAR
+-(RETURN_CODE) device_logClear;
+
+/**
+ * Log Read
+ *
+ Instructs the device to output all log data
+ 
+ @param response Full response received from NEO2 device, including log
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_logRead:(NSData**)response;
+
+/**
+ * Enable Log
+ * 
+ Instructs the device to enable/disable the log
+ 
+ @param enable True = enable log, False = disable log
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_logEnable:(BOOL)enable;
+
+/**
+ * Get RT1050 Firmware Version
+ * 
+ Gets the version for the RT1050 Firmware
+ 
+ @param response Response returned of the RT1050 firmware
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getRT1050FirmwareVersion:(NSString**)response;
 
 /**
  * Get Bootloader Version
@@ -293,7 +355,7 @@
  Polls the device for the bootloader version
  *
  * @param response Response return of the bootloader version from the device
- * @return RETURN_CODE: Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE: Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) device_getBootloaderVersion:(NSString**)response;
@@ -318,7 +380,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  
  */
 
@@ -330,7 +392,7 @@
  
  Causes the buzzer to beep once
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) device_buzzerOnOff;
 
@@ -357,7 +419,7 @@
  * @param merchantID  Merchant unique identifer registered with Apple.  Example com.idtechproducts.applePay
  * @param merchantURL Merchant URL, when applicable
  *
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  *
  */
 -(RETURN_CODE) device_setMerchantRecord:(int)index enabled:(bool)enabled merchantID:(NSString*)merchantID merchantURL:(NSString*)merchantURL;
@@ -374,18 +436,38 @@
  * Byte 34 = Length of Merchant URL
  * Bytes 35 - 99 = URL
  *
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  *
  */
--(RETURN_CODE) device_getMerchantRecord:(int)index record:(NSData*)record;
+-(RETURN_CODE) device_getMerchantRecord:(int)index record:(NSData**)record;
+/**
+ * Get Transaction Results
+ * 
+ Gets the transaction results when the reader is functioning in "Auto Poll" mode
+ 
+ @param results The transaction results
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getTransactionResults:(NSData**)results;
 
+/**
+ * Get Device Tree
+ *
+ Polls the NEO2/3 for the Device Tree
+ 
+ @param deviceTree The device tree returned as a NSString
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::getResponseCodeString:() 
+ */
+-(RETURN_CODE) device_getDeviceTreeVersion:(NSString**)deviceTree;
 
 /**
  * Remove All Certificate Authority Public Key
  *
  Removes all the CAPK for CTLS
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
 
  */
@@ -554,7 +636,7 @@
  - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_setCAPK:(CAKey)key; //added from universal sdk - MAR 8/2/2022
+-(RETURN_CODE) emv_setCAPK:(CAKey)key;
 
 /**
  * Set Certificate Authority Public Key
@@ -570,7 +652,7 @@
  - Public Key Exponent: Actually, the real length of the exponent is either one byte or 3 bytes. It can have two values: 3 (Format is 0x00 00 00 03), or  65537 (Format is 0x00 01 00 01)
  - Modulus Length: LenL LenH Indicated the length of the next field.
  - Modulus: This is the modulus field of the public key. Its length is specified in the field above.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE)  ctls_setCAPK:(NSData*)key;
@@ -634,6 +716,18 @@
  *
  */
 -(RETURN_CODE) ctls_startTransaction:(double)amount type:(int)type timeout:(int)timeout tags:(NSMutableDictionary *)tags;
+
+/**
+ * Reset Configuration Group
+ * 
+ This command allows resetting a dataset to its default configuration
+ If the file exists, it will be overwritten. If not, it will be created
+ 
+ @param group Configuration group
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) ctls_resetConfigurationGroup:(int)group;
 
 /**
  * Start a CTLS Transaction Request
@@ -709,11 +803,11 @@
  -'AES' : Encrypted card data with AES if DUKPT Key had been loaded
  -NONE' : No Encryption
  
- * @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  *
  */
--(RETURN_CODE) icc_getKeyFormatForICCDUKPT:(NSData**)format; //Added 8/12/2022 - MAR
+-(RETURN_CODE) icc_getKeyFormatForICCDUKPT:(NSData**)format;
 
 /**
  * Set Key format for ICC DUKPT
@@ -726,11 +820,11 @@
  -0x01 : Encrypted card data with AES if DUKPT Key had been loaded
  -Other Data : No Encryption
  
- * @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  *
  */
--(RETURN_CODE) icc_setKeyFormatForICCDUKPT:(NSData*)encryption; //Added 8/19/2022 - MAR
+-(RETURN_CODE) icc_setKeyFormatForICCDUKPT:(NSData*)encryption;
 
 /**
  * Update NEO 2 Firmware
@@ -765,9 +859,9 @@
  Polls the device for the current battery voltage
  
  @param response Returns battery voltage string representing millivolts
- * @return RETURN_CODE: Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE: Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
--(RETURN_CODE) emv_getBatteryVoltage:(NSString**)response; //Added 8/10/2022 - MAR
+-(RETURN_CODE) emv_getBatteryVoltage:(NSString**)response;
 
 /**
  * Begins searching for Bluetooth Low Energy devices in range
@@ -850,7 +944,7 @@
  *
  * @param result The transaction results
  *
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString().  When no data is available, return code = RETURN_CODE_NO_DATA_AVAILABLE
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:().  When no data is available, return code = RETURN_CODE_NO_DATA_AVAILABLE
  *
  */
 -(RETURN_CODE)  device_getAutoPollTransactionResults:(IDTEMVData**)result;
@@ -861,10 +955,10 @@
  Enables/disables extended error condition for commands 02-40, 61-xx, 62-xx, 83-41 when error is 0xd0a or 0xd0b
  *
  * @param enable TRUE = enable log, FALSE = disable log
- * @return RETURN_CODE: Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE: Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) device_extendedErrorCondition:(BOOL)enable; //added 8/9/2022 - MAR
+-(RETURN_CODE) device_extendedErrorCondition:(BOOL)enable;
 
 /**
  * Get Response Code String
@@ -956,7 +1050,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) device_setPassThrough:(BOOL)enablePassThrough;
@@ -990,7 +1084,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  @param serialNumber  Serial Number or the UID of the PICC
  @param ident Device ID to send command to.  If not specified, current SDK default device will be used.
 
- @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
 */
 
 -(RETURN_CODE) device_pollForToken:(Byte)seconds card:(Byte**)card serialNumber:(NSData**)serialNumber;
@@ -1003,7 +1097,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
 
  @param turnON  TRUE = ON, FALSE = OFF
 
- @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
 */
 -(RETURN_CODE) device_antennaControl:(bool)turnON;
 
@@ -1017,7 +1111,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  @param sendData  APDU Out
  @param receiveData  APDU response
 
- @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
 */
 -(RETURN_CODE) device_exchangeContactlessData:(NSData*)sendData  receiveData:(NSData**)receiveData;
 
@@ -1029,7 +1123,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  @param feature  Function/Feature ID
  @param addRequirement  Additional Requirement
 
- @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
 */
 -(RETURN_CODE) device_setSpecialFunctionOrFeature:(NSData*)feature addRequirement:(NSData*)addRequirement;
 
@@ -1042,7 +1136,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  @param feature  Function/Feature ID
  @param addRequirement  Additional Requirement
 
- @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
 */
 -(RETURN_CODE) device_getSpecialFunctionOrFeature:(NSData**)feature addRequirement:(NSData**)addRequirement;
 
@@ -1065,7 +1159,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) device_setTerminalData:(NSData*)tags;
 
@@ -1087,9 +1181,36 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) device_retrieveTerminalData:(NSData**)responseData;
+/**
+ * Query File
+ * 
+ Report if tthe file exists, and if so will report the file timestamp and the file size
+ 
+ @param directory The file directory to search in. If blank, will use the root directory
+ @param filename Name of the file to retrieve
+ @param isSD True = query SD card, False = query internal storage
+ @param exists True = file exists, False = file does not exist
+ @param timestamp If the file exists, reports the timestamp of the file
+ @param fileSize If the file exists, reports the size of the file
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_queryFile:(NSString*)directory filename:(NSString*)filename isSD:(BOOL)isSD exists:(BOOL*)exists timestamp:(NSDate**)timestamp fileSize:(int*)fileSize;
+/**
+ * Read File from SD card
+ * 
+ Reads a file from the SD card
+ 
+ @param directory The file directory to read from. If empty, the root directory is used
+ @param filename The name of the file to retrieve
+ @param fileData The contents of the file if it exists
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_readFileFromSD:(NSString*)directory filename:(NSString*)filename fileData:(NSData**)fileData;
 
 /**
  * Add Terminal Data
@@ -1109,7 +1230,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  */
 
 -(RETURN_CODE) device_addTLVToTerminalData:(NSData*)tlv;
@@ -1122,7 +1243,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  * @param mode 0 = OFF, 1 = Always On, 2 = Auto Exit
  
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE)  device_setBurstMode:(int) mode;
 
@@ -1135,7 +1256,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  * @param mode 0 = Auto Poll, 1 = Poll On Demand
  
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) device_setPollMode:(int) mode;
 
@@ -1162,7 +1283,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_authenticateTransaction:(NSData*)tags;
@@ -1179,7 +1300,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  
  @param selection Line number in hex (0x01, 0x02), or 'C'/'E' of function key
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_callbackResponseLCD:(int)mode selection:(unsigned char) selection;
@@ -1197,7 +1318,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  @param KSN  Key Serial Number. If no pairing and PIN is plaintext, value is nil
  @param PIN PIN data, encrypted.  If no pairing, PIN will be sent plaintext
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_callbackResponsePIN:(EMV_PIN_MODE_Types)mode KSN:(NSData*)KSN PIN:(NSData*)PIN;
@@ -1274,7 +1395,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  
  *
  */
@@ -1332,7 +1453,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  * @param mode Response from the device of the current poll mode
  
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) device_getPollMode:(NSData**)mode;
 
@@ -1342,7 +1463,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  Gets the TransArmor ID from the device
  *
  * @param TID TransArmor ID
- * @return RETURN_CODE: Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE: Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) device_getTransArmorID:(NSString**)TID;
@@ -1353,9 +1474,550 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  Polls the device for the Kernel Check Value
  
  @param response Response returned of the Check Value of the Kernel
- * @return RETURN_CODE: Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE: Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_getEMVKernelCheckValue:(NSString**)response;
+
+/**
+ * Get EMV Kernel Version
+ * 
+ Polls the device for the EMV Kernel Version
+ 
+ @param response The kernel version response in a string
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVKernelVersion:(NSString**)response;
+
+/**
+ * Callback Response PIN Entry for ETC
+ * 
+ Provides (or cancels) PIN entry information to kernel after a callback was received with callback type PINPAD ETC
+ 
+ @param type If cancel button is pressed during PIN entry, then this value is EMV_PIN_MODE_CANCEL
+ - If PIN bypass is pressed during PIN entry, then this value is EMV_PIN_MODE_BYPASS. Otherwise the value can be EMV_PIN_MODE_ONLINE_DUKPT, EMV_PIN_MODE_ONLINE_MKSK, or EMV_PIN_MODE_OFFLINE
+ @param KSN If enciphered PIN, this is either PINK DUKPT Key or PIN Session Key or PIN Pairing DUKPT
+ @param PIN If enciphered PIN, this is an ecrypted PIN block. If device does not implement pairing fuctions, this plaintext PIN
+ */
+-(RETURN_CODE) emv_callbackResponsePIN_ETC:(EMV_PIN_MODE_Types)type ksn:(NSData*)KSN pin:(NSData*)PIN;
+
+/**
+ * Callback Response Get ETC DUKPT key KSN
+ * 
+ Provides a status code to device request of DUKPT IK loaded status, from callback type GET KSN
+ 
+ @param KSN The KSN data
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_callbackResponseKSN:(NSData*)KSN;
+
+/**
+ * Verify DUKPT IK Loaded on ETC
+ * 
+ Use this command to verify the DUKPT IK isloaded into the ETC. NEO2 is activated and it can request PIN from ETC after this command
+ 
+ @param KCV ASN.1 structure of KCV
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_verifyDUKPTLoaded:(NSData*)KCV;
+
+/**
+ * Get Extended EMV Kernel Version
+ * 
+ Polls the device for the extended EMV kernel version
+ 
+ @param response The extended kernel verion response in a string
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVKernelVersionExt:(NSString**)response;
+
+/**
+ * Remove All Application Data
+ * 
+ Removes all the application data for the EMV kernel
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE)emv_removeAllApplicationData;
+
+/**
+ * Enable L80 Passthrough
+ * 
+ Enables Passthrough mode for direct communicaiton to L80 hooked up to NEO2 device
+ 
+ @param enablePassThrough True = passthrough ON, False = passthrough OFF
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_enableL80PassThrough:(BOOL)enablePassThrough;
+
+/**
+ * Get Product Type
+ * 
+ Returns a "product type" value in a proprietary TLV
+ 
+ @param type Product type
+ * ----------------------------------------
+ * Product Type      |    Description
+ *-----------------------------------------
+ *    42 37 00      |    ViVOpay 5000
+ *    43 33 00      |    ViVOpay 4500
+ *    43 35 00      |    ViVOpay Vend
+ *    43 36 00      |    Vendi (NEO, string ident = "")
+ *    43 37 00      |    ViVOpay Kiosk1 (ATM1, string ident = "")
+ *    43 38 00      |    Kiosk2
+ *    43 39 00      |    Kiosk3 (NEO, string ident = "")
+ *    55 31 00      |    UniPay 1.5 (NEO, string ident = "")
+ *    55 33 00      |    UniPay III (NEO) 
+ *    55 33 31      |    VP3300, VP3300 OEM (NEO) (iBase/Cake same code, string ident = "")
+ *    55 33 32      |    VP3300E(NEO, string ident = "")
+ *    55 33 33      |    VP3300C(NEO, string ident = "")
+ *    55 33 34      |    BTPay Mini (NEO) (UniPayIII + BLE, string ident = "")
+ *    56 31 00      |    VP3600
+ *    56 32 00      |    VP5200
+ *    56 33 00      |    VP5300
+ *    56 34 00      |    VP6300
+ *    56 35 00      |    VP6800
+ *    56 36 00      |    VP8300
+ *    56 37 00      |    VP8310
+ *    56 38 00      |    VP8800
+ *    56 39 00      |    VP8810
+ *    56 40 00      |    VP9000
+ *    44 30 00      |    QX120
+ *    44 31 00      |    Mx8Series
+ *    44 32 00      |    NETs
+ *    44 33 00      |    Magtek
+ *    44 35 00      |    ICP
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getProductType:(NSData**)type;
+
+/**
+ * Get Processor Type
+ * 
+ Returns a processor type TLV
+ 
+ @param type Processor type
+ *------------------------------------------
+ * Processor Type     |     Description
+ *------------------------------------------
+ *     45 00             |     ARM7/ LPC21xx
+ *     4D 00             |     ARM Cortex-M4/ K21 Family
+ *     4E 00             |     ARM Cortex-M4/ K81 Family
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getProcessorType:(NSData**)type;
+
+/**
+ * Get Hardware Info
+ * 
+ Returns an ASCII string for the hardware information
+ 
+ @param response The ASCII character string
+ *-----------------------------------------------------------
+ *            ASCII                          |    Description
+ *-----------------------------------------------------------
+ * HW,VPVendi<CR><LF>K21F Rev9                          |    Vendi
+ * HW,VP3300 Audio Jack<CR><LF>K21F Rev9         |    Unipay III
+ * HW,VPUnipay1.5<CR><LF>K21F Rev9                   |    Unipay 1.5
+ * HW,VPUniPay1.5TTK<CR><LF>K21F Rev9            |    UniPay 1.5 TTK 
+ * HW,VP3300 USB<CR><LF>K21F Rev9                   |    VP3300 USB, VP3300 USB OEM (iBase/Cake same code, string ident = "")
+ * HW,VP3300 USB-E<CR><LF>K21F Rev9               |    VP3300 USB-E
+ * HW,VP3300 USB-C<CR><LF>K21F Rev9               |    VP3300 USB-C 
+ * HW,VPVP3300 Bluetooth<CR><LF>K21F Rev9      |    VP3300 Bluetooth 
+ * HW,.VP6300<CR><LF>K81F.Rev4                          |    VP6300 
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getHardwareInfo:(NSString**)response;
+
+/**
+ * Get UID of MCU
+ * 
+ Returns the UID of the device
+ 
+ @param response The module UID information
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getUIDofMCU:(NSString**)response;
+
+/**
+ * Ping Device
+ * 
+ Pings the reader. If it is connected, returns success, otherwise returns timeout
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_pingDevice;
+
+/**
+ * Enable L100 Passthrough
+ * 
+ Enable passthrough mode for direct communication to L100 hooked up to NEO2 device
+ 
+ @param enablePassThrough True = passthrough ON, False = passthrough OFF
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_enableL100PassThrough:(BOOL)enablePassThrough;
+
+/**
+ * Set TransArmor ID
+ *
+ Sets the TransArmor ID
+ 
+ @param TID TransArmor ID
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_setTransArmorID:(NSString*)TID;
+
+/**
+ * Listen for Notifcations
+ *
+ Instructs SDK to listen for unsolicited data
+ 
+ @param enable True = Listen, False = Don't listen
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_listenForNotifications:(BOOL)enable; 
+
+/**
+ * Control LED
+ *
+ Controls the LED for the reader. This command will only operate in pass-through mode
+ 
+ @param indexLED The LED to control starting from the left
+ - 00: LED 0
+ - 01: LED 1
+ - 02: LED 2
+ - 03: LED 3
+ - FF: All LEDs
+ @param control Turns chosen LED(s) OFF (00) or ON (01)
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_controlLED:(Byte)indexLED control:(Byte)control;
+
+/**
+ * Device Certificate Type
+ *
+ Returns the device certificate type
+ 
+ @param type 0 = Unknown, 1 = Demo, 2 = Production
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_certificateType:(int*)type;
+
+/**
+ * Delete File
+ *
+ This command deletes a file or group of files
+ 
+ @param filename Complete path and file name of the file you want to delete. You do not need to specify the root directory. Indicate subdirectories with a foward slash (/)
+ @param isSD True = Delete from SD card, False = Delete from Flash
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_deleteFile:(NSString*)filename isSD:(BOOL)isSD;
+
+/**
+ * Delete Directory
+ *
+ This command deletes an empty directory
+ 
+ @param filename Complete path of the directory you want to delete.
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_deleteDirectory:(NSString*)filename;
+
+/**
+ * List Directory
+ *
+ This command retrieves a directory listing of user accessible files from the reader
+ 
+ @param directoryName The directory name. If null, root directory is selected
+ @param recursive Include sub-directories
+ @param onSD True = use SD card, False = use Flash
+ @param directory The returned directory information
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_listDirectory:(NSString*)directoryName recursive:(BOOL)recursive onSD:(BOOL)onSD directory:(NSString**)directory;
+
+/**
+ * Create Directory
+ *
+ This command adds a subdirectory to the indicated path
+ 
+ @param directoryName The directory name. The data for this command is an ASCII string with the complete path and directory name you want to create. You do not need to specify the root directory. Indicate subdirectories with a forward slash (/)
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_createDirectory:(NSString*)directoryName;
+
+/**
+ * Enter Low Power Mode
+ *
+ Puts the terminal in sleep or stop mode, with the option to wake on swipe/tap
+ 
+ @param stopMode True = Stop Mode (POR required), False = Sleep Mode (resume from last instruction)
+ @param wakeOnTrans True = Swipe/Tap will wake from low power, False = Will not wake from swipe/tap
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_lowPowerMode:(BOOL)stopMode wakeOnTrans:(BOOL)wakeOnTrans;
+
+/**
+ * Control User Interface
+ *
+ Controls the Display, Beep, and LED
+ 
+ @param values Four bytes to control the user interface elements
+ Byte[0] = LCD Message
+ - 00h: Idle Message (Welcome)
+ - 01h: Present Card (Please Present Card)
+ - 02h: Timeout or Transaction Canceled (No Card)
+ - 03h: Transaction between reader and card is in progress (Processing...)
+ - 04h: Transaction success (Thank You)
+ - 05h: Transaction failed (Failed)
+ - 06h: Amount (Amount $ 0.00 Tap Card)
+ - 07h: Balance or Offline available funds (Balance $ 0.00)
+ - 08h: Insert card (Use Chip & PIN)
+ - 09h: Try again (Tap Again)
+ - 0Ah: Tells the customer to present only one card (Present 1 Card Only)
+ - 0Bh: Tells the customer to wait for authentication/authorization (Wait)
+ - FFh: Indicates the command is setting the LED/Buzzer only
+ Byte[1] = Beep Indicator
+ - 00h: No beep
+ - 01h: Single beep
+ - 02h: Double beep
+ - 03h: Triple beep
+ - 04h: Quadruple beep
+ - 05h: Single long beep (200 ms)
+ - 06h: Single long beep (400 ms)
+ - 07h: Single long beep (600 ms)
+ - 08h: Single long beep (800 ms)
+ Byte[2] = LED
+ - 00h: LED 0 (Power LED)
+ - 01h: LED 1
+ - 02h: LED 2
+ - 03h: LED 3
+ - FFh: All LEDs
+ Byte[3] = LED Power
+ - 00h: LED OFF
+ - 01h: LED ON
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_controlUserInterface:(NSData*)values;
+
+/**
+ * Get DRL Reader Risk Parameters
+ *
+ Gets the index, application program ID, and reader risk parameters for the DRL settings
+ 
+ @param index DRL index (01-04)
+ @param tlv TLV data objects
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_getDrlReaderRiskPara:(Byte)index tlv:(NSData**)tlv;
+
+/**
+ * Get MSR Secure Parameters
+ *
+ Gets the parameters from the flash setting
+ 
+ @param b0 True = T1 force encryption
+ @param b1 True = T2 force encryption
+ @param b2 True = T3 force encryption
+ @param b3 True = T3 force encryption when card type is 80
+ @param tlv MSR secure parameters TLV objects
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_getMsrSecurePara:(BOOL)b0 b1:(BOOL)b1 b2:(BOOL)b2 b3:(BOOL)b3 tlv:(NSData**)tlv;
+
+/**
+ * Get Module Version Information
+ *
+ Gets the 16 byte UID of the MCU
+ 
+ @param uid The string representation of the UID
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_getModuleVer:(NSString**)moduleVer;
+
+/**
+ * Disable Blue LED Sequence
+ * 
+ Stop the blue LEDs on the ViVOpay Vendi reader from flashing in the left to right sequence and the LEDs off. Contactless function is also disabled at the same time
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_disBlueLED;
+
+/**
+ * Enable the blue LED and modify the behaviour
+ * 
+ Control the blue LED behaviour on the Vendi reader
+ 
+ @param dataCmd LED control. Minimum 4 bytes, maximum 25 bytes. First byte is cycle, next three bytes are the sequence. Then sequence can repeat up to 8 times.
+ - Byte 0 = Cycle (0 = Cycle once, 1 = Repeat)
+ - Byte 1 = LED state map
+ *      - bit 7 = Left blue LED
+ *      - bit 6 = Center blue LED
+ *      - bit 5 = Right blue LED
+ *      - bit 4 = Yellow LED
+ *      - bit 3 = Reserved
+ *      - bit 2 = Reserved
+ *      - bit 1 = Reserved
+ *      - bit 0 = Reserved
+ - Bytes 2 & 3 = Duration (Given in multiples of 10 ms, i.e. 10/20/30 etc.)
+ If Cycle = 1, more pairs be after 3
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_enaBlueLED:(NSData*)dataCmd;
+
+/**
+ * Turn On Yellow LED
+ * 
+ Turn on the ViVOpay Vendi reader yellow LED. This LED is located below the three blue LEDs
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_onYellowLED;
+
+/**
+ * Turn Off Yellow LED
+ * 
+ Turn off the ViVOpay Vendi reader yellow LED. This LED is located below the three blue LEDs
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_offYellowLED;
+
+/**
+ * Enter standby mode
+ * 
+ Puts unit into low power standby mode
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_enterStandbyMode;
+
+/**
+ * Get Light Sensor Value
+ * 
+ Gets the value from the sensor
+ 
+ @param lightVal Value of the light sensor
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_getLightSensorVal:(UInt16*)lightVal;
+
+/**
+ * Set TransArmor Encryption
+ * 
+ Sets the TransArmor encryption from the given certificate
+ 
+ @param cert Certificate in PEM format or DER format. PEM format must be string data (converted to binary) starting with "---". DER format is binary data.
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_setTransArmorEncryption:(NSData*)cert;
+
+/**
+ * Get Module Bytes
+ * 
+ Retrieves the first 64 bytes of the module information running in an ADF environment
+ 
+ @param type The ADF type
+ - ADF_TYPE_SDK = SDK
+ - ADF_TYPE_APP = Application
+ @param adfInfo List of modules information
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) adf_getModuleBytes:(ADF_TYPE)type adfInfo:(NSArray<NSData*>**)adfInfo;
+
+/**
+ * Get Module Info
+ * 
+ Retrieves the module information when running in an ADF environment
+ 
+ @param type The ADF type
+ - ADF_TYPE_SDK = SDK
+ - ADF_TYPE_APP = Application
+ @param adfInfo List of modules information
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) adf_getModuleInfo:(ADF_TYPE)type adfInfo:(NSArray**)adfInfo;
+
+/**
+ * Erase ADF Flash
+ * 
+ Erases the ADF flash memory
+ 
+ @param type The ADF type
+ - ADF_TYPE_SDK = SDK
+ - ADF_TYPE_APP = Application
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) adf_eraseFlash:(ADF_TYPE)type;
+
+/**
+ * Set JTAG
+ * 
+ Enables/Disables the JTAG pin in an ADF environment
+ 
+ @param enable True = JTAG enabled, False = JTAG disabled
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) adf_setJTAG:(BOOL)enable;
+
+/**
+ * Set ADF Mode
+ * 
+ Enables/Disables the ADF environment
+ 
+ @param enable True = ADF enabled, False = ADF disabled
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) adf_setADFMode:(BOOL)enable;
+
+/**
+ * Get ADF Mode
+ * 
+ Retrieves the state of the ADF environment
+ 
+ @param enable True = ADF is enabled, False = ADF is disabled
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) adf_getADFMode:(BOOL*)enable;
 
 /**
  * Get MSR Track
@@ -1371,10 +2033,43 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 5 : Track 1, Track 3
  - 6 : Track 2, Track 3
  - 7 : Track 1, Track 2 , Track 3
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) msr_getMSRTrack:(int*)val;
+
+/**
+ * Get MSR Configuration
+ *
+ Gets the MSR configuration data
+ 
+ @param config Configuration data retrieved
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) msr_getConfiguration:(NSData**)config;
+
+/**
+ * Set MSR Configuration
+ *
+ Sets MSR configuration data
+ 
+ @param config Configuration data to send
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) msr_setConfiguration:(NSData*)config;
+
+/**
+ * Retrieve MSR White List
+ *
+ Retrieves the whitelist
+ 
+ @param value The whitelist data which is in ASN.1 block format
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) msr_retrieveWhiteList:(NSData**)value;
 
 /**
  * Set MSR Track
@@ -1390,7 +2085,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 5 : Track 1, Track 3
  - 6 : Track 2, Track 3
  - 7 : Track 1, Track 2 , Track 3
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) msr_setMSRTrack:(int)val;
@@ -1404,7 +2099,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 4 = 4C
  - 5 = 5C
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_setTerminalMajorConfiguration:(int)configuration;
 
@@ -1417,7 +2112,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 4 = 4C
  - 5 = 5C
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_getTerminalMajorConfiguration:(NSUInteger**)configuration;
 
@@ -1506,7 +2201,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  
  
  
@@ -1544,7 +2239,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  
  
  */
@@ -1612,7 +2307,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_retrieveCRLList:(NSMutableArray**)response;
 
@@ -1639,7 +2334,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_retrieveTerminalData:(NSDictionary**)responseData;
 
@@ -1661,7 +2356,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_retrieveTransactionResult:(NSData*)tags retrievedTags:(NSDictionary**)retrievedTags;
@@ -1709,7 +2404,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setApplicationData:(NSString*)aidName configData:(NSDictionary*)data;
@@ -1730,7 +2425,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - Public Key Exponent: Actually, the real length of the exponent is either one byte or 3 bytes. It can have two values: 3 (Format is 0x00 00 00 03), or  65537 (Format is 0x00 01 00 01)
  - Modulus Length: LenL LenH Indicated the length of the next field.
  - Modulus: This is the modulus field of the public key. Its length is specified in the field above.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setCAPKFile:(NSData*)file;
@@ -1805,7 +2500,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setTerminalData:(NSDictionary*)data;
@@ -1837,7 +2532,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  @param fallback Indicate if it supports fallback to MSR
  
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  *
  * NOTE ON INTERFACE SELECTION: For the NEO2, tag DFEF37 is used to determine which interfaces to use for the transaction:
@@ -1853,6 +2548,54 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  */
 -(RETURN_CODE) emv_startTransaction:(double)amount amtOther:(double)amtOther type:(int)type timeout:(int)timeout tags:(NSData*)tags forceOnline:(BOOL)forceOnline fallback:(BOOL)fallback;
 
+/**
+ * Exchange Certificates, Nonces, and Keys
+ * 
+ Use this command to send the ETC certificate, nonce, and signature
+ The returned data is the NEO2 certificate, nonce, and signature
+ 
+ @param cert Send ETC certificate for signature verification, Receives NEO2 certificate for signature verification
+ @param nonce Send ETC random nonce, Receives NEO2 random nonce
+ @param signature Send ETC signature, Receives NEO2 signature. Signature of (CertETC_SV || NONCE_ETC) with PKCS1-v1_5 padding
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) emv_exchangeCerts:(NSData**)cert nonce:(NSData**)nonce signature:(NSData**)signature;
+
+/**
+ * Get EMV Configuration Check Value
+ * 
+ Polls device for the EMV Configuration Check Value
+ 
+ @param response Response returned of the Check Value of the Configuration
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVConfigurationCheckValue:(NSString**)response;
+
+/**
+ * Callback Response MSR Entry
+ * 
+ Provides MSR information to kernel after a callback was received with type EMV_CALLBACK_MSR
+ 
+ @param MSR Swiped track data
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_callbackResponseMSR:(NSData*)MSR;
+
+/**
+ * Generate DUKPT IK using KEK
+ *
+ Use this command to send the encrypted KEK and signature generated by the ETC.
+ NEO2 returns the DUKPT IK in TR-31 format encrypted with the KEK and signature
+ 
+ @param cert ETC certificate for signature verification
+ @param signature Signature of (KEK || NONCE_ETC) with PKCS1-v1_5 padding
+ @param key ASN.1 structure of DUKPT IK used between NEO2 and ETC
+ * @return RETURN_CODE: Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_generateDUKPT:(NSData*)cert signature:(NSData*)signature key:(NSData**)key;
 
 /**
  * Polls device for Serial Number
@@ -2022,7 +2765,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  
  Results returned to pinpadData delegate
 
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) pin_captureFunctionKey;
 
@@ -2033,7 +2776,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  This command can cancel IDT_Device:getEncryptedPIN:keyType:line1:line2:line3:() and IDT_Device::getNumeric:minLength:maxLength:messageID:language:() and IDT_Device::getAmount:maxLength:messageID:language:() and IDT_Device::getCardAccount:max:line1:line2:() and
  IDT_Device::pin_getFunctionKey() and IDT_Device::getEncryptedData:minLength:maxLength:messageID:language:()
  
-  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+  * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  */
 -(RETURN_CODE) pin_cancelPin;
 
@@ -2057,7 +2800,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  Results returned to pinpadData delegate
 
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) pin_capturePin:(int)type PAN:(NSString*)PAN minPIN:(int)minPIN maxPIN:(int)maxPIN message:(NSString*)message;
@@ -2073,7 +2816,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  * @param oldPW  Old password, as a six character string, example "123456"
  * @param newPW  New password, as a six character string, example "654321"
  
- * @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  *
  */
@@ -2088,7 +2831,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  NOTE: The reader must be in Pass Through Mode for FeliCa commands to work.
  
  @param key 16 byte key used for MAC generation of Read or Write with MAC
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_authentication:(NSData*)key;
@@ -2105,7 +2848,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  @param numBlocks Number of blocks
  @param blockList Block to read. Each block in blockList   Maximum 3 block requests
  @param blocks  Blocks read.  Each block 16 bytes.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_readWithMac:(int)numBlocks blockList:(NSData*)blockList blocks:(NSData**)blocks;
@@ -2120,7 +2863,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  
  @param command Command data from settlement center to be sent to felica card
  @param response Response data from felica card
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_SendCommand:(NSData*)command response:(NSData**)response;
@@ -2134,7 +2877,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  
  @param blockNumber Number of block
  @param data  Block to write.  Must be 16 bytes.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_writeWithMac:(int)blockNumber data:(NSData*)data;
@@ -2151,7 +2894,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  @param numBlocks Number of blocks
  @param blockList Blocks to read. Maximum 4 block requests
  @param blocks  Blocks read.  Each block 16 bytes.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_read:(NSData*)serviceCode numBlocks:(int)numBlocks blockList:(NSData*)blockList blocks:(NSData**)blocks;
@@ -2169,7 +2912,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
   @param blockList Block list.
   @param data  Block to write.  Must be 16 bytes.
   @param statusFlag  Status flag response as explained in FeliCA Lite-S User's Manual, Section 4.5
-  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+  * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
   
   */
  -(RETURN_CODE) felica_write:(NSData*)serviceCode blockCount:(int)blockCount  blockList:(NSData*)blockList data:(NSData*)data statusFlag:(NSData**)statusFlag;
@@ -2214,7 +2957,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
 
          @param response  Response as explained in FeliCA Lite-S User's Manual
          @param ip IP Address of target device (optional)
-        * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+        * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
         */
 -(RETURN_CODE) ctls_nfcCommand:(NSData*)systemCode response:(NSData**)response;
@@ -2245,7 +2988,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  
  @param nodeCode Node Code
  @param response  Response as explained in FeliCA Lite-S User's Manual
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_requestService:(NSData*)nodeCode response:(NSData**)response;
@@ -2277,7 +3020,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  
  Results returned to pinpadData delegate
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) pin_captureAmountInput:(int)minPIN maxPIN:(int)maxPIN message:(NSString*)message signature:(NSData*)signature;
@@ -2298,7 +3041,7 @@ If no PICC is detected within the specified time limit, ViVOpay stops polling an
  
  Results returned to pinpadData delegate
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_NEO2::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) pin_captureNumericInput:(bool)mask minPIN:(int)minPIN maxPIN:(int)maxPIN message:(NSString*)message signature:(NSData*)signature;

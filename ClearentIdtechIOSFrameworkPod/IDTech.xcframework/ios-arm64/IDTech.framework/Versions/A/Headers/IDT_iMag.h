@@ -128,6 +128,18 @@
 -(RETURN_CODE) sendDataCommand:(NSData*)cmd calcLRC:(BOOL)lrc response:(NSData**)response;
 
 /**
+ * Send Payment Application Engine Command
+ * 
+ Executes a PAE command
+ 
+ @param command ASCII command string, should be started with "*PAE"
+ @param response Command response
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_sendPAE:(NSString*)command response:(NSString**)response;
+
+/**
  Is Device Connected
  
  Returns the connection status of the iMag

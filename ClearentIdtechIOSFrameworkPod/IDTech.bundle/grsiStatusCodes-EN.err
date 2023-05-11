@@ -105,6 +105,16 @@ EE80	Cannot start Contact EMV transaction
 EE81	CTLS/MSR cancelled due to card insertion
 EE90	Account DUKPT Key not exist
 EE91	Account DUKPT Key KSN exhausted
+EE92	MAC DUKPT Key does not exist (if enable MAC verification)
+EE93	MAC DUKPT Key KSN exhausted (if enable MAC verification)
+EE94	No DEK / Desjardins Data Key / TransArmor RSA Cert
+EE95	Encryption Switch is Off
+EEA0	The screen or object already exists
+EEA1	The SD card does NOT exist
+EEA2	Error decoding QR code
+EEA3	Card was inserted, expected CTLS
+EEA4	Error code for card insertion before sending a transaction command (for products with motors)
+EEA5	LCD control is rejected, due to LCD is not in working state
 6200	No Serial Number
 6900	Invalid Command
 5500	No Admin DUKPT Key

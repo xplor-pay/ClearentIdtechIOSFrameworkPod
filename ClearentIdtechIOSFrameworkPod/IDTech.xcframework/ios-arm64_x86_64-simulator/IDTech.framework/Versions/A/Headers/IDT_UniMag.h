@@ -99,13 +99,25 @@
 -(RETURN_CODE) device_sendUniMagCommand:(UNIMAG_COMMAND_Types)command;
 
 /**
+ * Send Payment Application Engine Command
+ * 
+ Executes a PAE command
+ 
+ @param command ASCII command string, should be started with "*PAE"
+ @param response Command response
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniMag::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_sendPAE:(NSString*)command response:(NSString**)response;
+
+/**
  * Set Swipe Data Encryption
  *
  * Sets the swipe encryption method
  *
  @param encryption 1 = TDES, 2 = AES
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPay::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniMag::device_getResponseCodeString:()
  
  
  */
@@ -237,6 +249,18 @@
  */
 -(RETURN_CODE) msr_getNextKSN:(NSData**)response;
 
+/**
+ * Get Multi MSR setting values
+ *
+ Returns the settings used for swipe data
+ 
+ @param setting MSR setting to retrieve
+ @param value MSR setting values
+ * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ 
+ */
+-(RETURN_CODE) msr_getSettings:(Byte)setting value:(NSData**)value;
+
 
 /**
  * Set Swipe Force Encryption
@@ -248,7 +272,7 @@
  @param track3 Force encrypt track 3
  @param track3card0 Force encrypt track 3 when card type is 0
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPay::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniMag::device_getResponseCodeString:()
  
  
  */

@@ -51,4 +51,7 @@
 + (NSString*) msrToKB:(NSData*)data;
 +(IDTMSRData*) parseEnhancedEncryptedMSRFormat:(NSData*)data;
 +(NSString*) getHashSha256:(NSString*)input;
++(NSString*) extractVersionString:(NSString*)str;
++(BOOL) version1Later2:(NSString*)v1 compare:(NSString*)v2;
++(BOOL) version1Earlier2:(NSString*)v1 compare:(NSString*)v2;
 @end

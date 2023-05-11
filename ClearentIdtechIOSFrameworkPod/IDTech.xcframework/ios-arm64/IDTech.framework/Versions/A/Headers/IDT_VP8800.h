@@ -202,7 +202,7 @@
  * @param merchantID  Merchant unique identifer registered with Apple.  Example com.idtechproducts.applePay
  * @param merchantURL Merchant URL, when applicable
  *
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  *
  */
 -(RETURN_CODE) device_setMerchantRecord:(int)index enabled:(bool)enabled merchantID:(NSString*)merchantID merchantURL:(NSString*)merchantURL;
@@ -219,7 +219,7 @@
  * Byte 34 = Length of Merchant URL
  * Bytes 35 - 99 = URL
  *
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  *
  */
 -(RETURN_CODE) device_getMerchantRecord:(int)index record:(NSData*)record;
@@ -230,7 +230,7 @@
  *
  Removes all the CAPK for CTLS
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
 
  */
@@ -287,15 +287,15 @@
 
 /**
  * Retrieve Application Data by AID
- *
- Retrieves the CTLS Application Data as specified by the AID name passed as a parameter.
+ * 
+ Retrieves the CTLS Application Data for system default group 0 as specified by the AID name passed as a parameter
  
- @param AID Name of ApplicationID as Hex String (example "A0000000031010"). Must be between 5 and 16 bytes
- @param response  The TLV elements of the requested AID
+ @param AID Name of the Application ID in bytes. Must be between 5 and 16 bytes
+ @param tlv The TLV elements of the requested AID in bytes
  
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  */
--(RETURN_CODE)  ctls_retrieveApplicationData:(NSString*)AID response:(NSDictionary**)response;
+-(RETURN_CODE) ctls_retrieveApplicationData:(NSData*)AID tlv:(NSData**)tlv;
 
 /**
  * Retrieve Certificate Authority Public Key
@@ -373,7 +373,7 @@
  - Public Key Exponent: Actually, the real length of the exponent is either one byte or 3 bytes. It can have two values: 3 (Format is 0x00 00 00 03), or  65537 (Format is 0x00 01 00 01)
  - Modulus Length: LenL LenH Indicated the length of the next field.
  - Modulus: This is the modulus field of the public key. Its length is specified in the field above.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE)  ctls_setCAPK:(NSData*)key;
@@ -501,7 +501,40 @@
  */
 -(RETURN_CODE) ctls_startTransaction:(double)amount type:(int)type timeout:(int)timeout transTags:(NSData *)transTags VAS:(NSData *)VAS;
 
+/**
+ * Display Online Authorization Result Extended
+ * 
+ Use this command to display the status of an online authorization request on the reader's display (OK, NOT OK, or ARC). Use this command after the reader sends an online request to the issuer
+ 
+ @param statusCode 0 = NOT OK, 1 = OK, 2 = ARC
+ @param TLV Optional TLV data for AOSA, can be empty
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) ctls_displayOnlineAuthResult_ext:(Byte)statusCode TLV:(NSData*)TLV;
 
+/**
+ * Display Online Authorization Result
+ * 
+ Use this command to display the status of an online authorization request on the reader's display (OK or NOT OK). Use this command after the reader sends an online request t the issuer
+ @param isOK True = OK, False = NOT OK
+ @param TLV Optional TLV for the AOSA, can be empty
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) ctls_displayOnlineAuthResult:(BOOL)isOK TLV:(NSData*)TLV;
+
+/**
+ * Reset Configuration Group
+ * 
+ This command allows resetting a dataset to its default configuration
+ If the file exists, it will be overwritten. If not, it will be created
+ 
+ @param group Configuration group
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) ctls_resetConfigurationGroup:(int)group;
 
 
 /**
@@ -519,7 +552,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPay::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  *
  */
 -(RETURN_CODE) device_getFirmwareVersion:(NSString**)response;
@@ -614,7 +647,7 @@
  *
  * @param result The transaction results
  *
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString().  When no data is available, return code = RETURN_CODE_NO_DATA_AVAILABLE
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:().  When no data is available, return code = RETURN_CODE_NO_DATA_AVAILABLE
  *
  */
 -(RETURN_CODE)  device_getAutoPollTransactionResults:(IDTEMVData**)result;
@@ -631,7 +664,7 @@
  
  
  */
--(NSString *) device_getResponseCodeString: (int) errorCode;
+-(NSString *) device_getResponseCodeString:(int) errorCode;
 
 /**
  Is Device Connected
@@ -658,7 +691,7 @@
  * @param data  Command data (if applicable)
  * @param response  Returns next Command response
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniMagIII::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  *
  */
@@ -674,7 +707,7 @@
  * @param data  Command data (if applicable)
  * @param response  Returns next Command response
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniMagIII::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  *
  */
@@ -689,7 +722,7 @@
  @param tlv  TLV Command
  @param response  TLV Response
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_Device::device_getResponseCodeString:())
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:())
  
  */
 -(RETURN_CODE) device_sendGen2Cmd:(NSData*)tlv response:(NSData**)response;
@@ -710,7 +743,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) device_setPassThrough:(BOOL)enablePassThrough;
@@ -725,7 +758,7 @@
  * @param mode 0 = OFF, 1 = Always On, 2 = Auto Exit
  
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  */
 -(RETURN_CODE)  device_setBurstMode:(int) mode;
 
@@ -738,9 +771,35 @@
  * @param mode 0 = Auto Poll, 1 = Poll On Demand
  
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  */
 -(RETURN_CODE) device_setPollMode:(int) mode;
+
+/**
+ * Reboot Device
+ - NEO2
+ - VP3300
+ -VP8800
+ -UniPayI_V
+ 
+ *
+ Executes a command to restart the device.
+ *
+ 
+ * @return RETURN_CODE:
+ - 0x0000: Success: no error - RETURN_CODE_DO_SUCCESS
+ - 0x0001: Disconnect: no response from reader - RETURN_CODE_ERR_DISCONNECT
+ - 0x0002: Invalid Response: invalid response data - RETURN_CODE_ERR_CMD_RESPONSE
+ - 0x0003: Timeout: time out for task or CMD - RETURN_CODE_ERR_TIMEDOUT
+ - 0x0004: Invalid Parameter: wrong parameter - RETURN_CODE_ERR_INVALID_PARAMETER
+ - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
+ - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
+ - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+
+-(RETURN_CODE) device_rebootDevice;
 
 
 /**
@@ -765,7 +824,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_authenticateTransaction:(NSData*)tags;
@@ -782,7 +841,7 @@
  
  @param selection Line number in hex (0x01, 0x02), or 'C'/'E' of function key
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_callbackResponseLCD:(int)mode selection:(unsigned char) selection;
@@ -800,7 +859,7 @@
  @param KSN  Key Serial Number. If no pairing and PIN is plaintext, value is nil
  @param PIN PIN data, encrypted.  If no pairing, PIN will be sent plaintext
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_callbackResponsePIN:(EMV_PIN_MODE_Types)mode KSN:(NSData*)KSN PIN:(NSData*)PIN;
@@ -877,7 +936,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  
  *
  */
@@ -936,7 +995,7 @@
  - 4 = 4C
  - 5 = 5C
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_setTerminalMajorConfiguration:(int)configuration;
 
@@ -949,7 +1008,7 @@
  - 4 = 4C
  - 5 = 5C
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_getTerminalMajorConfiguration:(NSUInteger**)configuration;
 
@@ -1038,7 +1097,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  
  
  
@@ -1076,7 +1135,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  
  
  */
@@ -1103,6 +1162,25 @@
  */
 -(RETURN_CODE) emv_retrieveCAPKList:(NSArray**)response;
 
+/**
+ * Retrieve Certificate Authority Public Key
+ *
+ Retrieves the CAPK for EMV Kernel as specified by the RID/Index  passed as a parameter.
+ 
+ @param capk 6 bytes CAPK = 5 bytes RID + 1 byte Index
+ @param key Response returned as a CAKey format:
+ [5 bytes RID][1 byte Index][1 byte Hash Algorithm][1 byte Encryption Algorithm][20 bytes HashValue][4 bytes Public Key Exponent][2 bytes Modulus Length][Variable bytes Modulus]
+ Where:
+ - Hash Algorithm: The only algorithm supported is SHA-1.The value is set to 0x01
+ - Encryption Algorithm: The encryption algorithm in which this key is used. Currently support only one type: RSA. The value is set to 0x01.
+ - HashValue: Which is calculated using SHA-1 over the following fields: RID & Index & Modulus & Exponent
+ - Public Key Exponent: Actually, the real length of the exponent is either one byte or 3 bytes. It can have two values: 3 (Format is 0x00 00 00 03), or  65537 (Format is 0x00 01 00 01)
+ - Modulus Length: LenL LenH Indicated the length of the next field.
+ - Modulus: This is the modulus field of the public key. Its length is specified in the field above.
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_retrieveCAPK:(NSData*)capk key:(NSData**)key;
+
 
 
 /**
@@ -1122,7 +1200,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_retrieveCRLList:(NSMutableArray**)response;
 
@@ -1149,7 +1227,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_retrieveTerminalData:(NSDictionary**)responseData;
 
@@ -1171,7 +1249,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_retrieveTransactionResult:(NSData*)tags retrievedTags:(NSDictionary**)retrievedTags;
@@ -1219,7 +1297,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setApplicationData:(NSString*)aidName configData:(NSDictionary*)data;
@@ -1240,7 +1318,7 @@
  - Public Key Exponent: Actually, the real length of the exponent is either one byte or 3 bytes. It can have two values: 3 (Format is 0x00 00 00 03), or  65537 (Format is 0x00 01 00 01)
  - Modulus Length: LenL LenH Indicated the length of the next field.
  - Modulus: This is the modulus field of the public key. Its length is specified in the field above.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setCAPKFile:(NSData*)file;
@@ -1315,14 +1393,90 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setTerminalData:(NSDictionary*)data;
 
+/**
+ * Set Terminal Data VP8800
+ * 
+ Sets the terminal data for the VP8800
+ 
+ @param tlv Terminal tlv data
+ @param config Config verification, valid values 1-4
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_setTerminalDataVP8800:(NSData*)tlv config:(int)config;
 
+/**
+ * Get EMV Configuration Check Value
+ * 
+ Polls device for the EMV Configuration Check Value
+ 
+ @param response Response returned of the Check Value of the Configuration
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVConfigurationCheckValue:(NSString**)response;
 
+/**
+ * Callback Response MSR Entry
+ * 
+ Provides MSR information to kernel after a callback was received with type EMV_CALLBACK_MSR
+ 
+ @param MSR Swiped track data
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_callbackResponseMSR:(NSData*)MSR;
 
+/**
+ * Set EMV Exception
+ * 
+ Adds an entry to the EMV Exception List
+ 
+ @param exception EMV exception entry containing the PAN and sequence number where:
+ *      -Exception is 12 bytes
+ *      -[1 byte len][10 bytes PAN][1 byte sequence number]
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_setException:(NSData*)exception;
+
+/**
+ * Remove EMV Exception
+ * 
+ Removes an exception EMV entry containing the PAN and Sequence number where:
+ @param exception  [Exception] is 12 bytes:
+ *      - [1 byte len][10 bytes PAN][1 byte sequence number]
+ *      -PAN, in compressed numeric format, is padded with 0xff if required. For example 0x5413339000001596FFFF)
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:() 
+ */
+-(RETURN_CODE) emv_removeException:(NSData*)exception;
+
+/**
+ * Remove All EMV Exceptions
+ * 
+ Removes all the entries from the EMV Exception List
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_removeAllExceptions;
+
+/**
+ * Retrieve the EMV Exception List
+ * 
+ Returns the EMV Exception entries on the terminal
+ 
+ @param list The list of exception entries ([Exeption1], [Exception2],...[ExceptionN] where each is 12 bytes:
+ *      - [1 byte Len][10 bytes PAN][1 byte sequence number]
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_retrieveExceptionList:(NSData**)list;
 
 /**
  * Start EMV Transaction Request
@@ -1347,7 +1501,7 @@
  @param fallback Indicate if it supports fallback to MSR
  
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  *
  * NOTE ON INTERFACE SELECTION: For the VP8800, tag DFEF37 is used to determine which interfaces to use for the transaction:
@@ -1362,6 +1516,102 @@
  *
  */
 -(RETURN_CODE) emv_startTransaction:(double)amount amtOther:(double)amtOther type:(int)type timeout:(int)timeout tags:(NSData*)tags forceOnline:(BOOL)forceOnline fallback:(BOOL)fallback;
+
+/**
+ * Get Transaction Log Record
+ * 
+ Retrieves oldest transaction record on the transaction log. Upon successful completion, the oldest transaction record is deleted from the transaction log
+ 
+ @param record Transaction Record
+ @param remaining The number of records remaining on the transaction log
+ 
+ Transaction Record
+ --------------------------
+ Length | Description | Type
+ ----- | ----- | -----
+ 4 | Transaction Log State (TLS) | Enum (4-byte number, LSB first), SENT ONLINE = 0, NOT SENT = 1
+ 4 | Transaction Log Content (TLC) | Enum (4-byte number, LSB first), BATCH = 0, OFFLINE ADVICE = 1, ONLINEADVICE = 2, REVERSAL = 3
+ 4 | AppExpDate | unsigned char [4]
+ 3 | AuthRespCode | unsigned char [3]
+ 3 | MerchantCategoryCode | unsigned char [3]
+ 16 | MerchantID | unsigned char [16]
+ 2 | PosEntryMode | unsigned char [2]
+ 9 | TermID | unsigned char [9]
+ 3 | AIP | unsigned char [3]
+ 3 | ATC | unsigned char [3]
+ 33 | IssuerAppData | unsigned char [33]
+ 6 | TVR | unsigned char [6]
+ 3 | TSI | unsigned char [3]
+ 11 | Pan | unsigned char [11]
+ 2 | PanSQNCNum | unsigned char [2]
+ 3 | TermCountryCode | unsigned char [3]
+ 7 | TranAmount | unsigned char [7]
+ 3 | TranCurCode | unsigned char [3]
+ 4 | TranDate | unsigned char [4]
+ 2 | TranType | unsigned char [2]
+ 9 | IFDSerialNum | unsigned char [9]
+ 12 | AcquirerID | unsigned char [12]
+ 2 | CID | unsigned char [2]
+ 9 | AppCryptogram | unsigned char [9]
+ 5 | UnpNum | unsigned char [5]
+ 7 | AmountAuth | unsigned char [7]
+ 4 | AppEffDate | unsigned char [4]
+ 4 | CVMResults | unsigned char [4]
+ 129 | IssScriptResults | unsigned char [129]
+ 4 | TermCap | unsigned char [4]
+ 2 | TermType | unsigned char [2]
+ 20 | Track2 | unsigned char [20]
+ 4 | TranTime | unsigned char [4]
+ 7 | AmountOther | unsigned char [7]
+ 1 | Unused | Unsigned char [1]
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) emv_getTransactionLogRecord:(NSData**)record remaining:(int*)remaining;
+
+/**
+ * Get EMV Exemption Log Status
+ * 
+ This command returns information about the EMV Exemption log. The version number, record size, and number of records contained in the file are returned
+ 
+ @param status 12 bytes are returned
+ *  - bytes 0-3: Version Number
+ *  - bytes 4-7: Number of records
+ *  - bytes 8-11: Size of record
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getExemptionLogStatus:(NSData**)status;
+
+/**
+ * Get Kernel Check Value
+ *
+ Polls the device for the Kernel Check Value
+ 
+ @param response Response returned of the Check Value of the Kernel
+ * @return RETURN_CODE: Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVKernelCheckValue:(NSString**)response;
+
+/**
+ * Set Certificate Authority Public Key
+ *
+ Sets the CAPK for EMV Kernel as specified by the CAKey structure
+ 
+ @param key CAKey format:
+ [5 bytes RID][1 byte Index][1 byte Hash Algorithm][1 byte Encryption Algorithm][20 bytes HashValue][4 bytes Public Key Exponent][2 bytes Modulus Length][Variable bytes Modulus]
+ Where:
+ - Hash Algorithm: The only algorithm supported is SHA-1. The value is set to 0x01.
+ - Encryption Algorithm: The encryption algorithm in which this key is used. Currently support only one type: RSA. The value is set to 0x01.
+ - HashValue: Which is calculated using SHA-1 over the following fields: RID & Index & Modulus & Exponent.
+ - Pubic Key Exponent: Actually, the real length of the exponent is either one byte or 3 bytes. It can have two values: 3 (Format is 0x00 00 00 03), or 65537 (Format is 0x00 01 00 01)
+ - Modulus Length: LenL LenH Indicated the length of the next field.
+ - Modulus: This is the modulus field of the public key. Its length is specified in the field above.
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) emv_setCAPK:(NSData*)key;
 
 
 /**
@@ -1459,6 +1709,40 @@
 -(RETURN_CODE) icc_powerOffICC:(NSString**)error;
 
 /**
+ * Get Key format for ICC DUKPT
+ 
+ Specifies how data is being encrypted with Data Key or PIN key
+ 
+ *
+ * @param format  Response return from method:
+ -0x00 : Encrypted card data with TDES if DUKPT Key had been loaded
+ -0x01 : Encrypted card data with AES if DUKPT Key had been loaded
+ -Other Data : No Encryption
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ *
+ */
+-(RETURN_CODE) icc_getKeyFormatForICCDUKPT:(NSData**)format;
+
+/**
+ * Set Key format for ICC DUKPT
+ 
+ Specifies how data will be encrypted with Data Key or PIN key
+ 
+ *
+ * @param encryption  The type of encryption to be used
+ -0x00 : Encrypted card data with TDES if DUKPT Key had been loaded
+ -0x01 : Encrypted card data with AES if DUKPT Key had been loaded
+ -Other Data : No Encryption
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ *
+ */
+-(RETURN_CODE) icc_setKeyFormatForICCDUKPT:(NSData*)encryption;
+
+/**
  * Disable MSR Swipe
  
  
@@ -1485,6 +1769,228 @@
  */
 
 -(RETURN_CODE) msr_startMSRSwipe;
+
+/**
+ * Flush Track Data
+ *
+ Clears any track data being retained in memory by future PIN Block request
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) msr_flushTrackData;
+
+/**
+ * Control LED
+ *
+ Controls the LED for the reader. This command will only operate in pass-through mode
+ 
+ @param indexLED The LED to control starting from the left
+ - 00: LED 0
+ - 01: LED 1
+ - 02: LED 2
+ - 03: LED 3
+ - FF: All LEDs
+ @param control Turns chosen LED(s) OFF (00) or ON (01)
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_controlLED:(Byte)indexLED control:(Byte)control;
+
+/**
+ * Control Indicator
+ *
+ Control the reader. If connected, returns success, otherwise, returns timeout
+ 
+ @param indicator Selects what is being controlled
+ - 00h: ICC LED
+ - 01h: Blue MSR
+ - 02h: Red MSR
+ - 03h: Green MSR
+ @param enable True = ON, False = OFF
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_controlIndicator:(int)indicator enable:(BOOL)enable;
+
+/**
+ * Device Certificate Type
+ *
+ Returns the device certificate type
+ 
+ @param type 0 = Unknown, 1 = Demo, 2 = Production
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_certificateType:(int*)type;
+
+/**
+ * Delete File
+ *
+ This command deletes a file or group of files
+ 
+ @param filename Complete path and file name of the file you want to delete. You do not need to specify the root directory. Indicate subdirectories with a foward slash (/)
+ @param isSD True = Delete from SD card, False = Delete from Flash
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_deleteFile:(NSString*)filename isSD:(BOOL)isSD;
+
+/**
+ * Delete Directory
+ *
+ This command deletes an empty directory
+ 
+ @param filename Complete path of the directory you want to delete.
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_deleteDirectory:(NSString*)filename;
+
+/**
+ * List Directory
+ *
+ This command retrieves a directory listing of user accessible files from the reader
+ 
+ @param directoryName The directory name. If null, root directory is selected
+ @param recursive Include sub-directories
+ @param onSD True = use SD card, False = use Flash
+ @param directory The returned directory information
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_listDirectory:(NSString*)directoryName recursive:(BOOL)recursive onSD:(BOOL)onSD directory:(NSString**)directory;
+
+/**
+ * Create Directory
+ *
+ This command adds a subdirectory to the indicated path
+ 
+ @param directoryName The directory name. The data for this command is an ASCII string with the complete path and directory name you want to create. You do not need to specify the root directory. Indicate subdirectories with a forward slash (/)
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_createDirectory:(NSString*)directoryName;
+
+/**
+ * Drive Free Space
+ *
+ This command returns the free and used disk space on the flash drive
+ 
+ @param free Free bytes available on device
+ @param used Used bytes on device
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_getDriveFreeSpace:(int*)free used:(int*)used;
+
+/**
+ * Set Buzzer/LED
+ *
+ Sets the reader's buzzer and LEDs
+ 
+ @param buzzer Sets the configuration of the buzzer
+ - 00h: No Beep
+ - 01h: Single Beep
+ - 02h: Two beeps
+ - 03h: Three beeps
+ - 04h: Four beeps
+ - 05h: One long beep of 200ms
+ - 06h: One long beep of 400ms
+ - 07h: One long beep of 600ms
+ - 08h: One long beep of 800ms
+ @param led
+ - 00h: LED0 (leftmost LED)
+ - 01h: LED1
+ - 02h: LED2
+ - 03h: LED3
+ - FFh: All LEDs
+ @param ledON True = ON, False = OFF
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_setBuzzerLED:(Byte)buzzer led:(Byte)LED ledON:(BOOL)ledON;
+
+/**
+ * Control User Interface
+ *
+ Controls the Display, Beep, and LED
+ 
+ @param values Four bytes to control the user interface elements
+ Byte[0] = LCD Message
+ - 00h: Idle Message (Welcome)
+ - 01h: Present Card (Please Present Card)
+ - 02h: Timeout or Transaction Canceled (No Card)
+ - 03h: Transaction between reader and card is in progress (Processing...)
+ - 04h: Transaction success (Thank You)
+ - 05h: Transaction failed (Failed)
+ - 06h: Amount (Amount $ 0.00 Tap Card)
+ - 07h: Balance or Offline available funds (Balance $ 0.00)
+ - 08h: Insert card (Use Chip & PIN)
+ - 09h: Try again (Tap Again)
+ - 0Ah: Tells the customer to present only one card (Present 1 Card Only)
+ - 0Bh: Tells the customer to wait for authentication/authorization (Wait)
+ - FFh: Indicates the command is setting the LED/Buzzer only
+ Byte[1] = Beep Indicator
+ - 00h: No beep
+ - 01h: Single beep
+ - 02h: Double beep
+ - 03h: Triple beep
+ - 04h: Quadruple beep
+ - 05h: Single long beep (200 ms)
+ - 06h: Single long beep (400 ms)
+ - 07h: Single long beep (600 ms)
+ - 08h: Single long beep (800 ms)
+ Byte[2] = LED
+ - 00h: LED 0 (Power LED)
+ - 01h: LED 1
+ - 02h: LED 2
+ - 03h: LED 3
+ - FFh: All LEDs
+ Byte[3] = LED Power
+ - 00h: LED OFF
+ - 01h: LED ON
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_controlUserInterface:(NSData*)values;
+
+/**
+ * Get MSR Secure Parameters
+ *
+ Gets the parameters from the flash setting
+ 
+ @param b0 True = T1 force encryption
+ @param b1 True = T2 force encryption
+ @param b2 True = T3 force encryption
+ @param b3 True = T3 force encryption when card type is 80
+ @param tlv MSR secure parameters TLV objects
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_getMsrSecurePara:(BOOL)b0 b1:(BOOL)b1 b2:(BOOL)b2 b3:(BOOL)b3 tlv:(NSData**)tlv;
+
+/**
+ * Get Module Version Information
+ *
+ Gets the 16 byte UID of the MCU
+ 
+ @param uid The string representation of the UID
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_getModuleVer:(NSString**)moduleVer;
+
+/**
+ * Calibrate reference parameters
+ * 
+ Calibrates parameters with a given delta value
+ 
+ @param delta Delta value (0x02 is the standard value)
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_calibrateParameters:(Byte)delta;
 
 /**
  *Check if device is connected
@@ -1525,6 +2031,125 @@
 -(RETURN_CODE) device_startTransaction:(double)amount type:(int)type timeout:(int)timeout tags:(NSData*)tags;
 
 /**
+ * Get Poll Mode
+ *
+ * Gets the current poll mode of the device
+ *
+ * @param mode Response from the device of the current poll mode
+ 
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getPollMode:(NSData**)mode;
+/**
+ * Get Transaction Results
+ * 
+ Gets the transaction results when the reader is functioning in "Auto Poll" mode
+ 
+ @param results The transaction results
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getTransactionResults:(NSData**)results;
+
+/**
+ * Get EMV Kernel Version
+ * 
+ Polls the device for the EMV Kernel Version
+ 
+ @param response The kernel version response in a string
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVKernelVersion:(NSString**)response;
+
+/**
+ * Remove Transaction Amount Log
+ * 
+ This command can delete transaction amount log in the reader. (When EMV transaction is offline approved, or online, transaction amout log saves to the reader)
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_removeTransactionAmountLog;
+
+/**
+ * Continue Transaction for Cardholder Verification
+ * 
+ Use this command to send the results of Online PIN Request or Signature Request and to continue a Contact EMV transaction
+ If the prior response Status Code is 0x31h (Request Online PIN) or 0x32h (Request Signature), this is the next command to send
+ 
+ The tags will be returned in the callback routine
+ 
+ @param result Cardholder Verification result:
+ - 0: Success (PIN or Signature)
+ - 1: Cancelled PIN request
+ - 2: PIN pad not working
+ - 3: Timeout
+ - 4: Error
+ @param pinblock Encrypted PIN block if Success PIN result
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_continueTransactionForCV:(int)result pinblock:(NSData*)pinblock;
+
+/**
+ * Get Extended EMV Kernel Version
+ * 
+ Polls the device for the extended EMV kernel version
+ 
+ @param response The extended kernel verion response in a string
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVKernelVersionExt:(NSString**)response;
+
+/**
+ * Clear Transaction Log
+ * 
+ Clears the transaction log on the VP8800
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_clearTransactionLog;
+
+/**
+ * Get CRL Status
+ * 
+ This command returns information about the EMV Certificate Revocation List. The version number, record size, and number of records contained in the file are returned.
+ 
+ @param status 12 bytes returned
+ - bytes 0-3: Version number
+ - bytes 4-7: Number of records
+ - bytes 8-11: Size of record
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) emv_getCRLStatus:(NSData**)status;
+
+/**
+ * Get Transaction Log Status
+ * 
+ This command returns information about the EMV transaction log. The version number, record size, and number of records contained in the file are returned.
+ 
+ @param status 12 bytes returned
+ - bytes 0-3: Version number
+ - bytes 4-7: Number of records
+ - bytes 8-11: Size of record
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) emv_getTransactionLogStatus:(NSData**)status;
+
+/**
+ * Ping Device
+ * 
+ Pings the reader. If it is connected, returns success, otherwise returns timeout
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_pingDevice;
+
+/**
  * Capture Function Key
  *
  
@@ -1532,7 +2157,7 @@
  
  Results returned to pinpadData delegate
 
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  */
 -(RETURN_CODE) pin_captureFunctionKey;
 
@@ -1543,7 +2168,7 @@
  This command can cancel IDT_Device:getEncryptedPIN:keyType:line1:line2:line3:() and IDT_Device::getNumeric:minLength:maxLength:messageID:language:() and IDT_Device::getAmount:maxLength:messageID:language:() and IDT_Device::getCardAccount:max:line1:line2:() and
  IDT_Device::pin_getFunctionKey() and IDT_Device::getEncryptedData:minLength:maxLength:messageID:language:()
  
-  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+  * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  */
 -(RETURN_CODE) pin_cancelPin;
 
@@ -1567,7 +2192,7 @@
  Results returned to pinpadData delegate
 
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) pin_capturePin:(int)type PAN:(NSString*)PAN minPIN:(int)minPIN maxPIN:(int)maxPIN message:(NSString*)message;
@@ -1583,7 +2208,7 @@
  * @param oldPW  Old password, as a six character string, example "123456"
  * @param newPW  New password, as a six character string, example "654321"
  
- * @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  *
  */
@@ -1598,7 +2223,7 @@
  NOTE: The reader must be in Pass Through Mode for FeliCa commands to work.
  
  @param key 16 byte key used for MAC generation of Read or Write with MAC
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_authentication:(NSData*)key;
@@ -1615,7 +2240,7 @@
  @param numBlocks Number of blocks
  @param blockList Block to read. Each block in blockList   Maximum 3 block requests
  @param blocks  Blocks read.  Each block 16 bytes.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_readWithMac:(int)numBlocks blockList:(NSData*)blockList blocks:(NSData**)blocks;
@@ -1630,7 +2255,7 @@
  
  @param blockNumber Number of block
  @param data  Block to write.  Must be 16 bytes.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_writeWithMac:(int)blockNumber data:(NSData*)data;
@@ -1647,7 +2272,7 @@
  @param numBlocks Number of blocks
  @param blockList Blocks to read. Maximum 4 block requests
  @param blocks  Blocks read.  Each block 16 bytes.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_read:(NSData*)serviceCode numBlocks:(int)numBlocks blockList:(NSData*)blockList blocks:(NSData**)blocks;
@@ -1665,7 +2290,7 @@
  @param blockList Block list.
  @param data  Block to write.  Must be 16 bytes.
  @param statusFlag  Status flag response as explained in FeliCA Lite-S User's Manual, Section 4.5
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) felica_write:(NSData*)serviceCode blockCount:(int)blockCount  blockList:(NSData*)blockList data:(NSData*)data statusFlag:(NSData**)statusFlag;
@@ -1680,7 +2305,7 @@
  
  @param systemCode System Code
  @param response  Response as explained in FeliCA Lite-S User's Manual
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) ctls_nfcCommand:(NSData*)systemCode response:(NSData**)response;
@@ -1725,7 +2350,7 @@
 
          @param response  Response as explained in FeliCA Lite-S User's Manual
          @param ip IP Address of target device (optional)
-        * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+        * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
         */
 -(RETURN_CODE) felica_requestService:(NSData*)nodeCode response:(NSData**)response;
@@ -1746,7 +2371,7 @@
  
  Results returned to pinpadData delegate
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) pin_captureAmountInput:(int)minPIN maxPIN:(int)maxPIN message:(NSString*)message signature:(NSData*)signature;
@@ -1767,7 +2392,7 @@
  
  Results returned to pinpadData delegate
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) pin_captureNumericInput:(bool)mask minPIN:(int)minPIN maxPIN:(int)maxPIN message:(NSString*)message signature:(NSData*)signature;

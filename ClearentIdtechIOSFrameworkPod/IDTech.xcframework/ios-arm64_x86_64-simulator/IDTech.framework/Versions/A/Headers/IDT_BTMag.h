@@ -119,7 +119,7 @@ typedef enum{
  *
  * @param response Response returned of Firmware Version
  *
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPay::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_BTMag::device_getResponseCodeString:()
  *
  */
 -(RETURN_CODE) device_getFirmwareVersion:(NSString**)response;
@@ -139,6 +139,103 @@ typedef enum{
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
  */
 -(RETURN_CODE) device_sendDataCommand:(NSData*)cmd calcLRC:(BOOL)lrc response:(NSData**)response;
+
+/**
+ * Get Clear PAN Digits
+ *
+ Returns the number of digits that begin the PAN that will be in the clear
+ 
+ @param value Number of digits in clear. Values are between 0 - 6
+ * @return RETURN_CODE:  Values can be parsed with IDT_BTMag::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) msr_getClearPANID:(Byte*)value;
+
+/**
+ * Get Expiration Masking
+ *
+ Get the flag that determines if to mask the expiration date
+ 
+ @param value masked = 0, unmasked = 1
+ * @return RETURN_CODE:  Values can be parsed with IDT_BTMag::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) msr_getExpirationMask:(Byte*)value;
+
+/**
+ * Get Swipe Mask Option
+ *
+ Gets the swipe mask/clear data sending option
+ 
+ @param option Byte using lower three bits as flags. 0 = Mask Option OFF, 1 = Mask Option ON
+ bit0 = Track 1
+ bit1 = Track 2
+ bit2 = Track 3
+ 
+ Example: option = 0x03 -> Track1 & 2 Masked Option ON, Track 3 Masked Option OFF.
+ * @return RETURN_CODE:  Values can be parsed with IDT_BTMag::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) msr_getSwipeMaskOption:(Byte*)option;
+
+/**
+ * Set Multi MSR setting value
+ *
+ Sets the MSR setting to the value given
+ 
+ @param setting MSR setting to set
+ @param value MSR setting value
+ * @return RETURN_CODE:  Values can be parsed with IDT_BTMag::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) msr_setSetting:(Byte)setting value:(Byte)val;
+
+/**
+ * Set Clear PAN Digits
+ *
+ Sets the amount of digits shown in the clear (not masked) at the beginning of the returned PAN value
+ 
+ @param val Number of digits to show in the clear from 0 - 6 digits
+ * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ 
+ */
+-(RETURN_CODE) msr_setClearPANID:(Byte)val;
+
+/**
+ * Set Expiration Masking
+ *
+ Sets the flag to mask the expiration date
+ 
+ @param mask True = mask expiration
+ * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ 
+ */
+-(RETURN_CODE) msr_setExpirationMask:(BOOL)mask;
+
+/**
+ * Set Swipe Data Encryption
+ *
+ Sets the swipe encryption method
+ 
+ @param encryption 1 = TDES, 2 = AES
+ * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ 
+ */
+-(RETURN_CODE) msr_setSwipeEncryption:(Byte)encryption;
+
+/**
+ * Set Swipe Force Encryption
+ *
+ Sets the swipe force encryption options
+ 
+ @param track1 Force encrypt track 1
+ @param track2 Force encrypt track 2
+ @param track3 Force encrypt track 3
+ @param track3card0 Force encrypt track 3 when card type is 0
+ * @return RETURN_CODE:  Values can be parsed with IDT_BTMag::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) msr_setSwipeForcedEncryptionOption:(BOOL)track1 track2:(BOOL)track2 track3:(BOOL)track3 track3card0:(BOOL)track3card0;
 
 /**
  Is Device Connected
@@ -170,7 +267,7 @@ typedef enum{
  *
  * @param response  Returns Serial Number
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniMag::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_BTMag::device_getResponseCodeString:()
  
  *
  */

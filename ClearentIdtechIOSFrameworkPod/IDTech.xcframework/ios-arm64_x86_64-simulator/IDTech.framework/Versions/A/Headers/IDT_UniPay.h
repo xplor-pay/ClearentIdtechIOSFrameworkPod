@@ -199,7 +199,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPay::device_getResponseCodeString:()
  
  *
  */
@@ -723,6 +723,18 @@
  
  */
 -(RETURN_CODE) msr_getClearPANID:(NSString**)response;
+
+/**
+ * Set Multi MSR setting value
+ *
+ Sets the MSR setting to the value given
+ 
+ @param setting MSR setting to set
+ @param value MSR setting value
+ * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ 
+ */
+-(RETURN_CODE) msr_setSetting:(Byte)setting value:(Byte)val;
 
 
 /**

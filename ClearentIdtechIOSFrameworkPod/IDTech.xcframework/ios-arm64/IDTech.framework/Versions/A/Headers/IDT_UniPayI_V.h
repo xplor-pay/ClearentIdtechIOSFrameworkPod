@@ -156,10 +156,121 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPay::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  *
  */
 -(RETURN_CODE) device_getFirmwareVersion:(NSString**)response;
+
+/**
+ * Get Poll Mode
+ *
+ * Gets the current poll mode of the device
+ *
+ * @param mode Response from the device of the current poll mode
+ 
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getPollMode:(NSData**)mode;
+
+/**
+ * Get EMV Kernel Version
+ * 
+ Polls the device for the EMV Kernel Version
+ 
+ @param response The kernel version response in a string
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVKernelVersion:(NSString**)response;
+
+/**
+ * Get Extended EMV Kernel Version
+ * 
+ Polls the device for the extended EMV kernel version
+ 
+ @param response The extended kernel verion response in a string
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVKernelVersionExt:(NSString**)response;
+
+/**
+ * Ping Device
+ * 
+ Pings the reader. If it is connected, returns success, otherwise returns timeout
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_pingDevice;
+
+/**
+ * Device Get DateTime
+ * 
+ Gets the current system date and time of the device for VP3300 and UNIPAYI_V
+ 
+ @param dateTime The date time returned as follows:
+ -byte 0: Year 00-99
+ -byte 1: Month 01-12
+ -byte 2: Day 01-31
+ -byte 3: Hour 00-23
+ -byte 4: Minute 00-59
+ -byte 5: Second 00-59
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_getDateTime:(NSData**)dateTime;
+
+/**
+ * Set Date Time
+ * 
+ Sets the date and time of the device to the current date and time of the iOS device
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) device_setDateTime;
+
+/**
+ * Get DRS Status
+ *
+ Gets the status of DRS(Destructive Reset)
+ 
+ @param codeDRS The data format is [DRS SourceBlk Number] [SourceBlk1] ... [SourceBlkN]
+ [DRS SourceBlk Number] is 2 bytes, formate is NumL NumH. It is the number of [SourceBlkX]
+ [SourceBlkX] is n bytes, format is [SourceID] [SourceLen] [SourceData]
+ [SourceID] is 1 byte
+ [SourceLen] is 1 byte, it is the length of [SourceData]
+ Examples:
+ [SourceID]     [SourceLen]     [SourceData]
+ 00                1                01 – Application Error
+ 01                1                01 – Application Error
+ 02                1                0x01 – EMV L2 Configuration Check Value Error
+ 0x02 – Future Key Check Value Error
+ 10                1                01 – Battery Error
+ 11                1                Bit 0 – Tamper Switch 1 (0-No, 1-Error, string ident = "")
+ Bit 1– Tamper Switch 2 (0-No, 1-Error, string ident = "")
+ Bit 2– Tamper Switch 3 (0-No, 1-Error, string ident = "")
+ Bit 3– Tamper Switch 4 (0-No, 1-Error, string ident = "")
+ Bit 4– Tamper Switch 5 (0-No, 1-Error, string ident = "")
+ Bit 5– Tamper Switch 6 (0-No, 1-Error, string ident = "")
+ 12                1                01 –TemperatureHigh or Low
+ 13                1                01 –Voltage High or Low
+ 1F                4                Reg31~24bits, Reg23~16bits, Reg15~8bits, Reg7~0bits
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_getDRS:(NSData**)codeDRS;
+
+/**
+ * Self Check
+ *
+ If Self-Test function failed, then work into De-activation state
+ If device work into De-activation state, all sensitive data will be erased and it needs to be fixed by manufacturer.
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ 
+ */
+-(RETURN_CODE) device_selfCheck;
 
 /**
  * Is Audio Reader Connected
@@ -213,7 +324,7 @@
  * @param data  Command data (if applicable)
  * @param response  Returns next Command response
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniMagIII::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  *
  */
@@ -228,7 +339,7 @@
  * @param data  Command data (if applicable)
  * @param response  Returns next Command response
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniMagIII::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  *
  */
@@ -251,7 +362,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPay::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) device_setAudioVolume:(float)val;
@@ -272,10 +383,36 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) device_setPassThrough:(BOOL)enablePassThrough;
+
+/**
+ * Reboot Device
+ - NEO2
+ - VP3300
+ -VP8800
+ -UniPayI_V
+ 
+ *
+ Executes a command to restart the device.
+ *
+ 
+ * @return RETURN_CODE:
+ - 0x0000: Success: no error - RETURN_CODE_DO_SUCCESS
+ - 0x0001: Disconnect: no response from reader - RETURN_CODE_ERR_DISCONNECT
+ - 0x0002: Invalid Response: invalid response data - RETURN_CODE_ERR_CMD_RESPONSE
+ - 0x0003: Timeout: time out for task or CMD - RETURN_CODE_ERR_TIMEDOUT
+ - 0x0004: Invalid Parameter: wrong parameter - RETURN_CODE_ERR_INVALID_PARAMETER
+ - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
+ - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
+ - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
+ 
+ */
+
+-(RETURN_CODE) device_rebootDevice;
 
 /**
  * Authenticate Transaction
@@ -298,7 +435,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_authenticateTransaction:(NSData*)tags;
@@ -317,7 +454,7 @@
  - 0x0004: Invalid Parameter: wrong parameter - RETURN_CODE_ERR_INVALID_PARAMETER
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) device_startRKI;
@@ -335,7 +472,7 @@
  
  @param selection Line number in hex (0x01, 0x02), or 'C'/'E' of function key
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_callbackResponseLCD:(int)mode selection:(unsigned char) selection;
@@ -354,7 +491,7 @@
  @param KSN  Key Serial Number. If no pairing and PIN is plaintext, value is nil
  @param PIN PIN data, encrypted.  If no pairing, PIN will be sent plaintext
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_callbackResponsePIN:(EMV_PIN_MODE_Types)mode KSN:(NSData*)KSN PIN:(NSData*)PIN;
@@ -369,7 +506,7 @@
  - 4 = 4C
  - 5 = 5C
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_setTerminalMajorConfiguration:(int)configuration;
 
@@ -382,7 +519,7 @@
  - 4 = 4C
  - 5 = 5C
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_getTerminalMajorConfiguration:(NSUInteger**)configuration;
 
@@ -459,7 +596,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  *
  */
@@ -481,7 +618,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to BTPay::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_removeApplicationData:(NSString*)AID;
@@ -503,7 +640,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_removeCAPK:(NSString*)rid index:(NSString*)index ;
@@ -525,7 +662,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_removeCRLList;
@@ -545,7 +682,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_removeTerminalData;
@@ -566,7 +703,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to BTPay::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_retrieveAIDList:(NSArray**)response;
@@ -621,7 +758,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  
  
@@ -647,7 +784,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  
  */
@@ -681,7 +818,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  
  */
@@ -703,7 +840,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_retrieveCAPKList:(NSArray**)response;
@@ -727,7 +864,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  */
 -(RETURN_CODE) emv_retrieveCRLList:(NSMutableArray**)response;
 
@@ -779,7 +916,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
   */
 -(RETURN_CODE) emv_retrieveTerminalData:(NSDictionary**)responseData;
 
@@ -797,7 +934,7 @@
         "masked" that has the masked tag data, and a NSDictionary with the key "encrypted" that has the
         encrypted tag data
  
- * @return RETURN_CODE:  Values can be parsed with device_getResponseCodeString
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_retrieveTransactionResult:(NSData*)tags retrievedTags:(NSDictionary**)retrievedTags;
@@ -851,7 +988,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setApplicationData:(NSString*)aidName configData:(NSDictionary*)data;
@@ -872,7 +1009,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setCAPK:(CAKey)key;
@@ -891,7 +1028,7 @@
  - Public Key Exponent: Actually, the real length of the exponent is either one byte or 3 bytes. It can have two values: 3 (Format is 0x00 00 00 03), or  65537 (Format is 0x00 01 00 01)
  - Modulus Length: LenL LenH Indicated the length of the next field.
  - Modulus: This is the modulus field of the public key. Its length is specified in the field above.
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setCAPKFile:(NSData*)file;
@@ -916,7 +1053,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setCRLEntries:(NSData*)data;
@@ -972,7 +1109,7 @@
  - 0x0005: MSR Busy: SDK is doing MSR or ICC task - RETURN_CODE_SDK_BUSY_MSR
  - 0x0006: PINPad Busy:  SDK is doing PINPad task - RETURN_CODE_SDK_BUSY_PINPAD
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
- - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
+ - 0x0100 through 0xFFFF refer to IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_setTerminalData:(NSDictionary*)data;
@@ -1004,10 +1141,51 @@
  @param fallback Indicate if it supports fallback to MSR
  
  
- * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) emv_startTransaction:(double)amount amtOther:(double)amtOther type:(int)type timeout:(int)timeout tags:(NSData*)tags forceOnline:(BOOL)forceOnline fallback:(BOOL)fallback;
+
+/**
+ * Remove All Application Data
+ * 
+ Removes all the application data for the EMV kernel
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE)emv_removeAllApplicationData;
+
+/**
+ * Get Kernel Check Value
+ *
+ Polls the device for the Kernel Check Value
+ 
+ @param response Response returned of the Check Value of the Kernel
+ * @return RETURN_CODE: Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVKernelCheckValue:(NSString**)response;
+
+/**
+ * Get EMV Configuration Check Value
+ * 
+ Polls device for the EMV Configuration Check Value
+ 
+ @param response Response returned of the Check Value of the Configuration
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_getEMVConfigurationCheckValue:(NSString**)response;
+
+/**
+ * Callback Response MSR Entry
+ * 
+ Provides MSR information to kernel after a callback was received with type EMV_CALLBACK_MSR
+ 
+ @param MSR Swiped track data
+ 
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ */
+-(RETURN_CODE) emv_callbackResponseMSR:(NSData*)MSR;
 
 
 /**
@@ -1016,7 +1194,7 @@
  *
  * @param response  Returns Serial Number
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPay::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  *
  */
@@ -1105,13 +1283,47 @@ if(readerStatus->cardSeated)
 -(RETURN_CODE) icc_powerOffICC:(NSString**)error;
 
 /**
+ * Get Key format for ICC DUKPT
+ 
+ Specifies how data is being encrypted with Data Key or PIN key
+ 
+ *
+ * @param format  Response return from method:
+ -0x00 : Encrypted card data with TDES if DUKPT Key had been loaded
+ -0x01 : Encrypted card data with AES if DUKPT Key had been loaded
+ -Other Data : No Encryption
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ 
+ *
+ */
+-(RETURN_CODE) icc_getKeyFormatForICCDUKPT:(NSData**)format;
+
+/**
+ * Set Key format for ICC DUKPT
+ 
+ Specifies how data will be encrypted with Data Key or PIN key
+ 
+ *
+ * @param encryption  The type of encryption to be used
+ -0x00 : Encrypted card data with TDES if DUKPT Key had been loaded
+ -0x01 : Encrypted card data with AES if DUKPT Key had been loaded
+ -Other Data : No Encryption
+ 
+ * @return RETURN_CODE:  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
+ 
+ *
+ */
+-(RETURN_CODE) icc_setKeyFormatForICCDUKPT:(NSData*)encryption;
+
+/**
  * Disable MSR Swipe
  
  
  
  Cancels MSR swipe request.
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPay::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  */
 
 -(RETURN_CODE) msr_cancelMSRSwipe;
@@ -1121,7 +1333,7 @@ if(readerStatus->cardSeated)
 /**
  Cancels Transaction request (EMV).
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  */
 
 -(RETURN_CODE) emv_cancelTransaction;
@@ -1131,7 +1343,7 @@ if(readerStatus->cardSeated)
 /**
  Cancels Transaction request (EMV, swipe or CTLS).
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  */
 
 -(RETURN_CODE) device_cancelTransaction;
@@ -1144,7 +1356,7 @@ if(readerStatus->cardSeated)
  Enables MSR, waiting for swipe or tap to occur. If swipe captured, returns IDTMSRData instance to deviceDelegate::swipeMSRData:(). 
  
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPay::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  
  */
@@ -1190,7 +1402,7 @@ Forces the device to reader attached state.
  
  @param tlv TerminalData configuration data
  
- * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP8800::device_getResponseCodeString:()
+ * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_UniPayI_V::device_getResponseCodeString:()
  
  */
 -(RETURN_CODE) ctls_setTerminalData:(NSData*)tlv;

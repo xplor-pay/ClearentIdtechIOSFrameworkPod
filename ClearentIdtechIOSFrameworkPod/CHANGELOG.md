@@ -1,5 +1,106 @@
 # iOS SDK Changelog
 
+## 1.1.166.031
+Fixed timout issue with sendPKUpdate
+Added timeout parameter to API that sends commands
+Added variable to change pkBlockSize to 256, 512 or 1024 bytes
+
+## 1.1.166.030
+Fixed sendPKUpdate for updating firmware using PK packages on NEO3
+
+## 1.1.166.029
+added sendPKUpdate for updating firmware using PK packages on NEO3
+added updateStatus protocol for monitoring PK update progress
+
+## 1.1.166.028
+Fixed crash for when BLE device does not have advertised local name
+Incresed amount of devices shown to the user to as many as detected
+
+## 1.1.166.027
+### 1/9/2022
+NEO3-795 Display Advertised Local Name
+SDK-412 Add command to retrieve Device Tree Version String
+Added command to NEO2 h and m
+Cleaned up project by removing unneeded folders and schemes
+
+## 1.1.166.026
+### 11/22/2022
+Changing UIAlertView to use UIAlertController to clear warning of UIAlertView deprecation
+SVIS-79 Fix for setPassThrough sending incorrect command due to incorrect hex string length sent to hexToData
+Added checks to make sure hex strings sent to hexToData are of the correct length to other methods
+Fixed device_enaBlueLED to process dataCMD like in C#SDK
+Changed voltage reading to have decimal in the second spot if the length of the string is greater than 1
+Corrected header files to direct to appropriate method to get response code from RETURN_CODE
+Removed unneccesary comments that were showing up in doxygen documentation
+Added methods to extract version numbers, and compare version numbers in IDTUtility
+Added new global value for checking if VP3300 FW is higher than a certain version
+SDK-386 If VP3300 FW verion is 1.10.xx, device_startTransaction should operate like NEO2
+SDK-385 Fix for tag storage on device_startTransaction and check for correct callback
+
+## 1.1.166.025
+### 11/1/2022
+Fixed a typo in a log message when a card is inserted during ctls transaction
+When device_transaction is used and then a card is inserted for chip read, it will no longer return an error because emv_startTransaction returns RETURN_CODE_OK_NEXT_COMMMAND instead of RETURN_CODE_DO_SUCCESS, both are considered success
+Fixed setting global tags object when device_startTransaction begins
+
+## 1.1.166.024
+### 9/29/2022
+Added connections from added methods into header file
+Fixed an error causing a crash when using emv_setApplicationData with configData containing spaces
+Added a check to correctly check the type argument in ctls_startTransaction is within the correct range
+Added a way to check if the passed in string contains only valid hex values in hexToData method
+Added a check in hexToData to ensure that passed in string is of the correct length for hex data
+Added new method connections to correct device .h and .m where appropriate
+Added a range check for type and timeout to device_startTransaction
+Added method device_getTransactionResults and connected to header file as well as appropriate devices
+Fixed felica_write to be able to determine and accept 2 and 3 byte blockLists when only one type is used or mixed
+
+## 1.1.166.023
+### 9/22/2022
+Fixed a buffer non-clearing issue for new BT chip VP3300
+Added a missing check for ctls_startTransaction
+Fixed crash when executing setServiceScanFilter
+Fixed crash when executing getMerchantRecord
+Fixed crash when executing setMerchantRecord
+Added methods: device_sendPAE, emv_getEMVKernelVersionEXT, emv_removeAllApplicationData, emv_removeTransactionAmountLog, emv_setException, emv_removeException, emv_removeAllExceptions, emv_retrieveExceptionList, emv_setCRLEntriesIDG, emv_callbackResponseLCD, msr_retrieveWhiteList, msr_getSettings, msr_getClearPANID, msr_getExpirationMask, msr_getSwipeMaskOption, msr_setSetting, msr_setClearPANID, msr_setExpirationMask, msr_setSwipeEncryption, msr_setSwipeForcedEncryptionOption, msr_setSwipeMaskOption, emv_removeCAPKIDG
+Added enums: EMV_LCD_DISPLAY_MODE
+Added connections from added methods into header file
+Fixed typo in method name: device_getDrlReaderRiskPara
+
+## 1.1.166.022
+Added methods: emv_callbackResponseMSR, emv_retrieveCRLList, device_queryFile, device_readFileFromSD, msr_flushTrackData, msr_getConfiguration, msr_setConfiguration, device_getModuleVer
+Added enums to IDTCommon: TRANS_ERROR_CODE, RF_STATE, EXTENDED_STATUS_CODES, CEMV_APP_ERROR_FN, CEMV_APP_ERROR_STATE
+Fixed a few methods to be better inline with Universal SDK
+Fixed iOS 16 Audio Jack route
+
+## 1.1.166.021
+### 8/25/22
+Fixed ctls_startTransaction no response recognition
+
+## 1.1.166.020
+### 7/7/22
+Fixed parsing of VP3350 short packets
+Fixed parsing of VP3350 combined packets
+Fixed Menu Callback for VP3350
+
+## 1.1.166.019
+### 4/21/22
+Restored btServices service filter
+Added method setServiceUUID
+Added method setBLEDeviceTypeVP3300
+
+## 1.1.166.018
+### 3/28/22
+Changed mapping of status byte + 0xee00 to parser level instead of api level
+
+## 1.1.166.017
+### 3/14/22
+Changed deviceMessage to return on main thread without waiting to finish
+
+## 1.1.166.016
+### 3/3/22
+Check if centralmanager is power on state before attempting to scan
+
 ## 1.1.166.015
 ### 12/22/21
 Added fix to allow methods to execute properly within device connected callback
