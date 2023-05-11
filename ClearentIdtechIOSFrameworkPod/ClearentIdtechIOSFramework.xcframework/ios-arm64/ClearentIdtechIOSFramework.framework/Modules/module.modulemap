@@ -5,13 +5,6 @@ framework module ClearentIdtechIOSFramework {
   module * { export * }
 }
 
-framework module IDTech {
-  umbrella header "IDTech.h"
-
-  export *
-  module * { export * }
-}
-
 module ClearentIdtechIOSFramework.Swift {
   header "ClearentIdtechIOSFramework-Swift.h"
   requires objc
