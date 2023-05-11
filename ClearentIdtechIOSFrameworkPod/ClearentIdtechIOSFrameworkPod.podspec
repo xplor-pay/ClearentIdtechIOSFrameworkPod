@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ClearentIdtechIOSFrameworkPod'
-    s.version          = '4.0.95'
+    s.version          = '4.0.96'
     s.summary          = 'Clearent IOS Framework supporting IDTech credit card reader.'
     s.description  = <<-DESC
     This framework lets your app avoid handling credit card data by connecting to a supported IDTech credit card reader and sending the card data to Clearent for processing.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
                          }
 
     s.module_name   = 'ClearentIdtechIOSFramework'
-    
+
     s.swift_version = '5.0'
 
     s.ios.deployment_target = '13.0'
@@ -45,6 +45,7 @@ Pod::Spec.new do |s|
             'VALID_ARCHS' =>'arm64',
             'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
             'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
+            'SWIFT_OBJC_BRIDGING_HEADER' => 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.xcframework/Headers/ClearentIdtechIOSFramework-Swift.h',
             'SKIP_INSTALL' => 'NO'
 }
 
@@ -54,6 +55,7 @@ Pod::Spec.new do |s|
                     'VALID_ARCHS' =>'arm64',
                     'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
                     'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
+                    'SWIFT_OBJC_BRIDGING_HEADER' => 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.xcframework/Headers/ClearentIdtechIOSFramework-Swift.h',
                     'SKIP_INSTALL' => 'NO'
                     }
 
