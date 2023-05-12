@@ -7,7 +7,7 @@
 //
 #import <Foundation/Foundation.h>
 
-#import <IDTech/IDTech.h>
+#import <IDTech/IDT_VP3300.h>
 #import "ClearentConfiguration.h"
 
 typedef enum{
