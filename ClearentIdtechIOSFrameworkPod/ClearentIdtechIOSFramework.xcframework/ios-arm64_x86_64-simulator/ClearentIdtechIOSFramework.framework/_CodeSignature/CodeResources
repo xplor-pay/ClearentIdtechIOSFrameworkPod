@@ -170,7 +170,7 @@
 		</data>
 		<key>Headers/ClearentIdtechIOSFramework.h</key>
 		<data>
-		x+4Jg9fgnvWeMhOtlpLl5oAYpSY=
+		U/pab9hDyymgmCydpZhcrtyideg=
 		</data>
 		<key>Headers/ClearentManualEntry.h</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>Headers/Clearent_VP3300.h</key>
 		<data>
-		K3+wxO69tVHHoIfdUql5rXvtXLo=
+		3XGgRC5PQNKxpB29E1vCPE23J6s=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -282,11 +282,11 @@
 		</data>
 		<key>PrivateHeaders/ClearentDelegate.h</key>
 		<data>
-		XfUbEoCyCSCImJkYfc4pzmv6lmw=
+		+QNYpeGenTXONi6lIHbU1C4Q9nE=
 		</data>
 		<key>PrivateHeaders/ClearentEmvConfigurator.h</key>
 		<data>
-		DmvoolqQrMxee29KA2iLFKv8p8A=
+		8oYMXDAaKqIzaJNTjOTkg2uHqCI=
 		</data>
 		<key>PrivateHeaders/ClearentLogging.h</key>
 		<data>
@@ -614,7 +614,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0yuT+E33dMdZ4+fNJBCp6STosYyCtTc3DvjIqvSd9qI=
+			R7zDW+/lfDpQ8HsM/KCDHoQbFhlWJjXfoCwoc9W2cTo=
 			</data>
 		</dict>
 		<key>Headers/ClearentManualEntry.h</key>
@@ -684,7 +684,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ckrx1WhpCGPrK7qLgGu3YNen+3iyUKinYf7zxdzwN5o=
+			PXYxslTXxfH9nQha53bvWKeVGxhJ8ksBXPS3LO2btas=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
@@ -803,14 +803,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7dwWjgAq49HNTsYAv0JA3PSGnKFrU1v+dG45SA1WIzA=
+			cj6vHtcJGtpCTwxes5Nul4YccRx5AQqSje4YCGY22+8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ClearentEmvConfigurator.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQq/2YT4z/anmlNI73JGsSzkIUuehTsVNmzG/gtkbMM=
+			CeBKzU3AUh0cPeNDDIwdqStwliFWO5E/kmGYt9dCxio=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ClearentLogging.h</key>
