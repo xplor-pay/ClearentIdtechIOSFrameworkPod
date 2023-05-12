@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ClearentIdtechIOSFrameworkPod'
-    s.version          = '4.0.99'
+    s.version          = '4.0.100'
     s.summary          = 'Clearent IOS Framework supporting IDTech credit card reader.'
     s.description  = <<-DESC
     This framework lets your app avoid handling credit card data by connecting to a supported IDTech credit card reader and sending the card data to Clearent for processing.
@@ -21,20 +21,12 @@ Pod::Spec.new do |s|
                            :tag => s.version.to_s
                          }
 
-    s.module_name   = 'ClearentIdtechIOSFramework'
-
-    s.swift_version = '5.0'
-
     s.ios.deployment_target = '13.0'
 
-    s.dependency 'IDTech'
-
-    s.dependency 'CocoaLumberjack'
-
-    s.vendored_frameworks = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.xcframework'
+    s.vendored_frameworks = 'ClearentIdtechIOSFrameworkPod/IDTech.xcframework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.xcframework','ClearentIdtechIOSFrameworkPod/CocoaLumberjack.xcframework'
 
     s.frameworks = 'CFNetwork', 'AudioToolbox','AVFoundation','MediaPlayer','ExternalAccessory'
-   
+
     s.requires_arc = true
 
     s.resource = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechMessages.bundle'
@@ -44,9 +36,10 @@ Pod::Spec.new do |s|
             'ARCHS' => 'arm64 x86_64',
             'VALID_ARCHS' =>'arm64',
             'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+            'DEFINES_MODULE' => 'YES',
             'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
-            'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
-            'SKIP_INSTALL' => 'NO'
+            'SKIP_INSTALL' => 'NO',
+            'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
 }
 
     s.user_target_xcconfig = {'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module' ,
@@ -54,9 +47,10 @@ Pod::Spec.new do |s|
                   'ARCHS' => 'arm64 x86_64',
                     'VALID_ARCHS' =>'arm64',
                     'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+                    'DEFINES_MODULE' => 'YES',
                     'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
-                    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
-                    'SKIP_INSTALL' => 'NO'
+                    'SKIP_INSTALL' => 'NO',
+                    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
                     }
 
 end
