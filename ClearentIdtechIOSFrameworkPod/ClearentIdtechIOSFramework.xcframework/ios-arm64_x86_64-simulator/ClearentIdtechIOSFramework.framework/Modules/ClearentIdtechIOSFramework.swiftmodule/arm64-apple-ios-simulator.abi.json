@@ -5597,6 +5597,339 @@
             "moduleName": "ClearentIdtechIOSFramework"
           },
           {
+            "kind": "Var",
+            "name": "retryTap",
+            "printedName": "retryTap",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearentIdtechIOSFramework.UserAction.Type) -> ClearentIdtechIOSFramework.UserAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction",
+                    "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserAction",
+                        "printedName": "ClearentIdtechIOSFramework.UserAction",
+                        "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26ClearentIdtechIOSFramework10UserActionO8retryTapyA2CmF",
+            "mangledName": "$s26ClearentIdtechIOSFramework10UserActionO8retryTapyA2CmF",
+            "moduleName": "ClearentIdtechIOSFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothConnected",
+            "printedName": "bluetoothConnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearentIdtechIOSFramework.UserAction.Type) -> ClearentIdtechIOSFramework.UserAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction",
+                    "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserAction",
+                        "printedName": "ClearentIdtechIOSFramework.UserAction",
+                        "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26ClearentIdtechIOSFramework10UserActionO18bluetoothConnectedyA2CmF",
+            "mangledName": "$s26ClearentIdtechIOSFramework10UserActionO18bluetoothConnectedyA2CmF",
+            "moduleName": "ClearentIdtechIOSFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "cardInserted",
+            "printedName": "cardInserted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearentIdtechIOSFramework.UserAction.Type) -> ClearentIdtechIOSFramework.UserAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction",
+                    "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserAction",
+                        "printedName": "ClearentIdtechIOSFramework.UserAction",
+                        "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26ClearentIdtechIOSFramework10UserActionO12cardInsertedyA2CmF",
+            "mangledName": "$s26ClearentIdtechIOSFramework10UserActionO12cardInsertedyA2CmF",
+            "moduleName": "ClearentIdtechIOSFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "tapFailedInsertOrSwipe",
+            "printedName": "tapFailedInsertOrSwipe",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearentIdtechIOSFramework.UserAction.Type) -> ClearentIdtechIOSFramework.UserAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction",
+                    "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserAction",
+                        "printedName": "ClearentIdtechIOSFramework.UserAction",
+                        "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26ClearentIdtechIOSFramework10UserActionO22tapFailedInsertOrSwipeyA2CmF",
+            "mangledName": "$s26ClearentIdtechIOSFramework10UserActionO22tapFailedInsertOrSwipeyA2CmF",
+            "moduleName": "ClearentIdtechIOSFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "useChipReader",
+            "printedName": "useChipReader",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearentIdtechIOSFramework.UserAction.Type) -> ClearentIdtechIOSFramework.UserAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction",
+                    "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserAction",
+                        "printedName": "ClearentIdtechIOSFramework.UserAction",
+                        "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26ClearentIdtechIOSFramework10UserActionO13useChipReaderyA2CmF",
+            "mangledName": "$s26ClearentIdtechIOSFramework10UserActionO13useChipReaderyA2CmF",
+            "moduleName": "ClearentIdtechIOSFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "insertCard",
+            "printedName": "insertCard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearentIdtechIOSFramework.UserAction.Type) -> ClearentIdtechIOSFramework.UserAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction",
+                    "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserAction",
+                        "printedName": "ClearentIdtechIOSFramework.UserAction",
+                        "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26ClearentIdtechIOSFramework10UserActionO10insertCardyA2CmF",
+            "mangledName": "$s26ClearentIdtechIOSFramework10UserActionO10insertCardyA2CmF",
+            "moduleName": "ClearentIdtechIOSFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "cardReadError",
+            "printedName": "cardReadError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearentIdtechIOSFramework.UserAction.Type) -> ClearentIdtechIOSFramework.UserAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction",
+                    "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserAction",
+                        "printedName": "ClearentIdtechIOSFramework.UserAction",
+                        "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26ClearentIdtechIOSFramework10UserActionO13cardReadErroryA2CmF",
+            "mangledName": "$s26ClearentIdtechIOSFramework10UserActionO13cardReadErroryA2CmF",
+            "moduleName": "ClearentIdtechIOSFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "failedToReadCardTryInsertSwipe",
+            "printedName": "failedToReadCardTryInsertSwipe",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearentIdtechIOSFramework.UserAction.Type) -> ClearentIdtechIOSFramework.UserAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction",
+                    "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserAction",
+                        "printedName": "ClearentIdtechIOSFramework.UserAction",
+                        "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26ClearentIdtechIOSFramework10UserActionO30failedToReadCardTryInsertSwipeyA2CmF",
+            "mangledName": "$s26ClearentIdtechIOSFramework10UserActionO30failedToReadCardTryInsertSwipeyA2CmF",
+            "moduleName": "ClearentIdtechIOSFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "fallbackToSwipeRequest",
+            "printedName": "fallbackToSwipeRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearentIdtechIOSFramework.UserAction.Type) -> ClearentIdtechIOSFramework.UserAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserAction",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction",
+                    "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearentIdtechIOSFramework.UserAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UserAction",
+                        "printedName": "ClearentIdtechIOSFramework.UserAction",
+                        "usr": "s:26ClearentIdtechIOSFramework10UserActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26ClearentIdtechIOSFramework10UserActionO22fallbackToSwipeRequestyA2CmF",
+            "mangledName": "$s26ClearentIdtechIOSFramework10UserActionO22fallbackToSwipeRequestyA2CmF",
+            "moduleName": "ClearentIdtechIOSFramework"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -20967,17 +21300,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -30066,14 +30399,14 @@
     {
       "filePath": "\/Users\/seth\/Desktop\/azure\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapperEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 3798,
+      "offset": 4778,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/seth\/Desktop\/azure\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapperEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 3798,
+      "offset": 4778,
       "length": 8,
       "value": "1"
     },
