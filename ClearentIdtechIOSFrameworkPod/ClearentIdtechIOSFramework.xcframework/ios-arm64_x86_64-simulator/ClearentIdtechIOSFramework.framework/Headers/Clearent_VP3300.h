@@ -1584,6 +1584,8 @@ If you did not instruct the framework to do any configuration when you initializ
  */
 - (void) setPublicKey:(NSString*)publicKey;
 
+- (void) setVtToken:(NSString*)vtToken;
+
 /**
  *  If you've created a Clearent_VP3300 object and just want to change the offline mode on or off
  */

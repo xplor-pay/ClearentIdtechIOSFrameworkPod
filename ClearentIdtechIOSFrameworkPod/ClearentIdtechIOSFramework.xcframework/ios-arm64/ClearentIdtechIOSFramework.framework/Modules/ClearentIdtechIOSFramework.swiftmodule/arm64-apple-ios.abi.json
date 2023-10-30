@@ -10225,6 +10225,33 @@
           },
           {
             "kind": "Function",
+            "name": "updateVtToken",
+            "printedName": "updateVtToken(vtToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC13updateVtToken02vtG0ySS_tF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC13updateVtToken02vtG0ySS_tF",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "updateWebAuth",
             "printedName": "updateWebAuth(with:)",
             "children": [

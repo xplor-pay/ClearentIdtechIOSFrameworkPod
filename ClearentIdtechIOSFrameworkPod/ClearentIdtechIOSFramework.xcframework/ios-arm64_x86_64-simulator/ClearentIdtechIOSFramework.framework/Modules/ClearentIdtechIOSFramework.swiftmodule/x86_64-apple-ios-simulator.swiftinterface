@@ -255,6 +255,7 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : ClearentIdtechIOSFramewor
   public static var configuration: ClearentIdtechIOSFramework.ClearentWrapperConfiguration!
   final public func initialize(with config: ClearentIdtechIOSFramework.ClearentWrapperConfiguration)
   final public func addRemoteLog(clientSoftwareVersion: Swift.String, message: Swift.String)
+  final public func updateVtToken(vtToken: Swift.String)
   final public func updateWebAuth(with auth: ClearentIdtechIOSFramework.ClearentWebAuth)
   final public func hasWebAuth() -> Swift.Bool
   final public func enableOfflineMode() throws
