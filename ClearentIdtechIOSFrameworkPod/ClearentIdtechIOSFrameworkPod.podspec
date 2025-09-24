@@ -54,6 +54,6 @@ Pod::Spec.new do |s|
                     }
     
     # Dependencies (this is KEY)
-      spec.dependency "CocoaLumberjack", "~> 3.8"
+      s.dependency "CocoaLumberjack", "~> 3.8"
       
 end
