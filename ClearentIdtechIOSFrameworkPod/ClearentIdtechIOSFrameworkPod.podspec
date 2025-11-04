@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
             'DEFINES_MODULE' => 'YES',
             'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
             'SKIP_INSTALL' => 'NO',
-            'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
+            'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
             'SWIFT_EMIT_MODULE_INTERFACE' => 'YES'
 }
 
@@ -51,9 +51,9 @@ Pod::Spec.new do |s|
                     'DEFINES_MODULE' => 'YES',
                     'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
                     'SKIP_INSTALL' => 'NO',
-                    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
+                    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
                     'SWIFT_EMIT_MODULE_INTERFACE' => 'YES'
-                    }
+    }
     
     # Dependencies (this is KEY)
       s.dependency "CocoaLumberjack", "~> 3.8"
