@@ -31,10 +31,6 @@ Pod::Spec.new do |s|
 
     s.resource = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechMessages.bundle'
     
-    s.source_files = "ClearentIdtechIOSFrameworkPod/**/*.{swift,h,m}"
-    
-    s.public_header_files = "ClearentIdtechIOSFrameworkPod/**/*.h"
-    
     s.resources = [
       "ClearentIdtechIOSFrameworkPod/ClearentIdtechMessages.bundle",
       "ClearentIdtechIOSFrameworkPod/**/*.{xib,storyboard,xcassets,bundle}"
