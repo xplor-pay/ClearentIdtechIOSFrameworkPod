@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'ClearentIdtechIOSFrameworkPod'
-    s.version          = '4.0.146'
+    s.version          = '4.0.147'
     s.summary          = 'Clearent IOS Framework supporting IDTech credit card reader.'
     s.description  = <<-DESC
     This framework lets your app avoid handling credit card data by connecting to a supported IDTech credit card reader and sending the card data to Clearent for processing.
@@ -21,41 +21,35 @@ Pod::Spec.new do |s|
                            :tag => s.version.to_s
                          }
 
-    s.ios.deployment_target = '13.0'
+    s.platform         = :ios, "13.0"
+    
+    s.swift_version    = '5.0'
 
     s.vendored_frameworks = 'ClearentIdtechIOSFrameworkPod/IDTech.xcframework','ClearentIdtechIOSFrameworkPod/ClearentIdtechIOSFramework.xcframework'
 
     s.frameworks = 'CFNetwork', 'AudioToolbox','AVFoundation','MediaPlayer','ExternalAccessory'
 
-    s.requires_arc = true
-
     s.resource = 'ClearentIdtechIOSFrameworkPod/ClearentIdtechMessages.bundle'
-
-    s.pod_target_xcconfig = {'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module' ,
-            'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-            'ARCHS' => 'arm64 x86_64',
-            'VALID_ARCHS' =>'arm64',
-            'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
-            'DEFINES_MODULE' => 'YES',
-            'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
-            'SKIP_INSTALL' => 'NO',
-            'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
-            'SWIFT_EMIT_MODULE_INTERFACE' => 'YES'
-}
-
-    s.user_target_xcconfig = {'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module' ,
-                  'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-                  'ARCHS' => 'arm64 x86_64',
-                    'VALID_ARCHS' =>'arm64',
-                    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
-                    'DEFINES_MODULE' => 'YES',
-                    'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
-                    'SKIP_INSTALL' => 'NO',
-                    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
-                    'SWIFT_EMIT_MODULE_INTERFACE' => 'YES'
-    }
     
-    # Dependencies (this is KEY)
-      s.dependency "CocoaLumberjack", "~> 3.8"
+    s.source_files = "ClearentIdtechIOSFrameworkPod/**/*.{swift,h,m}"
+    
+    s.public_header_files = "ClearentIdtechIOSFrameworkPod/**/*.h"
+    
+    s.resources = [
+      "ClearentIdtechIOSFrameworkPod/ClearentIdtechMessages.bundle",
+      "ClearentIdtechIOSFrameworkPod/**/*.{xib,storyboard,xcassets,bundle}"
+    ]
+    
+    s.requires_arc = true
+    
+    s.dependency "CocoaLumberjack", "~> 3.8"
+
+    s.pod_target_xcconfig = {
+        'DEFINES_MODULE' => 'YES',
+        'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
+        'SWIFT_EMIT_MODULE_INTERFACE' => 'YES',
+        'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module',
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+    }
       
 end
