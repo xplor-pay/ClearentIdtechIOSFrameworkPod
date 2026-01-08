@@ -40,8 +40,8 @@ Pod::Spec.new do |s|
     s.pod_target_xcconfig = {
         'DEFINES_MODULE' => 'YES',
         'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module',
-        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
-        'SWIFT_EMIT_MODULE_INTERFACE' => 'YES'
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+        'SWIFT_EMIT_MODULE_INTERFACE' => 'YES',
         'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
     }
       
