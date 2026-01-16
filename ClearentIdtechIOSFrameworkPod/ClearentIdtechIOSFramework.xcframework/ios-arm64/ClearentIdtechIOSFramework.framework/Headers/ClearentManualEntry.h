@@ -12,6 +12,9 @@
 #import "ClearentManualEntryDelegate.h"
 #import "ClearentCard.h"
 
+//#import <ClearentIdtechIOSFramework/ClearentManualEntryDelegate.h>
+//#import <ClearentIdtechIOSFramework/ClearentCard.h>
+
 @interface ClearentManualEntry : NSObject
 
 @property(nonatomic) id<ClearentManualEntryDelegate> clearentManualEntryDelegate;

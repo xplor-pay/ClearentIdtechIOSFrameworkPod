@@ -13,16 +13,41 @@
 #import "ClearentPublicVP3300Delegate.h"
 #import "ClearentPaymentRequest.h"
 #import "ClearentVP3300Configuration.h"
-#import <IDTech/IDTech.h>
+ #import <IDTech/IDTech.h>
 #import "ClearentResponse.h"
 #import "ClearentConnection.h"
+//#import <ClearentIdtechIOSFramework/ClearentPublicVP3300Delegate.h>
+//#import <ClearentIdtechIOSFramework/ClearentPaymentRequest.h>
+//#import <ClearentIdtechIOSFramework/ClearentVP3300Configuration.h>
+////#import <IDTech/IDTech.h>
+//
+//
+//#import <ClearentIdtechIOSFramework/ClearentResponse.h>
+//#import <ClearentIdtechIOSFramework/ClearentConnection.h>
+//#import <CoreBluetooth/CoreBluetooth.h>
+
+
 
 /**
  * Interact with this object as a singleton. Provide a delegate that adheres to the Clearent_Public_IDTech_VP3300_Delegate protocol will allow the framework to send messages to you.
  * The Clearent solution wraps all of the IDTech functionality, allowing it to shield you from interacting with the credit card data. The methods that are available are well documented in the IDTech documentation.
  **/
 
+@protocol ClearentBypassDelegate <NSObject>
+
+/**
+ Called when bypass data is received from the device.
+ */
+- (void)didReceiveBypassData:(NSData *)data;
+
+@end
+
+
+
 @interface Clearent_VP3300 : NSObject
+
++ (void)disableAudioDetection;
+
 @property(nonatomic) SEL callBackSelector;
 
 - (id) init : (id <Clearent_Public_IDTech_VP3300_Delegate>)publicDelegate clearentBaseUrl:(NSString*)clearentBaseUrl publicKey:(NSString*)publicKey
@@ -71,7 +96,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  */
 
--(RETURN_CODE) ctls_cancelTransaction;
+-(NSInteger) ctls_cancelTransaction;
 
 
 
@@ -81,7 +106,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  */
 
--(RETURN_CODE) emv_cancelTransaction;
+-(NSInteger) emv_cancelTransaction;
 
 
 
@@ -91,7 +116,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  */
 
--(RETURN_CODE) device_cancelTransaction;
+-(NSInteger) device_cancelTransaction;
 
 
 /**
@@ -106,7 +131,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  
  */
--(RETURN_CODE) ctls_getConfigurationGroup:(int)group response:(NSDictionary**)response;
+-(NSInteger) ctls_getConfigurationGroup:(int)group response:(NSDictionary**)response;
 
 
 /**
@@ -129,7 +154,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  */
 
--(void) assignBypassDelegate:(id<IDT_VP3300_Delegate>)del;
+-(void) assignBypassDelegate:(id<ClearentBypassDelegate>)del;
 
 
 
@@ -143,7 +168,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) ctls_removeAllCAPK;
+-(NSInteger) ctls_removeAllCAPK;
 
 /**
  * Remove Application Data by AID
@@ -155,7 +180,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) ctls_removeApplicationData:(NSString*)AID;
+-(NSInteger) ctls_removeApplicationData:(NSString*)AID;
 
 /**
  * Remove Certificate Authority Public Key
@@ -167,7 +192,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  
  */
--(RETURN_CODE)  ctls_removeCAPK:(NSData*)capk;
+-(NSInteger)  ctls_removeCAPK:(NSData*)capk;
 
 /**
  * Remove Configuration Group
@@ -179,7 +204,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  
  */
--(RETURN_CODE)  ctls_removeConfigurationGroup:(int)group;
+-(NSInteger)  ctls_removeConfigurationGroup:(int)group;
 
 
 /**
@@ -192,7 +217,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) ctls_retrieveAIDList:(NSArray**)response;
+-(NSInteger) ctls_retrieveAIDList:(NSArray**)response;
 
 /**
  * Retrieve Application Data by AID
@@ -204,7 +229,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  */
--(RETURN_CODE)  ctls_retrieveApplicationData:(NSString*)AID response:(NSDictionary**)response;
+-(NSInteger)  ctls_retrieveApplicationData:(NSString*)AID response:(NSDictionary**)response;
 
 /**
  * Retrieve Certificate Authority Public Key
@@ -223,7 +248,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - Modulus: This is the modulus field of the public key. Its length is specified in the field above.
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  */
--(RETURN_CODE)  ctls_retrieveCAPK:(NSData*)capk key:(NSData**)key;
+-(NSInteger)  ctls_retrieveCAPK:(NSData*)capk key:(NSData**)key;
 
 
 /**
@@ -235,7 +260,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  */
--(RETURN_CODE)  ctls_retrieveCAPKList:(NSArray**)keys;
+-(NSInteger)  ctls_retrieveCAPKList:(NSArray**)keys;
 
 /**
  * Retrieve Terminal Data
@@ -249,7 +274,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  
  */
--(RETURN_CODE)  ctls_retrieveTerminalData:(NSData**)tlv;
+-(NSInteger)  ctls_retrieveTerminalData:(NSData**)tlv;
 
 /**
  * Set Application Data by AID
@@ -266,7 +291,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  
  */
--(RETURN_CODE)  ctls_setApplicationData:(NSData*)tlv;
+-(NSInteger)  ctls_setApplicationData:(NSData*)tlv;
 
 /**
  * Set Certificate Authority Public Key
@@ -285,7 +310,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  
  */
--(RETURN_CODE)  ctls_setCAPK:(NSData*)key;
+-(NSInteger)  ctls_setCAPK:(NSData*)key;
 
 
 /**
@@ -301,7 +326,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) ctls_setConfigurationGroup:(NSData*)tlv;
+-(NSInteger) ctls_setConfigurationGroup:(NSData*)tlv;
 
 
 /**
@@ -317,7 +342,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) ctls_setTerminalData:(NSData*)tlv;
+-(NSInteger) ctls_setTerminalData:(NSData*)tlv;
 
 
 
@@ -368,7 +393,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  *  - - Bit 4-8 : RFU
  *
  */
--(RETURN_CODE) ctls_startTransaction:(double)amount type:(int)type timeout:(int)timeout tags:(NSMutableDictionary *)tags;
+-(NSInteger) ctls_startTransaction:(double)amount type:(int)type timeout:(int)timeout tags:(NSMutableDictionary *)tags;
 
 
 
@@ -384,7 +409,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  */
 
--(RETURN_CODE) ctls_startTransaction;
+-(NSInteger) ctls_startTransaction;
 
 
 
@@ -397,7 +422,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  */
 
 
--(RETURN_CODE) device_cancelConnectToAudioReader;
+-(NSInteger) device_cancelConnectToAudioReader;
 /**
  * Connect To Audio Reader
  * @return RETURN_CODE
@@ -406,7 +431,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  */
 
--(RETURN_CODE) device_connectToAudioReader;
+-(NSInteger) device_connectToAudioReader;
 
 
 /**
@@ -427,7 +452,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_UniPay::device_getResponseCodeString:()
  *
  */
--(RETURN_CODE) device_getFirmwareVersion:(NSString**)response;
+-(NSInteger) device_getFirmwareVersion:(NSString**)response;
 
 
 /**
@@ -516,7 +541,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString().  When no data is available, return code = RETURN_CODE_NO_DATA_AVAILABLE
  *
  */
--(RETURN_CODE)  device_getAutoPollTransactionResults:(IDTEMVData**)result;
+-(NSInteger)  device_getAutoPollTransactionResults:(NSDictionary**)result;
 
 /**
  * Get Response Code String
@@ -547,7 +572,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  @endcode
  */
--(bool) device_isConnected:(IDT_DEVICE_Types)device;
+-(bool) device_isConnected:(NSInteger)device;
 
 /**
  * Send NEO IDG Command
@@ -562,7 +587,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  *
  */
--(RETURN_CODE) device_sendIDGCommand:(unsigned char)command subCommand:(unsigned char)subCommand data:(NSData*)data response:(NSData**)response;
+-(NSInteger) device_sendIDGCommand:(unsigned char)command subCommand:(unsigned char)subCommand data:(NSData*)data response:(NSData**)response;
 
 /**
  * Set Volume To Audio Reader
@@ -584,7 +609,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_UniPay::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) device_setAudioVolume:(float)val;
+-(NSInteger) device_setAudioVolume:(float)val;
 
 /**
  * Set Pass Through
@@ -605,7 +630,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
  
  */
--(RETURN_CODE) device_setPassThrough:(BOOL)enablePassThrough;
+-(NSInteger) device_setPassThrough:(BOOL)enablePassThrough;
 
 
 /**
@@ -618,7 +643,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  */
--(RETURN_CODE)  device_setBurstMode:(int) mode;
+-(NSInteger)  device_setBurstMode:(int) mode;
 
 
 /**
@@ -631,7 +656,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  */
--(RETURN_CODE) device_setPollMode:(int) mode;
+-(NSInteger) device_setPollMode:(int) mode;
 
 
 /**
@@ -651,7 +676,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
  
  */
--(RETURN_CODE) device_startRKI;
+-(NSInteger) device_startRKI;
 
 /**
  * Authenticate Transaction
@@ -678,7 +703,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_authenticateTransaction:(NSData*)tags;
+-(NSInteger) emv_authenticateTransaction:(NSData*)tags;
 /**
  * Callback Response LCD Display
  *
@@ -695,7 +720,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  
  */
--(RETURN_CODE) emv_callbackResponseLCD:(int)mode selection:(unsigned char) selection;
+-(NSInteger) emv_callbackResponseLCD:(int)mode selection:(unsigned char) selection;
 
 /**
  * Callback Response PIN Request
@@ -713,7 +738,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  
  */
--(RETURN_CODE) emv_callbackResponsePIN:(EMV_PIN_MODE_Types)mode KSN:(NSData*)KSN PIN:(NSData*)PIN;
+-(NSInteger) emv_callbackResponsePIN:(NSInteger)mode KSN:(NSData*)KSN PIN:(NSData*)PIN;
 
 /**
  * Complete EMV Transaction Online Request
@@ -757,7 +782,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  
  */
--(RETURN_CODE) emv_completeOnlineEMVTransaction:(BOOL)isSuccess hostResponseTags:(NSData*)tags;
+-(NSInteger) emv_completeOnlineEMVTransaction:(BOOL)isSuccess hostResponseTags:(NSData*)tags;
 
 
 
@@ -791,7 +816,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  *
  */
--(RETURN_CODE) emv_getEMVL2Version:(NSString**)response;
+-(NSInteger) emv_getEMVL2Version:(NSString**)response;
 
 /**
  * Remove Application Data by AID
@@ -812,7 +837,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to BTPay::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_removeApplicationData:(NSString*)AID;
+-(NSInteger) emv_removeApplicationData:(NSString*)AID;
 
 /**
  * Remove Certificate Authority Public Key
@@ -834,7 +859,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_removeCAPK:(NSString*)rid index:(NSString*)index ;
+-(NSInteger) emv_removeCAPK:(NSString*)rid index:(NSString*)index ;
 
 /**
  Sets the terminal major configuration in ICS .
@@ -847,7 +872,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  */
--(RETURN_CODE) emv_setTerminalMajorConfiguration:(int)configuration;
+-(NSInteger) emv_setTerminalMajorConfiguration:(int)configuration;
 
 /**
  Gets the terminal major configuration in ICS .
@@ -860,7 +885,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  */
--(RETURN_CODE) emv_getTerminalMajorConfiguration:(NSUInteger**)configuration;
+-(NSInteger) emv_getTerminalMajorConfiguration:(NSUInteger**)configuration;
 
 
 /**
@@ -880,7 +905,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_removeCRLList;
+-(NSInteger) emv_removeCRLList;
 
 
 /**
@@ -901,7 +926,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_removeTerminalData;
+-(NSInteger) emv_removeTerminalData;
 
 /**
  * Retrieve AID list
@@ -922,7 +947,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to BTPay::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_retrieveAIDList:(NSArray**)response;
+-(NSInteger) emv_retrieveAIDList:(NSArray**)response;
 
 
 /**
@@ -953,7 +978,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  
  */
--(RETURN_CODE) emv_retrieveApplicationData:(NSString*)AID response:(NSDictionary**)responseAID;
+-(NSInteger) emv_retrieveApplicationData:(NSString*)AID response:(NSDictionary**)responseAID;
 
 /**
  * Retrieve Certificate Authority Public Key
@@ -977,7 +1002,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  
  */
--(RETURN_CODE) emv_retrieveCAPK:(NSString*)rid index:(NSString*)index response:(CAKey**)response;
+-(NSInteger) emv_retrieveCAPK:(NSString*)rid index:(NSString*)index response:(NSDictionary**)response;
 
 
 /**
@@ -1011,7 +1036,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  
  */
--(RETURN_CODE) emv_retrieveCAPKFile:(NSString*)rid index:(NSString*)index response:(NSData**)response;
+-(NSInteger) emv_retrieveCAPKFile:(NSString*)rid index:(NSString*)index response:(NSData**)response;
 
 /**
  * Retrieve the Certificate Authority Public Key list
@@ -1032,7 +1057,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_retrieveCAPKList:(NSArray**)response;
+-(NSInteger) emv_retrieveCAPKList:(NSArray**)response;
 
 /**
  * Retrieve the Certificate Revocation List
@@ -1053,7 +1078,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
  - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
  */
--(RETURN_CODE) emv_retrieveCRLList:(NSMutableArray**)response;
+-(NSInteger) emv_retrieveCRLList:(NSMutableArray**)response;
 
 /**
  * Retrieve Terminal Data
@@ -1076,7 +1101,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0007: Unknown:  Unknown error - RETURN_CODE_ERR_OTHER
  - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
  */
--(RETURN_CODE) emv_retrieveTerminalData:(NSDictionary**)responseData;
+-(NSInteger) emv_retrieveTerminalData:(NSDictionary**)responseData;
 
 /**
  * Retrieve Transaction Results
@@ -1099,7 +1124,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_retrieveTransactionResult:(NSData*)tags retrievedTags:(NSDictionary**)retrievedTags;
+-(NSInteger) emv_retrieveTransactionResult:(NSData*)tags retrievedTags:(NSDictionary**)retrievedTags;
 
 /**
  * Set Application Data by AID
@@ -1147,7 +1172,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_setApplicationData:(NSString*)aidName configData:(NSDictionary*)data;
+-(NSInteger) emv_setApplicationData:(NSString*)aidName configData:(NSDictionary*)data;
 
 /**
  * Set Certificate Authority Public Key
@@ -1168,7 +1193,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_setCAPK:(CAKey)key;
+-(NSInteger) emv_setCAPK:(NSDictionary *)key;
 
 /**
  * Set Certificate Authority Public Key
@@ -1187,7 +1212,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  
  */
--(RETURN_CODE) emv_setCAPKFile:(NSData*)file;
+-(NSInteger) emv_setCAPKFile:(NSData*)file;
 
 /**
  * Set Certificate Revocation List
@@ -1212,7 +1237,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_UniPayII::device_getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_setCRLEntries:(NSData*)data;
+-(NSInteger) emv_setCRLEntries:(NSData*)data;
 
 
 
@@ -1262,7 +1287,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  - 0x0100 through 0xFFFF refer to IDT_Device::getResponseCodeString:()
  
  */
--(RETURN_CODE) emv_setTerminalData:(NSDictionary*)data;
+-(NSInteger) emv_setTerminalData:(NSDictionary*)data;
 
 /**
  * Start EMV Transaction Request
@@ -1289,7 +1314,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  
  */
--(RETURN_CODE) emv_startTransaction:(double)amount amtOther:(double)amtOther type:(int)type timeout:(int)timeout tags:(NSData*)tags forceOnline:(BOOL)forceOnline fallback:(BOOL)fallback;
+-(NSInteger) emv_startTransaction:(double)amount amtOther:(double)amtOther type:(int)type timeout:(int)timeout tags:(NSData*)tags forceOnline:(BOOL)forceOnline fallback:(BOOL)fallback;
 
 /**
 * Start EMV (dip and swipe interface only) Transaction Request 
@@ -1300,7 +1325,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
 * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
 
 */
--(RETURN_CODE) emv_startTransaction:(id<ClearentPaymentRequest>) clearentPaymentRequest;
+-(NSInteger) emv_startTransaction:(id<ClearentPaymentRequest>) clearentPaymentRequest;
 
 /**
  * Polls device for Serial Number
@@ -1312,7 +1337,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  *
  */
--(RETURN_CODE) config_getSerialNumber:(NSString**)response;
+-(NSInteger) config_getSerialNumber:(NSString**)response;
 
 /**
  * Exchange APDU (unencrypted)
@@ -1328,7 +1353,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  */
 
--(RETURN_CODE) icc_exchangeAPDU:(NSData*)dataAPDU response:(APDUResponse**)response;
+-(NSInteger) icc_exchangeAPDU:(NSData*)dataAPDU response:(NSDictionary**)response;
 /**
  * Get Reader Status
  *
@@ -1359,7 +1384,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  @endcode
  */
 
--(RETURN_CODE) icc_getICCReaderStatus:(ICCReaderStatus**)readerStatus;
+-(NSInteger) icc_getICCReaderStatus:(NSDictionary**)readerStatus;
 
 /**
  * Power On ICC
@@ -1376,7 +1401,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  
  */
--(RETURN_CODE) icc_powerOnICC:(NSData**)response;
+-(NSInteger) icc_powerOnICC:(NSData**)response;
 
 
 
@@ -1394,7 +1419,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  If Success, empty
  If Failure, ASCII encoded data of error string
  */
--(RETURN_CODE) icc_powerOffICC:(NSString**)error;
+-(NSInteger) icc_powerOffICC:(NSString**)error;
 
 /**
  * Disable MSR Swipe
@@ -1406,7 +1431,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Return codes listed as typedef enum in IDTCommon:RETURN_CODE.  Values can be parsed with IDT_VP3300::device_getResponseCodeString:()
  */
 
--(RETURN_CODE) msr_cancelMSRSwipe;
+-(NSInteger) msr_cancelMSRSwipe;
 
 /**
  * Enable MSR Swipe
@@ -1420,7 +1445,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  
  */
 
--(RETURN_CODE) msr_startMSRSwipe;
+-(NSInteger) msr_startMSRSwipe;
 
 /**
  *Check if device is connected
@@ -1452,7 +1477,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  
  */
--(RETURN_CODE) device_startTransaction:(double)amount amtOther:(double)amtOther type:(int)type timeout:(int)timeout tags:(NSData*)tags forceOnline:(BOOL)forceOnline  fallback:(BOOL)fallback;
+-(NSInteger) device_startTransaction:(double)amount amtOther:(double)amtOther type:(int)type timeout:(int)timeout tags:(NSData*)tags forceOnline:(BOOL)forceOnline  fallback:(BOOL)fallback;
 
 
 /**
@@ -1490,7 +1515,7 @@ __deprecated_msg("use initWithConnectionHandling method instead.");
  * @return RETURN_CODE:  Values can be parsed with errorCode.getErrorString()
  
  */
--(RETURN_CODE) device_startTransaction:(id<ClearentPaymentRequest>) clearentPaymentRequest;
+-(NSInteger) device_startTransaction:(id<ClearentPaymentRequest>) clearentPaymentRequest;
 
 
 /**
@@ -1542,13 +1567,13 @@ If you did not instruct the framework to do any configuration when you initializ
  Inspects the reader configuration to determine if contactless configuration has been applied. Must be connected to reader.
  If you get RETURN_CODE_DO_SUCCESS back then contactless has been configured. RETURN_CODE_ERR_DISCONNECT means the reader is not connected. RETURN_CODE_NO_DATA_AVAILABLE_ is returned when not configured
  */
--(RETURN_CODE) isContactlessConfigured;
+-(NSInteger) isContactlessConfigured;
 
 /**
  Inspects the reader configuration to determine if the reader has been preconfigured. Must be connected to reader.
  If you get RETURN_CODE_DO_SUCCESS back then reader has been preconfigured. RETURN_CODE_ERR_DISCONNECT means the reader is not connected. RETURN_CODE_NO_DATA_AVAILABLE_ is returned when not configured
  */
--(RETURN_CODE) isReaderPreconfigured;
+-(NSInteger) isReaderPreconfigured;
 
 
 /**

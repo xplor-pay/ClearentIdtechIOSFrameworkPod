@@ -11,7 +11,14 @@
 #import "ClearentFeedback.h"
 #import "ClearentBluetoothDevice.h"
 
+//#import <ClearentIdtechIOSFramework/ClearentTransactionToken.h>
+//#import <ClearentIdtechIOSFramework/ClearentFeedback.h>
+//#import <ClearentIdtechIOSFramework/ClearentBluetoothDevice.h>
+
+
 /** Protocol methods established for IDT_UniPayIII class  **/
+//NS_SWIFT_UI_ACTOR
+@class ClearentTransactionToken;
 @protocol Clearent_Public_IDTech_VP3300_Delegate <NSObject>
 
 /**

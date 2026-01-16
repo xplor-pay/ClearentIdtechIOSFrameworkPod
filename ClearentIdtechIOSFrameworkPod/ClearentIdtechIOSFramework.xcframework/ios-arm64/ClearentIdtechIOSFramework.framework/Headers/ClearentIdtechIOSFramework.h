@@ -27,3 +27,25 @@
 
 #import <IDTech/IDTech.h>
 
+//#import <ClearentIdtechIOSFramework/Clearent_VP3300.h>
+//#import <ClearentIdtechIOSFramework/ClearentManualEntry.h>
+//
+//#import <ClearentIdtechIOSFramework/ClearentPublicVP3300Delegate.h>
+//#import <ClearentIdtechIOSFramework/ClearentManualEntryDelegate.h>
+//#import <ClearentIdtechIOSFramework/ClearentCard.h>
+//#import <ClearentIdtechIOSFramework/ClearentPaymentRequest.h>
+//#import <ClearentIdtechIOSFramework/ClearentVP3300Configuration.h>
+//#import <ClearentIdtechIOSFramework/ClearentVP3300Config.h>
+//#import <ClearentIdtechIOSFramework/ClearentPayment.h>
+//#import <ClearentIdtechIOSFramework/ClearentResponse.h>
+//#import <ClearentIdtechIOSFramework/ClearentConnection.h>
+//#import <ClearentIdtechIOSFramework/ClearentTransactionToken.h>
+//#import <ClearentIdtechIOSFramework/ClearentFeedback.h>
+//#import <ClearentIdtechIOSFramework/ClearentBluetoothDevice.h>
+//#import <ClearentIdtechIOSFramework/ClearentDeviceConnector.h>
+//#import <ClearentIdtechIOSFramework/ClearentIDTUtility.h>
+
+//#import <IDTech/IDTech.h>
+//@class IDT_VP3300;
+//@class IDT_Device;
+//@class IDT_BTDevice;
