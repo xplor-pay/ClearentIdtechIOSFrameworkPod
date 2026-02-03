@@ -545,10 +545,12 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework15ClearentWrapper")
 
 @class ClearentTransactionToken;
 @class ClearentFeedback;
+@class ClearentBluetoothDevice;
 @interface ClearentWrapper (SWIFT_EXTENSION(ClearentIdtechIOSFramework)) <Clearent_Public_IDTech_VP3300_Delegate>
-- (void)successTransactionToken:(ClearentTransactionToken * _Null_unspecified)clearentTransactionToken;
-- (void)successOfflineTransactionToken:(NSData * _Null_unspecified)clearentTokenRequestData isTransactionEncrypted:(BOOL)isEncrypted;
-- (void)feedback:(ClearentFeedback * _Null_unspecified)clearentFeedback;
+- (void)successTransactionToken:(ClearentTransactionToken * _Nonnull)clearentTransactionToken;
+- (void)successOfflineTransactionToken:(NSData * _Nullable)clearentTransactionTokenRequestData isTransactionEncrypted:(BOOL)isEncrypted;
+- (void)feedback:(ClearentFeedback * _Nonnull)clearentFeedback;
+- (void)bluetoothDevices:(NSArray<ClearentBluetoothDevice *> * _Nonnull)bluetoothDevices;
 @end
 
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework17ClientInformation")
