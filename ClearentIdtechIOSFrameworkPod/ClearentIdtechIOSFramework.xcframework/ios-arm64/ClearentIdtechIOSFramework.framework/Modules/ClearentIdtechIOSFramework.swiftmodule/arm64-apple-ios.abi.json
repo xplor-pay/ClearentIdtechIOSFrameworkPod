@@ -390,6 +390,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
@@ -1023,6 +1030,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -3854,7 +3868,6 @@
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -3872,14 +3885,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP16didFinishPairingyyYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP16didFinishPairingyyYaF",
+            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP16didFinishPairingyyF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP16didFinishPairingyyF",
             "moduleName": "ClearentIdtechIOSFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -3904,7 +3916,6 @@
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -3943,7 +3954,6 @@
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -3968,7 +3978,6 @@
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -3999,7 +4008,6 @@
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4031,14 +4039,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP26didFindRecentlyUsedReaders7readersySayAA10ReaderInfoVG_tYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP26didFindRecentlyUsedReaders7readersySayAA10ReaderInfoVG_tYaF",
+            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP26didFindRecentlyUsedReaders7readersySayAA10ReaderInfoVG_tF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP26didFindRecentlyUsedReaders7readersySayAA10ReaderInfoVG_tF",
             "moduleName": "ClearentIdtechIOSFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4063,7 +4070,6 @@
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4081,14 +4087,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP26didEncounteredGeneralErroryyYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP26didEncounteredGeneralErroryyYaF",
+            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP26didEncounteredGeneralErroryyF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP26didEncounteredGeneralErroryyF",
             "moduleName": "ClearentIdtechIOSFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4134,14 +4139,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP20didFinishTransaction8response5erroryAA0H8ResponseVSg_AA0A5ErrorCSgtYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP20didFinishTransaction8response5erroryAA0H8ResponseVSg_AA0A5ErrorCSgtYaF",
+            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP20didFinishTransaction8response5erroryAA0H8ResponseVSg_AA0A5ErrorCSgtF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP20didFinishTransaction8response5erroryAA0H8ResponseVSg_AA0A5ErrorCSgtF",
             "moduleName": "ClearentIdtechIOSFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4225,7 +4229,6 @@
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4278,7 +4281,6 @@
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4370,14 +4372,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP16userActionNeeded6actionyAA04UserG0O_tYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP16userActionNeeded6actionyAA04UserG0O_tYaF",
+            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP16userActionNeeded6actionyAA04UserG0O_tF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP16userActionNeeded6actionyAA04UserG0O_tF",
             "moduleName": "ClearentIdtechIOSFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4395,14 +4396,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP21showEncryptionWarningyyYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP21showEncryptionWarningyyYaF",
+            "usr": "s:26ClearentIdtechIOSFramework0A15WrapperProtocolP21showEncryptionWarningyyF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperProtocolP21showEncryptionWarningyyF",
             "moduleName": "ClearentIdtechIOSFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "sugared_genericSig": "<Self where Self : ClearentIdtechIOSFramework.ClearentWrapperProtocol>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4417,7 +4417,6 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "Custom",
           "RawDocComment"
         ],
         "conformances": [
@@ -4781,6 +4780,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -6853,6 +6859,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -7161,6 +7174,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -7371,6 +7391,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -8152,6 +8179,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -8712,1569 +8746,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "ProximityReader",
-        "printedName": "ProximityReader",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayViewModel",
-        "printedName": "TapToPayViewModel",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "alertTitle",
-            "printedName": "alertTitle",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Custom",
-              "ProjectedValueProperty",
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "16.4",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "16.4",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "$alertTitle",
-            "printedName": "$alertTitle",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Publisher",
-                "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
-                "usr": "s:7Combine9PublishedV9PublisherV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "implicit": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Publisher",
-                    "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
-                    "usr": "s:7Combine9PublishedV9PublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Publisher",
-                    "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
-                    "usr": "s:7Combine9PublishedV9PublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "intro_Macosx": "11.0",
-                "intro_iOS": "16.4",
-                "intro_tvOS": "14.0",
-                "intro_watchOS": "7.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_GvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_GvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "intro_Macosx": "11.0",
-                "intro_iOS": "16.4",
-                "intro_tvOS": "14.0",
-                "intro_watchOS": "7.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "alertMessage",
-            "printedName": "alertMessage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Custom",
-              "ProjectedValueProperty",
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "16.4",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "16.4",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "$alertMessage",
-            "printedName": "$alertMessage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Publisher",
-                "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
-                "usr": "s:7Combine9PublishedV9PublisherV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "implicit": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Publisher",
-                    "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
-                    "usr": "s:7Combine9PublishedV9PublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Publisher",
-                    "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
-                    "usr": "s:7Combine9PublishedV9PublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "intro_Macosx": "11.0",
-                "intro_iOS": "16.4",
-                "intro_tvOS": "14.0",
-                "intro_watchOS": "7.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_GvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_GvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "intro_Macosx": "11.0",
-                "intro_iOS": "16.4",
-                "intro_tvOS": "14.0",
-                "intro_watchOS": "7.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapToPayViewModel",
-                "printedName": "ClearentIdtechIOSFramework.TapToPayViewModel",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelCACycfc",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelCACycfc",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "initiateTapToPay",
-            "printedName": "initiateTapToPay()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC08initiatedeF0yyYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC08initiatedeF0yyYaF",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "presentTermsAndConditions",
-            "printedName": "presentTermsAndConditions(tokenData:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC25presentTermsAndConditions9tokenDataySS_tYaKF",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC25presentTermsAndConditions9tokenDataySS_tYaKF",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "configureDevice",
-            "printedName": "configureDevice(tokenData:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC15configureDevice9tokenDataySS_tYaKF",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC15configureDevice9tokenDataySS_tYaKF",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "resetAlert",
-            "printedName": "resetAlert()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10resetAlertyyF",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10resetAlertyyF",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC",
-        "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "16.4",
-        "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Custom"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ObservableObject",
-            "printedName": "ObservableObject",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ObjectWillChangePublisher",
-                "printedName": "ObjectWillChangePublisher",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObservableObjectPublisher",
-                    "printedName": "Combine.ObservableObjectPublisher",
-                    "usr": "s:7Combine25ObservableObjectPublisherC"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7Combine16ObservableObjectP",
-            "mangledName": "$s7Combine16ObservableObjectP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayAuthorizingView",
-        "printedName": "TapToPayAuthorizingView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "16.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayCardView",
-        "printedName": "TapToPayCardView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework16TapToPayCardViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayCardViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework16TapToPayCardViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayCardViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework16TapToPayCardViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayCardViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "16.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayFlowView",
-        "printedName": "TapToPayFlowView",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapToPayFlowView",
-                "printedName": "ClearentIdtechIOSFramework.TapToPayFlowView",
-                "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewVACycfc",
-            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayFlowViewVACycfc",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayFlowViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayFlowViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayFlowViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "16.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayLandingPageView",
-        "printedName": "TapToPayLandingPageView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "16.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayLoadingView",
-        "printedName": "TapToPayLoadingView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "16.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPaySuccessView",
-        "printedName": "TapToPaySuccessView",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(tapToPayVM:amount:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapToPaySuccessView",
-                "printedName": "ClearentIdtechIOSFramework.TapToPaySuccessView",
-                "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TapToPayViewModel",
-                "printedName": "ClearentIdtechIOSFramework.TapToPayViewModel",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV03tapeF2VM6amountAcA0defH5ModelC_SStcfc",
-            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV03tapeF2VM6amountAcA0defH5ModelC_SStcfc",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "16.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -11253,6 +9731,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -12357,8 +10842,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC12startPairing19reconnectIfPossibleySb_tYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC12startPairing19reconnectIfPossibleySb_tYaF",
+            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC12startPairing19reconnectIfPossibleySb_tF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC12startPairing19reconnectIfPossibleySb_tF",
             "moduleName": "ClearentIdtechIOSFramework",
             "declAttributes": [
               "Custom",
@@ -12456,8 +10941,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC17isReaderConnectedSbyYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC17isReaderConnectedSbyYaF",
+            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC17isReaderConnectedSbyF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC17isReaderConnectedSbyF",
             "moduleName": "ClearentIdtechIOSFramework",
             "declAttributes": [
               "Custom",
@@ -13172,34 +11657,6 @@
           },
           {
             "kind": "Function",
-            "name": "handlePairedReaderChange",
-            "printedName": "handlePairedReaderChange(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ReaderInfoChange",
-                "printedName": "ClearentIdtechIOSFramework.ReaderInfoChange",
-                "usr": "s:26ClearentIdtechIOSFramework16ReaderInfoChangeV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC24handlePairedReaderChangeyyAA0g4InfoH0VF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC24handlePairedReaderChangeyyAA0g4InfoH0VF",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Custom",
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "retrieveLoggFileContents",
             "printedName": "retrieveLoggFileContents()",
             "children": [
@@ -13311,9 +11768,8 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "Nonisolated",
-              "AccessControl",
-              "RawDocComment"
+              "Custom",
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -13482,12 +11938,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC13deviceMessageyySSYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC13deviceMessageyySSYaF",
+            "usr": "c:@CM@ClearentIdtechIOSFramework@objc(cs)ClearentWrapper(im)deviceMessage:",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC13deviceMessageyySSF",
             "moduleName": "ClearentIdtechIOSFramework",
+            "objc_name": "deviceMessage:",
             "declAttributes": [
-              "Custom",
               "Final",
+              "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -13505,12 +11963,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC15deviceConnectedyyYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC15deviceConnectedyyYaF",
+            "usr": "c:@CM@ClearentIdtechIOSFramework@objc(cs)ClearentWrapper(im)deviceConnected",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC15deviceConnectedyyF",
             "moduleName": "ClearentIdtechIOSFramework",
+            "objc_name": "deviceConnected",
             "declAttributes": [
-              "Custom",
               "Final",
+              "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -13528,12 +11988,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC18deviceDisconnectedyyYaF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC18deviceDisconnectedyyYaF",
+            "usr": "c:@CM@ClearentIdtechIOSFramework@objc(cs)ClearentWrapper(im)deviceDisconnected",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC18deviceDisconnectedyyF",
             "moduleName": "ClearentIdtechIOSFramework",
+            "objc_name": "deviceDisconnected",
             "declAttributes": [
-              "Custom",
               "Final",
+              "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -16772,6 +15234,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17034,6 +15503,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17146,6 +15622,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17248,6 +15731,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17350,6 +15840,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17452,6 +15949,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17554,6 +16058,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17656,6 +16167,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17758,6 +16276,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17877,7 +16402,6 @@
         "mangledName": "$s26ClearentIdtechIOSFramework0A15WrapperDefaultsC",
         "moduleName": "ClearentIdtechIOSFramework",
         "declAttributes": [
-          "Final",
           "AccessControl"
         ],
         "superclassUsr": "s:26ClearentIdtechIOSFramework23UserDefaultsPersistenceC",
@@ -17900,257 +16424,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ReaderInfoChange",
-        "printedName": "ReaderInfoChange",
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework16ReaderInfoChangeV",
-        "mangledName": "$s26ClearentIdtechIOSFramework16ReaderInfoChangeV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ClearentDefaultsStore",
-        "printedName": "ClearentDefaultsStore",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ClearentDefaultsStore",
-                "printedName": "ClearentIdtechIOSFramework.ClearentDefaultsStore",
-                "usr": "s:26ClearentIdtechIOSFramework0A13DefaultsStoreC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework0A13DefaultsStoreC6sharedACvpZ",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A13DefaultsStoreC6sharedACvpZ",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ClearentDefaultsStore",
-                    "printedName": "ClearentIdtechIOSFramework.ClearentDefaultsStore",
-                    "usr": "s:26ClearentIdtechIOSFramework0A13DefaultsStoreC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A13DefaultsStoreC6sharedACvgZ",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A13DefaultsStoreC6sharedACvgZ",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "getPairedReader",
-            "printedName": "getPairedReader()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ClearentIdtechIOSFramework.ReaderInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ReaderInfo",
-                    "printedName": "ClearentIdtechIOSFramework.ReaderInfo",
-                    "usr": "s:26ClearentIdtechIOSFramework10ReaderInfoV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A13DefaultsStoreC15getPairedReaderAA0H4InfoVSgyF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A13DefaultsStoreC15getPairedReaderAA0H4InfoVSgyF",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updatePairedReader",
-            "printedName": "updatePairedReader(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ReaderInfoChange",
-                "printedName": "ClearentIdtechIOSFramework.ReaderInfoChange",
-                "usr": "s:26ClearentIdtechIOSFramework16ReaderInfoChangeV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ClearentIdtechIOSFramework.ReaderInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ReaderInfo",
-                    "printedName": "ClearentIdtechIOSFramework.ReaderInfo",
-                    "usr": "s:26ClearentIdtechIOSFramework10ReaderInfoV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A13DefaultsStoreC18updatePairedReaderyAA0H10InfoChangeVAA0hI0VSgF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A13DefaultsStoreC18updatePairedReaderyAA0H10InfoChangeVAA0hI0VSgF",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "unownedExecutor",
-            "printedName": "unownedExecutor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UnownedSerialExecutor",
-                "printedName": "_Concurrency.UnownedSerialExecutor",
-                "usr": "s:Sce"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework0A13DefaultsStoreC15unownedExecutorScevp",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A13DefaultsStoreC15unownedExecutorScevp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "implicit": true,
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13.0",
-            "intro_tvOS": "13.0",
-            "intro_watchOS": "6.0",
-            "declAttributes": [
-              "Available",
-              "Available",
-              "Available",
-              "Available",
-              "Final",
-              "Nonisolated",
-              "Semantics"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UnownedSerialExecutor",
-                    "printedName": "_Concurrency.UnownedSerialExecutor",
-                    "usr": "s:Sce"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A13DefaultsStoreC15unownedExecutorScevg",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A13DefaultsStoreC15unownedExecutorScevg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:26ClearentIdtechIOSFramework0A13DefaultsStoreC",
-        "mangledName": "$s26ClearentIdtechIOSFramework0A13DefaultsStoreC",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Actor",
-            "printedName": "Actor",
-            "usr": "s:ScA",
-            "mangledName": "$sScA"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -18179,6 +16452,1569 @@
         "moduleName": "ClearentIdtechIOSFramework",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayAuthorizingView",
+        "printedName": "TapToPayAuthorizingView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayAuthorizingViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "16.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayCardView",
+        "printedName": "TapToPayCardView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework16TapToPayCardViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayCardViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework16TapToPayCardViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayCardViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework16TapToPayCardViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayCardViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "16.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayFlowView",
+        "printedName": "TapToPayFlowView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapToPayFlowView",
+                "printedName": "ClearentIdtechIOSFramework.TapToPayFlowView",
+                "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewVACycfc",
+            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayFlowViewVACycfc",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayFlowViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayFlowViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework16TapToPayFlowViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayFlowViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "16.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayLandingPageView",
+        "printedName": "TapToPayLandingPageView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "16.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayLoadingView",
+        "printedName": "TapToPayLoadingView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "16.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPaySuccessView",
+        "printedName": "TapToPaySuccessView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(tapToPayVM:amount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapToPaySuccessView",
+                "printedName": "ClearentIdtechIOSFramework.TapToPaySuccessView",
+                "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TapToPayViewModel",
+                "printedName": "ClearentIdtechIOSFramework.TapToPayViewModel",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV03tapeF2VM6amountAcA0defH5ModelC_SStcfc",
+            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV03tapeF2VM6amountAcA0defH5ModelC_SStcfc",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "16.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "ProximityReader",
+        "printedName": "ProximityReader",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayViewModel",
+        "printedName": "TapToPayViewModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "alertTitle",
+            "printedName": "alertTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Custom",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvs",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvs",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "16.4",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvM",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10alertTitleSSSgvM",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "16.4",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$alertTitle",
+            "printedName": "$alertTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "implicit": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvs",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_Gvs",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "16.4",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_GvM",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC11$alertTitle7Combine9PublishedV9PublisherVySSSg_GvM",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "16.4",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alertMessage",
+            "printedName": "alertMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Custom",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvs",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvs",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "16.4",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvM",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC12alertMessageSSSgvM",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "16.4",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$alertMessage",
+            "printedName": "$alertMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "implicit": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvs",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_Gvs",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "16.4",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_GvM",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC13$alertMessage7Combine9PublishedV9PublisherVySSSg_GvM",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "16.4",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapToPayViewModel",
+                "printedName": "ClearentIdtechIOSFramework.TapToPayViewModel",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelCACycfc",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelCACycfc",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initiateTapToPay",
+            "printedName": "initiateTapToPay()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC08initiatedeF0yyYaF",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC08initiatedeF0yyYaF",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentTermsAndConditions",
+            "printedName": "presentTermsAndConditions(tokenData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC25presentTermsAndConditions9tokenDataySS_tYaKF",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC25presentTermsAndConditions9tokenDataySS_tYaKF",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureDevice",
+            "printedName": "configureDevice(tokenData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC15configureDevice9tokenDataySS_tYaKF",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC15configureDevice9tokenDataySS_tYaKF",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetAlert",
+            "printedName": "resetAlert()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC10resetAlertyyF",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC10resetAlertyyF",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC",
+        "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "16.4",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
         ]
       },
       {
@@ -18224,6 +18060,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -19515,6 +19358,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -19805,6 +19655,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -20673,6 +20530,13 @@
             "printedName": "_ObjectiveCBridgeableError",
             "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
             "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -21552,6 +21416,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -21885,6 +21756,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -22072,6 +21950,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -24419,6 +24304,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -24595,6 +24487,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -25211,6 +25110,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -28114,6 +28020,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -28439,6 +28352,178 @@
         "name": "ClearentWrapperConfiguration",
         "printedName": "ClearentWrapperConfiguration",
         "children": [
+          {
+            "kind": "Var",
+            "name": "readerInfoReceived",
+            "printedName": "readerInfoReceived",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((ClearentIdtechIOSFramework.ReaderInfo?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ClearentIdtechIOSFramework.ReaderInfo?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "ClearentIdtechIOSFramework.ReaderInfo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ReaderInfo",
+                            "printedName": "ClearentIdtechIOSFramework.ReaderInfo",
+                            "usr": "s:26ClearentIdtechIOSFramework10ReaderInfoV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC18readerInfoReceivedyAA06ReaderG0VSgcSgvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC18readerInfoReceivedyAA06ReaderG0VSgcSgvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ClearentIdtechIOSFramework.ReaderInfo?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ClearentIdtechIOSFramework.ReaderInfo?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "ClearentIdtechIOSFramework.ReaderInfo?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ReaderInfo",
+                                "printedName": "ClearentIdtechIOSFramework.ReaderInfo",
+                                "usr": "s:26ClearentIdtechIOSFramework10ReaderInfoV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC18readerInfoReceivedyAA06ReaderG0VSgcSgvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC18readerInfoReceivedyAA06ReaderG0VSgcSgvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ClearentIdtechIOSFramework.ReaderInfo?) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ClearentIdtechIOSFramework.ReaderInfo?) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "ClearentIdtechIOSFramework.ReaderInfo?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ReaderInfo",
+                                "printedName": "ClearentIdtechIOSFramework.ReaderInfo",
+                                "usr": "s:26ClearentIdtechIOSFramework10ReaderInfoV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC18readerInfoReceivedyAA06ReaderG0VSgcSgvs",
+                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC18readerInfoReceivedyAA06ReaderG0VSgcSgvs",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework0A20WrapperConfigurationC18readerInfoReceivedyAA06ReaderG0VSgcSgvM",
+                "mangledName": "$s26ClearentIdtechIOSFramework0A20WrapperConfigurationC18readerInfoReceivedyAA06ReaderG0VSgcSgvM",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "provideAuthAndMerchantTerminalDetails",
@@ -29243,6 +29328,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -32687,6 +32779,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -32828,6 +32927,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -33703,6 +33809,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
@@ -33869,6 +33982,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }
@@ -33970,7 +34090,7 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6427,
+      "offset": 6344,
       "length": 5,
       "value": "false"
     },
@@ -34159,28 +34279,28 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentReaderRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 1383,
+      "offset": 1364,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentReaderRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 1413,
+      "offset": 1394,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentReaderRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 1636,
+      "offset": 1617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentReaderRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 1909,
+      "offset": 1988,
       "length": 5,
       "value": "false"
     },
@@ -34323,286 +34443,6 @@
       "offset": 531,
       "length": 2,
       "value": "20"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 366,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 478,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 513,
-      "length": 2,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 540,
-      "length": 39,
-      "value": "\"Tap to Pay on iPhone.\nNow available.\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 758,
-      "length": 130,
-      "value": "\"Accept payments from contactless credit and debit cards, Apple Pay, or other contactless payment devices using only your iPhone.\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 1062,
-      "length": 9,
-      "value": "\"#6A6D7D\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1169,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1221,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1254,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1499,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 1630,
-      "length": 29,
-      "value": "\"Enable Tap to Pay on iPhone\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1705,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1912,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1915,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1927,
-      "length": 3,
-      "value": "132"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1931,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1942,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1946,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1990,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2047,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2089,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2219,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 2270,
-      "length": 12,
-      "value": "\"Learn More\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2328,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2385,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2388,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2400,
-      "length": 3,
-      "value": "132"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2404,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2415,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2419,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2474,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2796,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 2857,
-      "length": 19,
-      "value": "\"xmark.circle.fill\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 3169,
-      "length": 84,
-      "value": "\"https:\/\/developer.apple.com\/design\/human-interface-guidelines\/tap-to-pay-on-iphone\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 3498,
-      "length": 12,
-      "value": "\"Tap to Pay\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3552,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 3769,
-      "length": 14,
-      "value": "\"chevron.left\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 3867,
-      "length": 6,
-      "value": "\"Back\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySuccessView.swift",
-      "kind": "StringLiteral",
-      "offset": 329,
-      "length": 8,
-      "value": "\"$20.00\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySuccessView.swift",
-      "kind": "StringLiteral",
-      "offset": 486,
-      "length": 8,
-      "value": "\"$20.00\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/Networking\/HttpClient\/HttpClient.swift",
@@ -36560,42 +36400,42 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentUI\/Scenes\/ClearentProcessingModalPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2111,
+      "offset": 2113,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentUI\/Scenes\/ClearentProcessingModalPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2162,
+      "offset": 2164,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentUI\/Scenes\/ClearentProcessingModalPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3824,
+      "offset": 3826,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentUI\/Scenes\/ClearentProcessingModalPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 4418,
+      "offset": 4420,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentUI\/Scenes\/ClearentProcessingModalPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 15666,
+      "offset": 15759,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentUI\/Scenes\/ClearentProcessingModalPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 28591,
+      "offset": 27990,
       "length": 1,
       "value": "0"
     },
@@ -36997,6 +36837,286 @@
       "offset": 2330,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 366,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 478,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 513,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 540,
+      "length": 39,
+      "value": "\"Tap to Pay on iPhone.\nNow available.\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 758,
+      "length": 130,
+      "value": "\"Accept payments from contactless credit and debit cards, Apple Pay, or other contactless payment devices using only your iPhone.\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 1062,
+      "length": 9,
+      "value": "\"#6A6D7D\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1169,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1221,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1254,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1499,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 1630,
+      "length": 29,
+      "value": "\"Enable Tap to Pay on iPhone\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1705,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1912,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1915,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1927,
+      "length": 3,
+      "value": "132"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1931,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1942,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1946,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1990,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2047,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2089,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2219,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 2270,
+      "length": 12,
+      "value": "\"Learn More\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2328,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2385,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2388,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2400,
+      "length": 3,
+      "value": "132"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2404,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2415,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2419,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2474,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2796,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 2857,
+      "length": 19,
+      "value": "\"xmark.circle.fill\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 3169,
+      "length": 84,
+      "value": "\"https:\/\/developer.apple.com\/design\/human-interface-guidelines\/tap-to-pay-on-iphone\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 3498,
+      "length": 12,
+      "value": "\"Tap to Pay\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3552,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 3769,
+      "length": 14,
+      "value": "\"chevron.left\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 3867,
+      "length": 6,
+      "value": "\"Back\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySuccessView.swift",
+      "kind": "StringLiteral",
+      "offset": 329,
+      "length": 8,
+      "value": "\"$20.00\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySuccessView.swift",
+      "kind": "StringLiteral",
+      "offset": 486,
+      "length": 8,
+      "value": "\"$20.00\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/ReaderInfo.swift",
@@ -37435,7 +37555,7 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapperConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1834,
+      "offset": 2019,
       "length": 5,
       "value": "false"
     },

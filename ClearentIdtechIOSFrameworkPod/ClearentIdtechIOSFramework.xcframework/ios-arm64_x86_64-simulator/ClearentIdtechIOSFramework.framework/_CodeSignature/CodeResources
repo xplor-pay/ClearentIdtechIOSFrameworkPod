@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		I/s04fzq4UZtv9gvWatAlt9MfjA=
+		U9G0alu/GJD5tNaMgY/v65JJjBY=
 		</data>
 		<key>ClearentAnimationWithSubtitle.nib</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>ClearentInfoWithIcon.nib</key>
 		<data>
-		rHR1TYSU+xCM6VegCFfs347696g=
+		Bq4pHW3QIJAbKmgPLYf1KSrPNzk=
 		</data>
 		<key>ClearentLabelSwitch.nib</key>
 		<data>
-		Hx47t4G/G7GWfqNCsgmuIYv59UY=
+		q3OT+LtuzsypPAhxldTn3HWQsh8=
 		</data>
 		<key>ClearentLabelWithButton.nib</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>ClearentManualEntryFormView.nib</key>
 		<data>
-		BMzknu0yF3UzTirkT4CKTXnbZR8=
+		WdASaG61KneP+VO/kgUu+KEEnAM=
 		</data>
 		<key>ClearentOfflineModeReportViewController.nib</key>
 		<data>
-		9TQ0k8O8UwZ6RDkAAP23j7raGGk=
+		okrvo8wHz+Rhkz9KEv0kvLNl+ck=
 		</data>
 		<key>ClearentOfflineResultTableViewCell.nib</key>
 		<data>
-		jef7Q1RrlsV+eNMW4+7+yYAvoKw=
+		m7tI+padiu3PUTsZHOHM+wwK0Ys=
 		</data>
 		<key>ClearentPairingReaderItem.nib</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>ClearentPaymentFieldCell.nib</key>
 		<data>
-		9IT/6iI3dV8ixmqTStbl5TFaF4Q=
+		gFXXSQDGYrMUzBBech5qr5NbtlQ=
 		</data>
 		<key>ClearentPaymentFooterView.nib</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>ClearentPaymentTextField.nib</key>
 		<data>
-		87cJL60vh8ULYfRSspzti9Zdixo=
+		jW0zg3C7ZYjqadCtGc/vg5fK7UE=
 		</data>
 		<key>ClearentPrimaryButton.nib</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>ClearentReadersTableView.nib</key>
 		<data>
-		BCPFeYMo8kRRVVtrJOGlbBOO8xM=
+		4Q2NCxNnUZPK3+tAcqc1Zv2mL2g=
 		</data>
 		<key>ClearentReadersTableViewCell.nib</key>
 		<data>
-		152o+ePrA4g/41NPHcwvMNzzKK4=
+		mP2sD+5+oKdbSWUBsc/T5L/WBsQ=
 		</data>
 		<key>ClearentServiceFeeView.nib</key>
 		<data>
@@ -126,11 +126,11 @@
 		</data>
 		<key>ClearentSignatureView.nib</key>
 		<data>
-		tT09Fy2+i07db7A4KxZYXIfb+WE=
+		K8c4ObJ+P+8G44DNQ2GQuE4NRWM=
 		</data>
 		<key>ClearentTextField.nib</key>
 		<data>
-		cqaxSz29UdEzccQdaFo+q92Ouus=
+		ugQXYa9t5YH2vSCmNkVQbr7HJUg=
 		</data>
 		<key>ClearentTextFieldAndButton.nib</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>ClearentTipOptionView.nib</key>
 		<data>
-		+E6JzEmSOPrDF3sYb9v9O0idQ2E=
+		AQ+iCnixCxeLUmSH1wlPxNnZsuM=
 		</data>
 		<key>ClearentTitleLabel.nib</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Headers/ClearentIdtechIOSFramework-Swift.h</key>
 		<data>
-		IKcZeyi5++4idJAyTiLCmLl+vxg=
+		Eclevf7sP+fNnTeWp3eOJD5Gdps=
 		</data>
 		<key>Headers/ClearentIdtechIOSFramework.h</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NAlXTvN/iQBxeMgA65t+bckmZtc=
+		Y4wtSd3Qvkg0wNKWIANe8zuvjp8=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -226,43 +226,43 @@
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+bJ2RVrwkCPVBD0Si3klevKPikE=
+		8/zlg4O2oYCnpXUpYi5Fip2Mcqo=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		62XOiNXCWpP8sxM2PhFK3mSr+e0=
+		c5Y0euwUcTsJqQge2QyI7y4FChE=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1/H3W53oyjhEKSJ4nk4KvW9VrYo=
+		x0Jsp3Gofwo9qNGg/B4v7HYkhjg=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		62XOiNXCWpP8sxM2PhFK3mSr+e0=
+		c5Y0euwUcTsJqQge2QyI7y4FChE=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zZtK70Zbcya7O3oFFEL+YlWRX2Q=
+		WsufGC9cUYY8b3oi+WQVSYTaSR8=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+bJ2RVrwkCPVBD0Si3klevKPikE=
+		8/zlg4O2oYCnpXUpYi5Fip2Mcqo=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FIZGIwR1E8Et+s6RFD8epjZUr6o=
+		jcT7KVIb27lXsNJmKqInKqC7V9k=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		VE2kU65JgOnDkCFgxOLR/WSYqO0=
+		E/fI0zBQA0nld7H+RfoCKDJuYjE=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FIZGIwR1E8Et+s6RFD8epjZUr6o=
+		jcT7KVIb27lXsNJmKqInKqC7V9k=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ko9H6D2zSWEo2YqUD/zcO5ZvaRU=
+		s0CohxjNmq7wsCYOgN9IYKV7wxo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -338,7 +338,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zkxPQUvlVSCvwJy6WsyayJjmR8k/Ll7RWZ6FSqw4oyo=
+			gYuFqRiqr/lFxkvvibXlMtmEY6BpBBncGYmBv4xlzjw=
 			</data>
 		</dict>
 		<key>ClearentAnimationWithSubtitle.nib</key>
@@ -373,14 +373,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			feydpnOWYu50J8aSyOcCQhVWoeaLttg27RAqA1c1YcU=
+			4zjCln3K/IpBUDeK4WUVKZWVUOslZBEyj1eVtkGMJTU=
 			</data>
 		</dict>
 		<key>ClearentLabelSwitch.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ipxZiPU+dKJ4EuG72dhaPKIQ5Vzs3iq3bLbBchwbpvk=
+			BHkgiak9TZS6cGjJUIsvGBuyRoo/Va+M38+SN5LFq+I=
 			</data>
 		</dict>
 		<key>ClearentLabelWithButton.nib</key>
@@ -415,21 +415,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BYIAi1EJrx0Cz4i/7+ILYbWvTGfM0cWyzofQUyIHBYM=
+			hregSqMaBJ6JtcYQshIMUohymU/yjTrvuIOGX0FrHVc=
 			</data>
 		</dict>
 		<key>ClearentOfflineModeReportViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uq86g1q2VNDX+ASfxIuNj0vRNcOx0TqaPD62R5lNxCs=
+			J5PGXmw630q5sZ8lpzeP5RvMceSVm0BLe/UYX8RHc5w=
 			</data>
 		</dict>
 		<key>ClearentOfflineResultTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zeEpUHAYs2wqSHOA4J1mVpEFOMl1m3GelHl75OP+pjQ=
+			56tYWbc9OtWoka0l6oDPZBIXazHAlfzeU3U7D9lpyxU=
 			</data>
 		</dict>
 		<key>ClearentPairingReaderItem.nib</key>
@@ -443,7 +443,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qkfMojAJ5S02ePXXTVLfUXMNp8lkdEpW70pOdZo3Whk=
+			0tisaX9csIC/1TBE3MhC8yfoRnFIV6bZ7iyd9uuFpGk=
 			</data>
 		</dict>
 		<key>ClearentPaymentFooterView.nib</key>
@@ -471,7 +471,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lfan+uPGSvODIPgykbkKFtXZ1D2thXov+pU6uvyeVRc=
+			EIcPw5kgPTInUmfp2yv74KWW3elIf55gkgPHTfpLMzA=
 			</data>
 		</dict>
 		<key>ClearentPrimaryButton.nib</key>
@@ -513,14 +513,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gWhFfyTQaw2ctP4vbSmevp9rlzSaD06GiWWw5TyDWyM=
+			ByoC5TLN7DDTmuM8IUSulGqoEvvQZ1nK+96SJjxFXCQ=
 			</data>
 		</dict>
 		<key>ClearentReadersTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GuRHE+dKcZ7sQEYzaD0kCu+V1Zd2Ypj7wNaQcLvLMgk=
+			ozGjyTRzmbeZzUy9bGUeKai968ASui1p/rkV18DFmM0=
 			</data>
 		</dict>
 		<key>ClearentServiceFeeView.nib</key>
@@ -541,14 +541,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lNKvq2HrFSrifWL1IldA2f0SHKvtrKOe2Avzssu0BJc=
+			m4pnzYEEUhLPCp65CG5y0KGh6Eqy6CqushVcs7pMgEQ=
 			</data>
 		</dict>
 		<key>ClearentTextField.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EPCkxJ7maCpuXZO0wCIJ8D8PtLQSu0+ttEM2ksv/MHM=
+			8hplIksr7gh8j9n4ILT1U96PA6APVUZusrD9J8MNeq8=
 			</data>
 		</dict>
 		<key>ClearentTextFieldAndButton.nib</key>
@@ -562,7 +562,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+UIZmmpBvvf/CQwh+a6Cx50iHIB4T+1RhuOMQBAsrEs=
+			ab19jJ/fp4GRO6HWZeH09QgOqF/Mtoi0B7u+iP1o53Q=
 			</data>
 		</dict>
 		<key>ClearentTitleLabel.nib</key>
@@ -618,7 +618,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y0IN7zGRGLAPzJDQzpsNrw3WS59kEcfsFIfISmNxyd8=
+			7zJCJXz2sfmCLh4ACmIyqHtQFkhfoRL3agdIXEurmxE=
 			</data>
 		</dict>
 		<key>Headers/ClearentIdtechIOSFramework.h</key>
@@ -709,70 +709,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gORzg5rWEkUS5IWi1uCP14Dsp+1tQnNBdrfqHrbt3r0=
+			Z5StZQBcspXo1aJjTror89htvu3MPH+k9sYjuG4h04w=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e22ChBZs/NT23OWlXiIgKw2nMEHhBFDbuz3RN4qj6R8=
+			vVSxDlp9rQew0J9thc1bSNx1RoN39t/+z2UQqPF7KN4=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UNXLWV/ipxEVhUOuKivLuKg2aT1EihQQ4qpmUp7ae2E=
+			aUAyqMeV9JJ5nyKwashMk2HIo4lGQyFpAf8uYf05mBA=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e22ChBZs/NT23OWlXiIgKw2nMEHhBFDbuz3RN4qj6R8=
+			vVSxDlp9rQew0J9thc1bSNx1RoN39t/+z2UQqPF7KN4=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OXyNo4H22xhUrryi9rZQcyc+69x+8qiYLjsBWHeOW6E=
+			M1wlcFIIW4y9yzvZIYGLL+THSpCxRw914YMvquiFy9I=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gORzg5rWEkUS5IWi1uCP14Dsp+1tQnNBdrfqHrbt3r0=
+			Z5StZQBcspXo1aJjTror89htvu3MPH+k9sYjuG4h04w=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RBdvB05IsUPdPDDWplu7iqcIpEkddapmPMZDkj/5dhE=
+			849zf2hECvbp9LVv9NIoGCUvAJvSU121/719SMmMxe4=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sEVP+IY3HJ23Cwvdy9ddRB4+4V889XhrqccRCn86ZSw=
+			BKsm/DihgAN94l9zmvbiU4szHX4AdefU7Ol6wNkmf0E=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RBdvB05IsUPdPDDWplu7iqcIpEkddapmPMZDkj/5dhE=
+			849zf2hECvbp9LVv9NIoGCUvAJvSU121/719SMmMxe4=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GhdNBr029Do2jCKIu23iIc6sYrjxIf9WyIxF43pyinQ=
+			HOxh3uigxyNAw9ERMhTFXh/iVVhJIl5TsYp5BXi9y4s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
