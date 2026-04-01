@@ -11077,9 +11077,38 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TransactionResponse",
-                "printedName": "ClearentIdtechIOSFramework.TransactionResponse",
-                "usr": "s:26ClearentIdtechIOSFramework19TransactionResponseV"
+                "name": "Tuple",
+                "printedName": "(ClearentIdtechIOSFramework.TransactionResponse?, ClearentIdtechIOSFramework.ClearentError?)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ClearentIdtechIOSFramework.TransactionResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactionResponse",
+                        "printedName": "ClearentIdtechIOSFramework.TransactionResponse",
+                        "usr": "s:26ClearentIdtechIOSFramework19TransactionResponseV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ClearentIdtechIOSFramework.ClearentError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClearentError",
+                        "printedName": "ClearentIdtechIOSFramework.ClearentError",
+                        "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
               },
               {
                 "kind": "TypeNominal",
@@ -11095,8 +11124,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC15saleTransaction3jwt0E6EntityAA0F8ResponseVSS_AA04SaleH0VtYaKF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC15saleTransaction3jwt0E6EntityAA0F8ResponseVSS_AA04SaleH0VtYaKF",
+            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC15saleTransaction3jwt0E6EntityAA0F8ResponseVSg_AA0A5ErrorCSgtSS_AA04SaleH0VtYaKF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC15saleTransaction3jwt0E6EntityAA0F8ResponseVSg_AA0A5ErrorCSgtSS_AA04SaleH0VtYaKF",
             "moduleName": "ClearentIdtechIOSFramework",
             "declAttributes": [
               "Custom",
@@ -34454,7 +34483,7 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/ClearentIdtechIOSFramework\/ClearentIdtechIOSFramework\/ClearentWrapper\/Networking\/HttpClient\/HttpClient.swift",
       "kind": "Dictionary",
-      "offset": 3011,
+      "offset": 3035,
       "length": 3,
       "value": "[]"
     },

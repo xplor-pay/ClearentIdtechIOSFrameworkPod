@@ -333,7 +333,9 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : @preconcurrency ClearentI
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func startTransaction(with saleEntity: ClearentIdtechIOSFramework.SaleEntity, isManualTransaction: Swift.Bool) async -> ClearentIdtechIOSFramework.ClearentError?
   #endif
-  @_Concurrency.MainActor final public func saleTransaction(jwt: Swift.String, saleEntity: ClearentIdtechIOSFramework.SaleEntity) async throws -> ClearentIdtechIOSFramework.TransactionResponse
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public func saleTransaction(jwt: Swift.String, saleEntity: ClearentIdtechIOSFramework.SaleEntity) async throws -> (ClearentIdtechIOSFramework.TransactionResponse?, ClearentIdtechIOSFramework.ClearentError?)
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func sendSignatureWithImage(image: UIKit.UIImage, completion: @escaping (ClearentIdtechIOSFramework.SignatureResponse?, ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)
   #endif
