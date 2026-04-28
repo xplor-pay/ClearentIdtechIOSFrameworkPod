@@ -507,17 +507,8 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework28ClearentWrapperConfiguration")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSData;
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework30ClearentUIManagerConfiguration")
 @interface ClearentUIManagerConfiguration : ClearentWrapperConfiguration
-/// @param baseURL, required parameter that needs to point either to prod - gateway.clearent.net or sandbox - gateway-sb.clearent.net.
-/// @param apiKey, used for API authentication. This parameter can be nil as long as web authentication is used: ClearenwtWrapper.shared.updateWebAuth(…)
-/// @publicKey, if not passed, publicKey will be fetched from the web everytime a transaction is being made
-/// @offlineModeEncryptionKeyData, the key used to encrypt the offline transactions. If not passed, offline mode feature is not available
-/// @enableEnhancedMessaging, enables or disables the use of enhanced messages
-/// @tipAmounts, an array of tip percentages the client can select from during the payment process
-/// @signatureEnabled, if true, a screen will be displayed during the payment process where the client can draw the signature
-- (nonnull instancetype)initWithBaseURL:(NSString * _Nonnull)baseURL apiKey:(NSString * _Nullable)apiKey publicKey:(NSString * _Nullable)publicKey offlineModeEncryptionKeyData:(NSData * _Nullable)offlineModeEncryptionKeyData enableEnhancedMessaging:(BOOL)enableEnhancedMessaging tipAmounts:(NSArray<NSNumber *> * _Nonnull)tipAmounts signatureEnabled:(BOOL)signatureEnabled OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework15ClearentWebAuth")
@@ -537,6 +528,7 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework15ClearentWrapper")
 @end
 
 @class ClearentTransactionToken;
+@class NSData;
 @class ClearentFeedback;
 @class ClearentBluetoothDevice;
 @interface ClearentWrapper (SWIFT_EXTENSION(ClearentIdtechIOSFramework)) <Clearent_Public_IDTech_VP3300_Delegate>
@@ -1106,17 +1098,8 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework28ClearentWrapperConfiguration")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSData;
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework30ClearentUIManagerConfiguration")
 @interface ClearentUIManagerConfiguration : ClearentWrapperConfiguration
-/// @param baseURL, required parameter that needs to point either to prod - gateway.clearent.net or sandbox - gateway-sb.clearent.net.
-/// @param apiKey, used for API authentication. This parameter can be nil as long as web authentication is used: ClearenwtWrapper.shared.updateWebAuth(…)
-/// @publicKey, if not passed, publicKey will be fetched from the web everytime a transaction is being made
-/// @offlineModeEncryptionKeyData, the key used to encrypt the offline transactions. If not passed, offline mode feature is not available
-/// @enableEnhancedMessaging, enables or disables the use of enhanced messages
-/// @tipAmounts, an array of tip percentages the client can select from during the payment process
-/// @signatureEnabled, if true, a screen will be displayed during the payment process where the client can draw the signature
-- (nonnull instancetype)initWithBaseURL:(NSString * _Nonnull)baseURL apiKey:(NSString * _Nullable)apiKey publicKey:(NSString * _Nullable)publicKey offlineModeEncryptionKeyData:(NSData * _Nullable)offlineModeEncryptionKeyData enableEnhancedMessaging:(BOOL)enableEnhancedMessaging tipAmounts:(NSArray<NSNumber *> * _Nonnull)tipAmounts signatureEnabled:(BOOL)signatureEnabled OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework15ClearentWebAuth")
@@ -1136,6 +1119,7 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework15ClearentWrapper")
 @end
 
 @class ClearentTransactionToken;
+@class NSData;
 @class ClearentFeedback;
 @class ClearentBluetoothDevice;
 @interface ClearentWrapper (SWIFT_EXTENSION(ClearentIdtechIOSFramework)) <Clearent_Public_IDTech_VP3300_Delegate>
