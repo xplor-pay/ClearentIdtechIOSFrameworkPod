@@ -42,7 +42,10 @@
 
 @end
 
-
+typedef NS_ENUM(NSInteger, ClearentRemoteLogLevel) {
+    ClearentRemoteLogLevelInfo  = 0,
+    ClearentRemoteLogLevelError = 1
+};
 
 @interface Clearent_VP3300 : NSObject
 
@@ -1581,6 +1584,12 @@ If you did not instruct the framework to do any configuration when you initializ
  * some identification, preferably the name and version of your solution, and a brief log message.
  */
 - (void) addRemoteLogRequest:(NSString*) clientSoftwareVersion message:(NSString*) message;
+
+/**
+ * The Clearent solution includes remote logging to aid in support calls. If you want to contribute to these logs pass us
+ * some identification, preferably the name and version of your solution, and a brief log message.
+ */
+- (void) addRemoteLogRequest:(NSString*) clientSoftwareVersion level :(ClearentRemoteLogLevel) level message:(NSString*) message;
 
 
 /**

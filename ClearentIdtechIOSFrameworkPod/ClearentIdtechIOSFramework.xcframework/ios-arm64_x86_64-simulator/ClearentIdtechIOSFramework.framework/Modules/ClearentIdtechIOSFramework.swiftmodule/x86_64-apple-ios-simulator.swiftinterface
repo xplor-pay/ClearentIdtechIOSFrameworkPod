@@ -256,8 +256,18 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : @preconcurrency ClearentI
   @_Concurrency.MainActor final public var cardReaderPaymentIsPreffered: Swift.Bool
   @_Concurrency.MainActor final public var useManualPaymentAsFallback: Swift.Bool?
   @_Concurrency.MainActor public static var configuration: ClearentIdtechIOSFramework.ClearentWrapperConfiguration!
+  @objc public enum RemoteLogLevel : Swift.Int {
+    case info = 0
+    case error = 1
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
   @_Concurrency.MainActor final public func initialize(with config: ClearentIdtechIOSFramework.ClearentWrapperConfiguration)
   @_Concurrency.MainActor final public func addRemoteLog(clientSoftwareVersion: Swift.String, message: Swift.String)
+  @_Concurrency.MainActor final public func addRemoteLog(clientSoftwareVersion: Swift.String, level: ClearentIdtechIOSFramework.ClearentWrapper.RemoteLogLevel = .info, message: Swift.String)
   @_Concurrency.MainActor final public func updateVtToken(vtToken: Swift.String)
   @_Concurrency.MainActor final public func updateWebAuth(with auth: ClearentIdtechIOSFramework.ClearentWebAuth)
   @_Concurrency.MainActor final public func hasWebAuth() -> Swift.Bool
@@ -336,7 +346,8 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : @preconcurrency ClearentI
   public var shipping: ClearentIdtechIOSFramework.ClientInformation?
   public var softwareType: Swift.String?
   public var webAuth: ClearentIdtechIOSFramework.ClearentWebAuth?
-  @objc public init(amount: Swift.Double, customerID: Swift.String? = nil, invoice: Swift.String? = nil, orderID: Swift.String? = nil, billing: ClearentIdtechIOSFramework.ClientInformation? = nil, shipping: ClearentIdtechIOSFramework.ClientInformation? = nil, softwareType: Swift.String? = nil, webAuth: ClearentIdtechIOSFramework.ClearentWebAuth? = nil)
+  public var softwareTypeVersion: Swift.String?
+  @objc public init(amount: Swift.Double, customerID: Swift.String? = nil, invoice: Swift.String? = nil, orderID: Swift.String? = nil, billing: ClearentIdtechIOSFramework.ClientInformation? = nil, shipping: ClearentIdtechIOSFramework.ClientInformation? = nil, softwareType: Swift.String? = nil, webAuth: ClearentIdtechIOSFramework.ClearentWebAuth? = nil, softwareTypeVersion: Swift.String? = nil)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ClearentHintView : ClearentIdtechIOSFramework.ClearentMarginableView {
@@ -599,81 +610,81 @@ extension ClearentIdtechIOSFramework.ClearentDefaultHttpClient {
 }
 public protocol CodableProtocol : Swift.Decodable, Swift.Encodable {
 }
-@available(iOS 16.4, *)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ClearentRoundedCornersStackView : ClearentIdtechIOSFramework.ClearentAdaptiveStackView {
+  @objc deinit
+}
+@available(iOS 15.4, *)
 @_Concurrency.MainActor @preconcurrency public struct TapToPayErrorView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(tapToPayVM: ClearentIdtechIOSFramework.TapToPayViewModel)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @available(iOS 16.4, *)
+  @available(iOS 15.4, *)
   public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvp", 0) __
 }
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 @_Concurrency.MainActor @preconcurrency public struct TapToPayLandingPageView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @available(iOS 16.4, *)
+  @available(iOS 15.4, *)
   public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp", 0) __
 }
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 @_Concurrency.MainActor @preconcurrency public struct TapToPayLoadingView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @available(iOS 16.4, *)
+  @available(iOS 15.4, *)
   public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp", 0) __
 }
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 @_Concurrency.MainActor @preconcurrency public struct TapToPayRootView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, onDismiss: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @available(iOS 16.4, *)
+  @available(iOS 15.4, *)
   public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvp", 0) __
 }
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 @_Concurrency.MainActor @preconcurrency public struct TapToPaySuccessView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(tapToPayVM: ClearentIdtechIOSFramework.TapToPayViewModel)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @available(iOS 16.4, *)
+  @available(iOS 15.4, *)
   public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp", 0) __
 }
-@_hasMissingDesignatedInitializers @available(iOS 16.4, *)
+@_hasMissingDesignatedInitializers @available(iOS 15.4, *)
 @_Concurrency.MainActor public class TapToPayViewModel : Foundation.ObservableObject {
   @Combine.Published<Swift.String?> @_projectedValueProperty($alertTitle) @_Concurrency.MainActor public var alertTitle: Swift.String? {
     get
-    @available(iOS 16.4, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    @available(iOS 15.4, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
-    @available(iOS 16.4, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    @available(iOS 15.4, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
   @_Concurrency.MainActor public var $alertTitle: Combine.Published<Swift.String?>.Publisher {
     get
-    @available(iOS 16.4, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    @available(iOS 15.4, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
   @Combine.Published<Swift.String?> @_projectedValueProperty($alertMessage) @_Concurrency.MainActor public var alertMessage: Swift.String? {
     get
-    @available(iOS 16.4, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    @available(iOS 15.4, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
-    @available(iOS 16.4, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    @available(iOS 15.4, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
   @_Concurrency.MainActor public var $alertMessage: Combine.Published<Swift.String?>.Publisher {
     get
-    @available(iOS 16.4, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    @available(iOS 15.4, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
   @_Concurrency.MainActor public func resetAlert()
-  @available(iOS 16.4, *)
+  @available(iOS 15.4, *)
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ClearentRoundedCornersStackView : ClearentIdtechIOSFramework.ClearentAdaptiveStackView {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class ClearentUIBrandConfigurator : @unchecked Swift.Sendable {
@@ -894,21 +905,24 @@ extension ClearentIdtechIOSFramework.OfflineModeState : Swift.Equatable {}
 extension ClearentIdtechIOSFramework.OfflineModeState : Swift.Hashable {}
 extension ClearentIdtechIOSFramework.OfflineModeState : Swift.RawRepresentable {}
 extension ClearentIdtechIOSFramework.ClearentWrapper : Swift.Sendable {}
+extension ClearentIdtechIOSFramework.ClearentWrapper.RemoteLogLevel : Swift.Equatable {}
+extension ClearentIdtechIOSFramework.ClearentWrapper.RemoteLogLevel : Swift.Hashable {}
+extension ClearentIdtechIOSFramework.ClearentWrapper.RemoteLogLevel : Swift.RawRepresentable {}
 extension ClearentIdtechIOSFramework.ClearentErrorType : Swift.Equatable {}
 extension ClearentIdtechIOSFramework.ClearentErrorType : Swift.Hashable {}
 extension ClearentIdtechIOSFramework.ClearentErrorType : Swift.RawRepresentable {}
 extension ClearentIdtechIOSFramework.ClearentApplicationOrientation : Swift.Sendable {}
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 extension ClearentIdtechIOSFramework.TapToPayErrorView : Swift.Sendable {}
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 extension ClearentIdtechIOSFramework.TapToPayLandingPageView : Swift.Sendable {}
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 extension ClearentIdtechIOSFramework.TapToPayLoadingView : Swift.Sendable {}
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 extension ClearentIdtechIOSFramework.TapToPayRootView : Swift.Sendable {}
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 extension ClearentIdtechIOSFramework.TapToPaySuccessView : Swift.Sendable {}
-@available(iOS 16.4, *)
+@available(iOS 15.4, *)
 extension ClearentIdtechIOSFramework.TapToPayViewModel : Swift.Sendable {}
 extension ClearentIdtechIOSFramework.OfflineTransactionType : Swift.Equatable {}
 extension ClearentIdtechIOSFramework.OfflineTransactionType : Swift.Hashable {}

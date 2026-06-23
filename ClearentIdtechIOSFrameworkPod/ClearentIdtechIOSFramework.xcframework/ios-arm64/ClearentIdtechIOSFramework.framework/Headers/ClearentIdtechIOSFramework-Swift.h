@@ -588,6 +588,12 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework15ClearentWrapper")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Swift-friendly remote log level. Mirrors the Obj-C <code>ClearentRemoteLogLevel</code>.
+typedef SWIFT_ENUM(NSInteger, RemoteLogLevel, open) {
+  RemoteLogLevelInfo = 0,
+  RemoteLogLevelError = 1,
+};
+
 @interface ClearentWrapper (SWIFT_EXTENSION(ClearentIdtechIOSFramework)) <ClearentManualEntryDelegate>
 - (void)handleManualEntryError:(NSString * _Nullable)message;
 @end
@@ -633,7 +639,7 @@ SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework27OfflinePromptViewController")
 /// This class holds the necessary properties needed to initiate a payment request.
 SWIFT_CLASS("_TtC26ClearentIdtechIOSFramework11PaymentInfo")
 @interface PaymentInfo : NSObject
-- (nonnull instancetype)initWithAmount:(double)amount customerID:(NSString * _Nullable)customerID invoice:(NSString * _Nullable)invoice orderID:(NSString * _Nullable)orderID billing:(ClientInformation * _Nullable)billing shipping:(ClientInformation * _Nullable)shipping softwareType:(NSString * _Nullable)softwareType webAuth:(ClearentWebAuth * _Nullable)webAuth OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAmount:(double)amount customerID:(NSString * _Nullable)customerID invoice:(NSString * _Nullable)invoice orderID:(NSString * _Nullable)orderID billing:(ClientInformation * _Nullable)billing shipping:(ClientInformation * _Nullable)shipping softwareType:(NSString * _Nullable)softwareType webAuth:(ClearentWebAuth * _Nullable)webAuth softwareTypeVersion:(NSString * _Nullable)softwareTypeVersion OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
