@@ -363,9 +363,9 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : @preconcurrency ClearentI
   public var billing: ClearentIdtechIOSFramework.ClientInformation?
   public var shipping: ClearentIdtechIOSFramework.ClientInformation?
   public var softwareType: Swift.String?
-  public var webAuth: ClearentIdtechIOSFramework.ClearentWebAuth?
   public var softwareTypeVersion: Swift.String?
-  @objc public init(amount: Swift.Double, customerID: Swift.String? = nil, invoice: Swift.String? = nil, orderID: Swift.String? = nil, billing: ClearentIdtechIOSFramework.ClientInformation? = nil, shipping: ClearentIdtechIOSFramework.ClientInformation? = nil, softwareType: Swift.String? = nil, webAuth: ClearentIdtechIOSFramework.ClearentWebAuth? = nil, softwareTypeVersion: Swift.String? = nil)
+  public var webAuth: ClearentIdtechIOSFramework.ClearentWebAuth?
+  @objc public init(amount: Swift.Double, customerID: Swift.String? = nil, invoice: Swift.String? = nil, orderID: Swift.String? = nil, billing: ClearentIdtechIOSFramework.ClientInformation? = nil, shipping: ClearentIdtechIOSFramework.ClientInformation? = nil, softwareType: Swift.String? = nil, softwareTypeVersion: Swift.String? = nil, webAuth: ClearentIdtechIOSFramework.ClearentWebAuth? = nil)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ClearentHintView : ClearentIdtechIOSFramework.ClearentMarginableView {

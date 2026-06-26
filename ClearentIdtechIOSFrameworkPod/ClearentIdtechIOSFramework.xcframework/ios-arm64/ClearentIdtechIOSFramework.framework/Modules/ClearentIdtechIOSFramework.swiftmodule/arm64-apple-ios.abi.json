@@ -14650,116 +14650,6 @@
           },
           {
             "kind": "Var",
-            "name": "webAuth",
-            "printedName": "webAuth",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ClearentWebAuth",
-                    "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth",
-                    "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentWebAuth"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ClearentWebAuth",
-                        "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth",
-                        "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentWebAuth"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ClearentWebAuth",
-                        "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth",
-                        "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentWebAuth"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvs",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvM",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "softwareTypeVersion",
             "printedName": "softwareTypeVersion",
             "children": [
@@ -14869,9 +14759,119 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "webAuth",
+            "printedName": "webAuth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClearentWebAuth",
+                    "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth",
+                    "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentWebAuth"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClearentWebAuth",
+                        "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth",
+                        "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentWebAuth"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClearentWebAuth",
+                        "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth",
+                        "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentWebAuth"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvs",
+                "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvs",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvM",
+                "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC7webAuthAA0a3WebG0CSgvM",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(amount:customerID:invoice:orderID:billing:shipping:softwareType:webAuth:softwareTypeVersion:)",
+            "printedName": "init(amount:customerID:invoice:orderID:billing:shipping:softwareType:softwareTypeVersion:webAuth:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14978,21 +14978,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ClearentWebAuth",
-                    "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth",
-                    "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentWebAuth"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "Swift.String?",
                 "children": [
                   {
@@ -15004,13 +14989,28 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClearentWebAuth",
+                    "printedName": "ClearentIdtechIOSFramework.ClearentWebAuth",
+                    "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)ClearentWebAuth"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)PaymentInfo(im)initWithAmount:customerID:invoice:orderID:billing:shipping:softwareType:webAuth:softwareTypeVersion:",
-            "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC6amount10customerID7invoice05orderH07billing8shipping12softwareType7webAuth0mN7VersionACSd_SSSgA2mA17ClientInformationCSgApmA0a3WebP0CSgAMtcfc",
+            "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)PaymentInfo(im)initWithAmount:customerID:invoice:orderID:billing:shipping:softwareType:softwareTypeVersion:webAuth:",
+            "mangledName": "$s26ClearentIdtechIOSFramework11PaymentInfoC6amount10customerID7invoice05orderH07billing8shipping12softwareType0mN7Version7webAuthACSd_SSSgA2mA17ClientInformationCSgAp2mA0a3WebQ0CSgtcfc",
             "moduleName": "ClearentIdtechIOSFramework",
-            "objc_name": "initWithAmount:customerID:invoice:orderID:billing:shipping:softwareType:webAuth:softwareTypeVersion:",
+            "objc_name": "initWithAmount:customerID:invoice:orderID:billing:shipping:softwareType:softwareTypeVersion:webAuth:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
