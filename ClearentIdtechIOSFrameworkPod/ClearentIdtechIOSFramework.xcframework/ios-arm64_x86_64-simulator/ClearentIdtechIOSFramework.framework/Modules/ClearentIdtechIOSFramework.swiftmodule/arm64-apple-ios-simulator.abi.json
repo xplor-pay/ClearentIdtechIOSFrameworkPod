@@ -38953,21 +38953,21 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentWrapper\/Networking\/Entities\/SaleEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3751,
+      "offset": 3819,
       "length": 12,
       "value": "\"first-name\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentWrapper\/Networking\/Entities\/SaleEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3788,
+      "offset": 3856,
       "length": 11,
       "value": "\"last-name\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentWrapper\/Networking\/Entities\/SaleEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3844,
+      "offset": 3912,
       "length": 10,
       "value": "\"from-zip\""
     },
