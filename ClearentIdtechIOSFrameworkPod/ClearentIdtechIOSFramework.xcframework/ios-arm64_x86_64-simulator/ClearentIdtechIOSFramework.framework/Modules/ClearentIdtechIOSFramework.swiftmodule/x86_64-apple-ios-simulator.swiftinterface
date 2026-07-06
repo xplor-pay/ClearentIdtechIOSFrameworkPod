@@ -271,7 +271,7 @@ extension ClearentIdtechIOSFramework.ClearentWrapper : @preconcurrency ClearentI
     get
   }
   @_Concurrency.MainActor final public var flowType: (processType: ClearentIdtechIOSFramework.ProcessType, flowFeedbackType: ClearentIdtechIOSFramework.FlowFeedbackType?)?
-  @_Concurrency.MainActor final public var cardReaderPaymentIsPreffered: Swift.Bool
+  @_Concurrency.MainActor final public var cardReaderPaymentIsPreferred: Swift.Bool
   @_Concurrency.MainActor final public var useManualPaymentAsFallback: Swift.Bool?
   @_Concurrency.MainActor public static var configuration: ClearentIdtechIOSFramework.ClearentWrapperConfiguration!
   @objc public enum RemoteLogLevel : Swift.Int {

@@ -10674,8 +10674,8 @@
           },
           {
             "kind": "Var",
-            "name": "cardReaderPaymentIsPreffered",
-            "printedName": "cardReaderPaymentIsPreffered",
+            "name": "cardReaderPaymentIsPreferred",
+            "printedName": "cardReaderPaymentIsPreferred",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10685,8 +10685,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPrefferedSbvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPrefferedSbvp",
+            "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPreferredSbvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPreferredSbvp",
             "moduleName": "ClearentIdtechIOSFramework",
             "declAttributes": [
               "HasInitialValue",
@@ -10711,8 +10711,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPrefferedSbvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPrefferedSbvg",
+                "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPreferredSbvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPreferredSbvg",
                 "moduleName": "ClearentIdtechIOSFramework",
                 "implicit": true,
                 "declAttributes": [
@@ -10738,8 +10738,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPrefferedSbvs",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPrefferedSbvs",
+                "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPreferredSbvs",
+                "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPreferredSbvs",
                 "moduleName": "ClearentIdtechIOSFramework",
                 "implicit": true,
                 "declAttributes": [
@@ -10759,8 +10759,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPrefferedSbvM",
-                "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPrefferedSbvM",
+                "usr": "s:26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPreferredSbvM",
+                "mangledName": "$s26ClearentIdtechIOSFramework0A7WrapperC28cardReaderPaymentIsPreferredSbvM",
                 "moduleName": "ClearentIdtechIOSFramework",
                 "implicit": true,
                 "declAttributes": [
@@ -38953,21 +38953,21 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentWrapper\/Networking\/Entities\/SaleEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3819,
+      "offset": 3751,
       "length": 12,
       "value": "\"first-name\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentWrapper\/Networking\/Entities\/SaleEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3856,
+      "offset": 3788,
       "length": 11,
       "value": "\"last-name\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentWrapper\/Networking\/Entities\/SaleEntity.swift",
       "kind": "StringLiteral",
-      "offset": 3912,
+      "offset": 3844,
       "length": 10,
       "value": "\"from-zip\""
     },
