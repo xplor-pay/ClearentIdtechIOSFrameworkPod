@@ -3823,6 +3823,70 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "tapToPayOSVersionDeprecationDate",
+            "printedName": "tapToPayOSVersionDeprecationDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework0A9UIManagerC32tapToPayOSVersionDeprecationDate10Foundation0J0VSgvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A9UIManagerC32tapToPayOSVersionDeprecationDate10Foundation0J0VSgvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "intro_iOS": "15.4",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework0A9UIManagerC32tapToPayOSVersionDeprecationDate10Foundation0J0VSgvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework0A9UIManagerC32tapToPayOSVersionDeprecationDate10Foundation0J0VSgvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "isAccountLinked",
             "printedName": "isAccountLinked(paymentInfo:completion:)",
@@ -5610,1044 +5674,6 @@
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "ProximityReader",
-        "printedName": "ProximityReader",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "ProximityReader",
-        "printedName": "ProximityReader",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayErrorView",
-        "printedName": "TapToPayErrorView",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(tapToPayVM:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapToPayErrorView",
-                "printedName": "ClearentIdtechIOSFramework.TapToPayErrorView",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TapToPayViewModel",
-                "printedName": "ClearentIdtechIOSFramework.TapToPayViewModel",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV03tapeF2VMAcA0defH5ModelC_tcfc",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayErrorViewV03tapeF2VMAcA0defH5ModelC_tcfc",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayErrorViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "15.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayLandingPageView",
-        "printedName": "TapToPayLandingPageView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "15.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayLoadingView",
-        "printedName": "TapToPayLoadingView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "15.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayRootView",
-        "printedName": "TapToPayRootView",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(paymentInfo:onDismiss:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapToPayRootView",
-                "printedName": "ClearentIdtechIOSFramework.TapToPayRootView",
-                "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ClearentIdtechIOSFramework.PaymentInfo?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PaymentInfo",
-                    "printedName": "ClearentIdtechIOSFramework.PaymentInfo",
-                    "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)PaymentInfo"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV11paymentInfo9onDismissAcA07PaymentJ0CSg_yycSgtcfc",
-            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayRootViewV11paymentInfo9onDismissAcA07PaymentJ0CSg_yycSgtcfc",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayRootViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "15.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPaySuccessView",
-        "printedName": "TapToPaySuccessView",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(tapToPayVM:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TapToPaySuccessView",
-                "printedName": "ClearentIdtechIOSFramework.TapToPaySuccessView",
-                "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TapToPayViewModel",
-                "printedName": "ClearentIdtechIOSFramework.TapToPayViewModel",
-                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV03tapeF2VMAcA0defH5ModelC_tcfc",
-            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV03tapeF2VMAcA0defH5ModelC_tcfc",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp",
-            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp",
-            "moduleName": "ClearentIdtechIOSFramework",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvg",
-                "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvg",
-                "moduleName": "ClearentIdtechIOSFramework",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV",
-        "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "15.4",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "Available"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "ProximityReader",
-        "printedName": "ProximityReader",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "ProximityReader",
-        "printedName": "ProximityReader",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TapToPayViewModel",
-        "printedName": "TapToPayViewModel",
-        "declKind": "Class",
-        "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC",
-        "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "intro_iOS": "15.4",
-        "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Custom"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ObservableObject",
-            "printedName": "ObservableObject",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ObjectWillChangePublisher",
-                "printedName": "ObjectWillChangePublisher",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObservableObjectPublisher",
-                    "printedName": "Combine.ObservableObjectPublisher",
-                    "usr": "s:7Combine25ObservableObjectPublisherC"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7Combine16ObservableObjectP",
-            "mangledName": "$s7Combine16ObservableObjectP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -25179,6 +24205,1071 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ProximityReader",
+        "printedName": "ProximityReader",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ProximityReader",
+        "printedName": "ProximityReader",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayErrorView",
+        "printedName": "TapToPayErrorView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(tapToPayVM:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapToPayErrorView",
+                "printedName": "ClearentIdtechIOSFramework.TapToPayErrorView",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TapToPayViewModel",
+                "printedName": "ClearentIdtechIOSFramework.TapToPayViewModel",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV03tapeF2VMAcA0defH5ModelC_tcfc",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayErrorViewV03tapeF2VMAcA0defH5ModelC_tcfc",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework17TapToPayErrorViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayErrorViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "15.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayLandingPageView",
+        "printedName": "TapToPayLandingPageView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework23TapToPayLandingPageViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "15.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayLoadingView",
+        "printedName": "TapToPayLoadingView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework19TapToPayLoadingViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "15.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayRootView",
+        "printedName": "TapToPayRootView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(paymentInfo:onDismiss:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapToPayRootView",
+                "printedName": "ClearentIdtechIOSFramework.TapToPayRootView",
+                "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ClearentIdtechIOSFramework.PaymentInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentInfo",
+                    "printedName": "ClearentIdtechIOSFramework.PaymentInfo",
+                    "usr": "c:@M@ClearentIdtechIOSFramework@objc(cs)PaymentInfo"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV11paymentInfo9onDismissAcA07PaymentJ0CSg_yycSgtcfc",
+            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayRootViewV11paymentInfo9onDismissAcA07PaymentJ0CSg_yycSgtcfc",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework16TapToPayRootViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework16TapToPayRootViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "15.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPaySuccessView",
+        "printedName": "TapToPaySuccessView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(tapToPayVM:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TapToPaySuccessView",
+                "printedName": "ClearentIdtechIOSFramework.TapToPaySuccessView",
+                "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TapToPayViewModel",
+                "printedName": "ClearentIdtechIOSFramework.TapToPayViewModel",
+                "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV03tapeF2VMAcA0defH5ModelC_tcfc",
+            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV03tapeF2VMAcA0defH5ModelC_tcfc",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp",
+            "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp",
+            "moduleName": "ClearentIdtechIOSFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvg",
+                "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvg",
+                "moduleName": "ClearentIdtechIOSFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26ClearentIdtechIOSFramework19TapToPaySuccessViewV",
+        "mangledName": "$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "15.4",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ProximityReader",
+        "printedName": "ProximityReader",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "ProximityReader",
+        "printedName": "ProximityReader",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TapToPayViewModel",
+        "printedName": "TapToPayViewModel",
+        "declKind": "Class",
+        "usr": "s:26ClearentIdtechIOSFramework17TapToPayViewModelC",
+        "mangledName": "$s26ClearentIdtechIOSFramework17TapToPayViewModelC",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "intro_iOS": "15.4",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "Custom"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ClearentDefaultHttpClient",
         "printedName": "ClearentDefaultHttpClient",
@@ -25324,7 +25415,7 @@
           {
             "kind": "Function",
             "name": "sendEncryptedCardData",
-            "printedName": "sendEncryptedCardData(transactionId:paymentCardData:)",
+            "printedName": "sendEncryptedCardData(transactionId:paymentCardData:cardReaderId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -25359,11 +25450,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A17DefaultHttpClientC21sendEncryptedCardData13transactionId07paymentiJ010Foundation0J0VSSSg_AJtYaKF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A17DefaultHttpClientC21sendEncryptedCardData13transactionId07paymentiJ010Foundation0J0VSSSg_AJtYaKF",
+            "usr": "s:26ClearentIdtechIOSFramework0A17DefaultHttpClientC21sendEncryptedCardData13transactionId07paymentiJ0010cardReaderL010Foundation0J0VSSSg_A2KtYaKF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A17DefaultHttpClientC21sendEncryptedCardData13transactionId07paymentiJ0010cardReaderL010Foundation0J0VSSSg_A2KtYaKF",
             "moduleName": "ClearentIdtechIOSFramework",
             "declAttributes": [
               "AccessControl"
@@ -35294,7 +35399,7 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14633,
+      "offset": 15260,
       "length": 5,
       "value": "false"
     },
@@ -35479,650 +35584,6 @@
       "offset": 495,
       "length": 3,
       "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 440,
-      "length": 13,
-      "value": "\"exchange-id\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 744,
-      "length": 16,
-      "value": "\"tap-to-pay-jwt\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1080,
-      "length": 11,
-      "value": "\"last-four\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1120,
-      "length": 11,
-      "value": "\"card-type\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1159,
-      "length": 10,
-      "value": "\"exp-date\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1402,
-      "length": 15,
-      "value": "\"error-message\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1448,
-      "length": 13,
-      "value": "\"result-code\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1491,
-      "length": 12,
-      "value": "\"time-stamp\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/MerchantImageResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 640,
-      "length": 13,
-      "value": "\"exchange-id\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 685,
-      "length": 5,
-      "value": "\"mcc\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 719,
-      "length": 15,
-      "value": "\"terminal-name\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 763,
-      "length": 15,
-      "value": "\"software-type\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 814,
-      "length": 23,
-      "value": "\"software-type-version\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
-      "kind": "StringLiteral",
-      "offset": 865,
-      "length": 14,
-      "value": "\"host-profile\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 655,
-      "length": 12,
-      "value": "\"exchangeId\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 944,
-      "length": 20,
-      "value": "\"tap-to-pay-session\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1213,
-      "length": 12,
-      "value": "\"merchantId\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1252,
-      "length": 12,
-      "value": "\"terminalId\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1473,
-      "length": 15,
-      "value": "\"error-message\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1515,
-      "length": 13,
-      "value": "\"result-code\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1554,
-      "length": 12,
-      "value": "\"time-stamp\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Internal\/TapToPayInternalFeatureFlags.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1041,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayLogger.swift",
-      "kind": "Dictionary",
-      "offset": 655,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayLogger.swift",
-      "kind": "Dictionary",
-      "offset": 802,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayAmount.swift",
-      "kind": "StringLiteral",
-      "offset": 510,
-      "length": 5,
-      "value": "\"USD\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayAmount.swift",
-      "kind": "StringLiteral",
-      "offset": 577,
-      "length": 13,
-      "value": "\"en_US_POSIX\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 714,
-      "length": 16,
-      "value": "\"prepareStarted\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 765,
-      "length": 14,
-      "value": "\"prepareReady\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 815,
-      "length": 15,
-      "value": "\"prepareReused\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 868,
-      "length": 17,
-      "value": "\"prepareFallback\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 921,
-      "length": 15,
-      "value": "\"prepareFailed\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 975,
-      "length": 18,
-      "value": "\"prepareCancelled\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1034,
-      "length": 20,
-      "value": "\"prepareInvalidated\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1101,
-      "length": 26,
-      "value": "\"prepareStaleOnBackground\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1178,
-      "length": 30,
-      "value": "\"prepareReprepareOnForeground\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1250,
-      "length": 21,
-      "value": "\"prepareTokenCleared\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1312,
-      "length": 20,
-      "value": "\"prepareTokenReused\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1376,
-      "length": 23,
-      "value": "\"prepareTokenRefreshed\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1440,
-      "length": 20,
-      "value": "\"prepareAfterLaunch\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1506,
-      "length": 25,
-      "value": "\"prepareSkippedNotLinked\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1573,
-      "length": 21,
-      "value": "\"entitlementVerified\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1635,
-      "length": 20,
-      "value": "\"entitlementMissing\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2038,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2476,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2530,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2658,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7144,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7187,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15156,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayErrorView.swift",
-      "kind": "StringLiteral",
-      "offset": 265,
-      "length": 6,
-      "value": "\"$0.0\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 366,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 482,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 529,
-      "length": 2,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 993,
-      "length": 9,
-      "value": "\"#6A6D7D\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1100,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1148,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1193,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1433,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1640,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1643,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1655,
-      "length": 3,
-      "value": "132"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1659,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1670,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1674,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1718,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1842,
-      "length": 3,
-      "value": "0.6"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1848,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1886,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1928,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2018,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2161,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2218,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2221,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2233,
-      "length": 3,
-      "value": "132"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2237,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2248,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2252,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2307,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2609,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 2662,
-      "length": 19,
-      "value": "\"xmark.circle.fill\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3106,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3288,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
-      "kind": "StringLiteral",
-      "offset": 3505,
-      "length": 14,
-      "value": "\"chevron.left\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySuccessView.swift",
-      "kind": "StringLiteral",
-      "offset": 329,
-      "length": 6,
-      "value": "\"$0.0\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 1104,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 1149,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1193,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1251,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1319,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1374,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1429,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 13712,
-      "length": 23,
-      "value": "\"transactionIdentifier\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentWrapper\/Wrapper\/ClearentWrapperEnums.swift",
@@ -38402,476 +37863,511 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28014,
+      "offset": 28007,
+      "length": 31,
+      "value": "\"xsdk_ttp_os_deprecation_title\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 28109,
+      "length": 33,
+      "value": "\"xsdk_ttp_os_deprecation_message\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 28212,
+      "length": 33,
+      "value": "\"xsdk_ttp_os_deprecation_not_now\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 28316,
+      "length": 33,
+      "value": "\"xsdk_ttp_os_deprecation_install\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 28425,
       "length": 47,
       "value": "\"xsdk_ttp_somthing_went_wrong_please_try_again\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28171,
+      "offset": 28582,
       "length": 28,
       "value": "\"xsdk_ttp_error_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28266,
+      "offset": 28677,
       "length": 36,
       "value": "\"xsdk_ttp_error_entitlement_missing\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28371,
+      "offset": 28782,
       "length": 39,
       "value": "\"xsdk_ttp_error_background_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28470,
+      "offset": 28881,
       "length": 28,
       "value": "\"xsdk_ttp_error_unsupported\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28554,
+      "offset": 28965,
       "length": 24,
       "value": "\"xsdk_ttp_error_network\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28638,
+      "offset": 29049,
       "length": 29,
       "value": "\"xsdk_ttp_error_network_auth\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28733,
+      "offset": 29144,
       "length": 35,
       "value": "\"xsdk_ttp_error_service_connection\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28825,
+      "offset": 29236,
       "length": 26,
       "value": "\"xsdk_ttp_error_not_ready\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28912,
+      "offset": 29323,
       "length": 30,
       "value": "\"xsdk_ttp_error_token_invalid\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29004,
+      "offset": 29415,
       "length": 31,
       "value": "\"xsdk_ttp_error_prepare_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29098,
+      "offset": 29516,
+      "length": 40,
+      "value": "\"xsdk_ttp_error_prepare_failed_baseline\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 29619,
       "length": 32,
       "value": "\"xsdk_ttp_error_prepare_expired\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29191,
+      "offset": 29712,
       "length": 30,
       "value": "\"xsdk_ttp_error_device_banned\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29286,
+      "offset": 29807,
       "length": 35,
       "value": "\"xsdk_ttp_error_account_not_linked\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29390,
+      "offset": 29911,
       "length": 39,
       "value": "\"xsdk_ttp_error_account_already_linked\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29498,
+      "offset": 30019,
       "length": 39,
       "value": "\"xsdk_ttp_error_account_linking_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29609,
+      "offset": 30130,
       "length": 42,
       "value": "\"xsdk_ttp_error_account_linking_cancelled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29715,
+      "offset": 30236,
       "length": 33,
       "value": "\"xsdk_ttp_error_merchant_blocked\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29812,
+      "offset": 30333,
       "length": 33,
       "value": "\"xsdk_ttp_error_invalid_merchant\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29910,
+      "offset": 30431,
       "length": 35,
       "value": "\"xsdk_ttp_error_reader_memory_full\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30004,
+      "offset": 30525,
       "length": 28,
       "value": "\"xsdk_ttp_error_reader_busy\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30095,
+      "offset": 30616,
       "length": 33,
       "value": "\"xsdk_ttp_error_os_not_supported\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30194,
+      "offset": 30715,
       "length": 36,
       "value": "\"xsdk_ttp_error_model_not_supported\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30295,
+      "offset": 30816,
       "length": 34,
       "value": "\"xsdk_ttp_error_passcode_disabled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30390,
+      "offset": 30911,
       "length": 31,
       "value": "\"xsdk_ttp_error_icloud_sign_in\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30495,
+      "offset": 31016,
       "length": 45,
       "value": "\"xsdk_ttp_error_account_linking_check_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30607,
+      "offset": 31128,
       "length": 36,
       "value": "\"xsdk_ttp_error_account_deactivated\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30714,
+      "offset": 31235,
       "length": 42,
       "value": "\"xsdk_ttp_error_store_forward_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30831,
+      "offset": 31352,
       "length": 46,
       "value": "\"xsdk_ttp_error_store_forward_session_expired\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30956,
+      "offset": 31477,
       "length": 50,
       "value": "\"xsdk_ttp_error_store_forward_session_invalidated\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31085,
+      "offset": 31606,
       "length": 51,
       "value": "\"xsdk_ttp_error_store_forward_token_issuer_changed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31203,
+      "offset": 31724,
       "length": 36,
       "value": "\"xsdk_ttp_error_request_interrupted\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31295,
+      "offset": 31816,
       "length": 24,
       "value": "\"xsdk_ttp_error_unknown\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31378,
+      "offset": 31899,
       "length": 27,
       "value": "\"xsdk_ttp_error_unexpected\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31501,
+      "offset": 32022,
       "length": 27,
       "value": "\"xsdk_ttp_read_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31591,
+      "offset": 32112,
       "length": 32,
       "value": "\"xsdk_ttp_read_background_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31680,
+      "offset": 32201,
       "length": 26,
       "value": "\"xsdk_ttp_read_pin_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31764,
+      "offset": 32285,
       "length": 27,
       "value": "\"xsdk_ttp_read_pin_timeout\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31851,
+      "offset": 32372,
       "length": 29,
       "value": "\"xsdk_ttp_read_pin_cancelled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31950,
+      "offset": 32471,
       "length": 40,
       "value": "\"xsdk_ttp_read_service_connection_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32050,
+      "offset": 32571,
       "length": 29,
       "value": "\"xsdk_ttp_read_service_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32136,
+      "offset": 32657,
       "length": 26,
       "value": "\"xsdk_ttp_read_no_session\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32224,
+      "offset": 32745,
       "length": 31,
       "value": "\"xsdk_ttp_read_session_expired\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32315,
+      "offset": 32836,
       "length": 29,
       "value": "\"xsdk_ttp_read_token_expired\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32404,
+      "offset": 32925,
       "length": 29,
       "value": "\"xsdk_ttp_read_network_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32490,
+      "offset": 33011,
       "length": 26,
       "value": "\"xsdk_ttp_read_auth_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32575,
+      "offset": 33096,
       "length": 28,
       "value": "\"xsdk_ttp_read_session_busy\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32660,
+      "offset": 33181,
       "length": 25,
       "value": "\"xsdk_ttp_read_cancelled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32746,
+      "offset": 33267,
       "length": 30,
       "value": "\"xsdk_ttp_read_invalid_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32839,
+      "offset": 33360,
       "length": 32,
       "value": "\"xsdk_ttp_read_invalid_currency\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32929,
+      "offset": 33450,
       "length": 27,
       "value": "\"xsdk_ttp_read_invalid_aid\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33015,
+      "offset": 33536,
       "length": 28,
       "value": "\"xsdk_ttp_read_nfc_disabled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33111,
+      "offset": 33632,
       "length": 39,
       "value": "\"xsdk_ttp_read_not_allowed_during_call\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33214,
+      "offset": 33735,
       "length": 33,
       "value": "\"xsdk_ttp_read_passcode_disabled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33309,
+      "offset": 33830,
       "length": 32,
       "value": "\"xsdk_ttp_read_card_read_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33396,
+      "offset": 33917,
       "length": 24,
       "value": "\"xsdk_ttp_read_vas_fail\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33481,
+      "offset": 34002,
       "length": 30,
       "value": "\"xsdk_ttp_read_payment_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33571,
+      "offset": 34092,
       "length": 29,
       "value": "\"xsdk_ttp_read_card_declined\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33667,
+      "offset": 34188,
       "length": 37,
       "value": "\"xsdk_ttp_read_invalid_vas_merchants\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33768,
+      "offset": 34289,
       "length": 34,
       "value": "\"xsdk_ttp_read_invalid_vas_params\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33863,
+      "offset": 34384,
       "length": 31,
       "value": "\"xsdk_ttp_read_pin_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33967,
+      "offset": 34488,
       "length": 44,
       "value": "\"xsdk_ttp_read_store_forward_decline_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34079,
+      "offset": 34600,
       "length": 39,
       "value": "\"xsdk_ttp_read_store_forward_not_found\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34176,
+      "offset": 34697,
       "length": 27,
       "value": "\"xsdk_ttp_read_init_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34263,
+      "offset": 34784,
       "length": 29,
       "value": "\"xsdk_ttp_read_not_available\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34356,
+      "offset": 34877,
       "length": 34,
       "value": "\"xsdk_ttp_read_card_not_supported\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34445,
+      "offset": 34966,
       "length": 23,
       "value": "\"xsdk_ttp_read_unknown\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34526,
+      "offset": 35047,
       "length": 29,
       "value": "\"xsdk_ttp_read_unexpectedzed\""
     },
@@ -39630,6 +39126,853 @@
       "offset": 3126,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 440,
+      "length": 13,
+      "value": "\"exchange-id\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 744,
+      "length": 16,
+      "value": "\"tap-to-pay-jwt\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1080,
+      "length": 11,
+      "value": "\"last-four\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1120,
+      "length": 11,
+      "value": "\"card-type\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1159,
+      "length": 10,
+      "value": "\"exp-date\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1402,
+      "length": 15,
+      "value": "\"error-message\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1448,
+      "length": 13,
+      "value": "\"result-code\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/EncryptedCardTokenResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1491,
+      "length": 12,
+      "value": "\"time-stamp\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/MerchantImageResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 640,
+      "length": 13,
+      "value": "\"exchange-id\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 685,
+      "length": 5,
+      "value": "\"mcc\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 719,
+      "length": 15,
+      "value": "\"terminal-name\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 763,
+      "length": 15,
+      "value": "\"software-type\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 23,
+      "value": "\"software-type-version\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionPayloadEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 865,
+      "length": 14,
+      "value": "\"host-profile\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 655,
+      "length": 12,
+      "value": "\"exchangeId\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 944,
+      "length": 20,
+      "value": "\"tap-to-pay-session\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1213,
+      "length": 12,
+      "value": "\"merchantId\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1252,
+      "length": 12,
+      "value": "\"terminalId\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1473,
+      "length": 15,
+      "value": "\"error-message\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1515,
+      "length": 13,
+      "value": "\"result-code\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Entities\/TaptoPaySessionResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1554,
+      "length": 12,
+      "value": "\"time-stamp\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Internal\/TapToPayInternalFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1041,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayLogger.swift",
+      "kind": "Dictionary",
+      "offset": 655,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayLogger.swift",
+      "kind": "Dictionary",
+      "offset": 802,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 11,
+      "value": "\"timestamp\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 400,
+      "length": 6,
+      "value": "\"path\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 16,
+      "value": "\"termsPresented\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 679,
+      "length": 16,
+      "value": "\"tokenRequested\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 793,
+      "length": 15,
+      "value": "\"tokenReceived\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 996,
+      "length": 19,
+      "value": "\"linkAccountCalled\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1148,
+      "length": 15,
+      "value": "\"prepareCalled\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1269,
+      "length": 23,
+      "value": "\"readerSessionReceived\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1439,
+      "length": 20,
+      "value": "\"transactionStarted\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1579,
+      "length": 17,
+      "value": "\"readRequestSent\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1709,
+      "length": 13,
+      "value": "\"readyForTap\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1834,
+      "length": 14,
+      "value": "\"cardDetected\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1950,
+      "length": 20,
+      "value": "\"readResultReceived\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 2079,
+      "length": 27,
+      "value": "\"readerResultSentToBackend\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 2217,
+      "length": 24,
+      "value": "\"approvalResultReceived\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 2344,
+      "length": 25,
+      "value": "\"approvedShownToConsumer\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "Dictionary",
+      "offset": 2902,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayAmount.swift",
+      "kind": "StringLiteral",
+      "offset": 510,
+      "length": 5,
+      "value": "\"USD\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayAmount.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayOSVersionDeprecation.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 26,
+      "value": "\"osVersionDeprecationDate\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayReaderService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8958,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayReaderService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8995,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayReaderService.swift",
+      "kind": "Array",
+      "offset": 9069,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 16,
+      "value": "\"prepareStarted\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 765,
+      "length": 14,
+      "value": "\"prepareReady\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 15,
+      "value": "\"prepareReused\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 17,
+      "value": "\"prepareFallback\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 921,
+      "length": 15,
+      "value": "\"prepareFailed\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 975,
+      "length": 18,
+      "value": "\"prepareCancelled\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1034,
+      "length": 20,
+      "value": "\"prepareInvalidated\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1101,
+      "length": 26,
+      "value": "\"prepareStaleOnBackground\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1178,
+      "length": 30,
+      "value": "\"prepareReprepareOnForeground\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1250,
+      "length": 21,
+      "value": "\"prepareTokenCleared\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1312,
+      "length": 20,
+      "value": "\"prepareTokenReused\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1376,
+      "length": 23,
+      "value": "\"prepareTokenRefreshed\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1440,
+      "length": 20,
+      "value": "\"prepareAfterLaunch\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1506,
+      "length": 25,
+      "value": "\"prepareSkippedNotLinked\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1573,
+      "length": 21,
+      "value": "\"entitlementVerified\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1635,
+      "length": 20,
+      "value": "\"entitlementMissing\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1700,
+      "length": 24,
+      "value": "\"userInterfaceDismissed\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1777,
+      "length": 32,
+      "value": "\"userInterfaceDismissedTimedOut\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1860,
+      "length": 30,
+      "value": "\"osVersionDeprecationDetected\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2273,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2711,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2765,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2893,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7698,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7741,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16464,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "Dictionary",
+      "offset": 20940,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayErrorView.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 6,
+      "value": "\"$0.0\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 366,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 482,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 529,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 993,
+      "length": 9,
+      "value": "\"#6A6D7D\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1100,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1148,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1193,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1433,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1640,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1643,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1655,
+      "length": 3,
+      "value": "132"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1659,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1670,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1674,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1718,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1842,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1848,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1886,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1928,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2018,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2161,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2218,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2221,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2233,
+      "length": 3,
+      "value": "132"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2237,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2248,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2252,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2307,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2609,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 2662,
+      "length": 19,
+      "value": "\"xmark.circle.fill\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3106,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3288,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
+      "kind": "StringLiteral",
+      "offset": 3505,
+      "length": 14,
+      "value": "\"chevron.left\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySuccessView.swift",
+      "kind": "StringLiteral",
+      "offset": 329,
+      "length": 6,
+      "value": "\"$0.0\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayError.swift",
+      "kind": "StringLiteral",
+      "offset": 1614,
+      "length": 21,
+      "value": "\"prepareFailedReason\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1104,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1149,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1193,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1251,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1319,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1374,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1429,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1486,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1560,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 18427,
+      "length": 18,
+      "value": "\"readerIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 18694,
+      "length": 23,
+      "value": "\"transactionIdentifier\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentWrapper\/Networking\/HttpClient\/ClearentHttpClient.swift",
