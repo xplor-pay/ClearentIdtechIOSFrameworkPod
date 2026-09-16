@@ -112,7 +112,7 @@ public enum FlowInputType {
   @available(iOS 15.4, *)
   @_Concurrency.MainActor final public func linkAccount(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo? = nil, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil)
   @available(iOS 15.4, *)
-  @_Concurrency.MainActor final public func prepareTapToPay(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo? = nil, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor final public func prepareTapToPay(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo? = nil, forceRefreshToken: Swift.Bool = false, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil)
   @available(iOS 15.4, *)
   @_Concurrency.MainActor final public func invalidateTapToPaySession()
   @available(iOS 15.4, *)

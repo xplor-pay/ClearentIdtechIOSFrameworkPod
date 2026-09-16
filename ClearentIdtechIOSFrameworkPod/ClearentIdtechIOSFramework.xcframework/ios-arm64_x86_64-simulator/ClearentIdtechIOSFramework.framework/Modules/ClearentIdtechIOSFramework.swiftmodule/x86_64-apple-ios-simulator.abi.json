@@ -4052,7 +4052,7 @@
           {
             "kind": "Function",
             "name": "prepareTapToPay",
-            "printedName": "prepareTapToPay(paymentInfo:completion:)",
+            "printedName": "prepareTapToPay(paymentInfo:forceRefreshToken:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4073,6 +4073,13 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -4111,8 +4118,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:26ClearentIdtechIOSFramework0A9UIManagerC15prepareTapToPay11paymentInfo10completionyAA07PaymentJ0CSg_yAA0A5ErrorCSgcSgtF",
-            "mangledName": "$s26ClearentIdtechIOSFramework0A9UIManagerC15prepareTapToPay11paymentInfo10completionyAA07PaymentJ0CSg_yAA0A5ErrorCSgcSgtF",
+            "usr": "s:26ClearentIdtechIOSFramework0A9UIManagerC15prepareTapToPay11paymentInfo17forceRefreshToken10completionyAA07PaymentJ0CSg_SbyAA0A5ErrorCSgcSgtF",
+            "mangledName": "$s26ClearentIdtechIOSFramework0A9UIManagerC15prepareTapToPay11paymentInfo17forceRefreshToken10completionyAA07PaymentJ0CSg_SbyAA0A5ErrorCSgcSgtF",
             "moduleName": "ClearentIdtechIOSFramework",
             "intro_iOS": "15.4",
             "declAttributes": [
@@ -35399,7 +35406,14 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15260,
+      "offset": 12800,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/ClearentUIManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15739,
       "length": 5,
       "value": "false"
     },
@@ -39543,105 +39557,126 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1440,
+      "offset": 1448,
+      "length": 28,
+      "value": "\"prepareTokenForceRefreshed\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1520,
+      "length": 23,
+      "value": "\"prepareResetAfterSale\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1584,
       "length": 20,
       "value": "\"prepareAfterLaunch\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1506,
+      "offset": 1650,
       "length": 25,
       "value": "\"prepareSkippedNotLinked\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1573,
+      "offset": 1717,
       "length": 21,
       "value": "\"entitlementVerified\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1635,
+      "offset": 1779,
       "length": 20,
       "value": "\"entitlementMissing\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1700,
+      "offset": 1844,
       "length": 24,
       "value": "\"userInterfaceDismissed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1777,
+      "offset": 1921,
       "length": 32,
       "value": "\"userInterfaceDismissedTimedOut\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1860,
+      "offset": 2004,
       "length": 30,
       "value": "\"osVersionDeprecationDetected\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2273,
+      "offset": 2417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2711,
+      "offset": 2860,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2765,
+      "offset": 2914,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2893,
+      "offset": 3042,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7698,
+      "offset": 8124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7741,
+      "offset": 8167,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16464,
+      "offset": 8207,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18742,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
       "kind": "Dictionary",
-      "offset": 20940,
+      "offset": 23218,
       "length": 3,
       "value": "[]"
     },
@@ -39963,14 +39998,14 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 18427,
+      "offset": 18436,
       "length": 18,
       "value": "\"readerIdentifier\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 18694,
+      "offset": 18703,
       "length": 23,
       "value": "\"transactionIdentifier\""
     },
