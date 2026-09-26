@@ -141,6 +141,55 @@ extension UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public func showCancelAlert(title: Swift.String?, message: Swift.String?, cancelTitle: Swift.String?, cancelAction: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public func showAlert(title: Swift.String?, message: Swift.String?, action: UIKit.UIAlertAction, completion: (() -> Swift.Void)? = nil)
 }
+@available(iOS 15.4, *)
+@_Concurrency.MainActor @preconcurrency public struct TapToPayErrorView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(tapToPayVM: ClearentIdtechIOSFramework.TapToPayViewModel)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 15.4, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvp", 0) __
+}
+@available(iOS 15.4, *)
+@_Concurrency.MainActor @preconcurrency public struct TapToPayLandingPageView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 15.4, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp", 0) __
+}
+@available(iOS 15.4, *)
+@_Concurrency.MainActor @preconcurrency public struct TapToPayLoadingView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 15.4, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp", 0) __
+}
+@available(iOS 15.4, *)
+@_Concurrency.MainActor @preconcurrency public struct TapToPayRootView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, onDismiss: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 15.4, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvp", 0) __
+}
+@available(iOS 15.4, *)
+@_Concurrency.MainActor @preconcurrency public struct TapToPaySuccessView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(tapToPayVM: ClearentIdtechIOSFramework.TapToPayViewModel)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 15.4, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp", 0) __
+}
+@_hasMissingDesignatedInitializers @available(iOS 15.4, *)
+@_Concurrency.MainActor public class TapToPayViewModel : Foundation.ObservableObject {
+  @available(iOS 15.4, *)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
 public protocol ClearentWrapperProtocol : AnyObject {
   func didStartPairing()
   func didFinishPairing()
@@ -634,55 +683,6 @@ public struct SaleEntity : ClearentIdtechIOSFramework.CodableProtocol, Swift.Sen
 extension ClearentIdtechIOSFramework.ClearentInfoWithIcon : UIKit.UITextViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textView(_ textView: UIKit.UITextView, shouldInteractWith URL: Foundation.URL, in characterRange: Foundation.NSRange, interaction: UIKit.UITextItemInteraction) -> Swift.Bool
 }
-@available(iOS 15.4, *)
-@_Concurrency.MainActor @preconcurrency public struct TapToPayErrorView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(tapToPayVM: ClearentIdtechIOSFramework.TapToPayViewModel)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @available(iOS 15.4, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework17TapToPayErrorViewV4bodyQrvp", 0) __
-}
-@available(iOS 15.4, *)
-@_Concurrency.MainActor @preconcurrency public struct TapToPayLandingPageView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @available(iOS 15.4, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework23TapToPayLandingPageViewV4bodyQrvp", 0) __
-}
-@available(iOS 15.4, *)
-@_Concurrency.MainActor @preconcurrency public struct TapToPayLoadingView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @available(iOS 15.4, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework19TapToPayLoadingViewV4bodyQrvp", 0) __
-}
-@available(iOS 15.4, *)
-@_Concurrency.MainActor @preconcurrency public struct TapToPayRootView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, onDismiss: (() -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @available(iOS 15.4, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework16TapToPayRootViewV4bodyQrvp", 0) __
-}
-@available(iOS 15.4, *)
-@_Concurrency.MainActor @preconcurrency public struct TapToPaySuccessView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(tapToPayVM: ClearentIdtechIOSFramework.TapToPayViewModel)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @available(iOS 15.4, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp", 0) __
-}
-@_hasMissingDesignatedInitializers @available(iOS 15.4, *)
-@_Concurrency.MainActor public class TapToPayViewModel : Foundation.ObservableObject {
-  @available(iOS 15.4, *)
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
 public class ClearentDefaultHttpClient : @unchecked Swift.Sendable {
   public init(baseURL: Swift.String, apiKey: Swift.String?, webAuth: ClearentIdtechIOSFramework.ClearentWebAuth? = nil)
   public func terminalSettings() async throws -> Foundation.Data
@@ -909,6 +909,18 @@ extension ClearentIdtechIOSFramework.FlowButtonType : Swift.Hashable {}
 extension ClearentIdtechIOSFramework.FlowInputType : Swift.Equatable {}
 extension ClearentIdtechIOSFramework.FlowInputType : Swift.Hashable {}
 extension ClearentIdtechIOSFramework.ClearentUIManager : Swift.Sendable {}
+@available(iOS 15.4, *)
+extension ClearentIdtechIOSFramework.TapToPayErrorView : Swift.Sendable {}
+@available(iOS 15.4, *)
+extension ClearentIdtechIOSFramework.TapToPayLandingPageView : Swift.Sendable {}
+@available(iOS 15.4, *)
+extension ClearentIdtechIOSFramework.TapToPayLoadingView : Swift.Sendable {}
+@available(iOS 15.4, *)
+extension ClearentIdtechIOSFramework.TapToPayRootView : Swift.Sendable {}
+@available(iOS 15.4, *)
+extension ClearentIdtechIOSFramework.TapToPaySuccessView : Swift.Sendable {}
+@available(iOS 15.4, *)
+extension ClearentIdtechIOSFramework.TapToPayViewModel : Swift.Sendable {}
 extension ClearentIdtechIOSFramework.UserAction : Swift.Equatable {}
 extension ClearentIdtechIOSFramework.UserAction : Swift.Hashable {}
 extension ClearentIdtechIOSFramework.UserAction : Swift.RawRepresentable {}
@@ -923,18 +935,6 @@ extension ClearentIdtechIOSFramework.ClearentErrorType : Swift.Equatable {}
 extension ClearentIdtechIOSFramework.ClearentErrorType : Swift.Hashable {}
 extension ClearentIdtechIOSFramework.ClearentErrorType : Swift.RawRepresentable {}
 extension ClearentIdtechIOSFramework.ClearentApplicationOrientation : Swift.Sendable {}
-@available(iOS 15.4, *)
-extension ClearentIdtechIOSFramework.TapToPayErrorView : Swift.Sendable {}
-@available(iOS 15.4, *)
-extension ClearentIdtechIOSFramework.TapToPayLandingPageView : Swift.Sendable {}
-@available(iOS 15.4, *)
-extension ClearentIdtechIOSFramework.TapToPayLoadingView : Swift.Sendable {}
-@available(iOS 15.4, *)
-extension ClearentIdtechIOSFramework.TapToPayRootView : Swift.Sendable {}
-@available(iOS 15.4, *)
-extension ClearentIdtechIOSFramework.TapToPaySuccessView : Swift.Sendable {}
-@available(iOS 15.4, *)
-extension ClearentIdtechIOSFramework.TapToPayViewModel : Swift.Sendable {}
 extension ClearentIdtechIOSFramework.OfflineTransactionType : Swift.Equatable {}
 extension ClearentIdtechIOSFramework.OfflineTransactionType : Swift.Hashable {}
 extension ClearentIdtechIOSFramework.OfflineTransactionType : Swift.RawRepresentable {}
