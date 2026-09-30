@@ -6,7 +6,7 @@
 	<dict>
 		<key>.gitignore</key>
 		<data>
-		0S2JbhMshuOVYoBR2Cr6r2s6LzE=
+		+tBEeBNfeOL/ff5gQIeiIhJw0j4=
 		</data>
 		<key>Assets.car</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		u13SYfA/WcQDDO64RvYXNzMwWDk=
+		VHCRNqXIrvVm+cOX6T6nHbeD8oc=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -242,11 +242,11 @@
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		x4BBX8NOxVm8za6OabE6jCE4Sjo=
+		A2Jktusuf4nCsIxbUJ4rRqY0ka8=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		u13SYfA/WcQDDO64RvYXNzMwWDk=
+		VHCRNqXIrvVm+cOX6T6nHbeD8oc=
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -262,7 +262,7 @@
 		</data>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VjvCKK6Y7HADJxphg0Ug8xvTPto=
+		L334CTaMXlQgBAFBC1zrsFUpzVM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -331,7 +331,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ps7SJcPtN/gmoYhbYKF8glkB3vLIR88KymzS/XCY5x8=
+			Snwnh9jajPth10WJNYdRvb1e7D6bjKAKLj5W1N1nuu0=
 			</data>
 		</dict>
 		<key>Assets.car</key>
@@ -709,7 +709,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uVWQ6mdFl+MNFP4HhRNCzcNaE5ZKWAtcvg8p0AztISY=
+			+2mzrFvjwVgUpVvQM4pjqOh9argBlukMeBAcGzl/+Sc=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -737,14 +737,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8gY1SVL2dnZFlww7waR8l2MRMSIHJWITLEH2/To2c+E=
+			i1hgJoIZ+BehqwrFuL5Canl3onkGWb6CxuMSRDwPWFA=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uVWQ6mdFl+MNFP4HhRNCzcNaE5ZKWAtcvg8p0AztISY=
+			+2mzrFvjwVgUpVvQM4pjqOh9argBlukMeBAcGzl/+Sc=
 			</data>
 		</dict>
 		<key>Modules/ClearentIdtechIOSFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -772,7 +772,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MijrXvg8np48J8zN6IktgihOhYCmdblxokIKW0vGKiY=
+			xcORj5lyNtPubpWtTbZq+g3uOUlkFnV9Zzo75R7SMIQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

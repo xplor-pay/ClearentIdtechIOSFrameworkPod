@@ -551,30 +551,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "ProximityReader",
-        "printedName": "ProximityReader",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "ClearentIdtechIOSFramework"
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -1215,6 +1191,30 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ProximityReader",
+        "printedName": "ProximityReader",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearentIdtechIOSFramework"
       },
       {
         "kind": "Import",
@@ -35842,237 +35842,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 714,
-      "length": 16,
-      "value": "\"prepareStarted\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 765,
-      "length": 14,
-      "value": "\"prepareReady\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 815,
-      "length": 15,
-      "value": "\"prepareReused\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 868,
-      "length": 17,
-      "value": "\"prepareFallback\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 921,
-      "length": 15,
-      "value": "\"prepareFailed\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 975,
-      "length": 18,
-      "value": "\"prepareCancelled\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1034,
-      "length": 20,
-      "value": "\"prepareInvalidated\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1101,
-      "length": 26,
-      "value": "\"prepareStaleOnBackground\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1178,
-      "length": 30,
-      "value": "\"prepareReprepareOnForeground\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1250,
-      "length": 21,
-      "value": "\"prepareTokenCleared\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1312,
-      "length": 20,
-      "value": "\"prepareTokenReused\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1376,
-      "length": 23,
-      "value": "\"prepareTokenRefreshed\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1448,
-      "length": 28,
-      "value": "\"prepareTokenForceRefreshed\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1520,
-      "length": 23,
-      "value": "\"prepareResetAfterSale\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1592,
-      "length": 28,
-      "value": "\"readerTokenRecoveryStarted\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1671,
-      "length": 30,
-      "value": "\"readerTokenRecoverySucceeded\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1749,
-      "length": 27,
-      "value": "\"readerTokenRecoveryFailed\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1817,
-      "length": 20,
-      "value": "\"prepareAfterLaunch\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1883,
-      "length": 25,
-      "value": "\"prepareSkippedNotLinked\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1950,
-      "length": 21,
-      "value": "\"entitlementVerified\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2012,
-      "length": 20,
-      "value": "\"entitlementMissing\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2077,
-      "length": 24,
-      "value": "\"userInterfaceDismissed\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2154,
-      "length": 32,
-      "value": "\"userInterfaceDismissedTimedOut\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2237,
-      "length": 30,
-      "value": "\"osVersionDeprecationDetected\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2650,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3093,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3147,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3275,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8357,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8400,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8440,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20609,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPaySessionManager.swift",
-      "kind": "Dictionary",
-      "offset": 26016,
-      "length": 3,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayErrorView.swift",
       "kind": "StringLiteral",
       "offset": 265,
@@ -36082,205 +35851,436 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 487,
+      "offset": 437,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 534,
+      "offset": 484,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "StringLiteral",
-      "offset": 998,
+      "offset": 948,
       "length": 9,
       "value": "\"#6A6D7D\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1105,
+      "offset": 1055,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1153,
+      "offset": 1103,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1198,
+      "offset": 1148,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1438,
+      "offset": 1388,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1645,
+      "offset": 1595,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1648,
+      "offset": 1598,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1660,
+      "offset": 1610,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1664,
+      "offset": 1614,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1675,
+      "offset": 1625,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1679,
+      "offset": 1629,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1723,
+      "offset": 1673,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "FloatLiteral",
-      "offset": 1847,
+      "offset": 1797,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1853,
+      "offset": 1803,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1891,
+      "offset": 1841,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1933,
+      "offset": 1883,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2242,
+      "offset": 2192,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2299,
+      "offset": 2249,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2302,
+      "offset": 2252,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2314,
+      "offset": 2264,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2318,
+      "offset": 2268,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2329,
+      "offset": 2279,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2333,
+      "offset": 2283,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2475,
+      "offset": 2425,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2938,
+      "offset": 2592,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3120,
+      "offset": 2774,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPayLandingPageView.swift",
       "kind": "StringLiteral",
-      "offset": 3390,
+      "offset": 3044,
       "length": 14,
       "value": "\"chevron.left\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 16,
+      "value": "\"prepareStarted\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 765,
+      "length": 14,
+      "value": "\"prepareReady\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 15,
+      "value": "\"prepareReused\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 17,
+      "value": "\"prepareFallback\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 921,
+      "length": 15,
+      "value": "\"prepareFailed\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 975,
+      "length": 18,
+      "value": "\"prepareCancelled\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1034,
+      "length": 20,
+      "value": "\"prepareInvalidated\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1101,
+      "length": 26,
+      "value": "\"prepareStaleOnBackground\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1178,
+      "length": 30,
+      "value": "\"prepareReprepareOnForeground\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1250,
+      "length": 21,
+      "value": "\"prepareTokenCleared\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1312,
+      "length": 20,
+      "value": "\"prepareTokenReused\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1376,
+      "length": 23,
+      "value": "\"prepareTokenRefreshed\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1448,
+      "length": 28,
+      "value": "\"prepareTokenForceRefreshed\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1520,
+      "length": 23,
+      "value": "\"prepareResetAfterSale\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1592,
+      "length": 28,
+      "value": "\"readerTokenRecoveryStarted\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1671,
+      "length": 30,
+      "value": "\"readerTokenRecoverySucceeded\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1749,
+      "length": 27,
+      "value": "\"readerTokenRecoveryFailed\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1817,
+      "length": 20,
+      "value": "\"prepareAfterLaunch\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1883,
+      "length": 25,
+      "value": "\"prepareSkippedNotLinked\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1950,
+      "length": 21,
+      "value": "\"entitlementVerified\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2012,
+      "length": 20,
+      "value": "\"entitlementMissing\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2077,
+      "length": 24,
+      "value": "\"userInterfaceDismissed\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2154,
+      "length": 32,
+      "value": "\"userInterfaceDismissedTimedOut\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2237,
+      "length": 30,
+      "value": "\"osVersionDeprecationDetected\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2650,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3093,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3147,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3275,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8357,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8400,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8440,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20609,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
+      "kind": "Dictionary",
+      "offset": 26016,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySplashView.swift",
@@ -36306,7 +36306,7 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySplashView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6131,
+      "offset": 6147,
       "length": 4,
       "value": "true"
     },
@@ -36334,105 +36334,91 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1192,
+      "offset": 1196,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1237,
+      "offset": 1241,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1281,
+      "offset": 1285,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1349,
+      "offset": 1353,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1407,
+      "offset": 1411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1475,
+      "offset": 1479,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1530,
+      "offset": 1534,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1585,
+      "offset": 1589,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1642,
+      "offset": 1646,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1716,
+      "offset": 1720,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1759,
+      "offset": 9858,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1805,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9915,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 22586,
+      "offset": 22472,
       "length": 18,
       "value": "\"readerIdentifier\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 22853,
+      "offset": 22739,
       "length": 23,
       "value": "\"transactionIdentifier\""
     },
@@ -37398,2149 +37384,2142 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4463,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 4599,
+      "offset": 4552,
       "length": 29,
       "value": "\"xsdk_internet_no_connection\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4677,
+      "offset": 4630,
       "length": 27,
       "value": "\"xsdk_internet_error_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4770,
+      "offset": 4723,
       "length": 36,
       "value": "\"xsdk_internet_no_connection_btn_ok\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4903,
+      "offset": 4856,
       "length": 27,
       "value": "\"xsdk_bluetooth_turned_off\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4986,
+      "offset": 4939,
       "length": 30,
       "value": "\"xsdk_bluetooth_no_permission\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5065,
+      "offset": 5018,
       "length": 28,
       "value": "\"xsdk_bluetooth_error_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5152,
+      "offset": 5105,
       "length": 39,
       "value": "\"xsdk_bluetooth_permission_error_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5297,
+      "offset": 5250,
       "length": 31,
       "value": "\"xsdk_offline_report_nav_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5388,
+      "offset": 5341,
       "length": 34,
       "value": "\"xsdk_offline_report_clear_report\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5484,
+      "offset": 5437,
       "length": 36,
       "value": "\"xsdk_offline_report_save_error_log\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5577,
+      "offset": 5530,
       "length": 19,
       "value": "\"xsdk_offline_info\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5666,
+      "offset": 5619,
       "length": 42,
       "value": "\"xsdk_offline_report_entry_approved_count\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5766,
+      "offset": 5719,
       "length": 43,
       "value": "\"xsdk_offline_report_entry_approved_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5866,
+      "offset": 5819,
       "length": 42,
       "value": "\"xsdk_offline_report_entry_declined_count\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5966,
+      "offset": 5919,
       "length": 43,
       "value": "\"xsdk_offline_report_entry_declined_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6063,
+      "offset": 6016,
       "length": 39,
       "value": "\"xsdk_offline_report_entry_error_count\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6157,
+      "offset": 6110,
       "length": 40,
       "value": "\"xsdk_offline_report_entry_error_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6303,
+      "offset": 6256,
       "length": 31,
       "value": "\"xsdk_reader_details_nav_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6387,
+      "offset": 6340,
       "length": 31,
       "value": "\"xsdk_reader_details_connected\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6475,
+      "offset": 6428,
       "length": 36,
       "value": "\"xsdk_reader_details_autojoin_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6574,
+      "offset": 6527,
       "length": 42,
       "value": "\"xsdk_reader_details_autojoin_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6670,
+      "offset": 6623,
       "length": 38,
       "value": "\"xsdk_reader_details_readername_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6768,
+      "offset": 6721,
       "length": 45,
       "value": "\"xsdk_reader_details_custom_readername_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6876,
+      "offset": 6829,
       "length": 49,
       "value": "\"xsdk_reader_details_add_custom_readername_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6981,
+      "offset": 6934,
       "length": 40,
       "value": "\"xsdk_reader_details_serialnumber_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7072,
+      "offset": 7025,
       "length": 35,
       "value": "\"xsdk_reader_details_version_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7163,
+      "offset": 7116,
       "length": 35,
       "value": "\"xsdk_reader_details_remove_reader\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7264,
+      "offset": 7217,
       "length": 40,
       "value": "\"xsdk_reader_details_remove_alert_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7376,
+      "offset": 7329,
       "length": 42,
       "value": "\"xsdk_reader_details_remove_alert_message\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7469,
+      "offset": 7422,
       "length": 42,
       "value": "\"xsdk_reader_details_remove_alert_confirm\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7561,
+      "offset": 7514,
       "length": 41,
       "value": "\"xsdk_reader_details_remove_alert_cancel\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7656,
+      "offset": 7609,
       "length": 33,
       "value": "\"xsdk_reader_details_signal_weak\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7743,
+      "offset": 7696,
       "length": 33,
       "value": "\"xsdk_reader_details_signal_good\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7832,
+      "offset": 7785,
       "length": 35,
       "value": "\"xsdk_reader_details_signal_medium\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7923,
+      "offset": 7876,
       "length": 35,
       "value": "\"xsdk_reader_details_signal_status\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8015,
+      "offset": 7968,
       "length": 36,
       "value": "\"xsdk_reader_details_battery_status\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8150,
+      "offset": 8103,
       "length": 37,
       "value": "\"xsdk_payment_transaction_reader_tap\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8237,
+      "offset": 8190,
       "length": 40,
       "value": "\"xsdk_payment_transaction_reader_insert\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8326,
+      "offset": 8279,
       "length": 39,
       "value": "\"xsdk_payment_transaction_reader_slide\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8461,
+      "offset": 8414,
       "length": 33,
       "value": "\"xsdk_payment_manual_entry_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8550,
+      "offset": 8503,
       "length": 46,
       "value": "\"xsdk_payment_manual_entry_user_action_cancel\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8653,
+      "offset": 8606,
       "length": 47,
       "value": "\"xsdk_payment_manual_entry_user_action_confirm\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8761,
+      "offset": 8714,
       "length": 52,
       "value": "\"xsdk_payment_manual_entry_additional_section_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8863,
+      "offset": 8816,
       "length": 35,
       "value": "\"xsdk_payment_manual_entry_card_no\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8953,
+      "offset": 8906,
       "length": 41,
       "value": "\"xsdk_payment_manual_entry_card_no_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9052,
+      "offset": 9005,
       "length": 36,
       "value": "\"xsdk_payment_manual_entry_exp_date\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9157,
+      "offset": 9110,
       "length": 48,
       "value": "\"xsdk_payment_manual_entry_exp_date_placeholder\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9268,
+      "offset": 9221,
       "length": 42,
       "value": "\"xsdk_payment_manual_entry_exp_date_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9357,
+      "offset": 9310,
       "length": 31,
       "value": "\"xsdk_payment_manual_entry_csc\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9446,
+      "offset": 9399,
       "length": 43,
       "value": "\"xsdk_payment_manual_entry_csc_placeholder\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9541,
+      "offset": 9494,
       "length": 37,
       "value": "\"xsdk_payment_manual_entry_csc_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9641,
+      "offset": 9594,
       "length": 49,
       "value": "\"xsdk_payment_manual_entry_cardholder_first_name\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9758,
+      "offset": 9711,
       "length": 55,
       "value": "\"xsdk_payment_manual_entry_cardholder_first_name_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9875,
+      "offset": 9828,
       "length": 48,
       "value": "\"xsdk_payment_manual_entry_cardholder_last_name\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9990,
+      "offset": 9943,
       "length": 54,
       "value": "\"xsdk_payment_manual_entry_cardholder_last_name_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10102,
+      "offset": 10055,
       "length": 39,
       "value": "\"xsdk_payment_manual_entry_billing_zip\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10204,
+      "offset": 10157,
       "length": 45,
       "value": "\"xsdk_payment_manual_entry_billing_zip_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10302,
+      "offset": 10255,
       "length": 38,
       "value": "\"xsdk_payment_manual_entry_invoice_no\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10398,
+      "offset": 10351,
       "length": 44,
       "value": "\"xsdk_payment_manual_entry_invoice_no_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10493,
+      "offset": 10446,
       "length": 36,
       "value": "\"xsdk_payment_manual_entry_order_no\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10585,
+      "offset": 10538,
       "length": 42,
       "value": "\"xsdk_payment_manual_entry_order_no_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10682,
+      "offset": 10635,
       "length": 40,
       "value": "\"xsdk_payment_manual_entry_company_name\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10782,
+      "offset": 10735,
       "length": 46,
       "value": "\"xsdk_payment_manual_entry_company_name_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10882,
+      "offset": 10835,
       "length": 39,
       "value": "\"xsdk_payment_manual_entry_customer_id\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10980,
+      "offset": 10933,
       "length": 45,
       "value": "\"xsdk_payment_manual_entry_customer_id_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11084,
+      "offset": 11037,
       "length": 40,
       "value": "\"xsdk_payment_manual_entry_shipping_zip\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11188,
+      "offset": 11141,
       "length": 46,
       "value": "\"xsdk_payment_manual_entry_shipping_zip_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11327,
+      "offset": 11280,
       "length": 22,
       "value": "\"xsdk_signature_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11401,
+      "offset": 11354,
       "length": 25,
       "value": "\"xsdk_signature_subtitle\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11476,
+      "offset": 11429,
       "length": 23,
       "value": "\"xsdk_signature_action\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11547,
+      "offset": 11500,
       "length": 34,
       "value": "\"xsdk_signature_error_action_skip\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11647,
+      "offset": 11600,
       "length": 37,
       "value": "\"xsdk_signature_upload_failure_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11755,
+      "offset": 11708,
       "length": 39,
       "value": "\"xsdk_signature_upload_sucessful_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11867,
+      "offset": 11820,
       "length": 41,
       "value": "\"xsdk_signature_accepted_succesful_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12022,
+      "offset": 11975,
       "length": 25,
       "value": "\"xsdk_email_option_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12118,
+      "offset": 12071,
       "length": 30,
       "value": "\"xsdk_email_option_button_yes\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12218,
+      "offset": 12171,
       "length": 29,
       "value": "\"xsdk_email_option_button_no\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12305,
+      "offset": 12258,
       "length": 23,
       "value": "\"xsdk_email_form_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12389,
+      "offset": 12342,
       "length": 26,
       "value": "\"xsdk_email_form_subtitle\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12484,
+      "offset": 12437,
       "length": 35,
       "value": "\"xsdk_email_form_input_placeholder\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12586,
+      "offset": 12539,
       "length": 33,
       "value": "\"xsdk_email_form_invalid_address\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12682,
+      "offset": 12635,
       "length": 29,
       "value": "\"xsdk_email_form_button_send\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12774,
+      "offset": 12727,
       "length": 29,
       "value": "\"xsdk_email_form_button_skip\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12874,
+      "offset": 12827,
       "length": 38,
       "value": "\"xsdk_email_form_send_receipt_success\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12982,
+      "offset": 12935,
       "length": 37,
       "value": "\"xsdk_email_form_send_receipt_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13088,
+      "offset": 13041,
       "length": 36,
       "value": "\"xsdk_email_form_save_email_success\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13192,
+      "offset": 13145,
       "length": 35,
       "value": "\"xsdk_email_form_offline_mode_info\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13318,
+      "offset": 13271,
       "length": 20,
       "value": "\"xsdk_keyboard_done\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13425,
+      "offset": 13378,
       "length": 16,
       "value": "\"xsdk_common_ok\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13537,
+      "offset": 13490,
       "length": 32,
       "value": "\"xsdk_pairing_connecting_reader\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13633,
+      "offset": 13586,
       "length": 35,
       "value": "\"xsdk_pairing_connection_sucessful\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13716,
+      "offset": 13669,
       "length": 31,
       "value": "\"xsdk_pairing_user_action_pair\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13795,
+      "offset": 13748,
       "length": 31,
       "value": "\"xsdk_pairing_user_action_done\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13883,
+      "offset": 13836,
       "length": 30,
       "value": "\"xsdk_pairing_pair_new_reader\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13965,
+      "offset": 13918,
       "length": 35,
       "value": "\"xsdk_pairing_user_action_settings\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14051,
+      "offset": 14004,
       "length": 34,
       "value": "\"xsdk_pairing_user_action_addName\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14134,
+      "offset": 14087,
       "length": 32,
       "value": "\"xsdk_pairing_user_action_later\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14222,
+      "offset": 14175,
       "length": 28,
       "value": "\"xsdk_pairing_select_reader\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14313,
+      "offset": 14266,
       "length": 37,
       "value": "\"xsdk_pairing_no_readers_found_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14419,
+      "offset": 14372,
       "length": 43,
       "value": "\"xsdk_pairing_no_readers_found_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14516,
+      "offset": 14469,
       "length": 26,
       "value": "\"xsdk_pairing_reader_name\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14605,
+      "offset": 14558,
       "length": 37,
       "value": "\"xsdk_pairing_reader_name_input_hint\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14697,
+      "offset": 14650,
       "length": 43,
       "value": "\"xsdk_pairing_prepare_pairing_reader_range\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14796,
+      "offset": 14749,
       "length": 44,
       "value": "\"xsdk_pairing_prepare_pairing_reader_button\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14897,
+      "offset": 14850,
       "length": 33,
       "value": "\"xsdk_pairing_add_name_to_reader\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14986,
+      "offset": 14939,
       "length": 33,
       "value": "\"xsdk_pairing_rename_your_reader\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15085,
+      "offset": 15038,
       "length": 32,
       "value": "\"xsdk_pairing_paired_successful\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15210,
+      "offset": 15163,
       "length": 25,
       "value": "\"xsdk_reader_signal_idle\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15288,
+      "offset": 15241,
       "length": 30,
       "value": "\"xsdk_reader_signal_connected\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15425,
+      "offset": 15378,
       "length": 39,
       "value": "\"xsdk_readers_list_no_reader_connected\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15520,
+      "offset": 15473,
       "length": 33,
       "value": "\"xsdk_readers_list_select_reader\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15643,
+      "offset": 15596,
       "length": 39,
       "value": "\"xsdk_general_error_user_action_cancel\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15731,
+      "offset": 15684,
       "length": 38,
       "value": "\"xsdk_general_error_user_action_retry\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15824,
+      "offset": 15777,
       "length": 52,
       "value": "\"xsdk_general_error_user_action_manually_enter_card\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15937,
+      "offset": 15890,
       "length": 26,
       "value": "\"xsdk_general_error_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16030,
+      "offset": 15983,
       "length": 32,
       "value": "\"xsdk_general_error_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16117,
+      "offset": 16070,
       "length": 25,
       "value": "\"xsdk_reader_error_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16195,
+      "offset": 16148,
       "length": 25,
       "value": "\"xsdk_general_error_code\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16276,
+      "offset": 16229,
       "length": 28,
       "value": "\"xsdk_general_error_message\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16361,
+      "offset": 16314,
       "length": 35,
       "value": "\"xsdk_general_error_transaction_id\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16450,
+      "offset": 16403,
       "length": 32,
       "value": "\"xsdk_general_error_exchange_id\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16553,
+      "offset": 16506,
       "length": 29,
       "value": "\"xsdk_response_parsing_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16655,
+      "offset": 16608,
       "length": 42,
       "value": "\"xsdk_http_response_parsing_error_message\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16823,
+      "offset": 16776,
       "length": 38,
       "value": "\"xsdk_payment_transaction_please_wait\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16936,
+      "offset": 16889,
       "length": 37,
       "value": "\"xsdk_payment_transaction_processing\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17037,
+      "offset": 16990,
       "length": 48,
       "value": "\"xsdk_payment_transaction_completed_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17165,
+      "offset": 17118,
       "length": 54,
       "value": "\"xsdk_payment_transaction_completed_avoided_surcharge\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17282,
+      "offset": 17235,
       "length": 47,
       "value": "\"xsdk_payment_transaction_accepted_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17395,
+      "offset": 17348,
       "length": 51,
       "value": "\"xsdk_payment_transaction_not_accepted_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17553,
+      "offset": 17506,
       "length": 32,
       "value": "\"xsdk_tips_percentage_and_value\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17641,
+      "offset": 17594,
       "length": 25,
       "value": "\"xsdk_tips_custom_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17724,
+      "offset": 17677,
       "length": 38,
       "value": "\"xsdk_tips_user_transaction_tip_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17816,
+      "offset": 17769,
       "length": 47,
       "value": "\"xsdk_tips_user_action_transaction_without_tip\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17914,
+      "offset": 17867,
       "length": 44,
       "value": "\"xsdk_tips_user_action_transaction_with_tip\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18060,
+      "offset": 18013,
       "length": 33,
       "value": "\"xsdk_service_fee_type_surcharge\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18144,
+      "offset": 18097,
       "length": 27,
       "value": "\"xsdk_service_fee_type_nca\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18230,
+      "offset": 18183,
       "length": 36,
       "value": "\"xsdk_service_fee_type_service_lite\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18321,
+      "offset": 18274,
       "length": 31,
       "value": "\"xsdk_service_fee_type_service\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18411,
+      "offset": 18364,
       "length": 35,
       "value": "\"xsdk_service_fee_type_convenience\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18506,
+      "offset": 18459,
       "length": 37,
       "value": "\"xsdk_service_fee_type_cash_discount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18596,
+      "offset": 18549,
       "length": 29,
       "value": "\"xsdk_service_fee_base_price\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18682,
+      "offset": 18635,
       "length": 34,
       "value": "\"xsdk_service_fee_base_price_cash\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18782,
+      "offset": 18735,
       "length": 45,
       "value": "\"xsdk_service_fee_base_price_cash_debit_card\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18888,
+      "offset": 18841,
       "length": 38,
       "value": "\"xsdk_service_fee_adjusted_price_card\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18993,
+      "offset": 18946,
       "length": 45,
       "value": "\"xsdk_service_fee_adjusted_price_credit_card\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19105,
+      "offset": 19058,
       "length": 47,
       "value": "\"xsdk_service_fee_adjusted_price_cash_discount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19214,
+      "offset": 19167,
       "length": 39,
       "value": "\"xsdk_service_fee_adjusted_price_total\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19308,
+      "offset": 19261,
       "length": 30,
       "value": "\"xsdk_service_fee_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19445,
+      "offset": 19398,
       "length": 32,
       "value": "\"xsdk_offline_mode_enable_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19545,
+      "offset": 19498,
       "length": 34,
       "value": "\"xsdk_offline_mode_confirm_option\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19646,
+      "offset": 19599,
       "length": 33,
       "value": "\"xsdk_offline_mode_cancel_option\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19753,
+      "offset": 19706,
       "length": 40,
       "value": "\"xsdk_offline_mode_confirmation_message\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19874,
+      "offset": 19827,
       "length": 40,
       "value": "\"xsdk_offline_mode_confirmation_proceed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19994,
+      "offset": 19947,
       "length": 39,
       "value": "\"xsdk_offline_mode_confirmation_cancel\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20107,
+      "offset": 20060,
       "length": 41,
       "value": "\"xsdk_offline_mode_warning_message_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20228,
+      "offset": 20181,
       "length": 47,
       "value": "\"xsdk_offline_mode_warning_message_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20360,
+      "offset": 20313,
       "length": 52,
       "value": "\"xsdk_offline_mode_warning_confirmation_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20474,
+      "offset": 20427,
       "length": 27,
       "value": "\"xsdk_offline_mode_enabled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20577,
+      "offset": 20530,
       "length": 48,
       "value": "\"xsdk_offline_mode_warning_message_confirmation\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20704,
+      "offset": 20657,
       "length": 38,
       "value": "\"xsdk_offline_mode_encryption_message\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20821,
+      "offset": 20774,
       "length": 43,
       "value": "\"xsdk_offline_mode_encryption_call_support\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20943,
+      "offset": 20896,
       "length": 32,
       "value": "\"xsdk_offline_mode_report_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21039,
+      "offset": 20992,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_merchant_id\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21142,
+      "offset": 21095,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_terminal_id\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21245,
+      "offset": 21198,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_report_date\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21348,
+      "offset": 21301,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_report_time\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21458,
+      "offset": 21411,
       "length": 39,
       "value": "\"xsdk_offline_mode_report_offline_date\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21569,
+      "offset": 21522,
       "length": 39,
       "value": "\"xsdk_offline_mode_report_offline_time\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21682,
+      "offset": 21635,
       "length": 41,
       "value": "\"xsdk_offline_mode_report_transaction_id\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21797,
+      "offset": 21750,
       "length": 42,
       "value": "\"xsdk_offline_mode_report_external_ref_id\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21914,
+      "offset": 21867,
       "length": 42,
       "value": "\"xsdk_offline_mode_report_cardholder_name\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22025,
+      "offset": 21978,
       "length": 36,
       "value": "\"xsdk_offline_mode_report_card_type\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22136,
+      "offset": 22089,
       "length": 43,
       "value": "\"xsdk_offline_mode_report_last_four_digits\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22254,
+      "offset": 22207,
       "length": 42,
       "value": "\"xsdk_offline_mode_report_expiration_date\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22363,
+      "offset": 22316,
       "length": 33,
       "value": "\"xsdk_offline_mode_report_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22466,
+      "offset": 22419,
       "length": 37,
       "value": "\"xsdk_offline_mode_report_tip_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22577,
+      "offset": 22530,
       "length": 41,
       "value": "\"xsdk_offline_mode_report_empower_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22690,
+      "offset": 22643,
       "length": 39,
       "value": "\"xsdk_offline_mode_report_total_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22800,
+      "offset": 22753,
       "length": 38,
       "value": "\"xsdk_offline_mode_report_customer_id\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22906,
+      "offset": 22859,
       "length": 35,
       "value": "\"xsdk_offline_mode_report_order_id\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23009,
+      "offset": 22962,
       "length": 34,
       "value": "\"xsdk_offline_mode_report_invoice\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23118,
+      "offset": 23071,
       "length": 42,
       "value": "\"xsdk_offline_mode_report_billing_address\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23236,
+      "offset": 23189,
       "length": 43,
       "value": "\"xsdk_offline_mode_report_shipping_address\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23352,
+      "offset": 23305,
       "length": 40,
       "value": "\"xsdk_offline_mode_report_software_type\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23468,
+      "offset": 23421,
       "length": 43,
       "value": "\"xsdk_offline_mode_report_software_version\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23577,
+      "offset": 23530,
       "length": 32,
       "value": "\"xsdk_offline_mode_report_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23679,
+      "offset": 23632,
       "length": 37,
       "value": "\"xsdk_offline_mode_report_error_date\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23786,
+      "offset": 23739,
       "length": 37,
       "value": "\"xsdk_offline_mode_report_error_time\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23907,
+      "offset": 23860,
       "length": 38,
       "value": "\"xsdk_offline_mode_process_info_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24024,
+      "offset": 23977,
       "length": 44,
       "value": "\"xsdk_offline_mode_process_info_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24149,
+      "offset": 24102,
       "length": 53,
       "value": "\"xsdk_offline_mode_process_info_process_alert_action\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24268,
+      "offset": 24221,
       "length": 30,
       "value": "\"xsdk_no_merchant_error_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24371,
+      "offset": 24324,
       "length": 36,
       "value": "\"xsdk_no_merchant_error_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24481,
+      "offset": 24434,
       "length": 34,
       "value": "\"xsdk_no_merchant_error_ok_button\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24626,
+      "offset": 24579,
       "length": 21,
       "value": "\"xsdk_settings_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24717,
+      "offset": 24670,
       "length": 35,
       "value": "\"xsdk_settings_readers_placeholder\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24823,
+      "offset": 24776,
       "length": 32,
       "value": "\"xsdk_settings_offline_subtitle\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24927,
+      "offset": 24880,
       "length": 38,
       "value": "\"xsdk_settings_offline_switch_enabled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25042,
+      "offset": 24995,
       "length": 44,
       "value": "\"xsdk_settings_offline_switch_enable_prompt\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25164,
+      "offset": 25117,
       "length": 44,
       "value": "\"xsdk_settings_offline_pending_transactions\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25289,
+      "offset": 25242,
       "length": 47,
       "value": "\"xsdk_settings_offline_one_pending_transaction\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25407,
+      "offset": 25360,
       "length": 37,
       "value": "\"xsdk_settings_offline_upload_errors\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25516,
+      "offset": 25469,
       "length": 38,
       "value": "\"xsdk_settings_offline_upload_success\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25626,
+      "offset": 25579,
       "length": 35,
       "value": "\"xsdk_settings_offline_btn_process\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25732,
+      "offset": 25685,
       "length": 34,
       "value": "\"xsdk_settings_offline_btn_report\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25835,
+      "offset": 25788,
       "length": 32,
       "value": "\"xsdk_settings_offline_btn_done\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25949,
+      "offset": 25902,
       "length": 47,
       "value": "\"xsdk_settings_offline_btn_process_no_internet\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26068,
+      "offset": 26021,
       "length": 38,
       "value": "\"xsdk_settings_email_receipt_subtitle\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26177,
+      "offset": 26130,
       "length": 37,
       "value": "\"xsdk_settings_email_receipt_enabled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26309,
+      "offset": 26262,
       "length": 21,
       "value": "\"xsdk_ttp_tap_to_pay\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26402,
+      "offset": 26355,
       "length": 45,
       "value": "\"xsdk_ttp_tap_to_pay_on_iphone_now_available\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26519,
+      "offset": 26472,
       "length": 42,
       "value": "\"xsdk_ttp_accept_payment_from_contactless\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26627,
+      "offset": 26580,
       "length": 38,
       "value": "\"xsdk_ttp_enable_tap_to_pay_on_iphone\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26718,
+      "offset": 26671,
       "length": 21,
       "value": "\"xsdk_ttp_learn_more\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26787,
+      "offset": 26740,
       "length": 15,
       "value": "\"xsdk_ttp_back\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26867,
+      "offset": 26820,
       "length": 34,
       "value": "\"xsdk_ttp_authorizing_please_wait\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 26952,
+      "offset": 26905,
       "length": 18,
       "value": "\"xsdk_ttp_loading\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27023,
+      "offset": 26976,
       "length": 20,
       "value": "\"xsdk_ttp_preparing\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27103,
+      "offset": 27056,
       "length": 28,
       "value": "\"xsdk_ttp_preparing_percent\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27197,
+      "offset": 27150,
       "length": 35,
       "value": "\"xsdk_ttp_payment_successful_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27304,
+      "offset": 27257,
       "length": 41,
       "value": "\"xsdk_ttp_payment_successful_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27397,
+      "offset": 27350,
       "length": 19,
       "value": "\"xsdk_ttp_approved\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27471,
+      "offset": 27424,
       "length": 23,
       "value": "\"xsdk_ttp_send_receipt\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27542,
+      "offset": 27495,
       "length": 15,
       "value": "\"xsdk_ttp_done\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27620,
+      "offset": 27573,
       "length": 32,
       "value": "\"xsdk_ttp_payment_failure_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27721,
+      "offset": 27674,
       "length": 38,
       "value": "\"xsdk_ttp_payment_failure_description\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27808,
+      "offset": 27761,
       "length": 16,
       "value": "\"xsdk_ttp_retry\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27874,
+      "offset": 27827,
       "length": 17,
       "value": "\"xsdk_ttp_cancel\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 27964,
+      "offset": 27917,
       "length": 45,
       "value": "\"xsdk_ttp_ask_for_card_or_contactless_device\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28082,
+      "offset": 28035,
       "length": 45,
       "value": "\"xsdk_ttp_please_wait_we_process_the_payment\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28196,
+      "offset": 28149,
       "length": 31,
       "value": "\"xsdk_ttp_os_deprecation_title\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28298,
+      "offset": 28251,
       "length": 33,
       "value": "\"xsdk_ttp_os_deprecation_message\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28401,
+      "offset": 28354,
       "length": 33,
       "value": "\"xsdk_ttp_os_deprecation_not_now\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28505,
+      "offset": 28458,
       "length": 33,
       "value": "\"xsdk_ttp_os_deprecation_install\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28614,
+      "offset": 28567,
       "length": 47,
       "value": "\"xsdk_ttp_somthing_went_wrong_please_try_again\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28721,
+      "offset": 28674,
       "length": 31,
       "value": "\"xsdk_ttp_tap_to_pay_on_iphone\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28806,
+      "offset": 28759,
       "length": 22,
       "value": "\"xsdk_ttp_terms_apply\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 28885,
+      "offset": 28838,
       "length": 25,
       "value": "\"xsdk_ttp_splash_message\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29020,
+      "offset": 28973,
       "length": 28,
       "value": "\"xsdk_ttp_error_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29115,
+      "offset": 29068,
       "length": 36,
       "value": "\"xsdk_ttp_error_entitlement_missing\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29220,
+      "offset": 29173,
       "length": 39,
       "value": "\"xsdk_ttp_error_background_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29319,
+      "offset": 29272,
       "length": 28,
       "value": "\"xsdk_ttp_error_unsupported\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29403,
+      "offset": 29356,
       "length": 24,
       "value": "\"xsdk_ttp_error_network\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29487,
+      "offset": 29440,
       "length": 29,
       "value": "\"xsdk_ttp_error_network_auth\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29582,
+      "offset": 29535,
       "length": 35,
       "value": "\"xsdk_ttp_error_service_connection\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29674,
+      "offset": 29627,
       "length": 26,
       "value": "\"xsdk_ttp_error_not_ready\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29761,
+      "offset": 29714,
       "length": 30,
       "value": "\"xsdk_ttp_error_token_invalid\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29853,
+      "offset": 29806,
       "length": 31,
       "value": "\"xsdk_ttp_error_prepare_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 29954,
+      "offset": 29907,
       "length": 40,
       "value": "\"xsdk_ttp_error_prepare_failed_baseline\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30057,
+      "offset": 30010,
       "length": 32,
       "value": "\"xsdk_ttp_error_prepare_expired\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30150,
+      "offset": 30103,
       "length": 30,
       "value": "\"xsdk_ttp_error_device_banned\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30245,
+      "offset": 30198,
       "length": 35,
       "value": "\"xsdk_ttp_error_account_not_linked\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30349,
+      "offset": 30302,
       "length": 39,
       "value": "\"xsdk_ttp_error_account_already_linked\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30457,
+      "offset": 30410,
       "length": 39,
       "value": "\"xsdk_ttp_error_account_linking_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30568,
+      "offset": 30521,
       "length": 42,
       "value": "\"xsdk_ttp_error_account_linking_cancelled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30674,
+      "offset": 30627,
       "length": 33,
       "value": "\"xsdk_ttp_error_merchant_blocked\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30771,
+      "offset": 30724,
       "length": 33,
       "value": "\"xsdk_ttp_error_invalid_merchant\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30869,
+      "offset": 30822,
       "length": 35,
       "value": "\"xsdk_ttp_error_reader_memory_full\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 30963,
+      "offset": 30916,
       "length": 28,
       "value": "\"xsdk_ttp_error_reader_busy\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31054,
+      "offset": 31007,
       "length": 33,
       "value": "\"xsdk_ttp_error_os_not_supported\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31153,
+      "offset": 31106,
       "length": 36,
       "value": "\"xsdk_ttp_error_model_not_supported\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31254,
+      "offset": 31207,
       "length": 34,
       "value": "\"xsdk_ttp_error_passcode_disabled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31349,
+      "offset": 31302,
       "length": 31,
       "value": "\"xsdk_ttp_error_icloud_sign_in\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31454,
+      "offset": 31407,
       "length": 45,
       "value": "\"xsdk_ttp_error_account_linking_check_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31566,
+      "offset": 31519,
       "length": 36,
       "value": "\"xsdk_ttp_error_account_deactivated\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31673,
+      "offset": 31626,
       "length": 42,
       "value": "\"xsdk_ttp_error_store_forward_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31790,
+      "offset": 31743,
       "length": 46,
       "value": "\"xsdk_ttp_error_store_forward_session_expired\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 31915,
+      "offset": 31868,
       "length": 50,
       "value": "\"xsdk_ttp_error_store_forward_session_invalidated\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32044,
+      "offset": 31997,
       "length": 51,
       "value": "\"xsdk_ttp_error_store_forward_token_issuer_changed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32162,
+      "offset": 32115,
       "length": 36,
       "value": "\"xsdk_ttp_error_request_interrupted\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32254,
+      "offset": 32207,
       "length": 24,
       "value": "\"xsdk_ttp_error_unknown\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32337,
+      "offset": 32290,
       "length": 27,
       "value": "\"xsdk_ttp_error_unexpected\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32460,
+      "offset": 32413,
       "length": 27,
       "value": "\"xsdk_ttp_read_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32550,
+      "offset": 32503,
       "length": 32,
       "value": "\"xsdk_ttp_read_background_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32639,
+      "offset": 32592,
       "length": 26,
       "value": "\"xsdk_ttp_read_pin_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32723,
+      "offset": 32676,
       "length": 27,
       "value": "\"xsdk_ttp_read_pin_timeout\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32810,
+      "offset": 32763,
       "length": 29,
       "value": "\"xsdk_ttp_read_pin_cancelled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 32909,
+      "offset": 32862,
       "length": 40,
       "value": "\"xsdk_ttp_read_service_connection_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33009,
+      "offset": 32962,
       "length": 29,
       "value": "\"xsdk_ttp_read_service_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33095,
+      "offset": 33048,
       "length": 26,
       "value": "\"xsdk_ttp_read_no_session\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33183,
+      "offset": 33136,
       "length": 31,
       "value": "\"xsdk_ttp_read_session_expired\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33274,
+      "offset": 33227,
       "length": 29,
       "value": "\"xsdk_ttp_read_token_expired\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33363,
+      "offset": 33316,
       "length": 29,
       "value": "\"xsdk_ttp_read_network_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33449,
+      "offset": 33402,
       "length": 26,
       "value": "\"xsdk_ttp_read_auth_error\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33534,
+      "offset": 33487,
       "length": 28,
       "value": "\"xsdk_ttp_read_session_busy\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33619,
+      "offset": 33572,
       "length": 25,
       "value": "\"xsdk_ttp_read_cancelled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33705,
+      "offset": 33658,
       "length": 30,
       "value": "\"xsdk_ttp_read_invalid_amount\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33798,
+      "offset": 33751,
       "length": 32,
       "value": "\"xsdk_ttp_read_invalid_currency\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33888,
+      "offset": 33841,
       "length": 27,
       "value": "\"xsdk_ttp_read_invalid_aid\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 33974,
+      "offset": 33927,
       "length": 28,
       "value": "\"xsdk_ttp_read_nfc_disabled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34070,
+      "offset": 34023,
       "length": 39,
       "value": "\"xsdk_ttp_read_not_allowed_during_call\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34173,
+      "offset": 34126,
       "length": 33,
       "value": "\"xsdk_ttp_read_passcode_disabled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34268,
+      "offset": 34221,
       "length": 32,
       "value": "\"xsdk_ttp_read_card_read_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34355,
+      "offset": 34308,
       "length": 24,
       "value": "\"xsdk_ttp_read_vas_fail\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34440,
+      "offset": 34393,
       "length": 30,
       "value": "\"xsdk_ttp_read_payment_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34530,
+      "offset": 34483,
       "length": 29,
       "value": "\"xsdk_ttp_read_card_declined\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34626,
+      "offset": 34579,
       "length": 37,
       "value": "\"xsdk_ttp_read_invalid_vas_merchants\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34727,
+      "offset": 34680,
       "length": 34,
       "value": "\"xsdk_ttp_read_invalid_vas_params\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34822,
+      "offset": 34775,
       "length": 31,
       "value": "\"xsdk_ttp_read_pin_not_allowed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 34926,
+      "offset": 34879,
       "length": 44,
       "value": "\"xsdk_ttp_read_store_forward_decline_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 35038,
+      "offset": 34991,
       "length": 39,
       "value": "\"xsdk_ttp_read_store_forward_not_found\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 35135,
+      "offset": 35088,
       "length": 27,
       "value": "\"xsdk_ttp_read_init_failed\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 35222,
+      "offset": 35175,
       "length": 29,
       "value": "\"xsdk_ttp_read_not_available\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 35315,
+      "offset": 35268,
       "length": 34,
       "value": "\"xsdk_ttp_read_card_not_supported\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 35404,
+      "offset": 35357,
       "length": 23,
       "value": "\"xsdk_ttp_read_unknown\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/ClearentUI\/Common\/Util\/ClearentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 35485,
+      "offset": 35438,
       "length": 29,
       "value": "\"xsdk_ttp_read_unexpectedzed\""
     },
