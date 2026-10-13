@@ -28,6 +28,9 @@ Pods/
 *.xcframework
 !default.xcframework
 
+# Generated framework archives and binaries
+/ClearentIdtechIOSFramework.xcframework/
+
 ## Carthage
 Carthage/Build/
 
@@ -39,6 +42,9 @@ fastlane/test_output
 
 ## Archives
 *.xcarchive
+
+## Release automation logs
+/Scripts/logs/
 
 ## Temporary and backup files
 *.moved-aside

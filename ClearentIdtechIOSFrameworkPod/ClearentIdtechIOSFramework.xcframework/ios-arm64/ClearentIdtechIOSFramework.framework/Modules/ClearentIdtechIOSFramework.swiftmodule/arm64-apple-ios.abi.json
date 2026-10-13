@@ -36212,84 +36212,91 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 996,
+      "offset": 930,
       "length": 19,
       "value": "\"linkAccountCalled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 1148,
+      "offset": 1084,
+      "length": 35,
+      "value": "\"termsAndConditionsScreenPresented\""
+    },
+    {
+      "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1252,
       "length": 15,
       "value": "\"prepareCalled\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 1269,
+      "offset": 1373,
       "length": 23,
       "value": "\"readerSessionReceived\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 1439,
+      "offset": 1543,
       "length": 20,
       "value": "\"transactionStarted\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 1579,
+      "offset": 1683,
       "length": 17,
       "value": "\"readRequestSent\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 1709,
+      "offset": 1813,
       "length": 13,
       "value": "\"readyForTap\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 1834,
+      "offset": 1938,
       "length": 14,
       "value": "\"cardDetected\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 1950,
+      "offset": 2054,
       "length": 20,
       "value": "\"readResultReceived\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 2079,
+      "offset": 2183,
       "length": 27,
       "value": "\"readerResultSentToBackend\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 2217,
+      "offset": 2321,
       "length": 24,
       "value": "\"approvalResultReceived\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "StringLiteral",
-      "offset": 2344,
+      "offset": 2448,
       "length": 25,
       "value": "\"approvedShownToConsumer\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Logging\/TapToPayPerformanceLog.swift",
       "kind": "Dictionary",
-      "offset": 2902,
+      "offset": 3006,
       "length": 3,
       "value": "[]"
     },
@@ -36317,21 +36324,21 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayReaderService.swift",
       "kind": "IntegerLiteral",
-      "offset": 10292,
+      "offset": 10455,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayReaderService.swift",
       "kind": "BooleanLiteral",
-      "offset": 10329,
+      "offset": 10492,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/Repository\/TapToPayReaderService.swift",
       "kind": "Array",
-      "offset": 10403,
+      "offset": 10566,
       "length": 2,
       "value": "[]"
     },
