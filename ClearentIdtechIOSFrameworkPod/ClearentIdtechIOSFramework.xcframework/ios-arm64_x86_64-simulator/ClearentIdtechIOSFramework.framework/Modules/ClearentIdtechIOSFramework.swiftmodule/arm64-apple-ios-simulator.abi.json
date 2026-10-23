@@ -36618,7 +36618,7 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/View\/TapToPaySessionManager.swift",
       "kind": "Dictionary",
-      "offset": 30718,
+      "offset": 30960,
       "length": 3,
       "value": "[]"
     },
@@ -36660,14 +36660,14 @@
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayError.swift",
       "kind": "StringLiteral",
-      "offset": 2111,
+      "offset": 2133,
       "length": 21,
       "value": "\"prepareFailedReason\""
     },
     {
       "filePath": "\/Users\/Manoj\/Projects\/iOS\/clearent-Idtech-framework-ios\/ClearentIdtechIOSFramework\/TapToPay\/ViewModel\/TapToPayError.swift",
       "kind": "FloatLiteral",
-      "offset": 4067,
+      "offset": 4089,
       "length": 3,
       "value": "0.5"
     },
