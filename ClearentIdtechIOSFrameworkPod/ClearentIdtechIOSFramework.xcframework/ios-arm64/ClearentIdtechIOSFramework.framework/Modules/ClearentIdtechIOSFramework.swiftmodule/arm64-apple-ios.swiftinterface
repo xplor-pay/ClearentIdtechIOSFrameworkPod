@@ -111,12 +111,16 @@ public enum FlowInputType {
   @_Concurrency.MainActor final public func isAccountLinked(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo? = nil, completion: ((Swift.Bool, ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil)
   @available(iOS 15.4, *)
   @_Concurrency.MainActor final public func linkAccount(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo? = nil, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil)
+  @available(iOS 16.4, *)
+  @_Concurrency.MainActor final public func relinkTapToPayAccount(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo? = nil, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil)
   @available(iOS 15.4, *)
   @_Concurrency.MainActor final public func prepareTapToPay(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo? = nil, forceRefreshToken: Swift.Bool = false, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil)
   @available(iOS 15.4, *)
   @_Concurrency.MainActor final public func invalidateTapToPaySession()
   @available(iOS 15.4, *)
   @_Concurrency.MainActor final public func tapToPayViewController(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil) -> UIKit.UINavigationController
+  @available(iOS 15.4, *)
+  @_Concurrency.MainActor final public func tapToPayAccountLinkViewController(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, mode: ClearentIdtechIOSFramework.TapToPayAccountLinkMode, completion: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil) -> UIKit.UINavigationController
   @available(iOS 15.4, *)
   @_Concurrency.MainActor final public func showTapToPaySplash(fromViewController: UIKit.UIViewController)
   @objc @_Concurrency.MainActor final public func allUnprocessedOfflineTransactionsCount() -> Swift.Int
@@ -245,7 +249,7 @@ public enum UserAction : Swift.String, Swift.CaseIterable {
 }
 @available(iOS 15.4, *)
 @_Concurrency.MainActor @preconcurrency public struct TapToPayRootView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, onDismiss: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(paymentInfo: ClearentIdtechIOSFramework.PaymentInfo?, accountLinkMode: ClearentIdtechIOSFramework.TapToPayAccountLinkMode = .firstLink, onDismiss: ((ClearentIdtechIOSFramework.ClearentError?) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -260,6 +264,17 @@ public enum UserAction : Swift.String, Swift.CaseIterable {
   }
   @available(iOS 15.4, *)
   public typealias Body = @_opaqueReturnTypeOf("$s26ClearentIdtechIOSFramework19TapToPaySuccessViewV4bodyQrvp", 0) __
+}
+public enum TapToPayAccountLinkMode : Swift.Equatable {
+  case firstLink
+  case relink
+  case linkOnly
+  case relinkThenPay
+  public static func == (a: ClearentIdtechIOSFramework.TapToPayAccountLinkMode, b: ClearentIdtechIOSFramework.TapToPayAccountLinkMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers @available(iOS 15.4, *)
 @_Concurrency.MainActor public class TapToPayViewModel : Foundation.ObservableObject {
@@ -696,7 +711,7 @@ public class ClearentDefaultHttpClient : @unchecked Swift.Sendable {
 }
 extension ClearentIdtechIOSFramework.ClearentDefaultHttpClient {
   public func retrieveMerchantImage(merchantNumber: Swift.String) async throws -> Foundation.Data?
-  public func fetchTapToPaySessionToken() async throws -> Foundation.Data
+  public func fetchTapToPaySessionToken(merchantAllowedActions: [Swift.String]? = nil) async throws -> Foundation.Data
   public func sendEncryptedCardData(transactionId: Swift.String?, paymentCardData: Swift.String?, cardReaderId: Swift.String?) async throws -> Foundation.Data
 }
 public protocol CodableProtocol : Swift.Decodable, Swift.Encodable {
@@ -931,6 +946,7 @@ extension ClearentIdtechIOSFramework.TapToPayLoadingView : Swift.Sendable {}
 extension ClearentIdtechIOSFramework.TapToPayRootView : Swift.Sendable {}
 @available(iOS 15.4, *)
 extension ClearentIdtechIOSFramework.TapToPaySuccessView : Swift.Sendable {}
+extension ClearentIdtechIOSFramework.TapToPayAccountLinkMode : Swift.Hashable {}
 @available(iOS 15.4, *)
 extension ClearentIdtechIOSFramework.TapToPayViewModel : Swift.Sendable {}
 extension ClearentIdtechIOSFramework.ClearentWrapper : Swift.Sendable {}
